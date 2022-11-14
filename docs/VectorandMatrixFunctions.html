@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Vector and Matrix Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="APPEND_COLUMNS(A,B,...),Cartesian coordinate vector,Cartesian coordinates,Coordinate geometry matrix,Coordinate systems,Covariant metric tensor,COVARIANT_METRIC_TENSOR(A),Curvilinear coordinate systems,Cylindrical coordinates,Dot product,Geometry matrix,GEOMETRY_MATRIX(theta,G),i_ unit vector,j_ unit vector,Jacobian matrix,JACOBIAN(u,theta),k_ unit vector,Kronecker delta function,KRONECKER(i,,j),MATPROD(A,B,i,j),Matrix functions,Matrix product,Orthogonal coordinate systems,Outer product,OUTER(v,w),PARTITION(v,n,d),POLAR_SUM(p,q),POLAR_TO_RECTANGULAR(r,theta),Rectangular coordinates,RECTANGULAR_TO_POLAR(x,y),REMOVE_ELEMENS(v,v_),Spherical coordinates,Unit vector,Vector functions,VectorMatrixFunctions.mth">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vector and Matrix Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Vector and Matrix Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="VectorandMatrixFunctions"
+		  data-hnd-context="3502"
+		  data-hnd-title="Vector and Matrix Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="RationalApproximation.html" title="Rational Approximation" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="MiscellaneousFunctions.html" title="Miscellaneous Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Vector and Matrix Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">VectorMatrixFunctions.mth</span><span class="rvts6"> defines functions that automate some of the operations commonly performed on vectors and matrices. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">In </span><span class="rvts8">Derive</span><span class="rvts6">, an n by m matrix is stored internally as a vector of n elements, each of which is an m element vector. &nbsp;Therefore, it is possible to write functions that apply operations to the rows of a matrix. &nbsp;Moreover, by transposing a matrix, applying a function that operates on the rows of the resulting matrix, and finally transposing the result, makes it possible to apply operations to the columns of a matrix.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">i_ &nbsp;simplifies to the vector [1, 0, 0].</span></p>
+<p class="rvps9"><span class="rvts6">j_ &nbsp;simplifies to the vector [0, 1, 0].</span></p>
+<p class="rvps9"><span class="rvts6">k_ &nbsp;simplifies to the vector [0, 0, 1].</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">These three assigned variables represent the unit vectors i, j, and k for the rectangular (Cartesian) coordinate system. &nbsp;The underscore in their names is meant to suggest a vector and to distinguish them from the user variables i, j, and k. &nbsp;Any Cartesian coordinate vector can be entered as a linear combination of unit vectors. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">a·i_ + 3·j_ - k_</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts10">[a, 3, -1]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">OUTER</span><span class="rvts6">(v, w) simplifies to the outer product of vectors v and w. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">OUTER([a, b], [2, 3, 4])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> 2·a &nbsp;3·a &nbsp;4·a </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> 2·b &nbsp;3·b &nbsp;4·b </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">KRONECKER</span><span class="rvts6">(i, j) simplifies to 1 if integer i equals integer j, otherwise it simplifies to 0. &nbsp;The Kronecker delta function of i and j is often written as delta sub i, j . &nbsp;</span><span class="rvts7">KRONECKER</span><span class="rvts6"> is a useful utility function for implementing various vector and matrix operations.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The next several functions perform various operations on vectors and matrices:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">APPEND_COLUMNS</span><span class="rvts6">(A, B, ...) appends the columns of its arguments, which all must be matrices having the same number of rows. &nbsp;It can be given any number of matrices </span><span class="rvts32">or</span><span class="rvts6"> a vector of matrices. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">APPEND_COLUMNS([a, b; c, d], [e; f], [g; h])</span></p>
+<p class="rvps3"><span class="rvts6">and</span></p>
+<p class="rvps19"><span class="rvts10">APPEND_COLUMNS([[a, b; c, d], [e; f], [g; h]])</span></p>
+<p class="rvps3"><span class="rvts6">both simplify to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> a &nbsp;b &nbsp;e &nbsp;f </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> c &nbsp;d &nbsp;g &nbsp;h </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PARTITION</span><span class="rvts6">(v, n, d) simplifies to a partition of vector v into vectors of length n with an offset delta of d. &nbsp;d defaults to n. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">PARTITION([1, 2, 3, 4, 5], 3, 2)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> 1 &nbsp;2 &nbsp;3 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> 3 &nbsp;4 &nbsp;5 </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts7"><br/></span></p>
+<p class="rvps3"><span class="rvts7">REMOVE_ELEMENTS</span><span class="rvts6">(v, v_) removes any occurrences of the elements in v_ from the vector v. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">REMOVE_ELEMENTS([a, b, b, c, d, d, d, d, e, e], [b, d, e])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps19"><span class="rvts10">[a, c]</span></p>
+<p class="rvps3"><span class="rvts6">v_ need not necessarily be a vector. &nbsp;To remove one element, say d in the previous example, then simplifying</span></p>
+<p class="rvps19"><span class="rvts10">REMOVE_ELEMENTS([a, b, b, c, d, d, d, d, e, e], d)</span></p>
+<p class="rvps3"><span class="rvts6">yields the vector</span></p>
+<p class="rvps19"><span class="rvts10">[a, b, b, c, e, e]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MATPROD</span><span class="rvts6">(A, B, i, j) simplifies to the element on the ith row and jth column of the dot product of matrices A and B. &nbsp;The elements of the product of two matrices with nonnumeric elements are often much bulkier than the elements of the original matrices. &nbsp;</span><span class="rvts7">MATPROD</span><span class="rvts6"> allows you to compute a matrix product one element at a time. &nbsp;Alternatively, a matrix product can be computed one row at a time by simplifying expressions of the form A SUB i · B, for i=1 to the dimension of A.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">VectorMatrixFunctions.mth</span><span class="rvts6"> makes the following assignments for polar-cylindrical and spherical coordinate geometry matrices for use with the built-in vector calculus functions (see </span><a class="rvts19" href="DifferentialVectorCalculus.html">Differential Vector Calculus</a><span class="rvts20">Differential_Vector_Calculus</span><span class="rvts6"> and </span><a class="rvts19" href="IntegralVectorCalculus.html">Integral Vector Calculus</a><span class="rvts20">Integral_Vector_Calculus</span><span class="rvts6">):</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎡</span><span class="rvts10"> r &nbsp;</span><span class="rvts60">è</span><span class="rvts10"> &nbsp;z </span><span class="rvts9">⎤</span><br/><span class="rvts10">cylindrical := </span><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎣</span><span class="rvts10"> 1 &nbsp;r &nbsp;1 </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6">and</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎡</span><span class="rvts10"> r &nbsp; &nbsp; &nbsp;</span><span class="rvts60">è</span><span class="rvts10"> &nbsp; &nbsp; </span><span class="rvts60">Ö</span><span class="rvts10"> </span><span class="rvts9">⎤</span><br/><span class="rvts10">spherical := </span><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎣</span><span class="rvts10"> 1 &nbsp;r·SIN(</span><span class="rvts60">Ö</span><span class="rvts10">) &nbsp;r </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The file also defines functions for finding other coordinate geometry matrices in any orthogonal, curvilinear coordinate system. &nbsp;First, compute the </span><span class="rvts7">Jacobian matrix</span><span class="rvts6"> of the transformation from curvilinear to rectangular (Cartesian) coordinates. &nbsp;Next, compute the covariant metric tensor from the Jacobian matrix. &nbsp;If this matrix is diagonal, the coordinates are orthogonal, and you can proceed to compute the geometry matrix from the curvilinear coordinates and this diagonal:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Assume the transformation from curvilinear to some rectangular (Cartesian) coordinates is given by</span></p>
+<p class="rvps19"><span class="rvts6">x = u(</span><span class="rvts9">θ</span><span class="rvts6">1, </span><span class="rvts9">θ</span><span class="rvts6">2, ..., </span><span class="rvts9">θ</span><span class="rvts6">m)</span></p>
+<p class="rvps3"><span class="rvts6">where x is a vector of n rectangular coordinates, and u is a vector of n expressions depending on curvilinear coordinates </span><span class="rvts9">θ</span><span class="rvts6">1 through </span><span class="rvts9">θ</span><span class="rvts6">m, with m </span><span class="rvts9">≤</span><span class="rvts6"> n. &nbsp;(m </span><span class="rvts9">&lt;</span><span class="rvts6"> n corresponds to a hyper-surface imbedded in a higher-dimensional space.)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">JACOBIAN</span><span class="rvts6">(u, </span><span class="rvts9">θ</span><span class="rvts6">) simplifies to the Jacobian matrix of the above transformation, where </span><span class="rvts9">θ</span><span class="rvts6"> = [</span><span class="rvts9">θ</span><span class="rvts6">1, </span><span class="rvts9">θ</span><span class="rvts6">2, ..., </span><span class="rvts9">θ</span><span class="rvts6">m]. &nbsp;The Jacobian is the n by m matrix of partial derivatives of u, with dui/d</span><span class="rvts9">θ</span><span class="rvts6">j located at row i and column j. &nbsp;For example, the transformation from parabolic to rectangular (Cartesian) coordinates is x = (w²-v²)/2 and y = w·v and</span></p>
+<p class="rvps19"><span class="rvts10">JACOBIAN([(w^2 - v^2)/2, w·v], [w, v])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> w &nbsp;-v </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> v &nbsp; w </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">COVARIANT_METRIC_TENSOR</span><span class="rvts6">(A) simplifies to the covariant metric tensor of the Jacobian matrix A. &nbsp;Note that a coordinate system is orthogonal only if the elements off the main diagonal of the covariant metric tensor of its Jacobian matrix are 0. &nbsp;For example, the parabolic coordinate system is orthogonal since</span></p>
+<p class="rvps19"><span class="rvts10">COVARIANT_METRIC_TENSOR([w, -v; v, w])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp;2 &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> v &nbsp;+ w &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp;2 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> &nbsp; &nbsp;0 &nbsp; &nbsp; v &nbsp;+ w &nbsp;</span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GEOMETRY_MATRIX</span><span class="rvts6">(</span><span class="rvts9">θ</span><span class="rvts6">, G) simplifies to the geometry matrix for curvilinear coordinate vector </span><span class="rvts9">θ</span><span class="rvts6"> having a covariant metric tensor G. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">GEOMETRY_MATRIX([u, v], [v^2 + w^2, 0; 0, v^2 + w^2])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;u &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; v &nbsp; &nbsp; </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp;2 &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp;2 &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> </span><span class="rvts63">√</span><span class="rvts10">(v &nbsp;+ w ) &nbsp;</span><span class="rvts63">√</span><span class="rvts10">(v &nbsp;+ w ) </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Note that the second row of the geometry matrix is just the square roots of the diagonal elements of the covariant tensor. &nbsp;In some cases, simplification of the square roots may lead to unwanted absolute values unless you use the </span><a class="rvts19" href="VariableDomain.html">Author &gt; Variable Domain command</a><span class="rvts20">8MNT4Y</span><span class="rvts6"> to appropriately restrict the domain of some coordinate variables. &nbsp;For example, with spherical coordinates r should be declared nonnegative and </span><span class="rvts9">Φ</span><span class="rvts6"> should be declared between 0 and </span><span class="rvts9">π</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RECTANGULAR_TO_POLAR</span><span class="rvts6">(x, y) simplifies to a vector of the polar coordinates of the point (x,y) expressed in rectangular coordinates. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">RECTANGULAR_TO_POLAR(3, 4)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps27"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp; &nbsp;</span><span class="rvts60">ð</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎛</span><span class="rvts10"> 1 </span><span class="rvts9">⎞⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10">5, ——— — 2·ATAN</span><span class="rvts9">⎜</span><span class="rvts10">———</span><span class="rvts9">⎟⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎝</span><span class="rvts10"> 3 </span><span class="rvts9">⎠⎦</span></p>
+<p class="rvps3"><span class="rvts6">and approximates to [5, 0.9272952180].</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLAR_TO_RECTANGULAR</span><span class="rvts6">(r, q) simplifies to a vector of the rectangular coordinates of the point (r,q) expressed in polar coordinates. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">POLAR_TO_RECTANGULAR(2, pi/3)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [1, </span><span class="rvts9">√</span><span class="rvts6">3].</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLAR_SUM</span><span class="rvts6">(p, q) simplifies to the vector sum of the points p and q each expressed in polar coordinates as a two-element vector. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">POLAR_SUM([1, pi/2], [2, pi/3])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps19"><span class="rvts10">[</span><span class="rvts9">√</span><span class="rvts10">(2·</span><span class="rvts9">√</span><span class="rvts10">3 + 5), ATAN(</span><span class="rvts9">√</span><span class="rvts10">3 + 1)]</span></p>
+<p class="rvps3"><span class="rvts6">and approximates to [2.909312911, 1.219916915].</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com">Free EBook and documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Integrate</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Antiderivative,Calculus &gt; Integrate command,Cauchy principal value,Closed-form expression,Ctrl+Shift+I (Calculus &gt; Integrate command),Definite integral,DIF(u,x,n),Dubious accuracy message,Improper integrals,Indefinite integral,INT(u,x,a,b),Integral,Integral tables,Integrate command,No elementary integral message,Numerical integration,Simpson's rule,Singularities">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Integrate">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Integrate" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Integrate"
+		  data-hnd-context="1004"
+		  data-hnd-title="Integrate"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Menu Commands</li><li>Algebra Window</li><li>Calculus</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Differentiate.html" title="Differentiate" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="TaylorSeries.html" title="Taylor Series" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Calculus &gt; Integrate command</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">Calculus &gt; Integrate </span><span class="rvts6">command or press </span><span class="rvts7">Ctrl+Shift+I</span><span class="rvts6"> to find the definite integral or indefinite integral (antiderivative) of an expression. &nbsp;This command allows you to select the integration variable, and definite or indefinite integration. &nbsp;If you request definite integration, you can enter the lower and upper limits. &nbsp;If you request indefinite integration, you can enter the integration constant. &nbsp;Note that the #n notation can be used to refer to previous expressions when entering integration limits.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Alternatively, the antiderivative of the expression </span><span class="rvts32">u</span><span class="rvts6"> with respect to the variable </span><span class="rvts32">x</span><span class="rvts6"> without an integration constant can be entered by typing in an expression of the form </span><span class="rvts7">INT</span><span class="rvts6">(</span><span class="rvts32">u</span><span class="rvts6">, </span><span class="rvts32">x</span><span class="rvts6">). &nbsp;The antiderivative of the expression </span><span class="rvts32">u</span><span class="rvts6"> with respect to the variable </span><span class="rvts32">x</span><span class="rvts6"> with the integration constant </span><span class="rvts32">c</span><span class="rvts6"> can be entered by typing in an expression of the form </span><span class="rvts7">INT</span><span class="rvts6">(</span><span class="rvts32">u</span><span class="rvts6">, </span><span class="rvts32">x</span><span class="rvts6">, </span><span class="rvts32">c</span><span class="rvts6">). &nbsp;The definite integral of the expression </span><span class="rvts32">u</span><span class="rvts6"> with respect to the variable </span><span class="rvts32">x</span><span class="rvts6"> from the lower limit </span><span class="rvts32">a</span><span class="rvts6"> to the upper limit </span><span class="rvts32">b</span><span class="rvts6"> can be entered by typing in an expression of the form </span><span class="rvts7">INT</span><span class="rvts6">(</span><span class="rvts32">u</span><span class="rvts6">, </span><span class="rvts32">x</span><span class="rvts6">, </span><span class="rvts32">a</span><span class="rvts6">, </span><span class="rvts32">b</span><span class="rvts6">).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Antiderivatives and definite integrals are displayed using an integral sign. &nbsp;Upon simplification, </span><span class="rvts8">Derive</span><span class="rvts6"> attempts to determine a closed-form expression whose partial derivative is the integrand. &nbsp;A closed-form expression does not contain infinite series, infinite products, integrals, or limits. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">INT(x/(a^2+b^2·x^4),x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps35"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; b·x &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp;ATAN (——————)&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a &nbsp; &nbsp;</span><br/><span class="rvts10">———————————————</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; 2·a·b &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">Calculus </span><span class="rvts6">&gt; </span><span class="rvts7">Differentiate</span><span class="rvts6"> command to find higher order antiderivatives by entering a negative integer for the order of the derivative. &nbsp;Alternatively, the </span><span class="rvts32">n</span><span class="rvts6">th order antiderivative of the expression </span><span class="rvts32">u</span><span class="rvts6"> with respect to the variable </span><span class="rvts32">x</span><span class="rvts6"> can be entered by typing in an expression of the form </span><span class="rvts7">DIF</span><span class="rvts6">(</span><span class="rvts32">u</span><span class="rvts6">, </span><span class="rvts32">x</span><span class="rvts6">, -</span><span class="rvts32">n</span><span class="rvts6">). &nbsp;For example, the second-order antiderivative</span></p>
+<p class="rvps19"><span class="rvts10">DIF(-TAN(x)^2-1, x, -2)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps19"><span class="rvts10">LN(COS(x))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Issue successive </span><span class="rvts7">Calculus </span><span class="rvts6">&gt; </span><span class="rvts7">Integrate </span><span class="rvts6">commands or enter nested calls on </span><span class="rvts7">INT</span><span class="rvts6"> to obtain iterated definite integrals. &nbsp;This provides a convenient method for computing double integrals and triple integrals. &nbsp;For example, the iterated definite integral</span></p>
+<p class="rvps19"><span class="rvts10">INT(INT(x·LN(y), y, x, 2·x), x, 0, 2)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps19"><span class="rvts10">8·LN(2) - 32/9</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Derive</span><span class="rvts6"> uses powerful techniques that enable it to find antiderivatives for a large class of expressions. &nbsp;These expressions include extended polynomials; products of polynomials with sinusoids, logarithms, or exponentials that are linear in their arguments; piecewise continuous functions; and many rational expressions or expressions involving square roots of linear or quadratic expressions.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If a simplified result includes one or more integral signs it is because the antiderivative does not exist or </span><span class="rvts8">Derive</span><span class="rvts6"> is unable to find the antiderivative.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If </span><span class="rvts8">Derive</span><span class="rvts6"> determines that a closed-form antiderivative does not exist in terms of its pre-defined functions and operators, it displays the message </span><span class="rvts32">No elementary integral </span><span class="rvts6">on the status line.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If </span><span class="rvts8">Derive</span><span class="rvts6"> is unable to find an antiderivative that does exist, you may be able to help it along by making a change of variable or using integration by parts. &nbsp;Functions to facilitate both these integration techniques are defined in the </span><a class="rvts19" href="MiscellaneousFunctions.html">MiscellaneousFunctions.mth</a><span class="rvts20">144O15P</span><span class="rvts6"> utility file.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If all else fails, you can approximate the antiderivative of an expression by integrating its Taylor polynomial approximation (see </span><a class="rvts19" href="TaylorSeries.html">Calculus &gt; Taylor Series command</a><span class="rvts20">MRJ3J4</span><span class="rvts6">). &nbsp;You may need to use several different expansion points to make the series converge more rapidly over the interval of interest. &nbsp;For example, to find an approximation for the antiderivative of SIN(x)/x by integrating its fourth order Taylor polynomial approximation about the point x=0, simplify the expression</span></p>
+<p class="rvps19"><span class="rvts10">INT(TAYLOR(SIN(x)/x,x,0,4),x)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If you chose to add an arbitrary constant to antiderivatives, use a new constant name each time to prevent unjustified cancellations of the constants when subtracting antiderivatives.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">When comparing a </span><span class="rvts8">Derive</span><span class="rvts6"> produced antiderivative with one in an integral table, it is important to realize that they may appear quite different. &nbsp;They may be different forms of equivalent expressions, or they may differ by a well disguised constant. &nbsp;Note that if such different forms occur, you can use </span><span class="rvts8">Derive</span><span class="rvts6"> to simplify the difference of the two antiderivatives and see if the result is independent of the integration variable.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If precision is in approximate mode and the integrand depends only on the integration variable and both limits are numeric, then </span><span class="rvts8">Derive</span><span class="rvts6"> uses an extrapolated adaptive Simpson's rule to numerically approximate definite integrals. &nbsp;This algorithm is also used if precision is in mixed mode and </span><span class="rvts8">Derive</span><span class="rvts6"> is unable to determine a closed-form antiderivative for the integrand.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The computing time for this numerical integration algorithm usually increases sharply with the current precision. &nbsp;For many integrals the resulting accuracy is nearly that of the current precision. &nbsp;However, the accuracy may be significantly worse than the current precision if the integrand or one of its low order derivatives has a discontinuity or a singularity within the interval or at either endpoint. &nbsp;Integrals that have relatively equal areas above and below the axis can also cause poor relative error via catastrophic cancellation. &nbsp;</span><span class="rvts8">Derive</span><span class="rvts6"> is usually able to recognize that one of these situations has occurred, in which case it displays the warning message </span><span class="rvts10">Dubious accuracy</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If precision is in exact or mixed mode, </span><span class="rvts8">Derive</span><span class="rvts6"> simplifies definite integrals by trying to determine a closed-form antiderivative for the integrand. &nbsp;Then it subtracts the limit of the antiderivative as the integration variable approaches the lower limit from the limit as the integration variable approaches the upper limit. &nbsp;Both limits are approached from within the interval. &nbsp;Thus, </span><span class="rvts8">Derive</span><span class="rvts6"> can determine some improper integrals having infinite limits or integrand singularities at the limits. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">INT(1/x^2,x,1,inf)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 1, and</span></p>
+<p class="rvps19"><span class="rvts10">INT(1/SQRT(x),x,0,1)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 2.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Although this technique is valid for endpoint singularities, it may be invalid if there is a singularity within the integration interval. &nbsp;Instead of the Riemann integral, it may yield the Cauchy principal value. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">INT(1/x^3,x,-1,2)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 3/8 which is correct only if the assumption is made that the singularity at 0 is approached at the same rate from both sides, thus exactly canceling the positive and negative infinite areas.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">An even more serious problem occurs when a difference of antiderivatives across a singularity gives results that even Cauchy would call wrong. &nbsp;As is the case when using integral tables, it is your responsibility to find singularities that occur within the interval of integration and to split the integrals there. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If the integrand looks as though it may have singularities but their locations are not obvious, try using the soLve command to find the zeros of the integrand's common denominator. &nbsp;Plotting the integrand over the integration interval may also help. &nbsp;However, there is no known method that is guaranteed to find all internal singularities.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">There may exist a closed-form definite integral of an expression for which there is no closed-form antiderivative. &nbsp;Although </span><span class="rvts8">Derive</span><span class="rvts6"> can not directly integrate such expressions, it is useful for doing the steps required by various advanced techniques required to solve such problems.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Many applications of integration, including functions for Laplace transforms, Fourier series, arc lengths, surface areas, centroids, and moments of inertia, are defined in the </span><a class="rvts19" href="IntegrationApplications.html">IntegrationApplications.mth</a><span class="rvts20">2W1Y_YU</span><span class="rvts6"> utility file.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="Calculuscommands.html">Calculus commands</a><span class="rvts20">Calculus_commands</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/help-authoring-tool">Free help authoring tool</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

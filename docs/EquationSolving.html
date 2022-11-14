@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Equation Solving</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Approximate equation solving,Complex solutions,EquationSolving.mth,FIXED_POINT(g,x,x0,n),Fixed-point iteration,Function inverse,Inverse of function,NEWTON(u,x,x0,n),Newton's method,NEWTONS(u,x,x0,n),Numerical equation solving,Solving nonlinear systems,Taylor series solution,TAYLOR_INVERSE(u,x,y,x0,n),TAYLOR_SOLVE(u,x,y,x0,y0,n),Truncated Taylor series solution">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Equation Solving">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Equation Solving" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="EquationSolving"
+		  data-hnd-context="3501"
+		  data-hnd-title="Equation Solving"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="CombinatorialFunctions.html" title="Combinatorial Functions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="LinearAlgebra.html" title="Linear Algebra" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Equation Solving</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The </span><a class="rvts19" href="Solvecommands.html">Solve command</a><span class="rvts20">Solve_commands</span><span class="rvts6"> and the built-in </span><span class="rvts7">SOLVE</span><span class="rvts6"> and </span><span class="rvts7">NSOLVE</span><span class="rvts6"> functions can find real or complex solutions to individual algebraic equations and to systems of polynomial equations using exact and/or approximate methods. &nbsp;To supplement these capabilities, the file </span><span class="rvts7">EquationSolving.mth</span><span class="rvts6"> defines functions useful for finding approximate solutions (real or complex) to individual algebraic equations and to systems of algebraic equations using iterative methods. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Given a univariate expression u(x) and an initial guess of x0, </span><span class="rvts7">Newton's method</span><span class="rvts6"> uses repeated applications of the update formula xnew </span><span class="rvts9">←</span><span class="rvts6"> x - u(x)/u(x)' &nbsp;evaluated at the current value of x to find an x such that u(x) is arbitrarily close to zero. &nbsp;Newton's method can be used to find an approximate solution of a univariate equation by taking the difference of the two sides of the equation. &nbsp;Also, the method can be extended to solve a system of m equations dependent on m variables. &nbsp; Note that Newton's method requires that </span><span class="rvts8">Derive</span><span class="rvts6"> be able to differentiate the expressions with respect to each of the solution variables.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">NEWTON</span><span class="rvts6">(u, x, x0, n) approximates to a vector of n+1 approximations for the variable x resulting from n applications of Newton's method to the univariate expression u(x) beginning with an initial guess of x0. &nbsp;</span><span class="rvts7">NEWTON</span><span class="rvts6">(u, x, x0) approximates to a vector of the approximations for x until they converge at the current digits of precision. &nbsp;For example, at 10 digits of precision, the expression</span></p>
+<p class="rvps19"><span class="rvts10">NEWTON(x^2-3, x, 2)</span></p>
+<p class="rvps3"><span class="rvts6">approximates to</span></p>
+<p class="rvps19"><span class="rvts10">[2, 1.75, 1.732142857, 1.732050810, 1.732050810, 1.732050810]</span></p>
+<p class="rvps3"><span class="rvts6">Note that the last element is a good approximation to the square root of 3.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If u is a vector of m expressions, x is a vector of m variables, and x0 is a vector of m initial guesses, </span><span class="rvts7">NEWTONS</span><span class="rvts6">(u, x, x0, n) approximates to a matrix of n+1 rows of approximations for the variables of x from n applications of Newton's method to the expressions in u beginning with the initial guesses in x0. &nbsp;To solve a system of m equations in m variables, call </span><span class="rvts7">NEWTONS</span><span class="rvts6"> with a vector of the difference in the two sides of each equation, a vector of the m variables, and a vector of the m initial guesses. &nbsp;For example, to solve the equations exp(x·y) = x + 2·y and atan(x·y) = 2·x+y, approximate the expression</span></p>
+<p class="rvps19"><span class="rvts10">NEWTONS([EXP(x·y)-x-2·y, ATAN(x·y)-2·x-y], [x, y], [-1, -1], 7)</span></p>
+<p class="rvps3"><span class="rvts6">This results in an 8-row by 2-column matrix whose last row is an approximate solution to the equations based on 7 applications of Newton's method. &nbsp;This solution can be verified by substitution of these values for x and y into the original equations.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">NEWTONS</span><span class="rvts6">(u, x, x0) approximates to a matrix of approximations for the variables of x until all converge at the current digits of precision. &nbsp;Note that different rational numbers may look the same when displayed in scientific or decimal notation. &nbsp;For example, the expression</span></p>
+<p class="rvps19"><span class="rvts10">NEWTONS([EXP(x·y)-x-2·y, ATAN(x·y)-2·x-y], [x, y], [-1, -1])</span></p>
+<p class="rvps3"><span class="rvts6">approximates to a matrix having 10 rows at 6 digits of precision and a matrix having 39 rows at 10 digits of precision.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If you are interested in solutions containing complex numbers, use such numbers in the components of the initial guess. &nbsp;When a complex solution is found, its complex conjugate is often a good guess for another solution since complex solutions often occur in conjugate pairs.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Even if there is a solution, Newton's method may not converge to it unless your initial guess is sufficiently close. &nbsp;Also, divergence may generate large magnitude numbers that exhaust memory and/or take a long time to abort. &nbsp;Thus, it is usually best to begin by limiting </span><span class="rvts7">NEWTONS</span><span class="rvts6"> to a small number of iterations. &nbsp;Then by examining the last few rows of the resulting matrix, you can determine whether Newton's method is converging. &nbsp;If convergence does not begin within ten iterations or so, it is usually best to try a different initial guess rather than increasing the number of iterations.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If s is the last row of the resulting matrix, you can approximate the limit of u as x approaches s to determine if the residual is acceptably small. &nbsp;If s has converged to within roundoff error at the current precision and you want more accuracy, increase the precision by a few digits and use s as your initial guess. &nbsp;This is usually more efficient than doing the whole calculation at the higher precision.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If Newton's method is taking an unexpectedly long time, the iteration may be diverging. &nbsp;Abort the computation, and retry using a smaller number of iterations or a better initial guess.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">NEWTONS</span><span class="rvts6"> only finds one solution at a time. &nbsp;To find additional solutions, you can use a different initial guess. &nbsp;However, </span><span class="rvts7">NEWTONS</span><span class="rvts6"> may still converge to the solution you already know. &nbsp;To prevent this, the original system can be reduced to a deflated system of equations. &nbsp;If the vector [s1, s2, ..., sm] is a solution to the system represented by the vector u, the vector for the deflated system is</span></p>
+<p class="rvps26"><span class="rvts6">u</span><br/><span class="rvts6">————————————</span><br/><span class="rvts6">(x1-s1) (x2-s2) ... (xm-sm)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If you find a solution to the deflated system, you can apply </span><span class="rvts7">NEWTONS</span><span class="rvts6"> to the original system using this solution as an initial guess. &nbsp;This eliminates roundoff error caused by deflation and gives a more accurate, purified solution.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The difficulty of finding sufficiently good initial guesses increases sharply with the number of variables. &nbsp;Consequently, it is usually wise to eliminate as many variables as possible using the </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> before resorting to </span><span class="rvts7">NEWTONS</span><span class="rvts6">.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Another way to solve a system of equations approximately is to convert the system to a vector fixed-point form x=g, with g=[g1, g2, ..., gm], where expressions g1 through gm may each depend on any or all of the variables in x=[x1, x2, ..., xm]. &nbsp;You can then substitute the initial guesses for x1 through xm into g to compute updated guesses for x. &nbsp;You can continue to substitute the most recent set of components into g to compute a more recent set of guess components.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If there is a solution, the magnitudes of the partial derivatives of g1 through gm are small in the neighborhood of the solution, and the initial guess is close to the solution, then fixed-point iteration may converge to the solution and the convergence may occur in an acceptable amount of time. &nbsp;To compensate for these discouraging provisos, fixed-point iteration does not require differentiability and does not require space to store derivatives, unlike Newton's method.</span></p>
+<p class="rvps3"><span class="rvts7"><br/></span></p>
+<p class="rvps3"><span class="rvts7">FIXED_POINT</span><span class="rvts6">(g, x, x0, n) approximates to an n+1 by m matrix. &nbsp;g is the vector of expressions [g1, g2, ..., gm]. &nbsp;The other arguments, the returned result, and the usage suggestions are similar to those described for </span><span class="rvts7">NEWTONS</span><span class="rvts6">. &nbsp;For example, use complex numbers in the components of your initial guess if you are interested in complex solutions.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">However, </span><span class="rvts7">FIXED_POINT</span><span class="rvts6"> may diverge no matter how close the initial guess is to an exact solution: &nbsp;The most important determinants of success are choosing a close enough initial guess and choosing a particular fixed-point form for which g1 through gm have small magnitude partial derivatives near the guess: &nbsp;Ideally each equation has a portion that is invertible with respect to a distinct variable, and the magnitude of the partial derivative of this portion with respect to that variable is dominant near your guess. &nbsp;You can then solve each equation for its dominant variable xk in its dominant portion in terms of the other portions to obtain the form xk=gk. &nbsp;The same variable may occur on the right side too, but weakly.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Even if an equation cannot be solved exactly and extra parameters make it impossible to solve numerically, it may still be possible to find a truncated Taylor series solution. &nbsp;The series solution can extend an exact or approximate solution at a particular point into a useful neighborhood around the point. &nbsp;Of course, it is necessary that a truncated series solution exists at the point.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TAYLOR_SOLVE</span><span class="rvts6">(u, x, y, x0, y0, n) simplifies to an nth degree truncated Taylor series solution y(x) of the equation u(x, y)=0, given u(x0, y0)=0. &nbsp;For example, since y0=0 at x0=0 is a solution of the equation sin(y) + y + x·exp(x) = 0,</span></p>
+<p class="rvps19"><span class="rvts10">TAYLOR_SOLVE(SIN(y) + y + x·EXP(x), x, y, 0, 0, 3)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp;3 &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp;25·x &nbsp; &nbsp; &nbsp;x &nbsp; &nbsp; &nbsp;x &nbsp;</span><br/><span class="rvts10">- ——————— - ———— - ———&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp;96 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; 2 &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">This is the 3th degree truncated Taylor series solution of the equation expanded about the point y0=0 at x0=0. &nbsp;Note that it is impossible to solve this transcendental equation exactly for y. &nbsp;Also the extra parameter x makes it impossible to solve the equation numerically.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TAYLOR_INVERSE</span><span class="rvts6">(u, x, y, x0, n) simplifies to an nth degree truncated Taylor series expansion of the inverse of the function defined by y=u(x), expanded about y0=u(x0). &nbsp;This is useful when u(x) cannot be inverted exactly in closed form. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">TAYLOR_INVERSE(x·EXP(x), x, y, 0, 3)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp;3·y &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">—————— - y &nbsp;+ y&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com">Easy CHM and documentation editor</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

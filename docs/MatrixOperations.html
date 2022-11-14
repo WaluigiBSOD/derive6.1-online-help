@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Matrix Operations</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="^ (exponentiation) operator,` (transpose) operator,Back-accent postfix operator,COL operator,DET(A),Determinant,Inverting a matrix,Matrix operations,Operators, matrix,Postfix operator,Raising to a power,ROW operator,Singular matrix,Square matrix,TRACE(A),Transpose">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Matrix Operations">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Matrix Operations" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="MatrixOperations"
+		  data-hnd-context="2505"
+		  data-hnd-title="Matrix Operations"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Discussion Topics</li><li>Algebra Window</li><li>Vectors and Matrices</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="VectorOperations.html" title="Vector Operations" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="RowEchelonForm.html" title="Row Echelon Form" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Matrix Operations</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The functions and operators described in this section only apply to matrices.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The </span><span class="rvts7">ROW</span><span class="rvts6"> and </span><span class="rvts7">COL</span><span class="rvts6"> infix operators can be used as an alternative to the </span><span class="rvts7">SUB</span><span class="rvts6"> operator (see </span><a class="rvts19" href="VectorManipulationFunctions.html">Vector Manipulation Functions</a><span class="rvts20">Vector_Manipulation_Functions</span><span class="rvts6">) to extract rows and columns of matrices. &nbsp;If A is a matrix, A </span><span class="rvts7">ROW</span><span class="rvts6"> n and A </span><span class="rvts7">COL</span><span class="rvts6"> n return the nth row and column of A as a vector, respectively. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">[a, b, c; d, e, f; g, h, i] ROW 2</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [d, e, f], and</span></p>
+<p class="rvps19"><span class="rvts10">[a, b, c; d, e, f; g, h, i] COL 2</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [b, e, h]. &nbsp;If the right operand of </span><span class="rvts7">ROW</span><span class="rvts6"> or </span><span class="rvts7">COL</span><span class="rvts6"> is a vector of indices, a matrix of the specified rows or columns is returned. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">[a, b, c; d, e, f; g, h, i] ROW [3, 1]</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps27"><span class="rvts9">⎡</span><span class="rvts10"> g &nbsp;h &nbsp;i </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> a &nbsp;b &nbsp;c </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6">and</span></p>
+<p class="rvps19"><span class="rvts10">[a, b, c; d, e, f; g, h, i] COL [3, 1]</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps27"><span class="rvts9">⎡</span><span class="rvts10"> c &nbsp;a </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> f &nbsp;d </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> i &nbsp;g </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6">Note that the ... ellipsis can be used to extract a range of rows or columns. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts6">A </span><span class="rvts7">ROW</span><span class="rvts6"> [3, ..., 7]</span></p>
+<p class="rvps3"><span class="rvts6">returns a matrix consisting of the 3rd through 7th rows of the matrix A.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The </span><span class="rvts7">transpose</span><span class="rvts6"> of a matrix is the matrix resulting from interchanging its rows and columns. &nbsp;The transpose of a scalar or a vector of scalars is the original scalar or vector of scalars. &nbsp;Use the </span><span class="rvts7">`</span><span class="rvts6">(back-accent) postfix operator to generate the transpose of a matrix. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">[[a, b, c], [1, 2, 3]]</span><span class="rvts39">`</span></p>
+<p class="rvps3"><span class="rvts6">displays as</span></p>
+<p class="rvps27"><span class="rvts9">⎡</span><span class="rvts10"> a &nbsp;b &nbsp;c </span><span class="rvts9">⎤</span><span class="rvts10"> &nbsp;</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><span class="rvts39">`</span><span class="rvts10">&nbsp;</span><br/><span class="rvts9">⎣</span><span class="rvts10"> 1 &nbsp;2 &nbsp;3 </span><span class="rvts9">⎦</span><span class="rvts10"> &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">and simplifies to</span></p>
+<p class="rvps27"><span class="rvts9">⎡</span><span class="rvts10"> a &nbsp;1 </span><span class="rvts9">⎤</span><span class="rvts10">&nbsp;</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><span class="rvts10">&nbsp;</span><br/><span class="rvts9">⎢</span><span class="rvts10"> b &nbsp;2 </span><span class="rvts9">⎥</span><span class="rvts10">&nbsp;</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><span class="rvts10">&nbsp;</span><br/><span class="rvts9">⎣</span><span class="rvts10"> c &nbsp;3 </span><span class="rvts9">⎦</span><span class="rvts10">&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">A </span><span class="rvts7">square matrix</span><span class="rvts6"> is a matrix with the same number of rows as columns. &nbsp;Use </span><span class="rvts7">DET</span><span class="rvts6"> to compute the determinant of a square matrix. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">DET([2, 3; a, b])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 2·b - 3·a.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The </span><span class="rvts7">trace</span><span class="rvts6"> of a square matrix is the sum of its diagonal elements. &nbsp;Use </span><span class="rvts7">TRACE</span><span class="rvts6"> to compute the trace of a square matrix. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">TRACE([a, b, c; d, e, f; g, h, i])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a + e + i.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the ^ operator to raise a square matrix to an integer power. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">[2, 3; a, b]^2</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps27"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp;3·a + 4 &nbsp; &nbsp;3·b + 6 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> a·(b + 2) &nbsp;3·a + b &nbsp;</span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">A </span><span class="rvts7">singular matrix</span><span class="rvts6"> is a square matrix whose determinant is 0. &nbsp;A singular matrix has no inverse. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">[2, 3; 4·a, 6·a]^(-1)</span></p>
+<p class="rvps3"><span class="rvts6">does not simplify further since the matrix is singular.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Inverting a matrix can produce dramatically more complicated elements than the original matrix. &nbsp;The complexity of the inverse of an n by n matrix with symbolic elements often grows combinatorially with n. &nbsp;Even for numeric matrices, the elements of an inverse computed in exact or mixed mode can have dramatically more digits than the given elements. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">A system of linear equations can be represented as a vector of constants that is equal to the product of a coefficient matrix and a vector of unknowns. &nbsp;Provided the matrix is nonsingular, you can use the matrix inverse and product operations to solve this matrix equation. &nbsp;For example, to solve the system of equations</span></p>
+<p class="rvps19"><span class="rvts6">5·x + 3·y - 7·z &nbsp;= &nbsp;4</span><br/><span class="rvts6">2·x - 8·y + &nbsp;z &nbsp;= &nbsp;6</span><br/><span class="rvts6">-x + 9·y + 4·z &nbsp;= &nbsp;5</span></p>
+<p class="rvps3"><span class="rvts6">enter the expression</span></p>
+<p class="rvps19"><span class="rvts10">[5, 3, -7; 2, -8, 1; -1, 9, 4]^(-1)·[4, 6, 5]</span></p>
+<p class="rvps3"><span class="rvts6">which approximates to the solution vector for x, y, and z</span></p>
+<p class="rvps19"><span class="rvts10">[2.910596026, 0.1754966887, 1.582781456]</span></p>
+<p class="rvps3"><span class="rvts6">Note that the exact rational solution can be found by simplifying, instead of approximating, the equation.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The above method is only able to solve systems of linear equations that are </span><span class="rvts32">non</span><span class="rvts6">singular. &nbsp;Also since it requires the explicit computation of the inverse of a matrix, it is both space and time inefficient. &nbsp;In contrast, the </span><a class="rvts19" href="Solvecommands.html">Solve commands</a><span class="rvts20">Solve_commands</span><span class="rvts6"> and the function </span><span class="rvts7">ROW_REDUCE</span><span class="rvts6"> (see </span><a class="rvts19" href="RowEchelonForm.html">Row Echelon Form</a><span class="rvts20">Row_Echelon_Form</span><span class="rvts6">) can solve larger as well as singular systems of linear equations, so long as they are consistent.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="VectorsandMatrices.html">Vectors and Matrices</a><span class="rvts20">Vectors_and_Matrices</span><span class="rvts6"> topics</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com">Free CHM Help documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

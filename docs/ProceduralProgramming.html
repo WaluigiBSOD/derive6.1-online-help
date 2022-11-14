@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Procedural Programming</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="' (quote) operator,Default variable values,EXIT function,Initial variable values,LISP programming language,Local variables,LOOP(u1, u2, ...),Multi-line function display,Procedural programming,PROG(u1, u2, ...),Quote operator,RETURN(u)">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Procedural Programming">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Procedural Programming" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="ProceduralProgramming"
+		  data-hnd-context="4009"
+		  data-hnd-title="Procedural Programming"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Discussion Topics</li><li>Derive Programming</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="MutualRecursion.html" title="Mutual Recursion" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ProgrammingFunctions.html" title="Programming Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Procedural Programming</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">Using the </span><span class="rvts7">PROG</span><span class="rvts6"> and </span><span class="rvts7">LOOP</span><span class="rvts6"> program control constructs in user-defined functions makes it possible to write multi-line, procedural programs in </span><span class="rvts8">Derive</span><span class="rvts6">. &nbsp;Both these control constructs take any number of program statements (e.g. assignment statements and if-then-else statements). &nbsp;The statements of a </span><span class="rvts7">PROG</span><span class="rvts6"> construct are sequentially evaluated until an </span><span class="rvts7">EXIT</span><span class="rvts6"> or </span><span class="rvts7">RETURN</span><span class="rvts6"> statement is encountered or until its last statement is evaluated, which is returned as the value of the </span><span class="rvts7">PROG</span><span class="rvts6"> construct. &nbsp;The statements of a </span><span class="rvts7">LOOP</span><span class="rvts6"> construct are sequentially evaluated </span><span class="rvts32">repeatedly</span><span class="rvts6"> until an </span><span class="rvts7">EXIT</span><span class="rvts6"> or </span><span class="rvts7">RETURN</span><span class="rvts6"> statement is encountered, which terminates the loop and the last statement evaluated is returned as the value of the </span><span class="rvts7">LOOP</span><span class="rvts6"> construct.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Temporary assignments to </span><a class="rvts40" href="Localvariables.html">local variables</a><span class="rvts20">Local_variables</span><span class="rvts6"> of the function being defined are commonly made within the scope of the </span><span class="rvts7">PROG</span><span class="rvts6"> and </span><span class="rvts7">LOOP</span><span class="rvts6"> program control constructs. &nbsp;Upon exit from the user-defined function, these variables are restored to their original values. &nbsp;However, if assignments are made to non-local variables, these variables are </span><span class="rvts32">not</span><span class="rvts6"> restored to their original values upon exit from the function. &nbsp;Also, if a vector or matrix is assigned to different local variables, assignments to the elements of the vector or matrix affect the value of </span><span class="rvts32">all</span><span class="rvts6"> the local variables.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If a </span><span class="rvts7">RETURN</span><span class="rvts6"> statement is encountered at any point in the evaluation of a user-defined function, evaluation terminates and the value of </span><span class="rvts7">RETURN</span><span class="rvts6">'s argument is returned as the value of the function. &nbsp;If an </span><span class="rvts7">EXIT</span><span class="rvts6"> statement is encountered at any point in the evaluation of a </span><span class="rvts7">PROG</span><span class="rvts6"> or </span><span class="rvts7">LOOP</span><span class="rvts6"> control construct, evaluation of the construct terminates and evaluation continues with the next statement in the user-defined function.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The following definition of </span><span class="rvts7">Rev</span><span class="rvts6"> illustrates the use of the </span><span class="rvts7">PROG</span><span class="rvts6"> and </span><span class="rvts7">LOOP</span><span class="rvts6"> control constructs to reverse the elements of a vector. &nbsp;(Note that the built-in function </span><span class="rvts7">REVERSE</span><span class="rvts6"> can also be used to reverse the elements of a vector.) &nbsp;</span><span class="rvts7">Rev</span><span class="rvts6"> uses the built-in functions </span><span class="rvts7">FIRST</span><span class="rvts6">, </span><span class="rvts7">REST</span><span class="rvts6">, and </span><span class="rvts7">ADJOIN</span><span class="rvts6"> (see </span><a class="rvts19" href="VectorManipulationFunctions.html">Vector Manipulation Functions</a><span class="rvts20">Vector_Manipulation_Functions</span><span class="rvts6">) to perform operations on vectors analogous to the way lists are processed in the LISP programming language.</span></p>
+<p class="rvps19"><span class="rvts66">Rev(v,w) := PROG(w:=[], LOOP(IF(v=[], RETURN w), w:=ADJOIN(FIRST(v),w), v:=REST(v)))</span></p>
+<p class="rvps3"><span class="rvts6">After entry, the definition is displayed in the more readable, multi-line indented format as</span></p>
+<p class="rvps19"><span class="rvts10">Rev(v, w) := &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp; Prog &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; w := [] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; Loop &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; If v = [] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;RETURN w &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; w := ADJOIN(FIRST(v), w)&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; v := REST(v) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">Then, for example,</span></p>
+<p class="rvps19"><span class="rvts10">Rev([a, b, c])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [c, b, a].</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The default initial value of a user-defined function</span><span class="rvts6">’</span><span class="rvts6">s </span><a class="rvts40" href="Localvariables.html">local variables</a><span class="rvts20">Local_variables</span><span class="rvts6"> can be specified by including assignment statements in the function's formal argument list. &nbsp;If a function is called with fewer actual arguments than it has local variables, the extra local variables are given their assigned values. &nbsp;For example, if </span><span class="rvts7">SUMSQ</span><span class="rvts6"> is defined as&nbsp;</span></p>
+<p class="rvps27"><span class="rvts10">SUMSQ(x, y := 0, z := 0) := x^2 + y^2 + z^2</span></p>
+<p class="rvps3"><span class="rvts6">then the vector</span></p>
+<p class="rvps27"><span class="rvts10">[SUMSQ(5), SUMSQ(5, 3), SUMSQ(5, 3, 2)]</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [25, 34, 38]. &nbsp;Whereas, if </span><span class="rvts7">SUMSQ</span><span class="rvts6"> is defined as</span></p>
+<p class="rvps27"><span class="rvts10">SUMSQ(x, y, z) := x^2 + y^2 + z^2</span></p>
+<p class="rvps3"><span class="rvts6">then the above vector simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> 2 &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎣</span><span class="rvts10">y &nbsp;+ z &nbsp;+ 25, z &nbsp;+ 34, 38</span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Note that the default initial value can also be specified for the local variables of arbitrary user-defined functions. &nbsp;For example, if </span><span class="rvts7">FOO</span><span class="rvts6"> is defined as</span></p>
+<p class="rvps19"><span class="rvts10">FOO(x, y := 3, z) :=</span></p>
+<p class="rvps3"><span class="rvts6">then</span></p>
+<p class="rvps19"><span class="rvts10">FOO(5)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to </span><span class="rvts7">FOO</span><span class="rvts6">(5,3,z).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Specifying the default initial value of one or more of a function</span><span class="rvts6">’</span><span class="rvts6">s local variables often makes it possible to avoid using a </span><span class="rvts7">PROG</span><span class="rvts6"> construct in the function</span><span class="rvts6">’</span><span class="rvts6">s definition. &nbsp;For example, initializing the accumulator variable w to the empty vector shortens the definition of </span><span class="rvts7">Rev</span><span class="rvts6"> to</span></p>
+<p class="rvps19"><span class="rvts66">Rev(v,w:=[]) := LOOP(IF(v=[], RETURN w), w:=ADJOIN(FIRST(v),w), v:=REST(v))</span></p>
+<p class="rvps3"><span class="rvts6">Alternatively, </span><span class="rvts7">Rev</span><span class="rvts6"> can be even more elegantly defined using recursion as</span></p>
+<p class="rvps19"><span class="rvts66">Rev(v,w:=[]) := IF(v=[], w, Rev(REST(v),ADJOIN(FIRST(v),w)))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The evaluation of expressions in function definitions can be suppressed using the quote operator. &nbsp;The single quote mark is used for the quote operator. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">'(2+3)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 2+3 instead of 5. &nbsp;The quote operator is useful for quoting expressions in calls on functions that you do not want evaluated before being passed. &nbsp;For example,&nbsp;</span></p>
+<p class="rvps19"><span class="rvts10">TERMS('(x + x + x))</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to the [x, x, x]; whereas</span></p>
+<p class="rvps19"><span class="rvts10">TERMS((x + x + x))</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [3·x].</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">User functions can be defined so they will accept any number of arguments. &nbsp;If the single formal argument of a user-defined function is not enclosed in parentheses, then all the arguments in calls on the function are passed to the function as a vector. &nbsp;This allows user-defined function to accept any number of arguments. &nbsp;For example, after making the definition</span></p>
+<p class="rvps27"><span class="rvts10">FOO v := SUM(v)</span></p>
+<p class="rvps3"><span class="rvts6">then</span></p>
+<p class="rvps27"><span class="rvts10">FOO(2, 3, 5)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 10 and</span></p>
+<p class="rvps27"><span class="rvts10">FOO(2, 3, 5, 7, 11)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 28.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="ProgramminginDERIVE.html">Programming in DERIVE</a><span class="rvts20">Programming</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Create cross-platform Qt Help files</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

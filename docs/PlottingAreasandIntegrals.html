@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Plotting Areas and Integrals</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Area plots,AreaBetweenCurves(u,v,x,a,b),AreaOverCurve(u,x,a,b),AreaUnderCurve(u,x,a,b),Integral plots,PlotInt(u,x,a,b),Plotting areas and integrals">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Plotting Areas and Integrals">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Plotting Areas and Integrals" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="PlottingAreasandIntegrals"
+		  data-hnd-context="3526"
+		  data-hnd-title="Plotting Areas and Integrals"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li><li>Graphics Functions</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="GraphicsFunctions.html" title="Graphics Functions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="CoordinateSystemConversionFuncti.html" title="Coordinate System Conversion Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Plotting Areas and Integrals</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">Use the following functions defined in the </span><a class="rvts19" href="GraphicsFunctions.html">GraphicsFunctions.mth</a><span class="rvts20">ZG4ZTI</span><span class="rvts6"> utility file to plot areas associated with graphs of functions of a single variable in a 2D-plot window. &nbsp;Note that by interchanging the roles of x and y in these functions, the area plots can be carried out with respect to the y-axis as the basis, instead of the x-axis.&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts26">AreaUnderCurve</span><span class="rvts25">(u, x, a, b, y) plots the area under the graph of the function y = u(x) and above the x-axis from x = a to b (a &lt; b). &nbsp;For example, to plot the area under the function y = x + cos(x) from x = 0 to 3, plot the expression</span></p>
+<p class="rvps6"><span class="rvts46">AreaUnderCurve(x + COS(x), x, 0, 3, y)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts7">AreaUnderCurve</span><span class="rvts6">(u, y, a, b, x) plots the area to the left of the graph of the function x = u(y) and to the right of the y-axis from y = a to b (a &lt; b). &nbsp;For example, to plot the area to the left of the function x = y + cos(y) from y = 0 to 3, plot the expression</span></p>
+<p class="rvps6"><span class="rvts46">AreaUnderCurve(y + COS(y), y, 0, 3, x)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts26">AreaOverCurve</span><span class="rvts25">(u, x, a, b, y) plots the area over the graph of the function y = u(x) and under the x-axis from x = a to b (a &lt; b). &nbsp;For example, to plot the area over the function y = sin(x) - x from x = 1 to 3, plot the expression</span></p>
+<p class="rvps6"><span class="rvts46">AreaOverCurve(SIN(x) - x, x, 1, 3, y)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts7">AreaOverCurve</span><span class="rvts6">(u, y, a, b, x) plots the area to the right of the graph of the function x = u(y) and to the left of the y-axis from y = a to b (a &lt; b). &nbsp;For example, to plot the area to the right of the function x = sin(y) - y from y = 1 to 3, plot the expression</span></p>
+<p class="rvps6"><span class="rvts46">AreaOverCurve(SIN(y) - y, y, 1, 3, x)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts26">AreaBetweenCurves</span><span class="rvts25">(u, v, x, a, b, y) plots the area between the graphs of the functions y = u(x) and y = v(x) from x = a to b (a &lt; b). &nbsp;For example, to plot the area between the functions y = sin(2·x) and y = cos(3·x) from x = -</span><span class="rvts27">π</span><span class="rvts25"> to </span><span class="rvts27">π</span><span class="rvts25">, plot the expression</span></p>
+<p class="rvps6"><span class="rvts46">AreaBetweenCurves(SIN(2·x), COS(3·x), x, -pi, pi, y)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts7">AreaBetweenCurves</span><span class="rvts6">(u, v, y, a, b, x) plots the area between the graphs of the functions x = u(y) and x = v(y) from y = a to b (a &lt; b). &nbsp;For example, to plot the area between the functions x = sin(2y) and x = cos(3·y) from y = -</span><span class="rvts27">π</span><span class="rvts6"> to </span><span class="rvts27">π</span><span class="rvts6">, plot the expression</span></p>
+<p class="rvps6"><span class="rvts46">AreaBetweenCurves(SIN(2·y), COS(3·y), y, -pi, pi, x)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts25">By letting v = 0, </span><span class="rvts26">AreaBetweenCurves</span><span class="rvts25"> can also be used to plot the area associated with the definite integral of y = u(x) &nbsp;from x = a to b (a &lt; b) in a single color. &nbsp;For example, to plot the integral of the function y = sin(2·x) + cos(3·x) from x = -</span><span class="rvts27">π</span><span class="rvts25"> to </span><span class="rvts27">π</span><span class="rvts25">, plot the expression&nbsp;</span></p>
+<p class="rvps6"><span class="rvts46">AreaBetweenCurves(SIN(2·x) + COS(3·x), 0, x, -pi, pi, y)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts26">PlotInt</span><span class="rvts25">(u, x, a, b, y) plots the area associated with the definite integral of the function y = u(x) from x = a to b. &nbsp;For </span><span class="rvts26">PlotInt</span><span class="rvts25">, use rectangular coordinates and have the 2D-plot window's </span><a class="rvts19" href="ApproximateBeforePlotting.html">Options &gt; Approximate Before Plotting option</a><span class="rvts20">EVZ132</span><span class="rvts25"> turned on. &nbsp;For example, to plot the integral of the function y = x + sin(2·x) &nbsp;from x = -3 to 3, plot the expression</span></p>
+<p class="rvps6"><span class="rvts46">PlotInt(x + SIN(2·x), x, -3, 3, y)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PlotInt</span><span class="rvts6">(u, y, a ,b, x) plots the area associated with the definite integral of the function x = u(y) from y = a to b. &nbsp;For example, to plot the integral of the function x = y + sin(2</span><span class="rvts25">·</span><span class="rvts6">y) &nbsp;from y = -3 to 3, plot the expression</span></p>
+<p class="rvps6"><span class="rvts46">PlotInt(y + SIN(2·y), y, -3, 3, x)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts25">If the option to automatically change plot colors is on (see </span><a class="rvts19" href="Color.html">Options &gt; Display &gt; Color command</a><span class="rvts20">JDDXSP</span><span class="rvts25">), the positive part of the integral is plotted in one color, then the negative part is plotted in a contrasting color. &nbsp;For example, compare the previous plot with a plot of the expression</span></p>
+<p class="rvps6"><span class="rvts46">PlotInt(x + SIN(2·x), x, 3, -3, y)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts25">Many other examples of plotting and filling the areas of curves can be constructed directly using Boolean plots. &nbsp;For example, to plot and fill a circle of radius 2 with center at (1,2), plot the expression</span></p>
+<p class="rvps6"><span class="rvts46">(x-1)^2 + (y-2)^2 = 4 OR (x-1)^2 + (y-2)^2 &lt;= 4</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts25">If the plot looks like an ellipse, use the </span><a class="rvts19" href="AspectRatio.html">Set &gt; Aspect Ratio command</a><span class="rvts20">02_MF4</span><span class="rvts25"> to make it a true circle. &nbsp;As another example, to plot the area between x = y² and x = sin(y) for y = -2 to 2, plot the expression</span></p>
+<p class="rvps6"><span class="rvts46">x=y^2 OR x=SIN(y) OR ((x-y^2)·(SIN(y)-x) &gt;= 0 AND -2 &lt;= y &lt;= 2)</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="GraphicsFunctions.html">Graphics Functions</a><span class="rvts20">ZG4ZTI</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com">Free PDF documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Approximate Solution of ODEs</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Approximate solutions of ODEs,Differential equations, ordinary,DIRECTION_FIELD(r,x,x0,xm,m,y,y0,yn,n),EULER_ODE(r,x,y,x0,y0,h,n),Euler's method,EXTRACT_2_COLUMNS(A,j,k),Numerical solutions of ODEs,ODEApproximation.mth,Ordinary differential equations,Picard method,PICARD(r,p,x,y,x0,y0),RK(r,v,v0,h,n),Runge-Kutta method,Series solutions of ODEs,Taylor series,TAYLOR_ODE1(r,x,y,x0,y0,n),TAYLOR_ODE2(r,x,y,v,x0,y0,v0,n),TAYLOR_ODES(r,x,y,x0,y0,n)">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Approximate Solution of ODEs">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Approximate Solution of ODEs" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="ApproximateSolutionofODEs"
+		  data-hnd-context="3508"
+		  data-hnd-title="Approximate Solution of ODEs"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li><li>Differential and Recurrence Equations</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Second-orderOrdinaryDifferential.html" title="Second-order Ordinary Differential Equations" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="RecurrenceEquations.html" title="Recurrence Equations" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Approximate Solution of ODEs</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The on-line help for the files </span><a class="rvts19" href="First-orderOrdinaryDifferentialE.html">FirstOrderODES.mth</a><span class="rvts20">OA7SLO</span><span class="rvts6"> and </span><a class="rvts19" href="Second-orderOrdinaryDifferential.html">SecondOrderODES.mth</a><span class="rvts20">OB7SLO</span><span class="rvts6"> describes methods for finding exact solutions to ordinary differential equations. &nbsp;Sometimes none of these methods is applicable to your equation or the results of these methods cannot be converted to an explicit form. &nbsp;Perhaps your differential equation is unsolvable in terms of </span><span class="rvts8">Derive</span><span class="rvts6">'s functions, or you need to solve a system of differential equations. &nbsp;Don't give up if this happens!</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">ODEApproximation.mth</span><span class="rvts6"> defines functions for solving most ordinary differential equations and systems of such equations using truncated series approximations and approximate numerical methods. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps23"><span class="rvts7">Series Solutions to First Order Equations and Systems</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TAYLOR_ODE</span><span class="rvts6">1(r, x, y, x0, y0, n) simplifies to an nth order truncated Taylor series solution of the equation y' = r(x, y) given the initial condition y=y0 and x=x0. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">TAYLOR_ODE1(EXP(x·y), x, y, 0, 1, 4)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp;3 &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp;5·x &nbsp; &nbsp; &nbsp;x &nbsp; &nbsp; &nbsp;x &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">—————— + ———— + ———— + x + 1&nbsp;</span><br/><span class="rvts10">&nbsp; 12 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To verify that this is an approximate series solution to the differential equation, substitute this series solution for y in the unsimplified difference between the two sides of the equation. &nbsp;Then use the </span><a class="rvts19" href="TaylorSeries.html">Calculus Taylor Series command</a><span class="rvts20">MRJ3J4</span><span class="rvts6"> to verify that the third order Taylor series approximation of that difference is 0. &nbsp;The reason for using a third rather than fourth order Taylor series approximation is that differentiation reduces the order of the truncated series by 1.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TAYLOR_ODE1</span><span class="rvts6"> simplifies to </span><span class="rvts7">?</span><span class="rvts6"> if r is not sufficiently differentiable for an nth order truncated series. &nbsp;Try a smaller value for n if this happens.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PICARD</span><span class="rvts6">(r, p, x, y, x0, y0) expands to an improved approximate series solution of the equation y' = r(x, y), given the approximate series solution p(x). &nbsp;Expanding with respect to x often gives a more useful form than just simplifying the expression. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The Picard method involves integrating r(x, p(x)). &nbsp;If no integrals remain in the simplified result, you can try another iteration using the improved approximation for p, and so on. &nbsp;If you have no better first approximation, use the constant y0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">For example, suppose y' = y²+SQRT(x) and y=1 at x=0. &nbsp;Use of </span><span class="rvts7">TAYLOR_ODE1</span><span class="rvts6"> indicates that the right side of the equation is sufficiently differentiable only for a first order truncated Taylor-series solution x+1. &nbsp;Consequently, using this as a first approximation,</span></p>
+<p class="rvps19"><span class="rvts10">PICARD(y^2+SQRT(x), x + 1, x, y, 0, 1)</span></p>
+<p class="rvps3"><span class="rvts6">expands to</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3/2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp;x &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp;2·x &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">———— + x &nbsp;+ ———————— + x + 1&nbsp;</span><br/><span class="rvts10">&nbsp; 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">You can then use this second approximation as the second argument of </span><span class="rvts7">PICARD</span><span class="rvts6"> to obtain a third approximation, and so on. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Note that the highest order terms generated by the Picard method are often incorrect. &nbsp;For example, the coefficient of the above x³ term should be 1. &nbsp;Distrust terms whose coefficients are not the same for two successive iterates. &nbsp;For this reason and for efficiency, it is wise to discard all but the next higher order term after each iteration. &nbsp;For example, you should discard the above x³ and x² terms for the next iteration.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If any iterate yields a result containing an integral, you can try approximating r(x, p(x)) to make it integrable.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PICARD </span><span class="rvts6">can also be used to find series solutions of </span><span class="rvts32">systems</span><span class="rvts6"> of first order differential equations. &nbsp;Given a monic quasi-linear system of first order equations of the form</span></p>
+<p class="rvps6"><span class="rvts6">y1' = r1(x, y1, y2, ..., ym)</span></p>
+<p class="rvps23"><span class="rvts6">y2' = r2(x, y1, y2, ..., ym)</span></p>
+<p class="rvps23"><span class="rvts6">...</span></p>
+<p class="rvps48"><span class="rvts6">ym' = rm(x, y1, y2, ..., ym)</span></p>
+<p class="rvps3"><span class="rvts6">let r=[r1, r2, ..., rm], y=[y1, y2, ..., ym], and y=y0=[y1,0, y2,0, ..., ym,0] at x=x0. &nbsp;Then </span><span class="rvts7">PICARD</span><span class="rvts6">(r, p, x, y, x0, y0) expands to an improved series solution of the system, given the series solution p=[p1, p2, ..., pm].</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TAYLOR_ODES</span><span class="rvts6">(r, x, y, x0, y0, n) simplifies to the nth order truncated Taylor series solution of the above system of differential equations, provided vector r is sufficiently differentiable.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps23"><span class="rvts7">Series Solutions to Second Order Equations</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TAYLOR_ODE2</span><span class="rvts6"> (r, x, y, v, x0, y0, v0, n) &nbsp;simplifies to an nth order truncated Taylor series solution of the equation y" = r(x, y, v). &nbsp;Here v represents y', and v0 is the value of v at x = x0. &nbsp;For example, </span><span class="rvts7">TAYLOR_ODE2</span><span class="rvts6"> (2·x·v + x²·y + 3·x, x, y, v, 0, 0, 1, 5) simplifies to</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; 5 &nbsp; &nbsp; &nbsp; &nbsp;3 &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp;3·x &nbsp; &nbsp; &nbsp;5·x &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">—————— + —————— + x&nbsp;</span><br/><span class="rvts10">&nbsp; 10 &nbsp; &nbsp; &nbsp; &nbsp;6 &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To verify that this is an approximate series solution to the differential equation, substitute this series solution for y and substitute the derivative of this expression for v into the unsimplified difference between the two sides of the equation. &nbsp;Then use the </span><a class="rvts19" href="TaylorSeries.html">Calculus Taylor Series command</a><span class="rvts20">MRJ3J4</span><span class="rvts6"> to verify that the third order Taylor series approximation of that difference is 0. &nbsp;The reason for using a third rather than fifth order Taylor series approximation is that the second derivative of the truncated series reduces its order by 2.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TAYLOR_ODE2</span><span class="rvts6"> simplifies to </span><span class="rvts7">?</span><span class="rvts6"> if r is not sufficiently differentiable for an nth order truncated series. &nbsp;Try a smaller value for n if this happens.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps23"><span class="rvts7">Approximate Numerical Solutions to First Order Equations</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">EULER_ODE</span><span class="rvts6">(r, x, y, x0, y0, h, n) approximates to a vector of n+1 solution points of the equation y' = r(x, y) with y=y0 at x=x0 beginning with x=x0 using a step size of h. &nbsp;</span><span class="rvts7">EULER_ODE </span><span class="rvts6">uses </span><span class="rvts7">Euler's method</span><span class="rvts6"> to produce a vector of n+1 coordinate pairs of the form</span></p>
+<p class="rvps6"><span class="rvts6">[[x0, &nbsp;y0], &nbsp;[x0+h, &nbsp;y1], &nbsp;[x0+2·h, &nbsp;y2], &nbsp;..., &nbsp;[x0+n·h, &nbsp;yn]]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">This vector plots as a set of points that approximates the solution curve of the equation. &nbsp;For example, to generate five points of an approximate solution of the equation &nbsp;y' = 26/(3+(x+y)²) &nbsp;from x = 1 to x = 2 with y(1) = </span><span class="rvts9">−</span><span class="rvts6">2, approximate</span></p>
+<p class="rvps19"><span class="rvts10">EULER_ODE(26/(3+(x+y)^2), x, y, 1, -2, 1/4, 4)</span></p>
+<p class="rvps3"><span class="rvts6">giving</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp; 1 &nbsp; &nbsp; &nbsp; -2 &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> 1.25 &nbsp; &nbsp;-0.375 &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp;1.5 &nbsp;1.351141078 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> 1.75 &nbsp;1.935200456 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> &nbsp; 2 &nbsp; 2.327222449 </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Euler's method has educational value as the simplest numerical method for solving systems of simultaneous first order ordinary differential equations, but it typically has the largest error of any standard method. &nbsp;Thus, the more accurate </span><span class="rvts7">Runge-Kutta method</span><span class="rvts6"> should generally be used to solve such systems numerically.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RK</span><span class="rvts6">(r, v, v0, h, n) uses the classic fourth order Runge-Kutta method to approximate the solution of the system of first order differential equations &nbsp;yi' = ri(x, y). &nbsp;r is the vector [r1, r2, ..., rm], &nbsp;v is the vector [x, y1, y2, ..., ym], &nbsp;v0 is the corresponding vector of initial values, h is the desired step size, and n is the desired number of steps. &nbsp;</span><span class="rvts7">RK</span><span class="rvts6"> returns a data matrix of n+1 approximate solution points. &nbsp;Each row of the matrix consists of an x value and the corresponding approximate values of y1 through ym.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">When given a single differential equation, </span><span class="rvts7">RK</span><span class="rvts6"> returns a data matrix that plots in a 2D-plot window as the solution of the equation. &nbsp;For example, to plot the solution of y</span><span class="rvts6">’</span><span class="rvts6"> = sin(x·y) for x=0 to 10 having an initial value of y=1 at x=0, enter the expression</span></p>
+<p class="rvps19"><span class="rvts10">RK([SIN(x·y)], [x, y], [0, 1], 0.1, 100)</span></p>
+<p class="rvps3"><span class="rvts6">Then switch to a 2D-plot window and plot the expression after using the </span><a class="rvts19" href="Points.html">Options &gt; Display &gt; Points command</a><span class="rvts20">7CKH0ZT</span><span class="rvts6"> to connect data points and the </span><a class="rvts19" href="ApproximateBeforePlotting.html">Options &gt; Approximate Before Plotting command</a><span class="rvts20">EVZ132</span><span class="rvts6"> to approximate expressions before plotting them.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">When given m differential equations, </span><span class="rvts7">RK</span><span class="rvts6"> returns a m+1 column matrix. &nbsp;To plot y1 versus x, extract the first two columns of the matrix by appending COL [1,2] to the </span><span class="rvts7">RK</span><span class="rvts6"> function call. &nbsp;To plot y2 versus x, extract the first and third columns by appending COL [1,3], etc. &nbsp;Alternatively, to plot y2 versus y1 ¾ a parametric phase-plane plot ¾ extract the second and third columns by appending COL [2,3], etc. &nbsp;For example, to plot the solutions of the system y</span><span class="rvts6">’</span><span class="rvts6"> = sin(x·y·z) and z</span><span class="rvts6">’</span><span class="rvts6"> = cos(x·y·z) for x=0 to 5 having initial values of y=1 and z=1 at x=0, enter and plot the expressions</span></p>
+<p class="rvps6"><span class="rvts10">(RK([SIN(x·y·z),COS(x·y·z)], [x,y,z], [0,1,1], 0.1, 50)) COL [1,2]</span></p>
+<p class="rvps6"><span class="rvts10">(RK([SIN(x·y·z),COS(x·y·z)], [x,y,z], [0,1,1], 0.1, 50)) COL [1,3]</span></p>
+<p class="rvps6"><span class="rvts10">(RK([SIN(x·y·z),COS(x·y·z)], [x,y,z], [0,1,1], 0.1, 50)) COL [2,3]</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DIRECTION_FIELD</span><span class="rvts6">(r, x, x0, xm, m, y, y0, yn, n) approximates to a matrix of 2-component vectors that when plotted displays as a direction field for the equation y'=r(x,y). &nbsp;x varies from x0 through xm in m steps, and y varies from y0 through yn in n steps. &nbsp;Before plotting, use the 2D-plot window </span><a class="rvts19" href="Points.html">Options &gt; Display &gt; Points command</a><span class="rvts20">7CKH0ZT</span><span class="rvts6"> to connect the endpoints of the tangent segments and to make their endpoints small dots.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">For example, &nbsp;to plot a direction field for the equation y</span><span class="rvts6">’</span><span class="rvts6">=y-x, approximate the expression</span></p>
+<p class="rvps19"><span class="rvts10">DIRECTION_FIELD(y - x, x, -3, 3, 6, y, -3, 3, 6)</span></p>
+<p class="rvps3"><span class="rvts6">and then plot the result in a 2D-plot window using connected segments and small dots.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps23"><span class="rvts7">Higher Order Differential Equations</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">A second or higher order ordinary differential equation can always be transformed into an equivalent system of first order differential equations as follows:</span></p>
+<p class="rvps20"><span class="rvts6"><br/></span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">First, introduce a unique new variable for each derivative except the highest.</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Next, replace the highest order derivative with the first derivative of the variable that represents the next-highest order derivative.</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Finally, for each of the other variables, add to the system an equation that equates its first derivative to the variable that represents the next higher order derivative. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">For example, this procedure transforms a second order equation of the form f (x, y", y', y) = 0 into the system of first order equations f (x, v', v, y) = 0 and y' = v.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">This procedure can also be used to transform a </span><span class="rvts32">system</span><span class="rvts6"> of higher order ordinary differential equations into an equivalent system of first order equations. &nbsp;Simply transform each equation in turn, consistently using the same variable for a derivative everywhere it occurs.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">After transforming a higher order equation or system of equations into a system of first order equations, the methods described earlier in this section can be used to solve the system.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com">Free CHM Help documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

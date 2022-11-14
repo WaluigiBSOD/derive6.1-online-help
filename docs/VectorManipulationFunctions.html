@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Vector Manipulation Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Adding vector elements,ADJOIN(u,v),APPEND(v1,v2,...),Assignments, subscripted,DELETE(v,n),DIM(v),Dimension, vector,Down arrow,ELEMENT(m,j,k),ELEMENT(v,n),Extracting vector elements,F3 key (Insert highlighted expression),F4 key (Insert highlighted expression in parentheses),FIRST(v),Highlighting vector elements,Index,Indices, vector,INSERT(u,v,n),Inserting highlighted expressions,LISP programming language,Modifying vector elements,Negative vector indices,POSITION(e,v,n),Removing vector elements,REPLACE(u,v,n),REST(v,n),REVERSE(v),Right arrow,SELECT(u,k,m,n,s),SORT(v),SUB (subscript) operator,SUB SUB (subscript) operator,Subscripted assignments,Testing vector elements,Vector manipulation functions">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vector Manipulation Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Vector Manipulation Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="VectorManipulationFunctions"
+		  data-hnd-context="2503"
+		  data-hnd-title="Vector Manipulation Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Discussion Topics</li><li>Algebra Window</li><li>Vectors and Matrices</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="GeneratingVectorsandMatrices.html" title="Generating Vectors and Matrices" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="StringProcessingFunctions.html" title="String Processing Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Vector Manipulation Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">Use the functions and operators in this section to extract, concatenate, delete, insert, reverse, select, and sort elements of vectors. &nbsp;They can also be used to perform these same operations on the characters of a string or the digits of an integer (see the </span><a class="rvts19" href="StringProcessingFunctions.html">String Processing Functions</a><span class="rvts20">String_Processing_Functions</span><span class="rvts6">).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Many of these functions and operators have arguments or operands that specify the index of a vector element. &nbsp;If an index is a positive integer n, it specifies the nth element from the </span><span class="rvts32">left</span><span class="rvts6"> end of the vector. &nbsp;If an index is a negative integer n, it refers to the -nth element from the </span><span class="rvts32">right</span><span class="rvts6"> end of the vector.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The </span><span class="rvts7">dimension</span><span class="rvts6"> of a vector is the number of elements of the vector. &nbsp;Use </span><span class="rvts7">DIM</span><span class="rvts6"> to compute the dimension of a vector and the number of elements of a set. &nbsp;Since a matrix is just a vector of vectors, the dimension of a matrix is the number of </span><span class="rvts32">rows</span><span class="rvts6"> of the matrix. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">DIM([[a, b, c], [1, 2, 3]])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 2 since the matrix has two rows, and</span></p>
+<p class="rvps19"><span class="rvts10">DIM([[a, b, c], [1, 2, 3]] SUB 1)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 3 since the first row of the matrix has three columns.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">SUB</span><span class="rvts6"> infix operator to extract the elements of a vector or matrix. &nbsp;If v is a vector, v </span><span class="rvts7">SUB</span><span class="rvts6"> n returns the nth element of v. &nbsp;As an alternative to typing </span><span class="rvts7">SUB</span><span class="rvts6"> on the expression entry line, it can be entered by clicking on the </span><span class="rvts38">↓</span><span class="rvts6"> on the math symbol toolbar. &nbsp;In the algebra window worksheet, subscripts are displayed using standard subscript notation. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">[a, b, c, d] SUB 2</span></p>
+<p class="rvps3"><span class="rvts6">displays as</span></p>
+<p class="rvps27"><span class="rvts10">[a, b, c, d] &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">and simplifies to b. &nbsp;Use </span><span class="rvts7">SUB</span><span class="rvts6"> twice to extract the elements of a matrix. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">[a, b, c; d, e, f; g, h, i] SUB 2 SUB 3</span></p>
+<p class="rvps3"><span class="rvts6">displays as</span></p>
+<p class="rvps27"><span class="rvts9">⎡</span><span class="rvts10"> a &nbsp;b &nbsp;c </span><span class="rvts9">⎤</span><span class="rvts10"> &nbsp; &nbsp;</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><span class="rvts10"> &nbsp; &nbsp;</span><br/><span class="rvts9">⎢</span><span class="rvts10"> d &nbsp;e &nbsp;f </span><span class="rvts9">⎥</span><span class="rvts10"> &nbsp; &nbsp;</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><span class="rvts10"> &nbsp; &nbsp;</span><br/><span class="rvts9">⎣</span><span class="rvts10"> g &nbsp;h &nbsp;i </span><span class="rvts9">⎦</span><span class="rvts10"> &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2,3&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">and simplifies to </span><span class="rvts7">f</span><span class="rvts6">. &nbsp;If the right operand of </span><span class="rvts7">SUB</span><span class="rvts6"> is a vector of indices, a vector of the specified elements is returned. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">[a, b, c, d] SUB [4, 2]</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [d, b], and</span></p>
+<p class="rvps19"><span class="rvts10">[a, b, c; d, e, f; g, h, i] SUB [3, 1]</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> g &nbsp;h &nbsp;i </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> a &nbsp;b &nbsp;c </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The </span><span class="rvts7">SUB</span><span class="rvts6"> operator can be used in conjunction with the := assignment operator (see the </span><a class="rvts19" href="VariableValue.html">Author &gt; Variable Value command</a><span class="rvts20">2SGW02B</span><span class="rvts6">) to change designated elements of vectors assigned to variables. &nbsp;If the value of the variable A is a vector and a subscripted assignment of the form</span></p>
+<p class="rvps19"><span class="rvts6">A SUB n := u</span></p>
+<p class="rvps3"><span class="rvts6">is simplified, the nth element of A is replaced by u. &nbsp;If a subscripted assignment of the form</span></p>
+<p class="rvps19"><span class="rvts6">A SUB [n1, n2, ..., nm] := [u1, u2, ..., um]</span></p>
+<p class="rvps3"><span class="rvts6">is simplified, the elements n1, n2, ..., nm of A are replaced by u1, u2, ..., um, respectively. &nbsp;Note that unlike regular assignments, subscripted assignments must be simplified in order to take effect.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Since matrices are stored as vectors of vectors, subscripted assignments can also be used to change designated elements of matrices assigned to variables. &nbsp;If the value of the variable A is a matrix and a subscripted assignment of the form</span></p>
+<p class="rvps19"><span class="rvts6">A SUB n SUB m := u</span></p>
+<p class="rvps3"><span class="rvts6">is simplified, the mth element on the nth row of A is replaced by u.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The </span><span class="rvts7">SUB</span><span class="rvts6"> operator can similarly be used in conjunction with the update operators :+, :-, :*, and :/ (for details see </span><a class="rvts19" href="ProceduralProgramming.html">Procedural Programming</a><span class="rvts20">Procedural_Programming</span><span class="rvts6">) to update the elements of vectors and matrices.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">SUB SUB</span><span class="rvts6"> operator to extract the columns of a matrix. &nbsp;If A is a matrix, A </span><span class="rvts7">SUB SUB</span><span class="rvts6"> n returns the nth column of A as a vector. &nbsp;For example, A</span><span class="rvts38">↓↓</span><span class="rvts6">3 returns the 3rd column of A; whereas A</span><span class="rvts38">↓</span><span class="rvts6">3 returns the 3rd row of A. &nbsp;This scheme naturally extends to higher dimensional matrices. &nbsp;For example, three </span><span class="rvts7">SUB</span><span class="rvts6"> operators extract a plane from a 3-dimensional matrix.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Finally, if the right operand of </span><span class="rvts7">SUB SUB</span><span class="rvts6"> is a vector of indices, a matrix of the specified columns is returned. &nbsp;This makes it easy to extract arbitrary sub-matrices of a matrix. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts6">A </span><span class="rvts38">↓</span><span class="rvts6"> [2, 3] </span><span class="rvts38">↓↓</span><span class="rvts6"> [3, ..., 7]</span></p>
+<p class="rvps3"><span class="rvts6">returns the sub-matrix consisting of rows 2 and 3, and columns 3 through 7 of A.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The </span><span class="rvts7">ELEMENT</span><span class="rvts6"> function is equivalent to the </span><span class="rvts7">SUB</span><span class="rvts6"> operator but is entered using functional notation. &nbsp;</span><span class="rvts7">ELEMENT</span><span class="rvts6">(v, n) simplifies to the nth element of the vector v. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">ELEMENT([a, b, c, d], 2)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to b. &nbsp;</span><span class="rvts7">ELEMENT</span><span class="rvts6">(m, j, k) simplifies to the element in row j and column k of the matrix m. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">ELEMENT([a, b, c; d, e, f; g, h, i], 2, 3)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to </span><span class="rvts7">f</span><span class="rvts6">. &nbsp;Since the </span><span class="rvts7">SUB</span><span class="rvts6"> operator is displayed using standard subscript notation, we recommend using it rather than the </span><span class="rvts7">ELEMENT</span><span class="rvts6"> function.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">APPEND</span><span class="rvts6"> function to concatenate two or more vectors. &nbsp;</span><span class="rvts7">APPEND</span><span class="rvts6">(v1, v2, ..., vn) simplifies to a vector consisting of the elements of the vectors v1 through vn. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">APPEND([a, b], [c, d], [e, f])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [a, b, c, d, e, f]. &nbsp;If A is a matrix, </span><span class="rvts7">APPEND</span><span class="rvts6">(A) simplifies to a vector consisting of the elements of A. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">APPEND([[a, b], [c, d], [e, f]])</span></p>
+<p class="rvps3"><span class="rvts6">also simplifies to [a, b, c, d, e, f]. &nbsp;To append the columns of two matrices, use the function </span><span class="rvts7">APPEND_COLUMNS</span><span class="rvts6"> defined in the </span><a class="rvts19" href="VectorandMatrixFunctions.html">VECTOR.MTH</a><span class="rvts20">I._DEZ</span><span class="rvts6"> utility file.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The functions </span><span class="rvts7">FIRST</span><span class="rvts6">, </span><span class="rvts7">REST</span><span class="rvts6">, and </span><span class="rvts7">ADJOIN</span><span class="rvts6"> can be used to process the elements of vectors analogously to the way lists are processed in the LISP programming language (see </span><a class="rvts19" href="ProceduralProgramming.html">Procedural Programming</a><span class="rvts20">Procedural_Programming</span><span class="rvts6">). &nbsp;</span><span class="rvts7">FIRST</span><span class="rvts6">(v) simplifies to the first element of the vector v. &nbsp;</span><span class="rvts7">REST</span><span class="rvts6">(v) simplifies to a vector of all but the first element of v. &nbsp;If n is a positive integer, </span><span class="rvts7">REST</span><span class="rvts6">(v,n) simplifies to a vector of all but the first n elements of v. &nbsp;If n is a negative integer, </span><span class="rvts7">REST</span><span class="rvts6">(v,n) simplifies to a vector of all but the last n elements of v. &nbsp;</span><span class="rvts7">ADJOIN</span><span class="rvts6">(u,v) simplifies to a vector whose first element is u and whose remaining elements are the same as v. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">ADJOIN(FIRST([a, b, c]), REST([d, e, f]))</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [a, e, f].</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">DELETE</span><span class="rvts6"> function to delete one or more elements from a vector. &nbsp;If v is a vector and n is an integer, </span><span class="rvts7">DELETE</span><span class="rvts6">(v, n) simplifies to a copy of v but with the nth element deleted. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">DELETE([a, b, c, d], 2)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [a, c, d]. &nbsp;Note that if v is a matrix, the nth row of v is deleted. &nbsp;If w is a collection (i.e. a vector or set) of integers, </span><span class="rvts7">DELETE</span><span class="rvts6">(v, w) simplifies to a copy of v but with the elements specified in w deleted. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">DELETE([a, b, c, d], [2, -1])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [a, c].</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">INSERT</span><span class="rvts6"> function to insert an element into a vector. &nbsp;</span><span class="rvts7">INSERT</span><span class="rvts6">(u, v, n) simplifies to a copy of vector v but with expression u inserted before the nth element. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">INSERT(d, [a, b, c], 2)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [a, d, b, c]. &nbsp;n defaults to 1. &nbsp;If n is one more than the dimension of the vector, the new element is added to the end of the vector.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">REPLACE</span><span class="rvts6"> function to replace an element in a vector. &nbsp;</span><span class="rvts7">REPLACE</span><span class="rvts6">(u, v, n) simplifies to a copy of vector v but with expression u replacing the nth element. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">REPLACE(d, [a, b, c], 2)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [a, d, c]. &nbsp;n defaults to 1.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">REVERSE</span><span class="rvts6"> function to reverse the elements of a vector. &nbsp;</span><span class="rvts7">REVERSE</span><span class="rvts6">(v) simplifies to a copy of vector v but with the elements reversed. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">REVERSE([a, b, c])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [c, b, a].</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">POSITION</span><span class="rvts6"> function to find the position (i.e. index) of an element in a vector. &nbsp;If e is an expression that occurs in the vector v, </span><span class="rvts7">POSITION</span><span class="rvts6">(e, v) simplifies to the position of the first occurrence of e. &nbsp;If e does not occur in v, </span><span class="rvts7">POSITION</span><span class="rvts6">(e, v) simplifies to </span><span class="rvts7">false</span><span class="rvts6">. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">POSITION(c, [a, b, c, d, c, e])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 3, and</span></p>
+<p class="rvps19"><span class="rvts10">POSITION(f, [a, b, c, d, c, e])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to </span><span class="rvts7">false</span><span class="rvts6">. &nbsp;If n is an integer and e is an expression that occurs at or after the nth element of vector v, </span><span class="rvts7">POSITION</span><span class="rvts6">(e, v, n) simplifies to the position of the first such occurrence of e. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">POSITION(c, [a, b, c, d, c, e], 4)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 5.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">SELECT</span><span class="rvts6"> function to find those elements of a vector that satisfy some test criteria. &nbsp;</span><span class="rvts7">SELECT</span><span class="rvts6">(u, k, v) simplifies to a vector of those elements k of v for which u(k) is true. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">SELECT(PRIME(k), k, [3, 5, 7, 9, 11])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [3, 5, 7, 11]. &nbsp;</span><span class="rvts7">SELECT</span><span class="rvts6"> can also be used to test the elements of a sequence. &nbsp;</span><span class="rvts7">SELECT</span><span class="rvts6">(u, k, m, n, s) simplifies to a vector of those k for which u(k) is true with the variable k stepping from m through n in steps of size s. &nbsp;s defaults to 1. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">SELECT(PRIME(k), k, 1, 100)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector of all the prime numbers less than 100.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">SORT</span><span class="rvts6"> function to sort the elements of a vector or set, and return the result as a vector. &nbsp;Given a vector or set of numbers, </span><span class="rvts7">SORT</span><span class="rvts6"> returns a vector of the numbers sorted in ascending numerical order of their real parts with ties broken on their imaginary parts. &nbsp;Variable names are sorted lexicographically after numbers. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">SORT([3, 2, y, pi, #e, SQRT(2), z, x, 1, 0, 2, 0, 0, -3])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps6"><span class="rvts10">[-3, 0, 0, 0, 1, </span><span class="rvts9">√</span><span class="rvts10">2, 2, 2, ê, 3, </span><span class="rvts9">π</span><span class="rvts10">, x, y, z]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Given a vector or set of vectors, the vectors are sorted by comparing their first elements with ties being broken by comparing their second elements, etc. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">SORT({­[2, 3], [3, 1], [2, 1], [1, 5]})</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> 1 &nbsp;5 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> 2 &nbsp;1 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> 2 &nbsp;3 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> 3 &nbsp;1 </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If, in addition to a vector or set, SORT is given a predicate and two variables, the ordering is based on the truth-value returned by the predicate. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">SORT([-5, -2, 0, 3, 4], ABS(x)&lt;ABS(y), x, y)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps6"><span class="rvts10">[0, –2, 3, 4, -5]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="VectorsandMatrices.html">Vectors and Matrices</a><span class="rvts20">Vectors_and_Matrices</span><span class="rvts6"> topics</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour">Easily create Qt Help files</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

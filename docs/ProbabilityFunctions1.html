@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Probability Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Beta function,Binomial distribution function,Binomial probability density,BINOMIAL_DENSITY(k,n,p),BINOMIAL_DISTRIBUTION(k,n,p),CHI_SQUARE(u,v),Chi-square distribution function,Confidence level,Cumulative distribution functions,Degrees of freedom,Digamma function,DIGAMMA_PSI(z),Euler beta function,EULER_BETA(z,w),F_DISTRIBUTION(F,v1,v2),F-distribution function,Gaussian distribution,Hypergeometric distribution function,Hypergeometric probability density,HYPERGEOMETRIC_DENSITY(k,n,m,j),HYPERGEOMETRIC_DISTRIBUTION(k,n,m,j),Incomplete beta function,Incomplete gamma function,INCOMPLETE_BETA(x,z,w),INCOMPLETE_GAMMA(z,w),INCOMPLETE_GAMMA_SERIES(z,w,m),POCHHAMMER(a,x),Pochhammer's symbol function,Poisson distribution function,Poisson probability density,POISSON_DENSITY(k,t),POISSON_DISTRIBUTION(k,t),Polygamma function,POLYGAMMA(n,z,m),ProbabilityFunctions.mth,Psi function,STUDENT(t,n),Student's t-distribution function,t-distribution function,Variance-ratio distribution function">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Probability Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Probability Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="ProbabilityFunctions1"
+		  data-hnd-context="3512"
+		  data-hnd-title="Probability Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li><li>Special Functions</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="OrthogonalPolynomials.html" title="Orthogonal Polynomials" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="RiemannZetaFunctions.html" title="Riemann Zeta Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Probability Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">ProbabilityFunctions.mth</span><span class="rvts6"> defines the incomplete gamma function and its relatives, including various probability densities and cumulative distributions. &nbsp;Gamma and probability functions are described in Chapters 6 and 26 respectively of Abramowitz and Stegun [1965]. &nbsp;See the introduction to </span><a class="rvts19" href="ExponentialIntegrals.html">ExponentialIntegrals.mth</a><span class="rvts20">7RN4D</span><span class="rvts6"> for a discussion of accuracy. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POCHHAMMER</span><span class="rvts6">(a, x) simplifies to (a)x, the Pochhammer's symbol function. &nbsp;(a)x is defined by the identity (a)x &nbsp;= &nbsp;</span><span class="rvts9">Γ</span><span class="rvts6">(a+x) / </span><span class="rvts9">Γ</span><span class="rvts6">(a).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DIGAMMA_PSI</span><span class="rvts6">(z) approximates to the digamma function </span><span class="rvts9">Ψ</span><span class="rvts6">(z), provided the real part of z is positive (i.e. the phase of z is less than </span><span class="rvts9">π</span><span class="rvts6">/2). &nbsp;</span><span class="rvts9">Ψ</span><span class="rvts6">(z) is defined by the identity </span><span class="rvts9">Ψ</span><span class="rvts6">(z) = d/dz ln </span><span class="rvts9">Γ</span><span class="rvts6">(z) = &nbsp;d/dz </span><span class="rvts9">Γ</span><span class="rvts6">(z) / </span><span class="rvts9">Γ</span><span class="rvts6">(z). &nbsp;The built-in </span><span class="rvts7">DIGAMMA</span><span class="rvts6"> function is described in </span><a class="rvts19" href="ProbabilityFunctions.html">Probability Functions</a><span class="rvts20">Probability_Functions</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLYGAMMA</span><span class="rvts6">(n, z, m) simplifies to m+1 terms of a series approximation for </span><span class="rvts9">Ψ</span><span class="rvts6">(n)(z), the nth polygamma function, provided z is not zero or a negative integer. &nbsp;</span><span class="rvts9">Ψ</span><span class="rvts6">(1)(z), </span><span class="rvts9">Ψ</span><span class="rvts6">(2)(z), </span><span class="rvts9">Ψ</span><span class="rvts6">(3)(z), </span><span class="rvts9">Ψ</span><span class="rvts6">(4)(z) are called the trigamma, tetragamma, pentagamma, and hexagamma functions respectively. &nbsp;</span><span class="rvts9">Ψ</span><span class="rvts6">(n)(z) is defined by the identity </span><span class="rvts9">Ψ</span><span class="rvts6">(n)(z) = (d/dz)^n </span><span class="rvts9">Ψ</span><span class="rvts6">(z) = (d/dz)^(n+1) ln </span><span class="rvts9">Γ</span><span class="rvts6">(z).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">INCOMPLETE_GAMMA</span><span class="rvts6">(z, w) approximates to </span><span class="rvts32">P</span><span class="rvts6">(z, w), the incomplete gamma function, provided the real part of z is positive.&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">INCOMPLETE_GAMMA_SERIES</span><span class="rvts6">(z, w, m) simplifies to m+1 terms of a series approximation for </span><span class="rvts32">P</span><span class="rvts6">(z, w), the incomplete gamma function.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">EULER_BETA</span><span class="rvts6">(z, w) simplifies to </span><span class="rvts32">B</span><span class="rvts6">(z, w), the Euler beta function. &nbsp;</span><span class="rvts32">B</span><span class="rvts6">(z, w) is defined by the identity B(z, w) = </span><span class="rvts9">Γ</span><span class="rvts6">(z)·</span><span class="rvts9">Γ</span><span class="rvts6">(w) / </span><span class="rvts9">Γ</span><span class="rvts6">(z+w).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">INCOMPLETE_BETA</span><span class="rvts6">(x, z, w) simplifies to</span><span class="rvts32"> B</span><span class="rvts6">x(z, w), the incomplete beta function.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POISSON_DENSITY</span><span class="rvts6">(k, t) simplifies to the Poisson probability density defined as exp(-t)·t^k/k! .</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POISSON_DISTRIBUTION</span><span class="rvts6">(k, t) simplifies to the cumulative probability Poisson distribution function defined as the sum of exp(-t)·t^j/j! from j=0 to k.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">BINOMIAL_DENSITY</span><span class="rvts6">(k, n, p) simplifies to the binomial probability density defined as&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;k &nbsp; &nbsp; &nbsp; &nbsp;n - k</span><br/><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">COMB(n, k)·p ·(1 - p) &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">BINOMIAL_DISTRIBUTION</span><span class="rvts6">(k, n, p) simplifies to the cumulative probability binomial distribution function defined as</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">MIN(k,n) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10"> &nbsp;</span><span class="rvts9">Σ</span><span class="rvts10"> &nbsp; &nbsp; BINOMIAL_DENSITY(j, n, p)</span><br/><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10"> &nbsp;j=0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">HYPERGEOMETRIC_DENSITY</span><span class="rvts6">(k, n, m, j) simplifies to the hypergeometric probability density defined as</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">COMB(m, k)·COMB(j - m, n - k)</span><br/><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">—————————————————————————————</span><br/><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;COMB(j, n)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">HYPERGEOMETRIC_DISTRIBUTION</span><span class="rvts6">(k, n, m, j) simplifies to the cumulative probability hypergeometric distribution function defined as</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10"> &nbsp;MIN(k,n,m) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;</span><span class="rvts9">Σ</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; HYPERGEOMETRIC_DENSITY(</span><span class="rvts9">α</span><span class="rvts10">, n, m, j)</span><br/><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">α</span><span class="rvts10">=MAX(0,n-j+m) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts30">STUDENT</span><span class="rvts35">(t, n) approximates to the cumulative probability Student's t-distribution function with n degrees of freedom. &nbsp;Among other things </span><span class="rvts30">STUDENT</span><span class="rvts35"> can be used to test with a given confidence level whether a sample comes from a population obeying a Gaussian distribution whose mean is m but whose standard deviation is unknown. &nbsp;If M denotes the mean and S the standard deviation of a sample of size n, then T=(M-m)/(S/</span><span class="rvts9">√</span><span class="rvts35">n) is distributed according to the (non-cumulative) Student's t-distribution with n-1 degrees of freedom. &nbsp;For example, to determine for a sample size of 20 the value which T will not surpass with a confidence level of 99%, simplify</span></p>
+<p class="rvps6"><span class="rvts10">NSOLVE(STUDENT(t,19) = 99%, t)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">F_DISTRIBUTION</span><span class="rvts6">(F, </span><span class="rvts9">ν</span><span class="rvts6">1, </span><span class="rvts9">ν</span><span class="rvts6">2) approximates to </span><span class="rvts32">P</span><span class="rvts6">(</span><span class="rvts32">F</span><span class="rvts6">|</span><span class="rvts9">ν</span><span class="rvts6">1, </span><span class="rvts9">ν</span><span class="rvts6">2), the cumulative probability variance ratio or</span><span class="rvts32"> F</span><span class="rvts6">-distribution function with </span><span class="rvts9">ν</span><span class="rvts6">1 and </span><span class="rvts9">ν</span><span class="rvts6">2 degrees of freedom.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CHI_SQUARE</span><span class="rvts6">(u, v) approximates to</span><span class="rvts32"> P</span><span class="rvts6">(</span><span class="rvts9">χ</span><span class="rvts6">²|v), the cumulative probability chi-square distribution function, where u=</span><span class="rvts9">χ</span><span class="rvts6">².</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Create help files for the Qt Help Framework</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

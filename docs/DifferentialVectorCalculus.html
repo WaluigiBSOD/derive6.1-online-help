@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Differential Vector Calculus</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Cartesian coordinate vector,Cartesian coordinates,Coordinate geometry matrix,Coordinate systems,CURL,Curvilinear coordinate systems,Cylindrical coordinates,Differential vector calculus,DIV, divergence,GRAD,Gradient,LAPLACIAN,Orthogonal coordinate systems,Polar coordinates,Rectangular coordinates,Spherical coordinates,Vector calculus">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Differential Vector Calculus">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Differential Vector Calculus" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="DifferentialVectorCalculus"
+		  data-hnd-context="2509"
+		  data-hnd-title="Differential Vector Calculus"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Discussion Topics</li><li>Algebra Window</li><li>Vectors and Matrices</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="VectorandMatrixAlgebra.html" title="Vector and Matrix Algebra" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="IntegralVectorCalculus.html" title="Integral Vector Calculus" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Differential Vector Calculus</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts8">Derive</span><span class="rvts6"> can do differential vector calculus in any orthogonal, curvilinear coordinate system. &nbsp;For example, you can compute gradients, divergences, and curls in rectangular (Cartesian), polar-cylindrical, or spherical coordinates. &nbsp;The three-dimensional rectangular coordinate system is the default with x, y, and z used as the names of the coordinate variables.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use </span><span class="rvts7">GRAD</span><span class="rvts6"> to compute the gradient of an expression. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">GRAD(x·y^2·z^3)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp;2 &nbsp;3 &nbsp; &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp; &nbsp; 2 &nbsp;2</span><span class="rvts9">⎤</span><br/><span class="rvts9">⎣</span><span class="rvts10"> y ·z , 2·x·y·z , 3·x·y ·z </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To compute the general form of the gradient in rectangular (Cartesian) coordinates, define </span><span class="rvts7">F</span><span class="rvts6">(x,y,z) to be an arbitrary function (see the </span><a class="rvts19" href="FunctionDefinition.html">Author &gt; Function Definition command</a><span class="rvts20">1ER8JVI</span><span class="rvts6">) using the assignment</span></p>
+<p class="rvps19"><span class="rvts10">F(x, y, z) :=</span></p>
+<p class="rvps3"><span class="rvts6">then</span></p>
+<p class="rvps19"><span class="rvts10">GRAD(F(x, y, z))</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10">d &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10">—— F(x, y, z), —— F(x, y, z), —— F(x, y, z)</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10">dx &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dz &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To specify rectangular coordinates with other coordinate variables, call </span><span class="rvts7">GRAD</span><span class="rvts6"> with a vector of coordinate variables as the second argument. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">GRAD(c·w + x^2 + y^3 + z^4, [w, x, y, z])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to the four-element vector</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; 3</span><span class="rvts9">⎤</span><br/><span class="rvts9">⎣</span><span class="rvts10">c, 2·x, 3·y , 4·z </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">For other orthogonal coordinate systems, provide a second argument that is a </span><span class="rvts7">coordinate geometry matrix</span><span class="rvts6"> of the form</span></p>
+<p class="rvps26"><span class="rvts9">⎢</span><span class="rvts10"> x1 &nbsp;x2 &nbsp;... &nbsp;xn </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> h1 &nbsp;h2 &nbsp;... &nbsp;hn </span><span class="rvts9">⎥</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The first row consists of the coordinate variables associated with successive elements of vectors. &nbsp;The second row consists of the scale factors such that the squared infinitesimal length is given by</span></p>
+<p class="rvps19"><span class="rvts10">&nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2</span><br/><span class="rvts10">ds &nbsp;= (h1·dx1) &nbsp;+ (h2·dx2) &nbsp;+ ... + (hn·dxn)&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The file </span><a class="rvts19" href="VectorandMatrixFunctions.html">VECTOR.MTH</a><span class="rvts20">I._DEZ</span><span class="rvts6"> assigns polar-cylindrical and spherical coordinate geometry matrices to the variables </span><span class="rvts10">cylindrical</span><span class="rvts6"> and </span><span class="rvts10">spherical</span><span class="rvts6"> respectively as follows:</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎡</span><span class="rvts10"> r &nbsp;</span><span class="rvts9">θ</span><span class="rvts10"> &nbsp;z </span><span class="rvts9">⎤</span><br/><span class="rvts10">cylindrical := </span><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎣</span><span class="rvts10"> 1 &nbsp;r &nbsp;1 </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6">and</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎡</span><span class="rvts10"> r &nbsp; &nbsp; &nbsp;</span><span class="rvts9">θ</span><span class="rvts10"> &nbsp; &nbsp; </span><span class="rvts9">Φ</span><span class="rvts10"> </span><span class="rvts9">⎤</span><br/><span class="rvts10">spherical := </span><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎣</span><span class="rvts10"> 1 &nbsp;r·SIN(</span><span class="rvts9">Φ</span><span class="rvts10">) &nbsp;r </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Thus, if </span><a class="rvts19" href="VectorandMatrixFunctions.html">VECTOR.MTH</a><span class="rvts20">I._DEZ</span><span class="rvts6"> is loaded,</span></p>
+<p class="rvps19"><span class="rvts10">GRAD(r·SIN(theta)·COS(phi), spherical)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps6"><span class="rvts10">[COS(</span><span class="rvts9">φ</span><span class="rvts10">)·SIN(</span><span class="rvts9">θ</span><span class="rvts10">), COT(</span><span class="rvts9">φ</span><span class="rvts10">)·COS(</span><span class="rvts9">θ</span><span class="rvts10">), - SIN(</span><span class="rvts9">φ</span><span class="rvts10">)·SIN(</span><span class="rvts9">θ</span><span class="rvts10">)]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">For a right-hand coordinate system having the positive z-axis associated with the north pole, this definition of spherical coordinates measures colatitude </span><span class="rvts9">Φ</span><span class="rvts6"> in radians south from the north pole and measures colongitude </span><span class="rvts9">θ</span><span class="rvts6"> in radians east from the positive x-axis. &nbsp;Be aware that some references define spherical coordinates differently, such as interchanging the definitions of </span><span class="rvts9">θ</span><span class="rvts6"> and </span><span class="rvts9">Φ</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">All the differential vector functions take an optional second argument that is a Cartesian coordinate vector or a coordinate geometry matrix.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use </span><span class="rvts7">DIV</span><span class="rvts6"> to compute the </span><span class="rvts7">divergence</span><span class="rvts6"> of a vector. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">DIV([y^2·z^3, 2·x·y·z^3, 3·x·y^2·z^2])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp;3 &nbsp;</span><br/><span class="rvts10">x·(6·y ·z + 2·z )&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use </span><span class="rvts7">LAPLACIAN</span><span class="rvts6"> to compute the divergence of the gradient of an expression. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">LAPLACIAN(x·y^2·z^3)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to&nbsp;</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp;3 &nbsp;</span><br/><span class="rvts10">x·(6·y ·z + 2·z )&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use </span><span class="rvts7">CURL</span><span class="rvts6"> to compute the curl of a vector having two or three elements. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">CURL([y^2, 2·x·z, 0])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps6"><span class="rvts10">[- 2·x, 0, 2·z - 2·y]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The curl of a planar vector field is a vector perpendicular to that plane. &nbsp;Thus, the curl of a two element vector is a three element vector whose first two elements are zero. &nbsp;In this case </span><span class="rvts8">Derive</span><span class="rvts6"> follows the more common convention of just returning the third element as a scalar. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">CURL([v^2, u], [u, v; 1, 1])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 1 - 2·v.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="VectorsandMatrices.html">Vectors and Matrices</a><span class="rvts20">Vectors_and_Matrices</span><span class="rvts6"> topics</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/help-authoring-tool">Full-featured multi-format Help generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

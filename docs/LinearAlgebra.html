@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Linear Algebra</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Adjoint matrix,ADJOINT(A),Adjugate matrix,APPROX_EIGENVECTOR(A,mu),COFACTOR(A,i,j),Eigenvalues,Eigenvectors,EXACT_EIGENVECTOR(A,mu),FORCE0(A,i,j,p),Gaussian elimination,Gauss-Jordan elimination,Linear Algebra,Minor matrix,MINOR(A,i,j),Null space,NULL_SPACE(m),PIVOT(A,i,j),Row echelon form,SCALE_ELEMENT(v,i,s),SUBTRACT_ELEMENTS(v,i,j,s),SWAP_ELEMENTS(v,i,j)">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Linear Algebra">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Linear Algebra" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="LinearAlgebra"
+		  data-hnd-context="3527"
+		  data-hnd-title="Linear Algebra"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="EquationSolving.html" title="Equation Solving" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="NumberTheoryFunctions1.html" title="Number Theory Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Linear Algebra</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">LinearAlgebra.mth</span><span class="rvts6"> defines functions that supplement the built-in linear algebra capabilities of </span><span class="rvts8">Derive</span><span class="rvts6">. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used. &nbsp;The file </span><span class="rvts7">LinearAlgebra.dfw</span><span class="rvts6"> includes the definitions in the mth file along with comments and examples.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps6"><span class="rvts22">Row Reduction Primitives</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The five functions in this section can be used to reduce a matrix to row echelon form, one step at a time using Gaussian or Gauss-Jordan elimination. &nbsp;This is useful for educational purposes, or because you may be able to make a better choice of pivots than the built-in function for finding the </span><a class="rvts19" href="RowEchelonForm.html">Row Echelon Form</a><span class="rvts20">Row_Echelon_Form</span><span class="rvts6"> of a matrix.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">SCALE_ELEMENT</span><span class="rvts6">(v, i, s) simplifies to a copy of vector v with the ith element multiplied by the expression s. &nbsp;Note that if v is a matrix, the ith row is multiplied by s. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">SCALE_ELEMENT([1, 2, 3; 4, 5, 6; 7, 8, 9], 1, 4)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> 4 &nbsp;8 &nbsp;12 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> 4 &nbsp;5 &nbsp; 6 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> 7 &nbsp;8 &nbsp; 9 </span><span class="rvts9">⎦</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">SWAP_ELEMENTS</span><span class="rvts6">(v, i, j) simplifies to a copy of vector v with ith and jth elements interchanged. &nbsp;Note that if v is a matrix, the ith and jth rows are interchanged. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">SWAP_ELEMENTS([1, 2, 3; 4, 5, 6; 7, 8, 9], 1, 3)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> 7 &nbsp;8 &nbsp;9 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> 4 &nbsp;5 &nbsp;6 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> 1 &nbsp;2 &nbsp;3 </span><span class="rvts9">⎦</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">SUBTRACT_ELEMENTS</span><span class="rvts6">(v, i, j, s) simplifies to a copy of vector v in which the ith element is replaced with the ith element minus s times the jth element. &nbsp;s defaults to 1. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">SUBTRACT_ELEMENTS([1, 2, 3; 4, 5, 6; 7, 8, 9], 2, 1, 4)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> 1 &nbsp; 2 &nbsp; 3 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> 0 &nbsp;-3 &nbsp;-6 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> 7 &nbsp; 8 &nbsp; 9 </span><span class="rvts9">⎦</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">FORCE0</span><span class="rvts6">(A, i, j, p) simplifies to a copy of matrix A in which element Aij is forced to zero by subtracting an appropriate multiple of pivot row p from row i. &nbsp;</span><span class="rvts7">FORCE0</span><span class="rvts6"> combines scaling and subtraction to force an element of a matrix to zero in a single step. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">FORCE0([1, 2, 3; 4, 5, 6; 7, 8, 9], 2, 1, 1)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> 1 &nbsp; 2 &nbsp; 3 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> 0 &nbsp;-3 &nbsp;-6 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> 7 &nbsp; 8 &nbsp; 9 </span><span class="rvts9">⎦</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PIVOT</span><span class="rvts6">(A, i, j) simplifies to a copy of matrix A in which the elements in the jth column below the ith row are forced to zero by subtracting appropriate multiples of the ith row from the rows below it. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">PIVOT([1, 2, 3; 4, 5, 6; 7, 8, 9], 1, 1)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> 1 &nbsp; 2 &nbsp; 3 &nbsp;</span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> 0 &nbsp;-3 &nbsp;-6 &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> 0 &nbsp;-6 &nbsp;-12 </span><span class="rvts9">⎦</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps6"><span class="rvts22">Inverses and Adjoints by Cofactor Expansion</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts25">The three functions in this section can be used to compute determinants and inverses from first principles.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MINOR</span><span class="rvts6">(A, i, j) simplifies to a copy of matrix A in which the ith row and the jth column are omitted. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">MINOR([1, 2, 3; 4, 5, 6; 7, 8, 9], 2, 2)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> 1 &nbsp;3 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> 7 &nbsp;9 </span><span class="rvts9">⎦</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">COFACTOR</span><span class="rvts6">(A, i, j) simplifies to the numerator of the row j column i element of the inverse of square matrix A. &nbsp;The corresponding element of the inverse is this numerator divided by the determinant of A. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Element growth is severe when computing inverses of matrices having nonnumeric elements. &nbsp;</span><span class="rvts7">COFACTOR</span><span class="rvts6"> allows you to compute the matrix inverse one element at a time. &nbsp;Alternatively, a matrix inverse can be computed one column at a time by simplifying expressions of the form &nbsp;</span><span class="rvts7">ROW_REDUCE</span><span class="rvts6">(A, v), where v is a column of the identity matrix for dimension A.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">COFACTOR</span><span class="rvts6"> can also be used to compute the determinant of a square matrix A, if simplifying </span><span class="rvts7">DET</span><span class="rvts6">(A) exhausts memory. &nbsp;If A is an n by n matrix, the determinant of A is the sum of expressions of the form A1i·</span><span class="rvts7">COFACTOR</span><span class="rvts6">(A, 1, i), where i goes from 1 to n. &nbsp;The determinant can also be computed by similarly expanding about any row or column of the matrix.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">ADJOINT</span><span class="rvts6">(A) simplifies to the adjoint or adjugate of square matrix A. &nbsp;The adjoint of A is the transpose of the matrix of cofactors of A. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">ADJOINT([2, x; 1, 3])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp;3 &nbsp;-x </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> -1 &nbsp; 2 </span><span class="rvts9">⎦</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps6"><span class="rvts22">Eigenvalues and Eigenvectors</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts25">The three functions in this section are for computing the null space and eigenvectors of matrices.</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps3"><span class="rvts26">NULL_SPACE</span><span class="rvts25">(M) simplifies to a basis for the null space of the matrix M. &nbsp;The null space is the set of vectors x satisfying the matrix equation M</span><span class="rvts6">·</span><span class="rvts25">x=0. &nbsp;The null space will be empty if M is invertible, and will be nonempty if M is rank-deficient. &nbsp;</span><span class="rvts26">NULL_SPACE</span><span class="rvts25"> simplifies to a matrix in which each column is one basis vector for the null space. &nbsp;The result is in a form sometimes called the rational basis as distinct from the ortho-normal basis. &nbsp;Note that the product M</span><span class="rvts6">·</span><span class="rvts25">NULL_SPACE(M) should always simplify to the zero or empty matrix. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts46">NULL_SPACE([1, 2, 3; 1, 2, 3; 1, 2, 3])</span></p>
+<p class="rvps3"><span class="rvts25">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp;2 &nbsp; 3 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> -1 &nbsp; 0 </span><span class="rvts9">⎥</span><br/><span class="rvts9">⎢</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> &nbsp;0 &nbsp;-1 </span><span class="rvts9">⎦</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">EXACT_EIGENVECTOR</span><span class="rvts6">(</span><span class="rvts7">A</span><span class="rvts6">, </span><span class="rvts7">µ</span><span class="rvts6">) simplifies to the eigenvectors of matrix </span><span class="rvts7">A</span><span class="rvts6"> corresponding to the exact eigenvalue </span><span class="rvts7">µ</span><span class="rvts6">. &nbsp;If </span><span class="rvts7">µ</span><span class="rvts6"> is an exact eigenvalue of the square matrix </span><span class="rvts7">A</span><span class="rvts6">, the corresponding eigenvectors </span><span class="rvts25">(characteristic vectors) are </span><span class="rvts6">the nonzero vectors x that satisfies the singular homogeneous system (</span><span class="rvts7">A</span><span class="rvts6"> - </span><span class="rvts7">µ</span><span class="rvts6">·</span><span class="rvts7">I</span><span class="rvts6">) x = 0. &nbsp;</span><span class="rvts25">Equivalently, the eigenvectors form the null space of the matrix (</span><span class="rvts7">A</span><span class="rvts6"> - </span><span class="rvts7">µ</span><span class="rvts6">·</span><span class="rvts7">I</span><span class="rvts25">). &nbsp;If the eigenvalue has multiplicity m, then generally there are m eigenvectors; otherwise the matrix is called defective. &nbsp;</span><span class="rvts6">The built-in function </span><span class="rvts7">EIGENVALUES</span><span class="rvts6"> can be used to compute the exact eigenvalues of a matrix (see </span><a class="rvts19" href="Eigenvalues.html">Eigenvalues</a><span class="rvts20">Eigenvalues</span><span class="rvts6">). &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts46">EIGENVALUES([1, 2; 1, 1])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [SQRT(2) + 1, 1 – SQRT(2)], and</span></p>
+<p class="rvps19"><span class="rvts46">EXACT_EIGENVECTOR([1, 2; 1, 1], SQRT(2) + 1)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [- SQRT(2); -1].</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If </span><span class="rvts7">µ</span><span class="rvts6"> is only an approximate eigenvalue, the matrix </span><span class="rvts7">A</span><span class="rvts6"> - </span><span class="rvts7">µ</span><span class="rvts6">·</span><span class="rvts7">I</span><span class="rvts6"> is nonsingular. &nbsp;In that case </span><span class="rvts7">EXACT_EIGENVECTOR</span><span class="rvts6"> returns the zero vector since that is the only solution of (</span><span class="rvts7">A</span><span class="rvts6"> - </span><span class="rvts7">µ</span><span class="rvts6">·</span><span class="rvts7">I</span><span class="rvts6">)·x = 0. &nbsp;Exact irrational eigenvalues may also produce the zero vector if </span><span class="rvts8">Derive</span><span class="rvts6"> is unable to determine that certain complicated irrational expressions are equivalent to 0. &nbsp;Moreover, nonnumeric or irrational eigenvalues are likely to exhaust memory or yield extremely bulky eigenvector expressions. &nbsp;For these reasons, </span><span class="rvts7">EXACT_EIGENVECTOR</span><span class="rvts6"> is effectively limited to a maximum of 4 by 4 matrices. &nbsp;</span><span class="rvts7">APPROX_EIGENVECTOR</span><span class="rvts6"> is usually a better choice for numerical matrices larger than 3 by 3.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">APPROX_EIGENVECTOR</span><span class="rvts6">(</span><span class="rvts7">A</span><span class="rvts6">, </span><span class="rvts7">µ</span><span class="rvts6">) approximates to an eigenvector of numerical matrix </span><span class="rvts7">A</span><span class="rvts6"> corresponding to the eigenvalue that </span><span class="rvts7">µ</span><span class="rvts6"> approximates. &nbsp;</span><span class="rvts7">µ</span><span class="rvts6"> must be a number that is not an exact eigenvalue. &nbsp;The result is normalized to unit magnitude, making it unique to within a factor of plus or minus one for eigenvalues of multiplicity one. &nbsp;Multiply the result by a parameter such as @1 if you want a more general eigenvector. &nbsp;To assess the accuracy of a result vector x, compare it to </span><span class="rvts7">A</span><span class="rvts6"> · x / </span><span class="rvts7">µ</span><span class="rvts6"> to see how closely they agree. &nbsp;</span><span class="rvts7">APPROX_EIGENVECTOR</span><span class="rvts6"> uses inverse iteration to approximate eigenvectors.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Qt Help documentation made easy</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

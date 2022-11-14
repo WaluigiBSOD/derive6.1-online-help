@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Piecewise Continuous Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="ABS(x),Absolute value,Ceiling function,CEILING(m,n),CHI(a,x,b),Floor function,FLOOR(m,n),MAX(x1,x2,..,xn.),Maximum value,MIN(x1,x2,...,xn),Minimum value,MOD(m,n),MODS(m,n),Modulo,Piecewise continuous functions,Piecewise indicator function,POLY_MOD(u,n),POLY_MODS(u,n),Power-mod algorithm,Round function,ROUND(m,n),Sign function,SIGN(x),STEP(x),Symmetric modulo,Unit step function,Vertical bars">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Piecewise Continuous Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Piecewise Continuous Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="PiecewiseContinuousFunctions"
+		  data-hnd-context="3007"
+		  data-hnd-title="Piecewise Continuous Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Built-in Functions and Constants</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="InverseHyperbolicFunctions.html" title="Inverse Hyperbolic Functions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ComplexVariableFunctions.html" title="Complex Variable Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Piecewise Continuous Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">This topic describes the functions used for defining functions in a piecewise manner and how these functions handle real arguments. &nbsp;</span><a class="rvts19" href="ComplexVariableFunctions.html">Complex Variable Functions</a><span class="rvts20">Complex_Variable_Functions</span><span class="rvts6"> describes how they handle complex arguments. &nbsp;Note that the rules used to simplify expressions involving these functions take into account the user-declared domain of variables (see the </span><a class="rvts19" href="VariableDomain.html">Author &gt; Variable Domain command</a><span class="rvts20">8MNT4Y</span><span class="rvts6">).</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">ABS</span><span class="rvts6">(x) simplifies to the absolute value of x. &nbsp;An absolute value can be entered and is displayed using vertical bars to delimit the argument. &nbsp;Hence if x is 0 or a positive number, |x| simplifies to x. &nbsp;If x is a negative number, |x| simplifies to -x.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">SIGN</span><span class="rvts6">(x) simplifies to the sign of x. &nbsp;Hence if x is a positive number, </span><span class="rvts7">SIGN</span><span class="rvts6">(x) simplifies to 1. &nbsp;If x is a negative number, </span><span class="rvts7">SIGN</span><span class="rvts6">(x) simplifies to -1. &nbsp;Since the sign of 0 is indeterminate, </span><span class="rvts7">SIGN</span><span class="rvts6">(0) simplifies to plus-or-minus 1.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The functions </span><span class="rvts7">MIN</span><span class="rvts6"> and </span><span class="rvts7">MAX</span><span class="rvts6"> can take any number of arguments, a vector, or a matrix. &nbsp;If given a vector (see </span><a class="rvts19" href="VectorsandMatrices.html">Vectors and Matrices</a><span class="rvts20">Vectors_and_Matrices</span><span class="rvts6">), they are applied to the elements of the vector. &nbsp;If given a matrix, they are applied to the rows of the matrix, and the results are returned as a vector.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MAX</span><span class="rvts6">(x1, x2, ..., xn) simplifies to the maximum value of its arguments. &nbsp;</span><span class="rvts7">MAX</span><span class="rvts6">(x , y) simplifies to the equivalent expression ABS(x-y)/2 + (x+y)/2.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MIN</span><span class="rvts6">(x1, x2 ,..., xn) simplifies to the minimum value of its arguments. &nbsp;</span><span class="rvts7">MIN</span><span class="rvts6">(x, y) simplifies to the equivalent expression (x+y)/2 - ABS(x-y)/2.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">STEP</span><span class="rvts6">(x), the unit step function, simplifies to 1 if x &gt; 0; and to 0 if x &lt; 0. &nbsp;If the sign of x cannot be determined, </span><span class="rvts7">STEP</span><span class="rvts6">(x) simplifies to (</span><span class="rvts7">SIGN</span><span class="rvts6">(x)+1)/2.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CHI</span><span class="rvts6">, the piecewise indicator function, is defined as follows:</span></p>
+<p class="rvps20"><span class="rvts6"><br/></span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">CHI</span><span class="rvts6">(a, x, b) simplifies to 1 if a &lt; x &lt; b; to 0 if x &lt; a &lt; b or if a &lt; b &lt; x; and to -</span><span class="rvts7">CHI</span><span class="rvts6">(b, x, a) if b &lt; a. &nbsp;If the relation between a, b, and x cannot be determined, </span><span class="rvts7">CHI</span><span class="rvts6">(a, x, b) simplifies to </span><span class="rvts7">SIGN</span><span class="rvts6">(x-a)/2 - </span><span class="rvts7">SIGN</span><span class="rvts6">(x-b)/2.</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">CHI</span><span class="rvts6">(x) simplifies to </span><span class="rvts7">CHI</span><span class="rvts6">(0, x, 1).</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">CHI</span><span class="rvts6">(a, x) simplifies to </span><span class="rvts7">CHI</span><span class="rvts6">(a, x, 1).</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">CHI</span><span class="rvts6">(a, x, b, c) simplifies to c if x = a; to 1-c if x = b; otherwise it simplifies to </span><span class="rvts7">CHI</span><span class="rvts6">(a, x, b).</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">CHI</span><span class="rvts6">(a, x, b, c, d) simplifies to c if x = a; to d if x = b; otherwise it simplifies to </span><span class="rvts7">CHI</span><span class="rvts6">(a, x, b).</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">FLOOR</span><span class="rvts6">(m) simplifies to the greatest integer less than or equal to m. &nbsp;If m is nonnegative, this is equivalent to the integer-part of m. &nbsp;</span><span class="rvts7">FLOOR</span><span class="rvts6">(m, n) is equivalent to </span><span class="rvts7">FLOOR</span><span class="rvts6">(m/n) but is slightly more efficient. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">FLOOR(5.73)</span></p>
+<p class="rvps48"><span class="rvts10">FLOOR(573, 100)</span></p>
+<p class="rvps3"><span class="rvts6">both simplify to 5.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CEILING</span><span class="rvts6">(m) simplifies to the smallest integer greater than or equal to m. &nbsp;</span><span class="rvts7">CEILING</span><span class="rvts6">(m, n) is equivalent to </span><span class="rvts7">CEILING</span><span class="rvts6">(m/n) but is slightly more efficient. &nbsp;If m or n are not numbers, </span><span class="rvts7">CEILING</span><span class="rvts6">(m, n) simplifies to the equivalent expression &nbsp;- </span><span class="rvts7">FLOOR</span><span class="rvts6">(- m/n). &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">CEILING(5.73)</span></p>
+<p class="rvps48"><span class="rvts10">CEILING(573, 100)</span></p>
+<p class="rvps3"><span class="rvts6">both simplify to 6.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">ROUND</span><span class="rvts6">(m) simplifies to the nearest integer to m. &nbsp;</span><span class="rvts7">ROUND</span><span class="rvts6">(m, n) is equivalent to </span><span class="rvts7">ROUND</span><span class="rvts6">(m/n) but is slightly more efficient. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">ROUND(5.73)</span></p>
+<p class="rvps48"><span class="rvts10">ROUND(573, 100)</span></p>
+<p class="rvps3"><span class="rvts6">both simplify to 6.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MOD</span><span class="rvts6">(m, n) simplifies to m modulo n (i.e. the nonnegative remainder of m/n). &nbsp;</span><span class="rvts7">MOD</span><span class="rvts6">(m, 0) simplifies to m. &nbsp;Since n defaults to 1, </span><span class="rvts7">MOD</span><span class="rvts6">(m) simplifies to the fractional-part of m. &nbsp;For example,</span></p>
+<p class="rvps27"><span class="rvts10">MOD(5.73)</span></p>
+<p class="rvps48"><span class="rvts10">MOD(573, 100)</span></p>
+<p class="rvps3"><span class="rvts6">simplify to 73/100 and 73, respectively. &nbsp;If m, n&gt;0, and p&gt;0 are integers, </span><span class="rvts7">MOD</span><span class="rvts6">(m^p, n) is computed efficiently using the power-mod algorithm to raise m to the power p modulo n. &nbsp;For example,</span></p>
+<p class="rvps27"><span class="rvts10">VECTOR(MOD(3^(10^n),10007),n,1,10)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [9014, 4995, 6823, 5079, 2749, 8517, 594, 6074, 7480, 493].</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MODS</span><span class="rvts6">(m, n) simplifies to the symmetric m modulo n which will be in the half-open interval [-n/2,n/2). &nbsp;</span><span class="rvts7">MODS</span><span class="rvts6">(m, 0) simplifies to m. &nbsp;n defaults to 1. &nbsp;</span></p>
+<p class="rvps27"><span class="rvts10">MODS(5.73)</span></p>
+<p class="rvps48"><span class="rvts10">MODS(573, 100)</span></p>
+<p class="rvps3"><span class="rvts6">simplify to -27/100 and -27, respectively. &nbsp;If m, n&gt;0, and p&gt;0 are integers, </span><span class="rvts7">MODS</span><span class="rvts6">(m^p, n) is computed efficiently using the power-mod algorithm to raise m to the power p modulo n. &nbsp;For example,</span></p>
+<p class="rvps27"><span class="rvts10">VECTOR(MODS(3^(10^n),10007),n,1,10)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [-993, 4995, -3184, -4928, 2749, -1490, 594, -3933, -2527, 493].</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLY_MOD</span><span class="rvts6">(u, n) simplifies to the polynomial whose coefficients are those of u reduced by the modulus n, where n is an integer and u is a polynomial having numeric coefficients.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLY_MODS</span><span class="rvts6">(u, n) simplifies to the polynomial whose coefficients are those of u reduced by the symmetric modulus n, where n is an integer and u is a polynomial having numeric coefficients.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="Built-inFunctionsandConstants.html">Built-in Functions and Constants</a><span class="rvts20">Built_in_Functions_and_Constants</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpauthoringsoftware.com">News and information about help authoring tools and software</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

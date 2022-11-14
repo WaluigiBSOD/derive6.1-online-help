@@ -1,0 +1,532 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Built-in Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Built-in Derive Functions">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Built-in Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Built-in Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Built-inFunctions"
+		  data-hnd-context="6004"
+		  data-hnd-title="Built-in Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Indices</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Operators.html" title="Operators" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="UtilityFileFunctions.html" title="Utility File Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Built-in Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The following is an alphabetical list of the functions built-into </span><span class="rvts8">Derive</span><span class="rvts6"> (see </span><a class="rvts19" href="Built-inFunctionsandConstants.html">Built-in Functions and Constants</a><span class="rvts20">Built_in_Functions_and_Constants</span><span class="rvts6">).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">ABS</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">absolute value of real x</span></p>
+<p class="rvps68"><a class="rvts75" href="ComplexVariableFunctions.html">ABS</a><span class="rvts76">Complex_Variable_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">magnitude (modulus) of complex z</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorOperations.html">ABS</a><span class="rvts76">Vector_Operations</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">magnitude (length) of vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseTrigonometricFunctions.html">ACOS</a><span class="rvts76">Inverse_Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">angle whose cosine is z</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseHyperbolicFunctions.html">ACOSH</a><span class="rvts76">Inverse_Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">inverse hyperbolic cosine of z</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseTrigonometricFunctions.html">ACOT</a><span class="rvts76">Inverse_Trigonometric_Functions</span><span class="rvts6">(x,y)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">angle of the point (x,y)</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseTrigonometricFunctions.html">ACOT</a><span class="rvts76">Inverse_Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">angle whose cotangent is z</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseHyperbolicFunctions.html">ACOTH</a><span class="rvts76">Inverse_Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">inverse hyperbolic cotangent of z</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseTrigonometricFunctions.html">ACSC</a><span class="rvts76">Inverse_Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">angle whose cosecant is z</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseHyperbolicFunctions.html">ACSCH</a><span class="rvts76">Inverse_Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">inverse hyperbolic cosecant of z</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">ADJOIN</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(u,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">adjoin u to the front of vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">APPEND</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(v,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of elements of v followed by elements of w</span></p>
+<p class="rvps68"><a class="rvts75" href="Approximate.html">APPROX</a><span class="rvts76">1LCSBCN</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximate u using the current digits of precision</span></p>
+<p class="rvps68"><a class="rvts75" href="Approximate.html">APPROX</a><span class="rvts76">1LCSBCN</span><span class="rvts6">(u,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximate u using n digits of precision</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseTrigonometricFunctions.html">ASEC</a><span class="rvts76">Inverse_Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">angle whose secant is z</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseHyperbolicFunctions.html">ASECH</a><span class="rvts76">Inverse_Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">inverse hyperbolic secant of z</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseTrigonometricFunctions.html">ASIN</a><span class="rvts76">Inverse_Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">angle whose sine is z</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseHyperbolicFunctions.html">ASINH</a><span class="rvts76">Inverse_Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">inverse hyperbolic sine of z</span></p>
+<p class="rvps68"><a class="rvts75" href="ProgrammingFunctions.html">ASSIGN</a><span class="rvts76">Programming_Functions</span><span class="rvts6">(v,u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if the value of v is a variable, assigns that variable the value u</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseTrigonometricFunctions.html">ATAN</a><span class="rvts76">Inverse_Trigonometric_Functions</span><span class="rvts6">(y,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">angle of the point (x,y)</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseTrigonometricFunctions.html">ATAN</a><span class="rvts76">Inverse_Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">angle whose tangent is z</span></p>
+<p class="rvps68"><a class="rvts75" href="InverseHyperbolicFunctions.html">ATANH</a><span class="rvts76">Inverse_Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">inverse hyperbolic tangent of z</span></p>
+<p class="rvps68"><a class="rvts75" href="StatisticalFunctions.html">AVERAGE</a><span class="rvts76">Statistical_Functions</span><span class="rvts6">(z1,...,zn)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">arithmetic mean (average) of z1, ..., zn</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">CEILING</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">smallest integer </span><span class="rvts9">≥</span><span class="rvts6"> m</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">CEILING</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">smallest integer </span><span class="rvts9">≥</span><span class="rvts6"> m/n</span></p>
+<p class="rvps68"><a class="rvts75" href="Eigenvalues.html">CHARPOLY</a><span class="rvts76">Eigenvalues</span><span class="rvts6">(A,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">characteristic polynomial of square matrix A in terms of variable v</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">CHI</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(a,x,b)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if a&lt;x&lt;b, returns 1; if x&lt;a or x&gt;b, returns 0</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">CHI</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(a,x,b,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if x=a, returns c; if x=b, returns 1-c; else returns CHI(a,x,b)</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">CHI</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(a,x,b,c,d)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if x=a, returns c; if x=b, returns d; else returns CHI(a,x,b)</span></p>
+<p class="rvps68"><a class="rvts75" href="StringProcessingFunctions.html">CODES_TO_NAME</a><span class="rvts76">String_Processing_Functions</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">string or integer corresponding to ASCII codes in vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions.html">COMB</a><span class="rvts76">Probability_Functions</span><span class="rvts6">(z,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">combinations of z things taken w at a time</span></p>
+<p class="rvps68"><a class="rvts75" href="ComplexVariableFunctions.html">CONJ</a><span class="rvts76">Complex_Variable_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">complex conjugate of z</span></p>
+<p class="rvps68"><a class="rvts75" href="TrigonometricFunctions.html">COS</a><span class="rvts76">Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">cosine of z radians</span></p>
+<p class="rvps68"><a class="rvts75" href="HyperbolicFunctions.html">COSH</a><span class="rvts76">Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">hyperbolic cosine of z</span></p>
+<p class="rvps68"><a class="rvts75" href="TrigonometricFunctions.html">COT</a><span class="rvts76">Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">cotangent of z radians</span></p>
+<p class="rvps68"><a class="rvts75" href="HyperbolicFunctions.html">COTH</a><span class="rvts76">Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">hyperbolic cotangent of z</span></p>
+<p class="rvps68"><a class="rvts75" href="TrigonometricFunctions.html">CSC</a><span class="rvts76">Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">cosecant of z radians</span></p>
+<p class="rvps68"><a class="rvts75" href="HyperbolicFunctions.html">CSCH</a><span class="rvts76">Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">hyperbolic cosecant of z</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">CURL</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">curl of 2 or 3 element vector v wrt variables x, y, and z</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">CURL</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(v,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">curl of 2 or 3 element vector v wrt variables in vector w</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">CURL</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(v,A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">curl of 2 or 3 element vector v using coordinate geometry matrix A</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">DELETE</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(v,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">delete element n from vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">DENOMINATOR</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">syntactic denominator of u</span></p>
+<p class="rvps68"><a class="rvts75" href="MatrixOperations.html">DET</a><span class="rvts76">Matrix_Operations</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">determinant of matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="Differentiate.html">DIF</a><span class="rvts76">12746IV</span><span class="rvts6">(u,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">derivative of u(x) wrt x</span></p>
+<p class="rvps68"><a class="rvts75" href="Differentiate.html">DIF</a><span class="rvts76">12746IV</span><span class="rvts6">(u,x,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth order derivative of u(x) wrt x</span></p>
+<p class="rvps68"><a class="rvts75" href="Differentiate.html">DIF</a><span class="rvts76">12746IV</span><span class="rvts6">(u,x,-n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth-order antiderivative of u(x) wrt x</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions.html">DIGAMMA</a><span class="rvts76">Probability_Functions</span><span class="rvts6">(x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">digamma function </span><span class="rvts9">ψ</span><span class="rvts6">(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorOperations.html">DIM</a><span class="rvts76">Vector_Operations</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">number of elements of vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="ProgrammingFunctions.html">DISPLAY</a><span class="rvts76">Programming_Functions</span><span class="rvts6">(u,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">display u using up to n lines of text in a new text box</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">DIV</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">divergence of vector v wrt variables x, y, and z</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">DIV</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(v,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">divergence of vector v wrt variables in vector w</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">DIV</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(v,A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">divergence of vector v using coordinate geometry matrix A</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="Eigenvalues.html">EIGENVALUES</a><span class="rvts76">Eigenvalues</span><span class="rvts6">(A,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">eigenvalues of square matrix A in terms of variable v</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">ELEMENT</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(v,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth element of vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">ELEMENT</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(A,j,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">element in jth row and kth column of matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="ErrorFunctions.html">ERF</a><span class="rvts76">Error_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">error function of z</span></p>
+<p class="rvps68"><a class="rvts75" href="ErrorFunctions.html">ERF</a><span class="rvts76">Error_Functions</span><span class="rvts6">(z,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">generalized error function of z and w</span></p>
+<p class="rvps68"><a class="rvts75" href="ErrorFunctions.html">ERFC</a><span class="rvts76">Error_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">complementary error function of z</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">EVEN?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if k is an even number, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="BooleanFunctions.html">EVERY</a><span class="rvts76">Boolean_Functions</span><span class="rvts6">(u,x,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if u(x) is true for every x in c, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="BooleanFunctions.html">EVERY</a><span class="rvts76">Boolean_Functions</span><span class="rvts6">(u,k,m,n,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if u(k) is true for every k=m to n in steps of s, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ExponentialFunctions.html">EXP</a><span class="rvts76">Exponential_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">exponential of z (that is </span><span class="rvts32">e</span><span class="rvts6">^z)</span></p>
+<p class="rvps68"><a class="rvts75" href="Expand.html">EXPAND</a><span class="rvts76">984VML</span><span class="rvts6">(u,amount,x,y,...)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">expand u by amount wrt variables x,y,...</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="Factor.html">FACTOR</a><span class="rvts76">U08MH3</span><span class="rvts6">(u,amount,x,y,...)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">factor u by amount wrt variables x,y,...</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">FACTORS</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of pairs of primes and their powers of factorization of integer n</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">FACTORS</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of pairs of syntactic factors and their powers of expression u</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">FIRST</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">first element of vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="StatisticalFunctions.html">FIT</a><span class="rvts76">Statistical_Functions</span><span class="rvts6">(v,A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">least squares fit of label vector v to data matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">FLOOR</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integer part of m</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">FLOOR</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">greatest integer </span><span class="rvts9">≤</span><span class="rvts6"> m/n</span></p>
+<p class="rvps68"><a class="rvts75" href="FinancialFunctions.html">FVAL</a><span class="rvts76">Financial_Functions</span><span class="rvts6">(i,nper,pmt,pval,time)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">future value of contract</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions.html">GAMMA</a><span class="rvts76">Probability_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">gamma function of z</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions.html">GCD</a><span class="rvts76">Number_Theory_Functions</span><span class="rvts6">(m,n,...)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">greatest common divisor of m, n, ...</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">GRAD</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">gradient of expression u wrt variables x, y, and z</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">GRAD</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(u,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">gradient of expression u wrt variables in vector w</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">GRAD</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(u,A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">gradient of expression u using coordinate geometry matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="GrobnerBasis.html">GROEBNER_BASIS</a><span class="rvts76">GROEBNER_BASIS</span><span class="rvts6">(polys,vars)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Gröbner basis of polys based on lexicographic ordering vars</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">HEX</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth hex (i.e. 6-sided centered) number</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">IDENTICAL?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if u is identical to v, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="GeneratingVectorsandMatrices.html">IDENTITY_MATRIX</a><span class="rvts76">Generating_Vectors_and_Matrices</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n by n identity matrix</span></p>
+<p class="rvps68"><a class="rvts75" href="IFExpressions.html">IF</a><span class="rvts76">IF_Expressions</span><span class="rvts6">(r)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if r is true, return 1; if r is false, return 0</span></p>
+<p class="rvps68"><a class="rvts75" href="IFExpressions.html">IF</a><span class="rvts76">IF_Expressions</span><span class="rvts6">(r,t,f)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if r is true, return expression t; if r is false, return expression f</span></p>
+<p class="rvps68"><a class="rvts75" href="IFExpressions.html">IF</a><span class="rvts76">IF_Expressions</span><span class="rvts6">(r,t,f,u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if r is true, return expression t; if false, return expression f; if unknown, return u</span></p>
+<p class="rvps68"><a class="rvts75" href="ComplexVariableFunctions.html">IM</a><span class="rvts76">Complex_Variable_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">imaginary part of z</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">INSERT</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(u,v,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">insert u before the nth element of v</span></p>
+<p class="rvps68"><a class="rvts75" href="Integrate.html">INT</a><span class="rvts76">ARB2JQ</span><span class="rvts6">(u,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">antiderivative of u(x) wrt x</span></p>
+<p class="rvps68"><a class="rvts75" href="Integrate.html">INT</a><span class="rvts76">ARB2JQ</span><span class="rvts6">(u,x,a,b)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">definite integral of u(x) from x=a to b</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">INTEGER?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if k is an integer, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">INTEGER_TYPE?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if expression u is of integer type, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions.html">INVERSE_MOD</a><span class="rvts76">Number_Theory_Functions</span><span class="rvts6">(a,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">inverse of a mod m if it exists, and a question mark otherwise</span></p>
+<p class="rvps68"><a class="rvts75" href="TheITERATEFunction.html">ITERATE</a><span class="rvts76">The_ITERATE_Function</span><span class="rvts6">(u,x,x0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">1st repeated element of sequence x0, u(x0), u(u(x0)), ...</span></p>
+<p class="rvps68"><a class="rvts75" href="TheITERATEFunction.html">ITERATE</a><span class="rvts76">The_ITERATE_Function</span><span class="rvts6">(u,x,x0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">element n+1 of sequence x0, u(x0), u(u(x0)), ...</span></p>
+<p class="rvps68"><a class="rvts75" href="TheITERATEFunction.html">ITERATE</a><span class="rvts76">The_ITERATE_Function</span><span class="rvts6">(u,[x1,x2,...],[x01, x02,...])</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">1st repeated element of sequence [x01, x02,...],u(x01, x02,...),...</span></p>
+<p class="rvps68"><a class="rvts75" href="TheITERATESFunction.html">ITERATES</a><span class="rvts76">The_ITERATES_Function</span><span class="rvts6">(u,x,x0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector [x0,u(x0),u(u(x0)),...] until an element is repeated</span></p>
+<p class="rvps68"><a class="rvts75" href="TheITERATESFunction.html">ITERATES</a><span class="rvts76">The_ITERATES_Function</span><span class="rvts6">(u,x,x0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">1st n+1 elements of vector [x0,u(x0),u(u(x0)),...]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">LAPLACIAN</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">divergence of gradient of expression u wrt variables x, y, and z</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">LAPLACIAN</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(u,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">divergence of gradient of expression u wrt variables in vector w</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentialVectorCalculus.html">LAPLACIAN</a><span class="rvts76">Differential_Vector_Calculus</span><span class="rvts6">(u,A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">divergence of gradient of expression u using coordinate geometry matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions.html">LCM</a><span class="rvts76">Number_Theory_Functions</span><span class="rvts6">(m,n,...)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">least common multiple of m, n, ...</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">LHS</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(r)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">left hand side (left operand) of relation r</span></p>
+<p class="rvps68"><a class="rvts75" href="Limit.html">LIM</a><span class="rvts76">PGUOQ0</span><span class="rvts6">(u,x,a)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">limit of u(x) as x approaches a</span></p>
+<p class="rvps68"><a class="rvts75" href="Limit.html">LIM</a><span class="rvts76">PGUOQ0</span><span class="rvts6">(u,x,a,1)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">limit of u(x) as x approaches a from above</span></p>
+<p class="rvps68"><a class="rvts75" href="Limit.html">LIM</a><span class="rvts76">PGUOQ0</span><span class="rvts6">(u,x,a,-1)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">limit of u(x) as x approaches a from below</span></p>
+<p class="rvps68"><a class="rvts75" href="LogarithmicFunctions.html">LN</a><span class="rvts76">Logarithmic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">natural logarithm of z</span></p>
+<p class="rvps68"><a class="rvts75" href="UtilityFile.html">LOAD</a><span class="rvts76">1_O7U5P</span><span class="rvts6">(filename)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">load the utility file named filename</span></p>
+<p class="rvps68"><a class="rvts75" href="LogarithmicFunctions.html">LOG</a><span class="rvts76">Logarithmic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">natural logarithm of z</span></p>
+<p class="rvps68"><a class="rvts75" href="LogarithmicFunctions.html">LOG</a><span class="rvts76">Logarithmic_Functions</span><span class="rvts6">(z,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">logarithm of z to the base w</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">LOGICAL?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if k is a truth-value (i.e. true or false), return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">LOGICAL_TYPE?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if expression u is of truth-value type, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ProceduralProgramming.html">LOOP</a><span class="rvts76">Procedural_Programming</span><span class="rvts6">(s1,...,sn)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">repeatedly simplify statements s1 through sn until a RETURN or EXIT statement encountered</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ProgrammingFunctions.html">MAP</a><span class="rvts76">Programming_Functions</span><span class="rvts6">(u,x,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">evaluates u(x) for x equal to elements of collection c and returns true</span></p>
+<p class="rvps68"><a class="rvts75" href="ProgrammingFunctions.html">MAP</a><span class="rvts76">Programming_Functions</span><span class="rvts6">(u,k,m,n,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">evaluates u(k) for k=m to n in steps of size s and returns true</span></p>
+<p class="rvps68"><a class="rvts75" href="ProgrammingFunctions.html">MAP_LIST</a><span class="rvts76">Programming_Functions</span><span class="rvts6">(u,x,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">evaluates u(x) for x equal to elements of collection c and returns result as a collection</span></p>
+<p class="rvps68"><a class="rvts75" href="ProgrammingFunctions.html">MAP_LIST</a><span class="rvts76">Programming_Functions</span><span class="rvts6">(u,k,m,n,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">evaluates u(k) for k=m to n in steps of size s and returns result as a vector</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">MATRIX?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if u is a matrix, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">MAX</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(x1,x2,...)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">maximum of x1, x2, ...</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">MAX</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">maximum element of vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorOperations.html">MEMBER?</a><span class="rvts76">Vector_Operations</span><span class="rvts6">(u,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if u is a member of v, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">MIN</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(x1,x2,...)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">minimum of x1, x2, ...</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">MIN</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">minimum element of vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">MOD</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">fractional part of m</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">MOD</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m modulo n (nonnegative remainder of m/n)</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">MODS</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">symmetric m modulo n</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="StringProcessingFunctions.html">NAME_TO_CODES</a><span class="rvts76">String_Processing_Functions</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of ASCII codes corresponding to the characters in string or integer s</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions.html">NEXT_PRIME</a><span class="rvts76">Number_Theory_Functions</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">next prime larger than n</span></p>
+<p class="rvps68"><a class="rvts75" href="ErrorFunctions.html">NORMAL</a><span class="rvts76">Error_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">cumulative distribution function of z</span></p>
+<p class="rvps68"><a class="rvts75" href="ErrorFunctions.html">NORMAL</a><span class="rvts76">Error_Functions</span><span class="rvts6">(z,m,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">normal distribution function of z with mean m and standard deviation s</span></p>
+<p class="rvps68"><a class="rvts75" href="FinancialFunctions.html">NPER</a><span class="rvts76">Financial_Functions</span><span class="rvts6">(i,pmt,pval,fval,time)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">number of payment periods</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsNumerically.html">NSOLUTIONS</a><span class="rvts76">Solving_Equations_Numerically</span><span class="rvts6">(u,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of approximate solutions of equation u=0 for variable x</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsNumerically.html">NSOLUTIONS</a><span class="rvts76">Solving_Equations_Numerically</span><span class="rvts6">(B,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of approximate solutions of Boolean B for variable x</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsNumerically.html">NSOLUTIONS</a><span class="rvts76">Solving_Equations_Numerically</span><span class="rvts6">(B,x,Real)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of approximate real solutions of Boolean B for variable x</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsNumerically.html">NSOLUTIONS</a><span class="rvts76">Solving_Equations_Numerically</span><span class="rvts6">(B,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of vectors of simultaneous solutions of Boolean B for variables in vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsNumerically.html">NSOLUTIONS</a><span class="rvts76">Solving_Equations_Numerically</span><span class="rvts6">(w,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of vectors of simultaneous solutions of Booleans in vector w for variables in vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsNumerically.html">NSOLVE</a><span class="rvts76">Solving_Equations_Numerically</span><span class="rvts6">(u,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximate solution of equation u=0 for variable x expressed as a Boolean equivalent to u=0</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsNumerically.html">NSOLVE</a><span class="rvts76">Solving_Equations_Numerically</span><span class="rvts6">(B,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximate solution of Boolean B for variable x expressed as a Boolean equivalent to B</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsNumerically.html">NSOLVE</a><span class="rvts76">Solving_Equations_Numerically</span><span class="rvts6">(B,x,Real)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximate real solution of Boolean B for variable x expressed as a Boolean equivalent to B</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsNumerically.html">NSOLVE</a><span class="rvts76">Solving_Equations_Numerically</span><span class="rvts6">(B,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">solution of Boolean B for variables in vector v expressed as a Boolean equivalent to B</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsNumerically.html">NSOLVE</a><span class="rvts76">Solving_Equations_Numerically</span><span class="rvts6">(w,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">solution of Booleans in vector w for variables in vector v expressed as a vector of Booleans whose disjunction is equivalent to the conjunction of the Booleans in vector w</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">NUMBER?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if k is a real or complex number, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">NUMBER_TYPE?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if expression u is real or complex, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">NUMERATOR</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">syntactic numerator of u</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">ODD?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if k is an odd number, return true; otherwise return false</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions.html">PERM</a><span class="rvts76">Probability_Functions</span><span class="rvts6">(z,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">permutations of z things taken w at a time</span></p>
+<p class="rvps68"><a class="rvts75" href="ComplexVariableFunctions.html">PHASE</a><span class="rvts76">Complex_Variable_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">phase angle of z</span></p>
+<p class="rvps68"><a class="rvts75" href="FinancialFunctions.html">PMT</a><span class="rvts76">Financial_Functions</span><span class="rvts6">(i,nper,pval,fval,time)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">periodic payment</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">POLY_GCD</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(u,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">polynomial gcd of u and v</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">POLY_MOD</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(u,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">polynomial whose coefficients are those of polynomial u reduced by modulus n</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">POLY_MODS</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(u,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">polynomial whose coefficients are those of polynomial u reduced by symetric modulus n</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">POSITION</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(e,v,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">position of expression e in vector v after the nth element</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegralVectorCalculus.html">POTENTIAL</a><span class="rvts76">Integral_Vector_Calculus</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">scalar potential of vector v starting at (0,0,0) wrt variables x, y, and z</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegralVectorCalculus.html">POTENTIAL</a><span class="rvts76">Integral_Vector_Calculus</span><span class="rvts6">(v,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">scalar potential of vector v starting at coordinates in vector w wrt variables x, y, and z</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegralVectorCalculus.html">POTENTIAL</a><span class="rvts76">Integral_Vector_Calculus</span><span class="rvts6">(v,w,u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">scalar potential of vector v starting at coordinates in vector w wrt variables in vector u</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegralVectorCalculus.html">POTENTIAL</a><span class="rvts76">Integral_Vector_Calculus</span><span class="rvts6">(v,w,A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">scalar potential of vector v starting at coordinates in vector w using geometry matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">POWER?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if expression u is a power, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions.html">POWER_MOD</a><span class="rvts76">Number_Theory_Functions</span><span class="rvts6">(n,d,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n^d mod m</span></p>
+<p class="rvps68"><a class="rvts75" href="SetOperatorsandFunctions.html">POWER_SET</a><span class="rvts76">Set_Operators</span><span class="rvts6">(s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">all subsets of s</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions.html">PREVIOUS_PRIME</a><span class="rvts76">Number_Theory_Functions</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">first prime smaller than n</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions.html">PRIME?</a><span class="rvts76">Number_Theory_Functions</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n is prime, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="Product.html">PRODUCT</a><span class="rvts76">1NW3ZP_</span><span class="rvts6">(c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">product of the elements of collection c</span></p>
+<p class="rvps68"><a class="rvts75" href="Product.html">PRODUCT</a><span class="rvts76">1NW3ZP_</span><span class="rvts6">(u,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">antiquotient of u(k) wrt k</span></p>
+<p class="rvps68"><a class="rvts75" href="Product.html">PRODUCT</a><span class="rvts76">1NW3ZP_</span><span class="rvts6">(u,k,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">product of u(k) for k an element of collection c</span></p>
+<p class="rvps68"><a class="rvts75" href="Product.html">PRODUCT</a><span class="rvts76">1NW3ZP_</span><span class="rvts6">(u,k,m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">definite product of u(k) from k=m to n</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">PRODUCT?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if expression u is a product, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ProceduralProgramming.html">PROG</a><span class="rvts76">Procedural_Programming</span><span class="rvts6">(s1,...,sn)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">simplify statements s1 through sn unless a RETURN(u) or EXIT statement encountered</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="FinancialFunctions.html">PVAL</a><span class="rvts76">Financial_Functions</span><span class="rvts6">(i,nper,pmt,fval,time)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">present value of contract</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">QUOTIENT</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(u,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">polynomial quotient of u divided by v</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions.html">RANDOM</a><span class="rvts76">Probability_Functions</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n=0, initialize seed based on current time</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions.html">RANDOM</a><span class="rvts76">Probability_Functions</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n=1, a random </span><span class="rvts32">number</span><span class="rvts6"> in the interval [0,1)</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions.html">RANDOM</a><span class="rvts76">Probability_Functions</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n&gt;1, a random </span><span class="rvts32">integer</span><span class="rvts6"> &nbsp;in the interval [0,n)</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions.html">RANDOM</a><span class="rvts76">Probability_Functions</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n&lt;1, initialize random number seed to n</span></p>
+<p class="rvps68"><a class="rvts75" href="RowEchelonForm.html">RANK</a><span class="rvts76">Row_Echelon_Form</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">rank of matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="FinancialFunctions.html">RATE</a><span class="rvts76">Financial_Functions</span><span class="rvts6">(nper,pmt,pval,fval,time,min,max)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">periodic interest rate</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">RATIONAL?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if k is a rational number, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ComplexVariableFunctions.html">RE</a><span class="rvts76">Complex_Variable_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">real part of z</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">REAL_TYPE?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if expression u is real, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">REMAINDER</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(u,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">polynomial remainder of u divided by v</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">REPLACE</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(u,v,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">replace the nth element of v with u</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">REST</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">returns a vector of all but the first element of v</span></p>
+<p class="rvps68"><a class="rvts75" href="ProceduralProgramming.html">RETURN</a><span class="rvts76">Procedural_Programming</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">immediately exit function and return u as its value</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">REVERSE</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">reverse elements of vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">RHS</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(r)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">right hand side (right operand) of relation r</span></p>
+<p class="rvps68"><a class="rvts75" href="StatisticalFunctions.html">RMS</a><span class="rvts76">Statistical_Functions</span><span class="rvts6">(z1,...,zn)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">root mean square of z1 through zn</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">ROUND</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nearest integer to m/n (n defaults to 1)</span></p>
+<p class="rvps68"><a class="rvts75" href="RowEchelonForm.html">ROW_REDUCE</a><span class="rvts76">Row_Echelon_Form</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">row echelon form of A</span></p>
+<p class="rvps68"><a class="rvts75" href="RowEchelonForm.html">ROW_REDUCE</a><span class="rvts76">Row_Echelon_Form</span><span class="rvts6">(A,B)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">row echelon form of A augmented by B</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="TrigonometricFunctions.html">SEC</a><span class="rvts76">Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">secant of z radians</span></p>
+<p class="rvps68"><a class="rvts75" href="HyperbolicFunctions.html">SECH</a><span class="rvts76">Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">hyperbolic secant of z</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">SELECT</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(u,k,m,n,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of k as k goes from m thru n in steps of s for which u(k) is true</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">SELECT</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(u,k,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">collection of those elements of collection c for which u(k) is true</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">SET?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if u is a set, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">SET_TYPE?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if expression u is of set type, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">SIGN</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">sign of x</span></p>
+<p class="rvps68"><a class="rvts75" href="ComplexVariableFunctions.html">SIGN</a><span class="rvts76">Complex_Variable_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">radial projection of z on unit circle</span></p>
+<p class="rvps68"><a class="rvts75" href="TrigonometricFunctions.html">SIN</a><span class="rvts76">Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">sine of z radians</span></p>
+<p class="rvps68"><a class="rvts75" href="TrigonometricFunctions.html">SIN</a><span class="rvts76">Trigonometric_Functions</span><span class="rvts6">(z·deg)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">sine of z degrees</span></p>
+<p class="rvps68"><a class="rvts75" href="HyperbolicFunctions.html">SINH</a><span class="rvts76">Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">hyperbolic sine of z</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsandInequalitiesA.html">SOLUTIONS</a><span class="rvts76">Solving_Equations_and_Inequalities_Algebraically</span><span class="rvts6">(u,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of solutions of equation u=0 for variable x</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsandInequalitiesA.html">SOLUTIONS</a><span class="rvts76">Solving_Equations_and_Inequalities_Algebraically</span><span class="rvts6">(B,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of solutions of Boolean B for variable x</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsandInequalitiesA.html">SOLUTIONS</a><span class="rvts76">Solving_Equations_and_Inequalities_Algebraically</span><span class="rvts6">(B,x,Real)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of real solutions of Boolean B for variable x</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingSystemsofEquations.html">SOLUTIONS</a><span class="rvts76">Solving_Systems_of_Equations</span><span class="rvts6">(B,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of vectors of simultaneous solutions of Boolean B for variables in vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingSystemsofEquations.html">SOLUTIONS</a><span class="rvts76">Solving_Systems_of_Equations</span><span class="rvts6">(w,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of vectors of simultaneous solutions of Booleans in vector w for variables in vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsandInequalitiesA.html">SOLVE</a><span class="rvts76">Solving_Equations_and_Inequalities_Algebraically</span><span class="rvts6">(u,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">solution of equation u=0 for variable x expressed as a Boolean equivalent to u=0</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsandInequalitiesA.html">SOLVE</a><span class="rvts76">Solving_Equations_and_Inequalities_Algebraically</span><span class="rvts6">(B,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">solution of Boolean B for variable x expressed as a Boolean equivalent to B</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingEquationsandInequalitiesA.html">SOLVE</a><span class="rvts76">Solving_Equations_and_Inequalities_Algebraically</span><span class="rvts6">(B,x,Real)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">real solution of Boolean B for variable x expressed as a Boolean equivalent to B</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingSystemsofEquations.html">SOLVE</a><span class="rvts76">Solving_Systems_of_Equations</span><span class="rvts6">(B,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">solution of Boolean B for variables in vector v expressed as a Boolean equivalent to B</span></p>
+<p class="rvps68"><a class="rvts75" href="SolvingSystemsofEquations.html">SOLVE</a><span class="rvts76">Solving_Systems_of_Equations</span><span class="rvts6">(w,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">solution of Booleans in vector w for variables in vector v expressed as a vector of Booleans whose disjunction is equivalent to the conjunction of the Booleans in vector w</span></p>
+<p class="rvps68"><a class="rvts75" href="BooleanFunctions.html">SOME</a><span class="rvts76">Boolean_Functions</span><span class="rvts6">(u,x,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if u(x) is true for some x in c, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="BooleanFunctions.html">SOME</a><span class="rvts76">Boolean_Functions</span><span class="rvts6">(u,k,m,n,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if u(k) is true for some k=m to n in steps of s, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorManipulationFunctions.html">SORT</a><span class="rvts76">Vector_Manipulation_Functions</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">function to sort the elements of a vector or set v, and return the result as a vector</span></p>
+<p class="rvps68"><a class="rvts75" href="ExponentialFunctions.html">SQRT</a><span class="rvts76">Exponential_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">square root of z</span></p>
+<p class="rvps68"><a class="rvts75" href="StatisticalFunctions.html">STDEV</a><span class="rvts76">Statistical_Functions</span><span class="rvts6">(z1,...,zn)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">standard deviation of z1 through zn</span></p>
+<p class="rvps68"><a class="rvts75" href="PiecewiseContinuousFunctions.html">STEP</a><span class="rvts76">Piecewise_Continuous_Functions</span><span class="rvts6">(x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">step function of x</span></p>
+<p class="rvps68"><a class="rvts75" href="StringProcessingFunctions.html">STRING</a><span class="rvts76">String_Processing_Functions</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">string variable having same display name as variable v</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">STRING?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if expression u is a string variable, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="VariableSubstitution.html">SUBST</a><span class="rvts76">GP2.L1</span><span class="rvts6">(u,old,new)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">substitute new for old in u</span></p>
+<p class="rvps68"><a class="rvts75" href="Sum.html">SUM</a><span class="rvts76">15A5MUZ</span><span class="rvts6">(c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">sum of the elements of collection c</span></p>
+<p class="rvps68"><a class="rvts75" href="Sum.html">SUM</a><span class="rvts76">15A5MUZ</span><span class="rvts6">(u,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">antidifference of u(k) wrt k</span></p>
+<p class="rvps68"><a class="rvts75" href="Sum.html">SUM</a><span class="rvts76">15A5MUZ</span><span class="rvts6">(u,k,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">sum of u(k) for k an element of collection c</span></p>
+<p class="rvps68"><a class="rvts75" href="Sum.html">SUM</a><span class="rvts76">15A5MUZ</span><span class="rvts6">(u,k,m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">definite sum of u(k) from k=m to n</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">SUM?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if expression u is a sum, return true; otherwise return false</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="Table.html">TABLE</a><span class="rvts76">TX0JH_</span><span class="rvts6">(u,k,m,n,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">table of (n-m+1)/s rows of u(k) simplified with k=m to n in steps of size s</span></p>
+<p class="rvps68"><a class="rvts75" href="TrigonometricFunctions.html">TAN</a><span class="rvts76">Trigonometric_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">tangent of z radians</span></p>
+<p class="rvps68"><a class="rvts75" href="HyperbolicFunctions.html">TANH</a><span class="rvts76">Hyperbolic_Functions</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">hyperbolic tangent of z</span></p>
+<p class="rvps68"><a class="rvts75" href="TaylorSeries.html">TAYLOR</a><span class="rvts76">MRJ3J4</span><span class="rvts6">(u,x,a,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth order Taylor approximation of u(x) about x=a</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">TERMS</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of syntactic terms of u</span></p>
+<p class="rvps68"><a class="rvts75" href="MatrixOperations.html">TRACE</a><span class="rvts76">Matrix_Operations</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">trace of matrix A (sum of diagonal elements)</span></p>
+<p class="rvps68"><a class="rvts75" href="TruthTableFunctions.html">TRUTH_TABLE</a><span class="rvts76">Truth_Table_Functions</span><span class="rvts6">(p1,p2,...,bool1,bool2,...)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">truth table matrix for Boolean expressions bool1, bool2, ...</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">VARIABLE?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if u is a variable, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionDecompositionFunctions.html">VARIABLES</a><span class="rvts76">Expression_Decomposition_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">a vector of the free variables in u</span></p>
+<p class="rvps68"><a class="rvts75" href="StatisticalFunctions.html">VARIANCE</a><span class="rvts76">Statistical_Functions</span><span class="rvts6">(z1,...,zn)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">variance of z1, ..., zn</span></p>
+<p class="rvps68"><a class="rvts75" href="Vector1.html">VECTOR</a><span class="rvts76">.WK1F5</span><span class="rvts6">(u,k,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of u(k) applied to elements of vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="Vector1.html">VECTOR</a><span class="rvts76">.WK1F5</span><span class="rvts6">(u,k,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of u(k) as k goes from 1 thru n in steps of 1</span></p>
+<p class="rvps68"><a class="rvts75" href="Vector1.html">VECTOR</a><span class="rvts76">.WK1F5</span><span class="rvts6">(u,k,m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of u(k) as k goes from m thru n in steps of 1</span></p>
+<p class="rvps68"><a class="rvts75" href="Vector1.html">VECTOR</a><span class="rvts76">.WK1F5</span><span class="rvts6">(u,k,m,n,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of u(k) as k goes from m thru n in steps of s</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">VECTOR?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if u is a vector, return true; otherwise return false</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegralVectorCalculus.html">VECTOR_POTENTIAL</a><span class="rvts76">Integral_Vector_Calculus</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector potential of vector v starting at (0,0,0) wrt variables x, y, and z</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegralVectorCalculus.html">VECTOR_POTENTIAL</a><span class="rvts76">Integral_Vector_Calculus</span><span class="rvts6">(v,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector potential of vector v starting at vector w wrt variables x, y, and z</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegralVectorCalculus.html">VECTOR_POTENTIAL</a><span class="rvts76">Integral_Vector_Calculus</span><span class="rvts6">(v,w,u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector potential of vector v starting at vector w wrt variables in vector u</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegralVectorCalculus.html">VECTOR_POTENTIAL</a><span class="rvts76">Integral_Vector_Calculus</span><span class="rvts6">(v,w,A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector potential of vector v starting at vector w using geometry matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="ExpressionTypeFunctions.html">VECTOR_TYPE?</a><span class="rvts76">Expression_Type_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if expression u is of vector type, return true; otherwise return false</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ProgrammingFunctions.html">WRITE</a><span class="rvts76">Programming_Functions</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">write u as a line of text on the Algebra window status line</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ZetaFunctions.html">ZETA</a><span class="rvts76">Zeta_Functions</span><span class="rvts6">(s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">the Riemann zeta function </span><span class="rvts9">ζ</span><span class="rvts6">(s)</span></p>
+<p class="rvps68"><a class="rvts75" href="ZetaFunctions.html">ZETA</a><span class="rvts76">Zeta_Functions</span><span class="rvts6">(s,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">the Hurwitz zeta function </span><span class="rvts9">ζ</span><span class="rvts6">(s,z)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="TableofContents.html">Help Contents</a><span class="rvts20">idh_Contents</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour">Easily create HTML Help documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

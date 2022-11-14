@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Differentiation Applications</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Applications of differentiation,Asymptote,Cartesian coordinate vector,Center of curvature,CENTER_OF_CURVATURE(y,x),Circle, osculating,Curvature,CURVATURE(y,x),Derivative, implicit,DifferentiationApplications.mth,IMP_CENTER_OF_CURVATURE(u,x,y),IMP_CURVATURE(u,x,y),IMP_DIF(u,x,y,n),IMP_OSCULATING_CIRCLE(u,x,y,x0,y0,theta),IMP_PERPENDICULAR(u,x,y,x0,y0),IMP_TANGENT(u,x,y,x0,y0),Implicit derivative,Implicitly defined curves,Normal line,NORMAL_LINE(u,v,v0,t),Osculating circle,OSCULATING_CIRCLE(y,x,theta),PARA_CENTER_OF_CURVATURE(v,t),PARA_CURVATURE(v,t),PARA_DIF(v,t,n),PARA_OSCULATING_CIRCLE(v,t,t0,phi),PARA_PERPENDICULAR(v,t,t0,x),PARA_TANGENT(v,t,t0,x),Parametrically defined curves,Perpendicular line,PERPENDICULAR(y,x,x0),Polar coordinates,POLAR_CENTER_OF_CURVATURE(r,theta),POLAR_CURVATURE(r,theta),POLAR_DIF(r,theta,n),POLAR_OSCULATING_CIRCLE(r,theta,theta0,phi),POLAR_PERPENDICULAR(r,theta,theta0,x),POLAR_TANGENT(r,theta,theta0,x),Tangent line,Tangent plane,TANGENT(y,x,x0),TANGENT_PLANE(u,v,v0)">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Differentiation Applications">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Differentiation Applications" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="DifferentiationApplications"
+		  data-hnd-context="3504"
+		  data-hnd-title="Differentiation Applications"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li><li>Calculus</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="MiscellaneousFunctions.html" title="Miscellaneous Functions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="IntegrationApplications.html" title="Integration Applications" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Differentiation Applications</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">DifferentiationApplications.mth</span><span class="rvts6"> defines functions that automate some of the most common applications of differentiation. &nbsp;These applications include parametric, polar and implicit derivatives, curvature, centers-of-curvature, tangent lines, perpendicular lines, osculating circles, tangent planes, and surface normals. &nbsp;There are separate groups of functions for curves defined in rectangular (Cartesian) coordinates either explicitly, parametrically, or implicitly, and for curves explicitly defined in polar coordinates. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The following functions are for curves explicitly defined in rectangular coordinates by an abscissa and an ordinate, where the ordinate is the value of the expression y that depends on the abscissa variable x:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CURVATURE</span><span class="rvts6">(y, x) simplifies to the curvature of expression y in terms of variable x. &nbsp;If you want the curvature at a particular value of x, then substitute that value in the result or take the limit of the result as x approaches that value.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CENTER_OF_CURVATURE</span><span class="rvts6">(y, x) simplifies to the Cartesian coordinate vector of the center of curvature of expression y in terms of its variable x.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TANGENT</span><span class="rvts6">(y, x, x0) simplifies to the line tangent to expression y(x) at x=x0. &nbsp;The result will be linear in variable x.&nbsp;</span><span class="rvts7"> TANGENT</span><span class="rvts6">(y, x, inf) simplifies to the asymptote of y(x) as x approaches infinity.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PERPENDICULAR</span><span class="rvts6">(y, x, x0) simplifies to the line perpendicular to expression y at x=x0. &nbsp;The result will be linear in variable x.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">OSCULATING_CIRCLE</span><span class="rvts6">(y, x, </span><span class="rvts9">θ</span><span class="rvts6">) simplifies to a parametric representation of the circle that osculates expression y at its variable x, using </span><span class="rvts9">θ</span><span class="rvts6"> as the angular parameter.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The following functions are for curves parametrically defined in rectangular coordinates by a vector of the form v = [x, y], where x and y are expressions that depend on the parameter t:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PARA_DIF</span><span class="rvts6">(v, t, n) simplifies to the nth derivative of y with respect to x in terms of parametric variable t. &nbsp;n must be a nonnegative integer, and it defaults to 1. &nbsp;To learn how to program such defaults, inspect </span><span class="rvts7">PARA_DIF</span><span class="rvts6">'s definition in the file </span><span class="rvts7">DIF_APPS</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PARA_CURVATURE</span><span class="rvts6">(v, t) similarly simplifies to the curvature of parametric curve v in terms of parametric variable t.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PARA_CENTER_OF_CURVATURE</span><span class="rvts6">(v, t) similarly simplifies to a Cartesian coordinate vector of the center of curvature of v in terms of parametric variable t.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PARA_TANGENT</span><span class="rvts6">(v, t, t0, x) simplifies to an expression linear in variable x. &nbsp;This result is the y coordinate of the line tangent to parametric curve v at parameter value t=t0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PARA_PERPENDICULAR</span><span class="rvts6">(v, t, t0, x) similarly simplifies to the line perpendicular to parametric curve v at parameter value t=t0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PARA_OSCULATING_CIRCLE</span><span class="rvts6">(v, t, t0, </span><span class="rvts9">Φ</span><span class="rvts6">) simplifies to a parametric representation of the circle that osculates parametric curve v at parameter value t=t0. &nbsp;Variable </span><span class="rvts9">Φ</span><span class="rvts6"> is the angular parameter of this circle.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The following functions are for curves explicitly defined in polar coordinates by an expression r that depends on the angle </span><span class="rvts9">θ</span><span class="rvts6">:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLAR_DIF</span><span class="rvts6">(r, </span><span class="rvts9">θ</span><span class="rvts6">, n) simplifies to the nth derivative of y with respect to x in terms of variable </span><span class="rvts9">θ</span><span class="rvts6">. &nbsp;n must be a nonnegative integer, and it defaults to 1.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLAR_CURVATURE</span><span class="rvts6">(r, </span><span class="rvts9">θ</span><span class="rvts6">) simplifies to the curvature of expression r in terms of variable </span><span class="rvts9">θ</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLAR_CENTER_OF_CURVATURE</span><span class="rvts6">(r, </span><span class="rvts9">θ</span><span class="rvts6">) simplifies to the rectangular coordinates of the center of curvature of expression r, in terms of variable </span><span class="rvts9">θ</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLAR_TANGENT</span><span class="rvts6">(r, </span><span class="rvts9">θ</span><span class="rvts6">, </span><span class="rvts9">θ</span><span class="rvts6">0, x) simplifies to an expression linear in variable x. &nbsp;This result is the y coordinate of the line tangent to expression r at angle </span><span class="rvts9">θ</span><span class="rvts6">=</span><span class="rvts9">θ</span><span class="rvts6">0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLAR_PERPENDICULAR</span><span class="rvts6">(r, </span><span class="rvts9">θ</span><span class="rvts6">, </span><span class="rvts9">θ</span><span class="rvts6">0, x) similarly simplifies to the line perpendicular to expression r at angle </span><span class="rvts9">θ</span><span class="rvts6">=</span><span class="rvts9">θ</span><span class="rvts6">0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLAR_OSCULATING_CIRCLE</span><span class="rvts6">(r, </span><span class="rvts9">θ</span><span class="rvts6">, </span><span class="rvts9">θ</span><span class="rvts6">0, </span><span class="rvts9">Φ</span><span class="rvts6">) simplifies to the parametric circle that osculates polar curve r at angle </span><span class="rvts9">θ</span><span class="rvts6">=</span><span class="rvts9">θ</span><span class="rvts6">0. &nbsp;Variable </span><span class="rvts9">Φ</span><span class="rvts6"> is used as the angular circle parameter.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The following functions are for curves implicitly defined in rectangular coordinates by an equation of the form u=0, where u is an expression that depends on the variables x and y. &nbsp;The values of the arguments for x and y must be unassigned variables. &nbsp;Do not declare y to be a function. &nbsp;The results are unique only modulo u(x,y)=0 or u(x0,y0)=0, so the symbolic results may differ from results derived by other methods. &nbsp;However, the numerical results from substituting a pair of numbers that satisfy u(x,y)=0 or u(x0,y0)=0 should be the same, within roundoff error:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">IMP_DIF</span><span class="rvts6">(u, x, y, n) simplifies to the nth implicit derivative of y with respect to x. &nbsp;n must be a positive integer, and it defaults to 1. &nbsp;In most cases the result depends on both x and y rather than x or y alone. &nbsp;This is acceptable for some applications. &nbsp;If not, you can sometimes use the original equation u=0 to eliminate either y or x from the derivative. &nbsp;Moreover, you can always substitute a particular value of x or of y into u, then solve for the other variable. &nbsp;This may require approximate mode. &nbsp;Either way, the resulting numerical values of x and y can then be substituted into the derived general implicit derivative.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">IMP_CURVATURE</span><span class="rvts6">(u, x, y) simplifies to the curvature of the curve implicitly defined by u=0. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">IMP_CENTER_OF_CURVATURE</span><span class="rvts6">(u, x, y) simplifies to the center of curvature of the curve implicitly defined by u=0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">IMP_TANGENT</span><span class="rvts6">(u, x, y, x0, y0) simplifies to an expression linear in variable x. &nbsp;The result is the y coordinate of the line tangent at x=x0 and y=y0 to the curve implicitly defined by u=0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">IMP_PERPENDICULAR</span><span class="rvts6">(u, x, y, x0, y0) similarly simplifies to the line perpendicular at x=x0 and y=y0 to the curve implicitly defined by u=0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">IMP_OSCULATING_CIRCLE</span><span class="rvts6">(u, x, y, x0, y0, </span><span class="rvts9">θ</span><span class="rvts6">) simplifies to the circle that osculates at x=x0 and y=y0 the curve implicitly defined by u=0. &nbsp;The circle is defined parametrically in terms of variable </span><span class="rvts9">θ</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The following functions implement applications of derivatives to surfaces defined implicitly by an equation of the form u=0, where u is an expression that depends on the three rectangular (Cartesian) coordinate variables comprising the vector v. &nbsp;Typically v is the vector [x, y, z]:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TANGENT_PLANE</span><span class="rvts6">(u, v, v0) simplifies to an expression that is linear in the three coordinate variables of v. &nbsp;This result defines the plane tangent to the surface u=0 at v=v0: &nbsp;When equated to zero, the result is a linear relationship between the variables in v, and you can solve this equation for any of its variables in terms of the others (see the </span><a class="rvts19" href="Solvecommands.html">Solve commands</a><span class="rvts20">Solve_commands</span><span class="rvts6">). &nbsp;Given any two components of v0, you can substitute them into u, and then solve for the remaining component. &nbsp;Solving it may require switching to approximate mode.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">NORMAL_LINE</span><span class="rvts6">(u, v, v0, t) simplifies to a Cartesian coordinate vector that is linear in variable t. &nbsp;This result parametrically defines the line perpendicular to the surface u=0 at v=v0. &nbsp;v is a vector of coordinate variables, and v0 is a corresponding vector of coordinate values on the surface.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com">Free CHM Help documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Miscellaneous Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="DEF_INT_SUBST(y,x,u,a,b),GOODNESS_OF_FIT(u,x,A),Inductive proofs,INT_PARTS(u,v,x),INT_SUBST(y,x,u),Integration by parts,Integration by substitution,Interpolate,INVERSE(u,x),LEFT_RIEMANN(u,x,a,b,n),LIM2(u,x,y,x0,y0),MiscellaneousFunctions.mth,POLY_COEFF(u,x,n),POLY_DEGREE(u,x),POLY_INTERPOLATE(A,x),POLY_INTERPOLATE_EXPRESSION(u,x,a),PROVE_SUM(t,k,a,n,s),RANDOM_MATRIX(m,n,s),RANDOM_NORMAL(s,m),RANDOM_POLY(x,d,s),random_sign,RANDOM_VECTOR(n,s),RATIO_TEST(t,n),Riemann sum,Simpson's rule,SQUARE_WAVE(x),Standard deviation">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Miscellaneous Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Miscellaneous Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="MiscellaneousFunctions"
+		  data-hnd-context="3521"
+		  data-hnd-title="Miscellaneous Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="VectorandMatrixFunctions.html" title="Vector and Matrix Functions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="DifferentiationApplications.html" title="Differentiation Applications" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Miscellaneous Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">MiscellaneousFunctions.mth </span><span class="rvts6">contains functions for miscellaneous tasks that do not fit the categories of the other utility files. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">SQUARE_WAVE</span><span class="rvts6">(n) simplifies to 1 if n mod 2 is less than 1, otherwise it simplifies to -1.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Consider the sum of t from n=a to infinity where t is an expression dependent on index variable n. &nbsp;To determine if the series converges or diverges for a given t, first enter the above sum and see if it simplifies to a closed form of finite or infinite magnitude. &nbsp;Success in finding a closed form sum may require restricting the domains of variables in t (other than the index variable n) to appropriate intervals (see the </span><a class="rvts19" href="VariableDomain.html">Author &gt; Variable Domain command</a><span class="rvts20">8MNT4Y</span><span class="rvts6">).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If </span><span class="rvts8">Derive</span><span class="rvts6"> does not return a closed form sum, there are many tests you can use to determine if a series converges or diverges. &nbsp;For example, Leibniz's alternating series test states that a series converges if</span></p>
+<p class="rvps20"><span class="rvts6"><br/></span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">t alternates in sign beyond a certain n,</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">the limit of t as n approaches infinity is 0, and</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">|t| is nonincreasing beyond a certain n.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Convergence tests for non-alternating series are given in Calculus textbooks. &nbsp;Most of these tests are easy to apply directly using </span><span class="rvts8">Derive</span><span class="rvts6">'s </span><a class="rvts19" href="Limit.html">Calculus Limit</a><span class="rvts20">PGUOQ0</span><span class="rvts6"> or &nbsp;</span><a class="rvts19" href="Integrate.html">Calculus Integrate</a><span class="rvts20">ARB2JQ</span><span class="rvts6"> commands. &nbsp;However, the particularly useful ratio test requires a substitution followed by a limit, so the following function is defined in </span><span class="rvts7">MiscellaneousFunctions.mth</span><span class="rvts6"> to facilitate performing this test:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RATIO_TEST</span><span class="rvts6">(t, n) simplifies to the limit of the absolute value of the ratio of the n+1th term of the series to the nth term, as n approaches infinity. &nbsp;If the result is greater than 1, the series diverges. &nbsp;If the result is less than 1, the series converges. &nbsp;If the result equals 1, the test is inconclusive.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If u(x,y) is an expression dependent on the variables x and y, </span><span class="rvts8">Derive</span><span class="rvts6"> simplifies </span><span class="rvts7">LIM</span><span class="rvts6">(u, [x, y], [x0, y0]) by first computing the limit with respect to x, then with respect to y. &nbsp;This result may be different than </span><span class="rvts7">LIM</span><span class="rvts6">(u, [y, x], [y0, x0]). &nbsp;In contrast, the following function returns the multivariate limit:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LIM2</span><span class="rvts6">(u, x, y, x0, y0) simplifies to the limit of u as [x, y] approaches [x0, y0] along a straight line of slope @1. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">LIM2((x^2-y^2)/(x^2+y^2),x,y,0,0)</span></p>
+<p class="rvps3"><span class="rvts35">simplifies to (1-@1^2)/(@1^2+1). &nbsp;If the result is independent of @1, the limit is independent of the direction of approach. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">LIM2((SIN(x^2)-SIN(y^2))/(x-y),x,y,0,0)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 0, and so the limit is independent of the direction of approach.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The adaptive Simpson's Rule method </span><span class="rvts8">Derive</span><span class="rvts6"> uses to numerically approximate definite integrals is fast, robust, and accurate (see the </span><a class="rvts19" href="Integrate.html">Calculus Integrate command</a><span class="rvts20">ARB2JQ</span><span class="rvts6">). &nbsp;However, simpler numerical integration methods are useful for educational purposes; for obtaining rigorous bounds on the integrals of monotonic, concave, or convex integrands; and for approximating definite integrals when the integrands depend on parameters other than the integration variable.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LEFT_RIEMANN</span><span class="rvts6">(u, x, a, b, n) approximates to the left </span><span class="rvts7">Riemann sum</span><span class="rvts6"> for the integral of expression u from x=a through b, using n equal-width rectangular strips. &nbsp;If </span><span class="rvts8">Derive</span><span class="rvts6"> can determine a closed form for the sum for symbolic n, then you may prefer to use the &nbsp;</span><a class="rvts19" href="Basic.html">Simplify Basic Command</a><span class="rvts20">BQ.NIL</span><span class="rvts6"> rather than the </span><a class="rvts19" href="Approximate.html">Simplify Approximate Command</a><span class="rvts20">1LCSBCN</span><span class="rvts6"> so that you can simplify the limit of that closed-form sum as n approaches infinity. &nbsp;Otherwise you should use numeric n and the </span><span class="rvts7">Simplify Approximate </span><span class="rvts6">command.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">There may be expressions for which </span><span class="rvts8">Derive</span><span class="rvts6"> is unable to find a closed form antiderivative, even though one exists. &nbsp;You may be able to help </span><span class="rvts8">Derive</span><span class="rvts6"> integrate such expressions by using one of the following functions to explicitly integrate by parts or to make a change of variable. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">INT_PARTS</span><span class="rvts6">(u, v, x) uses integration by parts to find the antiderivative of the expression u·v with respect to x.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">INT_SUBST</span><span class="rvts6">(y, x, u) finds the antiderivative of the expression y(x) with respect to x by substituting the inverse of u(x) for x in y, integrating, and then substituting u(x) for x in the result. &nbsp;This technique is called integration by substitution. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">INT_SUBST(t·SIN(t^2), t, t^2)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps6"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp;COS(t )&nbsp;</span><br/><span class="rvts10">- —————————</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DEF_INT_SUBST</span><span class="rvts6">(y, x, u, a, b) finds the definite integral of the expression y(x) from x=a to x=b by substituting the inverse of u(x) for x in y and integrating the result from u(a) to u(b).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">INVERSE</span><span class="rvts6">(u, x) simplifies to the inverse of expression u(x) with respect to x. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">INVERSE(SIN(x/b), x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to b·asin(x). &nbsp;Note that making appropriate domain declarations (see the </span><a class="rvts19" href="VariableDomain.html">Author &gt; Variable Domain command</a><span class="rvts20">8MNT4Y</span><span class="rvts6">) of variables that occur in u will help</span><span class="rvts7"> INVERSE</span><span class="rvts6"> produce the desired result.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Derive</span><span class="rvts6"> can assist with many proofs, including inductive ones. &nbsp;The classic example of an inductive proof is showing that the sum of t(k) from k=a to n equals s(n). &nbsp;This can be done by proving that t(a) - s(a) = 0 and proving that</span></p>
+<p class="rvps6"><span class="rvts6">s(n) + t(n+1) - s(n+1) = 0</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">This is just substitution followed by algebraic simplification, seeking two expressions equivalent to zero. &nbsp;Consequently, it is easily automated using the </span><span class="rvts7">LIM</span><span class="rvts6"> function to do the substitutions:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PROVE_SUM</span><span class="rvts6">(t, k, a, n, s) simplifies to a vector of two expressions. &nbsp;If both expressions are equivalent to 0, the sum formula above is proved. &nbsp;If either expression is not equivalent to 0, the sum formula is disproved. &nbsp;The technique used in </span><span class="rvts7">PROVE_SUM </span><span class="rvts6">can be adapted to many other broad categories of inductive proofs.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The following two functions are for extracting components of polynomials:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLY_COEFF</span><span class="rvts6">(u, x, n) simplifies to the coefficient of the x^n term(s) of the polynomial u(x).</span></p>
+<p class="rvps3"><span class="rvts7"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLY_DEGREE</span><span class="rvts6">(u, x) simplifies to the degree of x in the polynomial u(x). &nbsp;Note that it returns -1 as the degree of 0, the zero polynomial. &nbsp;If desired, the definition of </span><span class="rvts7">POLY_DEGREE</span><span class="rvts6"> can be modified using an </span><a class="rvts19" href="IFExpressions.html">IF expression</a><span class="rvts20">IF_Expressions</span><span class="rvts6"> to return 0 if u=0. &nbsp;Others may prefer that it be modified to return minus infinity if u=0.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The following functions and variable show how the pseudo-random number generator function (see the </span><a class="rvts19" href="ProbabilityFunctions.html">Probability Functions</a><span class="rvts20">Probability_Functions</span><span class="rvts6">) can be used:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">random_sign</span><span class="rvts6"> simplifies to either 1 or -1 randomly with equal probability.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RANDOM_POLY</span><span class="rvts6">(x, d, s) simplifies to a polynomial of degree d in the variable x with random number coefficients between -s and s exclusive.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RANDOM_VECTOR</span><span class="rvts6">(n, s) simplifies to an n element vector with random number elements between -s and s exclusive.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RANDOM_MATRIX</span><span class="rvts6">(m, n, s) simplifies to an m by n element matrix with random number elements between -s and s exclusive.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RANDOM_NORMAL</span><span class="rvts6">(s,m) simplifies to a random value with a normal distribution having a standard deviation of s and a mean value of m.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The following function indicates how well an expression approximates a set of data points:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GOODNESS_OF_FIT</span><span class="rvts6">(u, x, A) returns the standard deviation of expression u(x) from the values given in data matrix A. &nbsp;u(x) can be the expression returned by the built-in function </span><span class="rvts7">FIT</span><span class="rvts6">, provided u(x) is dependent on only one data variable (see the </span><a class="rvts19" href="StatisticalFunctions.html">Statistical Functions</a><span class="rvts20">Statistical_Functions</span><span class="rvts6">). &nbsp;For numerical data, </span><span class="rvts7">GOODNESS_OF_FIT</span><span class="rvts6"> should be approximated rather than simplified.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLY_INTERPOLATE</span><span class="rvts6">(A, x) &nbsp;simplifies to the polynomial in variable x that interpolates the &nbsp;[x, y] &nbsp;coordinate pairs given by the rows of the two-column matrix A. &nbsp;When applicable, </span><span class="rvts7">POLY_INTERPOLATE</span><span class="rvts6"> is generally preferable to the built-in </span><span class="rvts7">FIT</span><span class="rvts6"> function (see the </span><a class="rvts19" href="StatisticalFunctions.html">Statistical Functions</a><span class="rvts20">Statistical_Functions</span><span class="rvts6">). &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">POLY_INTERPOLATE([[0,0], [1,1], [2,2], [3,0]], x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps6"><span class="rvts10">&nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp;x ·(3 - x)&nbsp;</span><br/><span class="rvts10">————————————</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLY_INTERPOLATE_EXPRESSION</span><span class="rvts6">(u, x, a) &nbsp;simplifies to the polynomial in variable x that interpolates the expression u given the one dimensional vector of supporting points a.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour">Easily create Help documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

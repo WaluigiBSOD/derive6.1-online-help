@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Ordering Variables in Expressions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Coefficient,Less main variable,More main variable,Normal form,Numeric coefficient,Order list, variable,Ordering Variables in Expressions,Primary variable,Secondary variable,Tertiary variable,Variable order list,VariableOrder control variable">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ordering Variables in Expressions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Ordering Variables in Expressions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="OrderingVariablesinExpressions"
+		  data-hnd-context="593"
+		  data-hnd-title="Ordering Variables in Expressions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Discussion Topics</li><li>Algebra Window</li><li>Displaying Expressions</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="SelectingObjectsandSubexpression.html" title="Selecting Objects and Subexpressions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ControllingNotation.html" title="Controlling Notation" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Ordering Variables in Expressions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">Since addition and multiplication are commutative and associative, the terms of a sum and the factors of a product could be arranged in any order. &nbsp;However, the </span><span class="rvts8">Derive</span><span class="rvts6"> normal form orders terms and factors in a certain way to aid the collection of similar terms and factors. &nbsp;For example, the similar terms of</span></p>
+<p class="rvps19"><span class="rvts10">5·y·x + 7 - 3·x·y</span></p>
+<p class="rvps3"><span class="rvts6">are much easier to find and collect if the terms are first rearranged as</span></p>
+<p class="rvps19"><span class="rvts10">5·x·y - 3·x·y + 7</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The </span><a class="rvts19" href="Output.html">Options &gt; Mode Settings &gt; Output command</a><span class="rvts20">3L4YH</span><span class="rvts6"> lets you control the ordering used to sort variables. &nbsp;This variable ordering has a strong influence on how the terms of a sum and the factors of a product are ordered.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Derive</span><span class="rvts6"> maintains a list of variables that specifies the ordering used to sort variables. &nbsp;The factory default variable order list consists of the variables </span><span class="rvts7">x</span><span class="rvts6">, </span><span class="rvts7">y</span><span class="rvts6">, and </span><span class="rvts7">z</span><span class="rvts6"> in that order.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">A variable on the list is more main than variables after it on the list or variables not on the list. &nbsp;A variable not on the list is less main than variables on the list or variables before it in alphabetical order. &nbsp;For example, </span><span class="rvts7">x</span><span class="rvts6"> is more main than </span><span class="rvts7">y</span><span class="rvts6">, which is more main than </span><span class="rvts7">a</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">When an expression has more than one variable, the most main variable is called the primary variable. &nbsp;The next most main variable is called the secondary variable, and so on. &nbsp;For example, </span><span class="rvts7">x</span><span class="rvts6"> is the primary variable of</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">5·a·x &nbsp;+ x·y&nbsp;</span></p>
+<p class="rvps3"><span class="rvts7">y</span><span class="rvts6"> is the secondary variable, and </span><span class="rvts7">a</span><span class="rvts6"> is the tertiary variable.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The coefficient of a product consists of those factors that do not contain the primary variable of the product. &nbsp;For example, if </span><span class="rvts7">x</span><span class="rvts6"> is the primary variable of</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp; &nbsp; &nbsp;2 &nbsp;5&nbsp;</span><br/><span class="rvts10">3·a·x ·y &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">then 3·a·y^5 is the coefficient, and 3 is the numeric coefficient.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The ordering of the factors in a product is based solely on the bases of the factors; the exponents of the factors have no influence on the ordering. &nbsp;Bases of a product that consist of a variable on the order list are sorted in that order. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">z^2·x^3·y^5</span></p>
+<p class="rvps3"><span class="rvts6">displays as</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp;2 &nbsp;3 &nbsp;5&nbsp;</span><br/><span class="rvts10">z ·x ·y &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">and simplifies to</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp;3 &nbsp;5 &nbsp;2&nbsp;</span><br/><span class="rvts10">x ·y ·z &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Bases of a product that consist of a variable not on the order list are sorted in alphabetical order before bases that consist of a variable on the order list and after the numeric coefficient of the product. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">z^3·b^2·a·2·x^5·c</span></p>
+<p class="rvps3"><span class="rvts6">displays as</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp;3 &nbsp;2 &nbsp; &nbsp; &nbsp;5 &nbsp;&nbsp;</span><br/><span class="rvts10">z ·b ·a·2·x ·c&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">and simplifies to</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp;5 &nbsp;3&nbsp;</span><br/><span class="rvts10">2·a·b ·c·x ·z &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">When ordering the terms of a sum, terms that contain the primary variable come before terms free of the variable. &nbsp;Moreover, terms that contain the primary variable come before terms that contain that variable to a lower degree. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">5·y^3+2·x^2-3·a·x</span></p>
+<p class="rvps3"><span class="rvts6">displays as</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp; &nbsp;3 &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">5·y &nbsp;+ 2·x &nbsp;- 3·a·x&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">and simplifies to</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3&nbsp;</span><br/><span class="rvts10">2·x &nbsp;- 3·a·x + 5·y &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The coefficients of terms are used to break ties in the ordering of sums. &nbsp;The terms of the sum that do not contain the primary variable of the sum are ordered using their own primary variable.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Derive</span><span class="rvts6"> sometimes rearranges the terms of a sum to produce more attractive output by eliminating a leading minus sign or displaying the real part of a sum before the imaginary part. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">-x + y</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to y</span><span class="rvts9">−</span><span class="rvts6">x.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><a class="rvts19" href="Output.html">Options &gt; Mode Settings &gt; Output command</a><span class="rvts20">3L4YH</span><span class="rvts6"> to change and/or rearrange the variables on the variable order list. &nbsp;This command displays the current list and invites you to make changes. &nbsp;Note that existing expressions must be resimplified to see the effect of changing the variable order list.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">When a new variable ordering is entered, this command generates an expression of the form</span></p>
+<p class="rvps19"><span class="rvts6">VariableOrder := [</span><span class="rvts7">x</span><span class="rvts6">1, </span><span class="rvts7">x</span><span class="rvts6">2, ..., </span><span class="rvts7">x</span><span class="rvts6">n]</span></p>
+<p class="rvps3"><span class="rvts6">where </span><span class="rvts7">x</span><span class="rvts6">1, </span><span class="rvts7">x</span><span class="rvts6">2, ..., </span><span class="rvts7">x</span><span class="rvts6">n are variables. &nbsp;The variable ordering can also be changed by entering on the expression entry line an expression of the above form using upper and lower case for </span><span class="rvts7">VariableOrder</span><span class="rvts6"> exactly as shown. &nbsp;</span><span class="rvts7">[x, y, z]</span><span class="rvts6"> is the factory default variable order setting.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If changing the variable order list does not yield exactly the desired form for a simplified expression, you can rearrange the expression using the </span><a class="rvts19" href="Expression.html">Edit &gt; Expression command</a><span class="rvts20">129EYT7</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Subexpressions are less likely to be expanded if their variables are least main. &nbsp;Similarly, ratios are least likely to be combined if variables in sums in their denominators are least main. &nbsp;Thus the ordering of variables can dramatically affect the conciseness of a simplified result and the time required to obtain it. &nbsp;For example, if x is more main than y (as it is by default),</span></p>
+<p class="rvps19"><span class="rvts10">(x + 1)^9 + y</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp;9 &nbsp; &nbsp;8 &nbsp; &nbsp; 7 &nbsp; &nbsp; 6 &nbsp; &nbsp; &nbsp;5 &nbsp; &nbsp; &nbsp;4 &nbsp; &nbsp; 3 &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">x + 9x + 36x + 84x + 126x + 126x + 84x + 36x + 9x + y + 1&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">because the subexpression (x+1)^9 is expanded. &nbsp;However, if you change the variable order list to y,x,z using the assignment</span></p>
+<p class="rvps19"><span class="rvts10">VariableOrder := [y, x, z]</span></p>
+<p class="rvps3"><span class="rvts6">then</span></p>
+<p class="rvps19"><span class="rvts10">(x + 1)^9 + y</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9&nbsp;</span><br/><span class="rvts10">y + (x + 1) &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">because the subexpression (x+1)^9 is not expanded, thus giving a compact result that requires less time to compute. &nbsp;Before continuing, we recommend restoring the default </span><span class="rvts8">Derive</span><span class="rvts6"> variable ordering by issuing the command</span></p>
+<p class="rvps19"><span class="rvts10">VariableOrder := [x, y, z]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Expression growth from an unfortunate ordering of variables can exhaust memory before a result is derived. &nbsp;If this occurs while simplifying a multivariate expression, change the ordering of the variables and try resimplifying the expression. &nbsp;Alternatively, use the </span><a class="rvts19" href="VariableSubstitution.html">Simplify &gt; Variable Substitution command</a><span class="rvts20">GP2.L1</span><span class="rvts6"> to interchange the names of the variables in the expression before resimplifying.</span></p>
+<p class="rvps3"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com">Free EBook and documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

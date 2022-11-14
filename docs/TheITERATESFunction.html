@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>The ITERATES Function</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Continued fraction,Fixed-point iteration,ITERATES,Iteration,Newton's method,Update formula">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The ITERATES Function">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="The ITERATES Function" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="TheITERATESFunction"
+		  data-hnd-context="4001"
+		  data-hnd-title="The ITERATES Function"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Discussion Topics</li><li>Derive Programming</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ProgramminginDERIVE.html" title="Programming in DERIVE" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="TheITERATEFunction.html" title="The ITERATE Function" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>The ITERATES Function</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">In most programming languages numerical operations are usually done by iteration (i.e. loops and jumps) and/or by recursion (i.e. recursive function calls). &nbsp;Many of these operations can easily be done in </span><span class="rvts8">Derive</span><span class="rvts6"> using its built-in calculus and vector functions (see </span><a class="rvts19" href="Calculuscommands.html">Calculus commands</a><span class="rvts20">Calculus_commands</span><span class="rvts6"> and </span><a class="rvts19" href="VectorsandMatrices.html">Vectors and Matrices</a><span class="rvts20">Vectors_and_Matrices</span><span class="rvts6">). &nbsp;For example, </span><span class="rvts7">SUM</span><span class="rvts6"> and </span><span class="rvts7">PRODUCT</span><span class="rvts6"> can be used to add or multiply a sequence of expressions. &nbsp;</span><span class="rvts7">VECTOR</span><span class="rvts6"> can be used to generate a table of data. &nbsp;The </span><span class="rvts7">SUB</span><span class="rvts6"> operator can be used to extract data from a vector or table.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">In addition to these specialized functions, </span><span class="rvts8">Derive</span><span class="rvts6"> provides two built-in functions for general-purpose iteration: &nbsp;</span><span class="rvts7">ITERATE</span><span class="rvts6"> and </span><span class="rvts7">ITERATES</span><span class="rvts6">. &nbsp;Simplifying or approximating an expression of the form</span></p>
+<p class="rvps19"><span class="rvts6">ITERATES (u, x, x0)</span></p>
+<p class="rvps3"><span class="rvts6">causes the update formula</span></p>
+<p class="rvps19"><span class="rvts6">x &nbsp;</span><span class="rvts9">←</span><span class="rvts6"> &nbsp;u(x)</span></p>
+<p class="rvps3"><span class="rvts6">to be repeatedly applied, starting with x=x0, until x is equal to one of its earlier values. &nbsp;The result is a vector of these values, starting with x0.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The </span><span class="rvts7">fixed-point iteration method</span><span class="rvts6"> for solving an equation provides a good illustration of the use of </span><span class="rvts7">ITERATES</span><span class="rvts6">. &nbsp;For example, to solve the transcendental equation x = exp(-x/20) plot the difference in the two sides of the equation</span></p>
+<p class="rvps19"><span class="rvts10">x - EXP(-x/20)</span></p>
+<p class="rvps3"><span class="rvts6">and note that a solution exists in the neighborhood of x=1. &nbsp;To refine this initial guess, substitute the guess into the right side of the equation, and then approximate the result to determine a second approximation for x. &nbsp;Then substitute this second approximation for x in the right side to determine a third approximation, and so on.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The function </span><span class="rvts7">ITERATES</span><span class="rvts6"> can be used to automate this process. &nbsp;For example, using the </span><a class="rvts19" href="Approximate.html">Simplify &gt; Approximate command</a><span class="rvts20">1LCSBCN</span><span class="rvts6"> at 6 digits of precision,</span></p>
+<p class="rvps19"><span class="rvts10">solns := ITERATES(EXP(-x/20), x, 1)</span></p>
+<p class="rvps3"><span class="rvts6">approximates to the vector</span></p>
+<p class="rvps19"><span class="rvts10">[1, 0.951229, 0.953551, 0.953441, 0.953446, 0.953446, 0.953446, 0.953446]</span></p>
+<p class="rvps3"><span class="rvts6">of successively better approximations to x = exp(-x/20).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If the above expression involving </span><span class="rvts7">ITERATES</span><span class="rvts6"> is simplified rather than approximated, no iterate would ever equal an earlier one and the iteration would never terminate. &nbsp;Therefore, approximation is the appropriate operation to apply for this particular application of </span><span class="rvts7">ITERATES</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Note that displayed in decimal notation the last </span><span class="rvts32">four</span><span class="rvts6"> approximations in the above vector appear equal. &nbsp;However if solns is simplified, the approximations are displayed in rational notation as</span></p>
+<p class="rvps27"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp; &nbsp;4681 &nbsp; &nbsp;349 &nbsp; &nbsp;8437 &nbsp; &nbsp;19559 &nbsp; &nbsp;21013 &nbsp; &nbsp;18412 &nbsp; &nbsp;18412 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10">1, ——————, —————, ——————, ———————, ———————, ———————, ———————</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> &nbsp; &nbsp;4921 &nbsp; &nbsp;366 &nbsp; &nbsp;8849 &nbsp; &nbsp;20514 &nbsp; &nbsp;22039 &nbsp; &nbsp;19311 &nbsp; &nbsp;19311 </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6">and it becomes apparent that only the last </span><span class="rvts32">two</span><span class="rvts6"> values are actually equal. &nbsp;The decimal notation only makes it </span><span class="rvts32">appear</span><span class="rvts6"> that </span><span class="rvts7">ITERATES</span><span class="rvts6"> did more iterations than necessary.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">ITERATES</span><span class="rvts6"> takes an optional fourth argument giving exactly how many iterations to perform. &nbsp;For example, at 6 digits of precision</span></p>
+<p class="rvps19"><span class="rvts10">ITERATES(EXP(-x/20), x, 1, 5)</span></p>
+<p class="rvps3"><span class="rvts6">approximates to the six element vector</span></p>
+<p class="rvps6"><span class="rvts10">[1, 0.951229, 0.953551, 0.953441, 0.953446, 0.953446]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If the fourth argument of </span><span class="rvts7">ITERATES</span><span class="rvts6"> is a negative integer, the inverse of the first argument is iterated upon. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">ITERATES(TAN(x), x, x, -1)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [x, ATAN(x)]. &nbsp;This feature is used to define </span><span class="rvts7">INVERSE</span><span class="rvts6"> in </span><a class="rvts19" href="MiscellaneousFunctions.html">MiscellaneousFunctions.mth</a><span class="rvts20">144O15P</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The fixed-point iteration method often diverges since the magnitudes of successive iterates get bigger and bigger until memory is exhausted. &nbsp;Thus, it is usually a good idea to make the fourth argument of </span><span class="rvts7">ITERATES</span><span class="rvts6"> a small positive integer. &nbsp;See </span><a class="rvts19" href="EquationSolving.html">EquationSolving.mth</a><span class="rvts20">.S02QQ</span><span class="rvts6"> for more detailed discussion of fixed-point iteration.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">Newton's method</span><span class="rvts6"> for solving an equation provides another good illustration of the use of </span><span class="rvts7">ITERATES</span><span class="rvts6">. &nbsp;For example, if the function </span><span class="rvts7">NEWTON</span><span class="rvts6"> is defined as</span></p>
+<p class="rvps27"><span class="rvts10">NEWTON(u, x, x0, n) := ITERATES(x - u/DIF(u, x), x, x0, n)</span></p>
+<p class="rvps3"><span class="rvts7">NEWTON</span><span class="rvts6"> can be used to solve equations of the form u=0 with an initial guess of x=x0. &nbsp;It repeatedly applies the update formula</span></p>
+<p class="rvps19"><span class="rvts6">x </span><span class="rvts9">←</span><span class="rvts6"> x - u/u</span><span class="rvts6">’</span></p>
+<p class="rvps3"><span class="rvts6">to correct the current approximation for x by subtracting u divided by the derivative of u and evaluating the result at x. &nbsp;If n is a positive integer, the iteration is repeated n times; otherwise, it is repeated until x is equal to one of its earlier values. &nbsp;For example,</span></p>
+<p class="rvps27"><span class="rvts10">NEWTON(x^2-3, x, 2)</span></p>
+<p class="rvps3"><span class="rvts6">approximates to a vector of successively better approximations to the square root of 3. &nbsp;See </span><a class="rvts19" href="EquationSolving.html">EquationSolving.mth</a><span class="rvts20">.S02QQ</span><span class="rvts6"> for a more detailed discussion of Newton's method.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">As another example of the use of </span><span class="rvts7">ITERATES</span><span class="rvts6">, consider the </span><span class="rvts7">continued fraction</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">b + —————————————————————&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; b + —————————————————&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;... &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; b + ———————&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; b + ———&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">where there are n divisions. &nbsp;Entering such expressions on the expression entry line would be tedious, especially for large n. &nbsp;However, using </span><span class="rvts7">ITERATES</span><span class="rvts6"> it is possible to generate the continued fraction by applying the update formula</span></p>
+<p class="rvps19"><span class="rvts6">r &nbsp;</span><span class="rvts9">←</span><span class="rvts6"> &nbsp;b+ a/r</span></p>
+<p class="rvps3"><span class="rvts6">to itself n times, starting with r=x. &nbsp;For example, if the function </span><span class="rvts7">CF</span><span class="rvts6"> is defined as</span></p>
+<p class="rvps27"><span class="rvts10">CF(b, a, x, n) := ITERATES(b + a/r, r, x, n)</span></p>
+<p class="rvps3"><span class="rvts6">trivially factoring</span></p>
+<p class="rvps27"><span class="rvts10">CF(1, 1, x, 6)</span></p>
+<p class="rvps3"><span class="rvts6">yields a vector that allows you to guess the general form of the continued fraction a=1 and b=1 for n divisions.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="ProgramminginDERIVE.html">Programming in DERIVE</a><span class="rvts20">Programming</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour">Easily create EBooks</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

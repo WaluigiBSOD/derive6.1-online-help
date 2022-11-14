@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Recurrence Equations</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="CLAIRAUT_DIF(p,q,d,x,y,c),Forward first difference,GEOMETRIC1(k,p,q,x,x0,y0),LIN1_DIFFERENCE(p,q,x,x0,y0),LIN2_CCF(p,q,r,x,c1,c2),LIN2_CCF_BV(p,q,r,x,x0,y0,x2,y2),Linear-geometric recurrence equation,RECURRENCE1(r,x,y,x0,y0,n),RecurrenceEquations.mth">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Recurrence Equations">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Recurrence Equations" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="RecurrenceEquations"
+		  data-hnd-context="3509"
+		  data-hnd-title="Recurrence Equations"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li><li>Differential and Recurrence Equations</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ApproximateSolutionofODEs.html" title="Approximate Solution of ODEs" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="GraphicsFunctions.html" title="Graphics Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Recurrence Equations</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">RecurrenceEquations.mth</span><span class="rvts6"> defines functions for finding exact solutions of first and second order difference equations and of linear-geometric recurrence equations. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LIN1_DIFFERENCE</span><span class="rvts6">(p, q, x, x0, y0) simplifies to a specific solution of a recurrence equation having the form</span></p>
+<p class="rvps19"><span class="rvts6">y(x+1) = p(x)·y(x) + q(x)</span></p>
+<p class="rvps3"><span class="rvts6">for the initial condition y=y0 at x=x0. &nbsp;Note that linear first order difference equations can always be put in this form. &nbsp;For a general instead of a specific solution, make x0 and y0 unassigned variables. &nbsp;A convenient way to do this is to give </span><span class="rvts7">LIN1_DIFFERENCE</span><span class="rvts6"> only three arguments.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">For example, to solve the difference equation &nbsp;y(m+1) = m·y(m) + (m+1)! &nbsp;for the initial condition y=2 at x=1, enter and simplify the expression</span></p>
+<p class="rvps19"><span class="rvts10">LIN1_DIFFERENCE(m, (m+1)!, m, 1, 2)</span></p>
+<p class="rvps3"><span class="rvts6">to produce the algebraic solution</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts9">⎤</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts9">⎢</span><span class="rvts10"> m &nbsp; &nbsp; &nbsp;m &nbsp; &nbsp; </span><span class="rvts9">⎥</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts9">⎢</span><span class="rvts10">———— + ——— + 1</span><span class="rvts9">⎥</span><span class="rvts10">·(m - 1)!&nbsp;</span><br/><span class="rvts9">⎣</span><span class="rvts10"> &nbsp;2 &nbsp; &nbsp; 2 &nbsp; &nbsp; </span><span class="rvts9">⎦</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To verify that it satisfies the initial condition, substitute m=1 into the solution, and see that it simplifies to 2. &nbsp;To verify that it satisfies the difference equation &nbsp;y(m+1) = m·y(m) + (m+1)! , substitute m+1 for m in the above solution, and see that that result equals m times the solution plus (m+1)! . &nbsp;Note that the best way to check that two dissimilar looking expressions are actually equal is to subtract one from the other and see if the result is 0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The result of </span><span class="rvts7">LIN1_DIFFERENCE</span><span class="rvts6"> may contain products or sums that </span><span class="rvts8">Derive</span><span class="rvts6"> could not simplify to a closed-form. &nbsp;A closed-form solution for all x &gt; x0 may not even exist in terms of </span><span class="rvts8">Derive</span><span class="rvts6">'s built-in defined functions. &nbsp;However:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RECURRENCE1</span><span class="rvts6">(r, x, y, x0, y0, n) simplifies to the matrix</span></p>
+<p class="rvps19"><span class="rvts6">[[x0, &nbsp;y0], &nbsp;[x0+1, &nbsp;y(x0+1)], &nbsp;..., &nbsp;[x0+n, &nbsp;y(x0+n)]]</span></p>
+<p class="rvps3"><span class="rvts6">where y satisfies the (perhaps nonlinear) first order difference equation &nbsp;y(x+1) = r(x, y(x)). &nbsp;Here y(x) should be represented by a variable y rather than a function in expression r. &nbsp;Depending on r and your goal, it may be more appropriate to approximate rather than simplify when using </span><span class="rvts7">RECURRENCE1</span><span class="rvts6">. &nbsp;Either way, you can then plot the resulting two-column matrix.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GEOMETRIC1</span><span class="rvts6">(k, p, q, x, x0, y0) simplifies to a solution of the first order </span><span class="rvts7">linear-geometric recurrence</span><span class="rvts6"> equation y(k·x) = p(x)·y(x) + q(x), where k is a particular number, such as 2 or 3. &nbsp;The complexity analysis of "divide and conquer" algorithms often entails a linear-geometric recurrence equation.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CLAIRAUT_DIF</span><span class="rvts6">(p, q, d, x, y, c) simplifies to an implicit algebraic general solution of the equation p(y-x·d) = q(d), where variable y represents y(x) and variable d represents the </span><span class="rvts7">forward first difference</span><span class="rvts6"> y(x+1) - y(x). &nbsp;This solution is in terms of x and a symbolic arbitrary constant c. &nbsp;For example, to find a general solution of the difference equation</span></p>
+<p class="rvps19"><span class="rvts6">(y(x+1) - x·(y(x+1) - y(x)))² = (y(x+1) - y(x))²</span></p>
+<p class="rvps3"><span class="rvts6">enter and simplify the expression</span></p>
+<p class="rvps19"><span class="rvts10">CLAIRAUT_DIF((y - x·d)^2, d^2)</span></p>
+<p class="rvps3"><span class="rvts6">to give</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp;2 &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp;2 &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">c ·x &nbsp;- 2·c·x·y + y &nbsp;- c &nbsp;= 0&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LIN2_CCF</span><span class="rvts6">(p, q, r, x, c1, c2) simplifies to a general solution of the constant coefficient second order linear difference equation y(x+2) + p·y(x+1) + q·y(x) = r(x), in terms of two symbolic constants c1 and c2. &nbsp;Note that the result may contain one or more sums for which </span><span class="rvts8">Derive</span><span class="rvts6"> can not find a closed-form.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LIN2_CCF_BV</span><span class="rvts6">(p, q, r, x, x0, y0, x2, y2,) is similar to </span><span class="rvts7">LIN2_CCF</span><span class="rvts6">, but simplifies to a specific solution that satisfies the boundary conditions y=y0 at x=x0 and y=y2 at x=x2.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com">Free HTML Help documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

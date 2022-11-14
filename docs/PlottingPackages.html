@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Plotting Packages</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="2D-IntegralPlots.dfw,2D-plotExamples.dfw,2D-plotPatterns.dfw,3D-IntegralPlots.dfw,3D-plotExamples.dfw,ArrowVectors.dfw,Body scan plots,BodyscanPlots.dfw,BodyscanPlots.mth,Cube,Dodecahedron,Example, plot,Icosahedron,Octahedron,Patterns, plot,Plot examples,Plot patterns,Plotting Packages,Plotting tools,PlotTransformations.dfw,PlotTransformations.mth,Polyhedra, uniform,Polyhedron,Surface of revolution,Tetrahedron,Uniform polyhedra,UniformPolyhedra.dfw,Vector arrows,Vector fields,VectorFields.dfw,Venn diagrams,VennDiagrams.dfw,VolumeOfRevolution.dfw">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Plotting Packages">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Plotting Packages" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="PlottingPackages"
+		  data-hnd-context="4033"
+		  data-hnd-title="Plotting Packages"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>User Contributed Math Packages</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="NumberTheoryPackages.html" title="Number Theory Packages" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="RegressionAnalysisPackages.html" title="Regression Analysis Packages" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Plotting Packages</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The </span><span class="rvts7">Users\Plotting</span><span class="rvts6"> subdirectory of </span><span class="rvts8">Derive</span><span class="rvts6"> includes plotting packages and interesting examples to plot contributed free of charge by </span><span class="rvts8">Derive</span><span class="rvts6"> users. &nbsp;If you have any questions about a package, please contact the author of the package directly.</span></p>
+<p class="rvps80"><span class="rvts7">2D-plotExamples.dfw</span><span class="rvts6"> &nbsp; Examples of interesting expressions to plot in a 2D-plot window.</span></p>
+<p class="rvps80"><span class="rvts7">3D-plotExamples.dfw</span><span class="rvts6"> &nbsp; Examples of interesting expressions to plot in a 3D-plot window.</span></p>
+<p class="rvps80"><span class="rvts7">2DIntegralPlots.dfw</span><span class="rvts6"> &nbsp; Contains instructions and examples for plotting in a 2D-plot window integrals and areas between a 2D-function curve and the </span><span class="rvts32">x</span><span class="rvts6"> or </span><span class="rvts32">y</span><span class="rvts6"> axis. &nbsp;The integrals can be plotted in any of the following forms: &nbsp;an instantaneous line plot using trapezium strip outlines; an outline plot of a function curve together with its boundary lines; a plot consisting of an outline filled with a Boolean area plot in a single color; a dynamic plot consisting of a trapezium plot followed by a directed sweep filling each trapezium strip in turn with a color.</span></p>
+<p class="rvps80"><span class="rvts7">3DIntegralPlots.dfw</span><span class="rvts6"> &nbsp; Contains instructions and examples for plotting in a 3D-plot window integrals and areas between a 3D-function curve and the </span><span class="rvts32">x</span><span class="rvts6">, </span><span class="rvts32">y </span><span class="rvts6">or </span><span class="rvts32">z</span><span class="rvts6"> axis, as well as plotting closed surfaces (solids?) and surfaces of revolution formed by revolving the integrals and curves about an axis. &nbsp;The integrals are plotted using trapezium strips of different colors or all the same color. &nbsp;The surfaces and closed surfaces of revolution are plotted with either crossways (circular) or lengthways strips in different colors or all the same color. &nbsp;"See-through" mesh line structures of the integrals and surfaces can also be plotted.</span></p>
+<p class="rvps80"><span class="rvts7">2D-plotPatterns.dfw</span><span class="rvts6"> &nbsp; Provides a set of tools (together with demonstrations) for generating a variety of 2D-plot patterns. &nbsp;The patterns are drawn using Boolean area plots and line plots. &nbsp;They include: &nbsp;cyclic and dihedral symmetry group patterns; strip-repeating and plane-filling symmetry group patterns; border and wallpaper patterns; linear and non-linear tiling and patchwork patterns.</span></p>
+<p class="rvps80"><span class="rvts7">ArrowVectors.dfw</span><span class="rvts6"> &nbsp; Provides tools for drawing vector arrows in both the 2D and 3D-plot windows. The arrows can be drawn with both proportional and fixed length barbs. The user can set a scale for the barbs in relation to the shaft of each arrow, and set a scale for sliding the barbs down the shaft of each arrow. There are also instructions to draw position vector arrows, and chains of vector arrows, using either point coordinates or column vectors.</span></p>
+<p class="rvps80"><span class="rvts7">BodyscanPlots.dfw</span><span class="rvts6"> and </span><span class="rvts7">BodyscanPlots.mth</span><span class="rvts6"> &nbsp; Define tools for making 2D and 3D plots of expressions using database and body scanning techniques. &nbsp;These include basic 2D and 3D construction methods for shapes and objects (by plotting them layer-by-layer from database specifications). &nbsp;More advanced applications include: chasing a parametric curve in 2D and 3D by copies of a scaled outline or object; scanning the space between two or more parametric curves with a number of panels (or scanning along a single parametric curve by a number of sectors); covering a parametric surface with a pattern of points or objects. &nbsp;Variations in the techniques include: spiraling cross-sections; separating out panels; randomizing mesh lines; seeing-through objects. &nbsp;This file contains all the general-purpose transformers and geometry sets defined in </span><span class="rvts7">PlotTransformations.dfw</span><span class="rvts6">.</span></p>
+<p class="rvps80"><span class="rvts7">PlotTransformations.dfw</span><span class="rvts6"> and </span><span class="rvts7">PlotTransformations.mth</span><span class="rvts6"> &nbsp;Define the following general-purpose 2D and 3D plotting tools: &nbsp;PARA – plots parametric objects with respect to user-selected intervals (when required); TRAN– linearly transforms objects using a 2x2 or 3x3 matrix; DIS – displaces objects using a row or column displacement vector; INV – inverts objects with respect to the 2D- or 3D-axes; STR – stretches objects in the directions of the 2D- or 3D-axes; ROT – rotates objects about the origin (2D) or about an axis through the origin (3D); REF – reflects objects in an line through the origin (2D) or a plane containing &nbsp;the origin (3D); SHEAR – shears objects in the directions of the 2D- or 3D-axes. &nbsp;The file also contains instructions for plotting geometry sets of 2D and 3D laminas and objects, including: squares; triangles; regular polygons; circles; three point triangles and parallelograms; stretched polygons and ellipses; cubes; tetrahedrons; pyramids; prisms; spheres and hemispheres, cones and double cones; four point tetrahedrons and parallelepipeds; cuboids; spheroids; etc. &nbsp;Demonstrations are included.</span></p>
+<p class="rvps80"><span class="rvts7">UniformPolyhedra.dfw</span><span class="rvts6"> &nbsp; Contains instructions and examples for plotting in a 3D-plot window all eighteen convex uniform polyhedra in basic, star-like and skeletal-frame forms (together with their duals). &nbsp;Uniform prisms, anti-prisms and the four non-convex regular polyhedra can also be constructed and plotted. &nbsp;In addition, there are instructions for plotting great circles, discs and sections of spheres (especially those associated with regular polyhedron and the great-schwarz sections). &nbsp;Techniques are described for plotting polyhedra in single or multiple colors and using 3D-slider bars with star-like polyhedra. &nbsp;</span><span class="rvts7">UniformPolyhedra.dfw</span><span class="rvts6"> updates and supersedes </span><span class="rvts7">RegularPolyhedrons.dfw</span><span class="rvts6"> included with earlier versions of </span><span class="rvts8">Derive</span><span class="rvts6">.</span></p>
+<p class="rvps80"><span class="rvts7">VectorFields.dfw</span><span class="rvts6"> &nbsp; Defines functions for plotting 2 and 3D vector fields in 2 and 3D plot windows, respectively. &nbsp;The functions will plot vectors (as arrows) uniformly throughout a specified region, or plot vectors of equal magnitude throughout a specified region.</span></p>
+<p class="rvps80"><span class="rvts7">VennDiagrams.dfw</span><span class="rvts6"> &nbsp; Contains 2D-plot embedded windows of two-circle and three-circle Venn diagram outlines together with Boolean area assignments (to global variables A, B and C) for filling the circular subset regions with color. &nbsp;In a 2D-plot window with </span><span class="rvts7">Simplify Before Plotting</span><span class="rvts6"> mode on, regions of the Venn diagrams can be specified using A, B, C and the set operators </span><span class="rvts9">∪</span><span class="rvts6">, </span><span class="rvts9">∩</span><span class="rvts6"> and ` or the logical operators </span><span class="rvts9">∨</span><span class="rvts6">, </span><span class="rvts9">∧</span><span class="rvts6"> and </span><span class="rvts9">¬</span><span class="rvts6">. &nbsp;There are also examples of Venn diagrams involving numbers (or letters) which can be dragged into designated subset regions in the 2D-plot window, and then the contents of the regions can be verified by applying set operators to the specified subsets.</span></p>
+<p class="rvps80"><span class="rvts7">VolumeOfRevolution.dfw</span><span class="rvts6"> &nbsp; Shows how to produce 3D-plots of expressions revolved about either the horizontal or vertical axes.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UserContributedMathPackages.html">User Contributed Math Packages</a><span class="rvts20">User_Contributed_Math_Packages</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/help-authoring-tool">Full-featured multi-format Help generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

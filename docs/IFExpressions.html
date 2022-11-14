@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>IF Expressions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="IF expressions">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="IF Expressions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="IF Expressions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="IFExpressions"
+		  data-hnd-context="4003"
+		  data-hnd-title="IF Expressions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Discussion Topics</li><li>Derive Programming</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="TheITERATEFunction.html" title="The ITERATE Function" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="NestedIFExpressions.html" title="Nested IF Expressions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>IF Expressions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">Often functions are defined in a piecewise manner using one or more conditions. &nbsp;For example, a job may pay $10 per hour for the first 40 hours per week and $15 per hour for any additional hours.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">IF</span><span class="rvts6"> expressions are a convenient way to express such conditions in </span><span class="rvts8">Derive</span><span class="rvts6">. &nbsp;For example, if h hours are worked during a week, the above pay schedule can be entered as</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">IF(h &lt;= 40, 10h, 400 + 15·(h - 40))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">When this </span><span class="rvts7">IF</span><span class="rvts6"> expression is simplified and if </span><span class="rvts8">Derive</span><span class="rvts6"> determines that the condition h &lt;=40 is true using the current value or domain declaration of h, the second argument 10·h is simplified and returned. &nbsp;If </span><span class="rvts8">Derive</span><span class="rvts6"> determines that the condition is false, the third argument 400 + 15·(h - 40) is simplified and returned. &nbsp;For example, if h is assigned a value of 50, this </span><span class="rvts7">IF</span><span class="rvts6"> expression simplifies to 550. &nbsp;Or if h is not assigned a value but is declared less than 30, it simplifies to 10h.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If </span><span class="rvts8">Derive</span><span class="rvts6"> cannot determine whether the condition is true or false, the entire </span><span class="rvts7">IF</span><span class="rvts6"> expression is returned.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Note that an </span><span class="rvts7">IF</span><span class="rvts6"> expression can be used as a subexpression within another expression. &nbsp;For example, adding a $100 bonus to the above pay schedule can be entered as</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">100 + IF(h &lt;= 40, 10h, 400 + 15·(h - 40))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">A pair of expressions separated by one of the relational operators (=, /=, &lt;, &lt;=, &gt;, or &gt;=) is a relation (see Entering Equations and Relations). &nbsp;When a relation is simplified, its two sides are simplified independently and </span><span class="rvts8">Derive</span><span class="rvts6"> makes no attempt to determine the truth or falsehood of the relation. &nbsp;However, when a relation appears as the first clause of an </span><span class="rvts7">IF</span><span class="rvts6"> expression and the </span><span class="rvts7">IF</span><span class="rvts6"> expression is simplified, </span><span class="rvts8">Derive</span><span class="rvts6"> treats the relation as a condition and actively tries to determine its truth value.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The general form of the </span><span class="rvts7">IF</span><span class="rvts6"> expression is</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps23"><span class="rvts7">IF</span><span class="rvts6"> (</span><span class="rvts32">test</span><span class="rvts6">, </span><span class="rvts32">then</span><span class="rvts6">, </span><span class="rvts32">else</span><span class="rvts6">, </span><span class="rvts32">unknown</span><span class="rvts6">)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">where the </span><span class="rvts32">test</span><span class="rvts6"> clause is a condition, and the </span><span class="rvts32">then</span><span class="rvts6">, </span><span class="rvts32">else</span><span class="rvts6">, and </span><span class="rvts32">unknown</span><span class="rvts6"> clauses are expressions. &nbsp;If the test clause is not a relation or a logical combination of relations (see </span><a class="rvts19" href="BooleanTestClauses.html">Boolean Test Clauses</a><span class="rvts20">Boolean_Test_Clauses</span><span class="rvts6">), it is treated as the condition </span><span class="rvts32">test</span><span class="rvts6">=0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">When an </span><span class="rvts7">IF</span><span class="rvts6"> expression is simplified, </span><span class="rvts8">Derive</span><span class="rvts6"> evaluates the </span><span class="rvts32">test</span><span class="rvts6"> clause to determine its truth value. &nbsp;If true, the </span><span class="rvts32">then</span><span class="rvts6"> clause is simplified and returned as the value of the </span><span class="rvts7">IF</span><span class="rvts6"> expression. &nbsp;If false, the </span><span class="rvts32">else</span><span class="rvts6"> clause is simplified and returned. &nbsp;If the truth value cannot be determined, the </span><span class="rvts32">unknown</span><span class="rvts6"> clause is simplified and returned. &nbsp;Note that whichever clause is returned, the other two clauses are </span><span class="rvts32">not</span><span class="rvts6"> simplified.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If the </span><span class="rvts32">unknown</span><span class="rvts6"> clause is omitted and the truth value of the </span><span class="rvts32">test</span><span class="rvts6"> clause cannot be determined, the entire </span><span class="rvts7">IF</span><span class="rvts6"> expression is returned. &nbsp;This is often informative, and subsequent assignments or domain declarations might enable you to resimplify the </span><span class="rvts7">IF</span><span class="rvts6"> expression to a decisive result. &nbsp;Alternatively, </span><span class="rvts7">?</span><span class="rvts6"> is often used as the </span><span class="rvts32">unknown</span><span class="rvts6"> clause since it yields a more compact result when the truth value of the </span><span class="rvts32">test</span><span class="rvts6"> clause cannot be determined. &nbsp;</span><span class="rvts7">?</span><span class="rvts6"> is the expression signifying a quantity of unknown phase and magnitude.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If the </span><span class="rvts32">else</span><span class="rvts6"> clause is also omitted from the </span><span class="rvts7">IF</span><span class="rvts6"> expression, a default value of </span><span class="rvts7">?</span><span class="rvts6"> is assumed for it. &nbsp;Finally, if the </span><span class="rvts32">then</span><span class="rvts6"> clause is also omitted, </span><span class="rvts7">IF</span><span class="rvts6"> returns 1 if the argument evaluates to </span><span class="rvts7">true</span><span class="rvts6">, otherwise it returns 0. &nbsp;When used in conjunction with the </span><span class="rvts7">SUM</span><span class="rvts6"> function, this is useful for counting the elements of a vector or sequence that satisfy some condition. &nbsp;For example,</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">SUM(IF(PRIME(n)), n, 1, 100)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 25, the number of primes between 1 and 100.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">An expression of the form</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps23"><span class="rvts7">ITERATE</span><span class="rvts6"> (</span><span class="rvts7">IF</span><span class="rvts6"> (</span><span class="rvts32">test</span><span class="rvts6">, x, u), x, x0)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">can be used to search for a number or expression that satisfies the search condition </span><span class="rvts32">test</span><span class="rvts6">. &nbsp;Given x, u generates the next number or expression to test. &nbsp;For example,</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">ITERATE(IF(PRIME(n) AND PRIME(n+2), n, n+2), n, 100001)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 100151, the leading element of the first prime pair larger than 100000. &nbsp;(Prime pairs are consecutive primes that differ by 2.)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">IF</span><span class="rvts6"> expressions can be used on the right side of a function definition. &nbsp;For example, most </span><span class="rvts8">Derive</span><span class="rvts6"> functions are defined for complex as well as real values of their arguments, and many functions return complex results for some real values of their arguments. &nbsp;However, in an educational setting devoted to the real domain, some instructors may prefer that functions return </span><span class="rvts7">?</span><span class="rvts6"> when an argument or a result is not real. &nbsp;Using the following filter function, more restrictive variants can be defined that impose this constraint:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">REAL_ONLY(x) := IF(IM(x) = 0, x)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Note that the </span><span class="rvts32">else</span><span class="rvts6"> clause of the </span><span class="rvts7">IF</span><span class="rvts6"> expression is omitted so that </span><span class="rvts7">?</span><span class="rvts6"> is automatically returned if </span><span class="rvts8">Derive</span><span class="rvts6"> can determine that </span><span class="rvts7">IM</span><span class="rvts6">(x) is not 0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">As examples of using </span><span class="rvts7">REAL_ONLY</span><span class="rvts6">, you can define:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">REAL_LN(x) := REAL_ONLY(LN(x))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">REAL_ABS(x) := ABS(REAL_ONLY(x))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LN</span><span class="rvts6">(x) is not real-valued if x is negative. &nbsp;</span><span class="rvts7">ABS</span><span class="rvts6">(x) is real-valued even if x is not real. &nbsp;These two facts account for the different placement of </span><span class="rvts7">REAL_ONLY</span><span class="rvts6"> in the above definitions.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Since zero can be approached from either the positive or negative direction, or for that matter any direction in the complex plane, zero does not have a definite sign. &nbsp;Thus, </span><span class="rvts7">SIGN</span><span class="rvts6">(0) simplifies to plus-or-minus 1 (see </span><a class="rvts19" href="ComplexVariableFunctions.html">Complex Variable Functions</a><span class="rvts20">Complex_Variable_Functions</span><span class="rvts6">).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">For additional examples of </span><span class="rvts7">IF</span><span class="rvts6"> expressions, inspect the definitions in the files </span><a class="rvts19" href="VectorandMatrixFunctions.html">VectorMatrixFunctions.mth</a><span class="rvts20">I._DEZ</span><span class="rvts6"> and </span><a class="rvts19" href="NumericalApproximation.html">NumericalApproximation.mth</a><span class="rvts20">Y5C_1X</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="ProgramminginDERIVE.html">Programming in DERIVE</a><span class="rvts20">Programming</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com">Easy EBook and documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

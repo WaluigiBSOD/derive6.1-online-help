@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Gr&ouml;bner Basis</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Basis - Gr&ouml;bner,Gr&ouml;bner Basis,GROEBNER_BASIS function,Hilbert's Nullstellensatz,Nullstellensatz – Hilbert's">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Gr&ouml;bner Basis">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Gr&ouml;bner Basis" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="GrobnerBasis"
+		  data-hnd-context="2501"
+		  data-hnd-title="Gröbner Basis"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Discussion Topics</li><li>Algebra Window</li><li>Vectors and Matrices</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="RowEchelonForm.html" title="Row Echelon Form" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Eigenvalues.html" title="Eigenvalues" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Gr&ouml;bner Basis</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">Use the function </span><span class="rvts7">GROEBNER_BASIS</span><span class="rvts6"> to construct the Gröbner basis for a collection of polynomials based on lexicographic ordering of the variables. &nbsp;If </span><span class="rvts32">polys</span><span class="rvts6"> is a vector (set) of polynomials and </span><span class="rvts32">vars</span><span class="rvts6"> is a vector of variables,</span></p>
+<p class="rvps30"><span class="rvts7">GROEBNER_BASIS</span><span class="rvts6">(</span><span class="rvts32">polys</span><span class="rvts6">, </span><span class="rvts32">vars</span><span class="rvts6">)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector (set) of polynomials that form the Gröbner basis for </span><span class="rvts32">polys</span><span class="rvts6"> based on the lexicographic ordering of </span><span class="rvts32">vars</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Note that the Gröbner basis of a collection of polynomials </span><span class="rvts35">is unique, once the order for the variables is fixed. &nbsp;If the ordering of the variables is changed, the </span><span class="rvts6">Gröbner basis </span><span class="rvts35">could change. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts57">GROEBNER_BASIS([x*z^3+2*y+2, y*z^3-y*z^2-z^2+y^2+y], [x, y, z])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps27"><span class="rvts58">⎡</span><span class="rvts57"> 2 &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">⎤</span><br/><span class="rvts58">⎣</span><span class="rvts57">y &nbsp;+ y·(z &nbsp;- z &nbsp;+ 1) - z , x·z &nbsp;+ 2·y + 2</span><span class="rvts58">⎦</span></p>
+<p class="rvps3"><span class="rvts6">whereas</span></p>
+<p class="rvps19"><span class="rvts57">GROEBNER_BASIS([x*z^3+2*y+2, y*z^3-y*z^2-z^2+y^2+y], [z, y, x])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a more complicated basis consisting of six polynomials.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The Gröbner basis has numerous applications. &nbsp;For example, consider the problem of finding the intersection of the following three surfaces: the sphere centered at the origin with a radius of the square root of 2 (x^2+y^2+z^2=2); the paraboloid (z=x^2+y^2); and the vertical cylinder along the z axis with a radius of 1 (x^2+y^2=1). &nbsp;The fact that</span></p>
+<p class="rvps19"><span class="rvts10">GROEBNER_BASIS([x^2+y^2+z^2-2, x^2+y^2-z, x^2+y^2-1], [x, y, z])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [z - 1, x^2 + y^2 - 1] shows that the intersection of the three surfaces is a circle of radius 1 parallel to the xy plane at height 1.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To verify that the following two paraboloids do not intersect in R^3 (i.e. the system has no real roots), note that&nbsp;</span></p>
+<p class="rvps19"><span class="rvts10">GROEBNER_BASIS([x^2+y^2-z+1, -x^2-y^2-1-z], [x, y, z])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [z, x^2 + y^2 + 1].</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To verify that the following two paraboloids do not intersect in C^3 (i.e. the system has no roots), note that</span></p>
+<p class="rvps19"><span class="rvts10">GROEBNER_BASIS([x^2+y^2-z+1, x^2+y^2-z+3], [x, y, z])</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [1]. &nbsp;It is a requirement of Hilbert's Nullstellensatz that the geometric interpretation of the Gröbner basis must always be done in C^n, not in R^n.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="VectorsandMatrices.html">Vectors and Matrices</a><span class="rvts20">Vectors_and_Matrices</span><span class="rvts6"> topics</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour/iphone-website-generation">Easily create iPhone documentation</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

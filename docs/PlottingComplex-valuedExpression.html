@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Plotting Complex-valued Expressions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Absolute value plots,ARCS(w,z,r0,rm,m,theta0,thetan,n),Complex-valued expression plots,HORIZONTALS(w,z,z00,zmn,m,n),Imaginary part plots,Magnitude plots,Phase angle plots,Plot real and imaginary parts mode,Plotting complex-valued expressions,Ray plots,RAYS(w,z,z00,zmn,m,n),Real part plots,Surface plots,Trace plots mode">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Plotting Complex-valued Expressions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Plotting Complex-valued Expressions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="PlottingComplex-valuedExpression"
+		  data-hnd-context="3529"
+		  data-hnd-title="Plotting Complex-valued Expressions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li><li>Graphics Functions</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="PlottingSpaceCurvesandParametric.html" title="Plotting Space Curves and Parametric Surfaces" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="PlottingGridLinesandPoints.html" title="Plotting Grid Lines and Points" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Plotting Complex-valued Expressions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">Use the following functions defined in the </span><a class="rvts19" href="GraphicsFunctions.html">GraphicsFunctions.mth</a><span class="rvts20">ZG4ZTI</span><span class="rvts6"> utility file to plot expressions having complex values:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To superimpose plots of the real and imaginary parts of an expression w that depends on a single real-valued variable, issue the </span><a class="rvts19" href="PlotRealandImaginaryParts.html">Options &gt; Plot Real and Imaginary Parts command</a><span class="rvts20">3TKJ2T</span><span class="rvts6"> in a 2D-plot window, and then plot w. &nbsp;For example, turn </span><span class="rvts7">plot real and imaginary parts</span><span class="rvts6"> mode </span><span class="rvts7">on</span><span class="rvts6">, and then plot the expression</span></p>
+<p class="rvps6"><span class="rvts10">ASIN(x)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To superimpose plots of the absolute value (magnitude) and phase angle of an expression w that depends on a single real-valued variable, plot the expressions ABS(w) and PHASE(w) in a 2D-plot window. &nbsp;For example, plot the expressions</span></p>
+<p class="rvps6"><span class="rvts10">ABS(ASIN(x))</span></p>
+<p class="rvps6"><span class="rvts10">PHASE(ASIN(x))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To parametrically plot the real and imaginary parts of an expression w that depends on a single real-valued variable, issue the </span><a class="rvts19" href="TracePlots.html">Options &gt; Trace Plots command</a><span class="rvts20">1FN.FSI</span><span class="rvts6"> or press the </span><span class="rvts7">F3</span><span class="rvts6"> key in a 2D-plot window, and plot the vector [RE(w), IM(w)]. &nbsp;Then as the cross is moved along the curve, the cross coordinates displayed on the status bar show the real and imaginary parts of w as a function of the parameter values displayed on the title bar of the 2D-plot window. &nbsp;For example, to plot the sine of z = t·(1+</span><span class="rvts32">i</span><span class="rvts6">) for t = -2·</span><span class="rvts9">π</span><span class="rvts6"> to 2·</span><span class="rvts9">π</span><span class="rvts6">, turn </span><span class="rvts7">trace</span><span class="rvts6"> mode </span><span class="rvts7">on</span><span class="rvts6"> and plot the expression</span></p>
+<p class="rvps6"><span class="rvts10">[RE(SIN(t·(1 + #i))), IM(SIN(t·(1 + #i)))]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To superimpose surface plots of the real and imaginary parts of an expression w that depends on a single complex-valued variable, substitute the expression x+</span><span class="rvts32">i</span><span class="rvts6">·y for the variable in the expressions RE(w) and IM(w), and then plot the resulting expressions in a 3D-plot window. &nbsp;In order to distinguish between the plots, use the </span><a class="rvts19" href="Plot2.html">Insert &gt; Plot command</a><span class="rvts20">72HLS1</span><span class="rvts6"> to plot the imaginary surface and select a different color scheme than that used for the real surface. &nbsp;For example, plot the expressions</span></p>
+<p class="rvps6"><span class="rvts10">RE(EXP(x + #i·y)/5)</span></p>
+<p class="rvps6"><span class="rvts10">IM(EXP(x + #i·y)/5)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To superimpose surface plots of the absolute value (magnitude) and phase angle of an expression w that depends on a single complex-valued variable, substitute the expression x + </span><span class="rvts32">i</span><span class="rvts6">·y for the variable in the expressions ABS(w) and PHASE(w), and then plot the resulting expressions in a 3D-plot window. &nbsp;In order to distinguish between the plots, use the </span><a class="rvts19" href="Plot2.html">Insert &gt; Plot command</a><span class="rvts20">72HLS1</span><span class="rvts6"> to plot the phase surface and select a different color scheme than that used for the absolute value surface. &nbsp;For example, plot the expression</span></p>
+<p class="rvps6"><span class="rvts10">ABS(EXP(x + #i·y)/5)</span></p>
+<p class="rvps6"><span class="rvts10">PHASE(EXP(x + #i·y)/5)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To plot rays in a 2D-plot window whose length and direction represent the absolute value (magnitude) and phase angle of an expression w that depends on a single complex-valued variable at a rectangular array of points in the complex plane, use the </span><span class="rvts7">RAYS</span><span class="rvts6"> function as described below. &nbsp;The length and direction of rays between array points can be estimated using mental interpolation. &nbsp;Also, the real and imaginary parts of w can be estimated from the length and direction of rays using mental conversion.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RAYS</span><span class="rvts6">(w, z, z00, zmn, m, n) approximates to a matrix that plots in a 2D-plot window as a rectangular array of rays (i.e. line segments) whose length and direction represent the absolute value and phase angle of the expression w that depends on the variable z. &nbsp;z varies from z00 at one corner of the array through zmn at the diagonally opposite corner, with m panels in the x direction and n panels in the y direction. &nbsp;Before plotting an expression involving the </span><span class="rvts7">RAYS</span><span class="rvts6"> function, use the 2D-plot window</span><span class="rvts6">’</span><span class="rvts6">s </span><a class="rvts19" href="Points.html">Options &gt; Display &gt; Points command</a><span class="rvts20">7CKH0ZT</span><span class="rvts6"> to select connected small size points, and use the </span><a class="rvts19" href="ApproximateBeforePlotting.html">Options &gt; Approximate Before Plotting command</a><span class="rvts20">EVZ132</span><span class="rvts6"> to approximate expressions before plotting them. &nbsp;If the rays are too short to discern accurately or so long that they confusingly cross each other, multiply w by a suitable numerical scale factor. &nbsp;For example, to see how exp(z) varies exponentially with the real part of z and sinusoidally with the imaginary part of z, issue the above </span><span class="rvts7">Options</span><span class="rvts6"> commands and then plot the expression</span></p>
+<p class="rvps6"><span class="rvts10">RAYS(EXP(z)/10, z, -1 - 2·pi·#i, 1 + 2·pi·#i, 12, 24)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To show in a 2D-plot window how a rectangular array of values in the z-plane maps into a distorted grid in the w-plane of a complex-valued expression w that depends on a complex-valued variable z, use the </span><span class="rvts7">HORIZONTALS</span><span class="rvts6"> function as described below. &nbsp;The grid points in the w-plane can be joined by line segments to help visualize the underlying grid topology. &nbsp;By noting the order in which grid points are drawn and counting them, each grid point in the w-plane can be associated with a coordinate value in the z-plane. &nbsp;Also, the values of w between grid points can be estimated using mental interpolation.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">HORIZONTALS</span><span class="rvts6">(w, z, z00, zmn, m, n) approximates to a matrix that plots in a 2D-plot window as an array of dots, with each row of w values joined by segments. &nbsp;z varies from z00 at one corner of the grid through zmn at the diagonally opposite corner, with m panels in the x direction and n panels in the y direction. &nbsp;Before plotting an expression involving the </span><span class="rvts7">HORIZONTALS</span><span class="rvts6"> function, use the 2D-plot window</span><span class="rvts6">’</span><span class="rvts6">s </span><a class="rvts19" href="Points.html">Options &gt; Display &gt; Points command</a><span class="rvts20">7CKH0ZT</span><span class="rvts6"> to select connected medium size points, and use the </span><a class="rvts19" href="ApproximateBeforePlotting.html">Options &gt; Approximate Before Plotting command</a><span class="rvts20">EVZ132</span><span class="rvts6"> to approximate expressions before plotting them. &nbsp;To join the dot columns by segments, approximate and plot the coprojection of the matrix (i.e. plot </span><span class="rvts7">COPROJECTION(HORIZONTALS</span><span class="rvts6">(w, z, z00, zmn, m, n)) ). &nbsp;For example, issue the above </span><span class="rvts7">Options</span><span class="rvts6"> commands and then plot the expressions</span></p>
+<p class="rvps6"><span class="rvts10">HORIZONTALS(EXP(z), z, -1-pi·#i, 1+pi·#i, 12, 24)</span></p>
+<p class="rvps6"><span class="rvts10">COPROJECTION(HORIZONTALS(EXP(z), z, -1-pi·#i, 1+pi·#i, 12, 24))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To show in a 2D-plot window how a regular polar array of values in the z-plane maps into a distorted grid in the w-plane of a complex-valued expression w that depends on a complex-valued variable z, use the </span><span class="rvts7">ARCS</span><span class="rvts6"> function as described below. &nbsp;The grid points in the w-plane can be joined by line segments along lines of constant radius and/or lines of constant phase in the z-plane to help visualize the underlying grid topology. &nbsp;By noting the order in which grid points are drawn and counting them, each grid point in the w-plane can be associated with a coordinate value in the z-plane. &nbsp;Also, the values of w between grid points can be estimated using mental interpolation.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">ARCS</span><span class="rvts6">(w, z, r0, rm, m, </span><span class="rvts9">θ</span><span class="rvts6">0, </span><span class="rvts9">θ</span><span class="rvts6">n, n) approximates to a matrix that plots in a 2D-plot window as an array of dots, with each row of w values joined by segments. &nbsp;z=r·exp(</span><span class="rvts32">i</span><span class="rvts6">·</span><span class="rvts9">θ)</span><span class="rvts6"> varies from r=r0 through rm and </span><span class="rvts9">θ</span><span class="rvts6">=</span><span class="rvts9">θ</span><span class="rvts6">0 through </span><span class="rvts9">θ</span><span class="rvts6">n, with m panels in the r direction and n panels in the </span><span class="rvts9">θ</span><span class="rvts6"> direction. &nbsp;Before plotting an expression involving the </span><span class="rvts7">ARCS</span><span class="rvts6"> function, use the 2D-plot window</span><span class="rvts6">’</span><span class="rvts6">s </span><a class="rvts19" href="Points.html">Options &gt; Display &gt; Points command</a><span class="rvts20">7CKH0ZT</span><span class="rvts6"> to select connected medium size points, and use the </span><a class="rvts19" href="ApproximateBeforePlotting.html">Options &gt; Approximate Before Plotting command</a><span class="rvts20">EVZ132</span><span class="rvts6"> to approximate expressions before plotting them. &nbsp;To join the dots in the radial direction by segments, approximate and plot the coprojection of the matrix (i.e. plot </span><span class="rvts7">COPROJECTION(ARCS</span><span class="rvts6">(w, z, r0, rm, m, </span><span class="rvts9">θ</span><span class="rvts6">0, </span><span class="rvts9">θ</span><span class="rvts6">n, n)) ). &nbsp;For example, issue the above </span><span class="rvts7">Options</span><span class="rvts6"> commands and then plot the expressions</span></p>
+<p class="rvps6"><span class="rvts10">ARCS(EXP(z), z, 0, pi, 4, -pi, pi, 24)</span></p>
+<p class="rvps6"><span class="rvts10">COPROJECTION(ARCS(EXP(z), z, 0, pi, 4, -pi, pi, 24))</span></p>
+<p class="rvps3"><span class="rvts25"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="GraphicsFunctions.html">Graphics Functions</a><span class="rvts20">ZG4ZTI</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/create-epub-ebooks">Generate EPub eBooks with ease</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

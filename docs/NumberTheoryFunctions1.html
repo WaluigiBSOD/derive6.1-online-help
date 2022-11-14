@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Number Theory Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="SQUAREFREE(n),Totient function, Euler's,U_LUCAS(n,p,q),U_MOD(n,p,q,m),V_LUCAS(n,p,q),V_MOD(n,p,q,m)">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Number Theory Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Number Theory Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="NumberTheoryFunctions1"
+		  data-hnd-context="3520"
+		  data-hnd-title="Number Theory Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="LinearAlgebra.html" title="Linear Algebra" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="RationalApproximation.html" title="Rational Approximation" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Number Theory Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The exact precision integer and rational arithmetic provided by </span><span class="rvts8">Derive</span><span class="rvts6"> make it ideal for explorations into the theory of numbers. &nbsp;The built-in </span><a class="rvts19" href="PiecewiseContinuousFunctions.html">Piecewise Continuous Functions</a><span class="rvts20">Piecewise_Continuous_Functions</span><span class="rvts6"> and </span><a class="rvts19" href="ProbabilityFunctions.html">Probability Functions</a><span class="rvts20">Probability_Functions</span><span class="rvts6"> are especially useful for this purpose. &nbsp;The file </span><span class="rvts7">NumberTheoryFunctions.mth</span><span class="rvts6"> defines additional number theory functions in terms of the built-in functions. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">EXTENDED_GCD</span><span class="rvts6">(a, b) simplifies for integers a and b to a vector [d, [x, y]] of integers such that</span></p>
+<p class="rvps23"><span class="rvts6">d = gcd(a, b) = x·a + y·b</span></p>
+<p class="rvps3"><span class="rvts6">using the extended Euclidean gcd algorithm. &nbsp;For example, to find the extended gcd of 20580 and 85176, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">EXTENDED_GCD(20580, 85176)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">SOLVE_MOD</span><span class="rvts6">(u, x, m) simplifies to a vector of solutions of the linear congruence equation u(x) mod m. &nbsp;For example, to solve the equation 3·x = 30 mod 9, simplify either of the expressions</span></p>
+<p class="rvps6"><span class="rvts10">SOLVE_MOD(3·x = 30, x, 9)</span></p>
+<p class="rvps6"><span class="rvts10">SOLVE_MOD(3·x - 30, x, 9)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CRT</span><span class="rvts6">(a, m) simplifies to the solution of the system of linear congruence equations x = ai mod mi, where the elements of m must be pairwise coprime, using the Chinese Remainder Theorem (CRT). &nbsp;For example, to solve the congruences x = 1 mod 4, x = 2 mod 5, and x = 3 mod 11, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">CRT([1, 2, 3], [4, 5, 11])</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">NTH_PRIME</span><span class="rvts6">(n) simplifies to the nth prime number. &nbsp;For example, to make a table of the first 50 primes, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(VECTOR(NTH_PRIME(n+m), m, 0, 40, 10), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PRIMEPI</span><span class="rvts6">(x, d, a) simplifies to the number of primes p </span><span class="rvts9">≤</span><span class="rvts6"> x, where x is a positive real number, such that p is of the form p = k·d + a for some k </span><span class="rvts9">≥</span><span class="rvts6"> 0. &nbsp;d and a must be coprime natural numbers. &nbsp;</span><span class="rvts7">PRIMEPI</span><span class="rvts6">(x) simplifies to the number of primes up to x. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">[PRIMEPI(10000, 6, 1), PRIMEPI(10000, 6, 5) + 2, PRIMEPI(10000)]</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to [611, 618, 1229].</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">FAREY</span><span class="rvts6">(n) simplifies to a vector of Farey fractions of order n (i.e. all the fractions in the interval (0,1] whose denominator is not greater than n). &nbsp;For example, to determine the Farey fractions of order 6, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">FAREY(6)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DIVISORS</span><span class="rvts6">(n) simplifies to the ordered vector of all the positive divisors of n. &nbsp;For example, to determine the divisors of 28, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">DIVISORS(28)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DIVISOR_SIGMA</span><span class="rvts6">(k, n) simplifies to the sum of the kth powers of the positive divisors of n where k is a nonnegative integer. &nbsp;For example, to determine the sum of the cubes of the divisors of 1000, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">DIVISOR_SIGMA(3, 1000)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DIVISOR_TAU</span><span class="rvts6">(n) simplifies to the number of divisors of n (i.e. it is equivalent to </span><span class="rvts7">DIVISOR_SIGMA</span><span class="rvts6">(0, n) ). &nbsp;For example, to determine the number of divisors of 28, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">DIVISOR_TAU(28)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">EULER_PHI</span><span class="rvts6">(n) simplifies to the Euler's totient function </span><span class="rvts9">ϕ</span><span class="rvts6">(n) (i.e. the number of positive integers not greater than n that are relatively prime to n). &nbsp;For example, to determine </span><span class="rvts9">ϕ</span><span class="rvts6">(100), simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">EULER_PHI(100)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PRIME_POWER?</span><span class="rvts6">(n) simplifies to true, if n is a power of a prime; otherwise it simplifies to false. &nbsp;For example, to determine all prime powers not greater than 100, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">SELECT(PRIME_POWER?(n), n, 1, 100)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PRIMITIVE_ROOT</span><span class="rvts6">(n) simplifies to the smallest primitive root modulo n, if one exists; otherwise it simplifies to a question mark. &nbsp;For example, to determine the primitive root modulo 54, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">PRIMITIVE_ROOT(54)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MOEBIUS_MU</span><span class="rvts6">(n) simplifies to the Moebius mu function of n. &nbsp;For example, to determine the Moebius mu function of 100, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">MOEBIUS_MU(100)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">SQUAREFREE</span><span class="rvts6">(n) simplifies to true, if n is square free (i.e. not divisible by the square of a prime); otherwise it simplifies to false. &nbsp;For example, to determine if 837 is square free, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">SQUAREFREE(837)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CYCLOTOMIC</span><span class="rvts6">(n, x) simplifies to the nth cyclotomic polynomial in x. &nbsp;For example, to determine the first 6 cyclotomic polynomials, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR([n, CYCLOTOMIC(n,x)], n, 1, 6)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GEN_LUCAS</span><span class="rvts6">(n, p, q, L0, L1) simplifies to the nth term of the generalized Lucas sequence L(n) where L(0) = L0, L(1) = L1, and L(n+2) = p·L(n+1) - q·L(n).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">U_LUCAS</span><span class="rvts6">(n, p, q) simplifies to the nth term of the Lucas sequence U(n) where U(0)=0, U(1)=1, and U(n+2)=p·U(n+1)-q·U(n). &nbsp;For example, to determine U(30) with p=1 and q=-1, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">U_LUCAS(30, 1, -1)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">V_LUCAS</span><span class="rvts6">(n, p, q) simplifies to the nth term of the Lucas sequence V(n) where V(0)=2, V(1)=p, and V(n+2)=p·V(n+1)-q·V(n). &nbsp;For example, to determine V(30) with p=1 and q=-1, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">V_LUCAS(31, 1, -1)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">U_MOD</span><span class="rvts6">(n, p, q, m) simplifies to </span><span class="rvts7">U_LUCAS</span><span class="rvts6">(n, p, q) mod m, but is much more efficient. &nbsp;If the discriminant p²-4·q is 0 mod m, a question mark is returned. &nbsp;For example, to show that U(30) is divisible by 31 with p=1 and q=-1, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">U_MOD(30, 1, -1, 31)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">V_MOD</span><span class="rvts6">(n, p, q, m) simplifies to </span><span class="rvts7">V_LUCAS</span><span class="rvts6">(n, p, q) mod m, but is much more efficient. &nbsp;For example, to find V(31) mod 31 with p=1 and q=-1, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">V_MOD(31, 1, -1, 31)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LUCAS</span><span class="rvts6">(n) simplifies to the nth Lucas number (i.e. it is equivalent to </span><span class="rvts7">V_LUCAS</span><span class="rvts6">(n,1,-1)). &nbsp;For example, to determine the first 11 Lucas numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(LUCAS(n), n, 0, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">FIBONACCI</span><span class="rvts6">(n) simplifies to the nth Fibonacci number. &nbsp;For example, to determine the first 11 Fibonacci numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(FIBONACCI(n), n, 0, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PELL</span><span class="rvts6">(n) simplifies to the nth Pell number. &nbsp;For example, to determine the first 11 Pell numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(PELL(n), n, 0, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LUCAS_LEHMER</span><span class="rvts6">(p) simplifies to true, if the Mersenne number 2^p-1, where p is an odd prime, is prime, otherwise it simplifies to false. &nbsp;For example, to determine if 2^31-1 is prime, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">LUCAS_LEHMER(31)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">NEXT_MERSENNE_DEGREE</span><span class="rvts6">(n) simplifies to the smallest prime p &gt; n such that the Mersenne number 2^p - 1 is prime. &nbsp;For example, to determine the first prime p &gt; 31 such that 2^p - 1 is prime, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">NEXT_MERSENNE_DEGREE(31)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MERSENNE_LIST</span><span class="rvts6">(n) simplifies to the first n primes p for which the corresponding Mersenne number 2^p - 1 is prime. &nbsp;For example, to find the 12 smallest exponents of this kind, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">MERSENNE_LIST(12)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MERSENNE_DEGREE</span><span class="rvts6">(n) is the nth exponent (ordered by size) for which the corresponding Mersenne number is known to be prime. &nbsp;For example, to determine the exponent of the largest known Mersenne prime as of 13 August 1999, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">MERSENNE_DEGREE(38)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MERSENNE</span><span class="rvts6">(n) simplifies to the nth Mersenne prime. &nbsp;For example, to determine the first 12 Mersenne primes, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(MERSENNE(n), n, 1, 12)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PERFECT</span><span class="rvts6">(n) simplifies to the nth perfect number (i.e. numbers that are equal to the sum of their divisors). &nbsp;For example, to determine the first 10 perfect numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(PERFECT(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CONTINUED_FRACTION</span><span class="rvts6">(u, n) approximates to a vector of n+1 partial quotients of the continued fraction of u. &nbsp;If ?s appear in the result, use the </span><a class="rvts19" href="Precisionfield.html">Precision field</a><span class="rvts20">Precision_field</span><span class="rvts6"> of the </span><a class="rvts19" href="Simplificationfields.html">Options &gt; Mode Settings &gt; Simplification command</a><span class="rvts20">19_L5FP</span><span class="rvts6"> to increase the precision. &nbsp;For example, to determine the first 8 partial quotients of the continued fraction for the base of the natural logarithms </span><span class="rvts32">e</span><span class="rvts6">, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">CONTINUED_FRACTION(#e, 8)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CONVERGENT</span><span class="rvts6">(x, k) simplifies to the kth convergent of x based on the continued fraction of x. &nbsp;For example, to approximate </span><span class="rvts9">√</span><span class="rvts6">2 using the 10th convergent, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">CONVERGENT(SQRT(2), 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CONVERGENTS</span><span class="rvts6">(x, k) simplifies to a vector of the 0 through kth convergents of x based on the continued fraction for x. &nbsp;For example, to generate a vector of the first 11 convergents of </span><span class="rvts9">√</span><span class="rvts6">2, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">CONVERGENTS(SQRT(2), 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">JACOBI</span><span class="rvts6">(a, b) simplifies to the Jacobi symbol (a/b), where a is assumed to be an integer and b an odd natural number. &nbsp;Jacobi symbols play an important role in number theory. &nbsp;In particular, if b is an odd prime, then 1 + (a/b) is the number of mod b incongruent solutions of the congruence x^2 = a mod b. &nbsp;For example, to see whether 2 is a square mod 23 or not, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">JACOBI(2, 23)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">SQUARE_ROOT</span><span class="rvts6">(a, p) simplifies to a square root of a mod p, where a is an integer and p a prime, if one exists and a question mark otherwise. &nbsp;For example, to determine a square root of 2 mod 23, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">SQUARE_ROOT(2,23)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/help-authoring-tool">Full-featured multi-format Help generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

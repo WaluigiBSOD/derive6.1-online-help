@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Orthogonal Polynomials</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="ASSOCIATED_LEGENDRE_P(n,m,x),Chebychev polynomial,CHEBYCHEV_T(n,x),CHEBYCHEV_T_LIST(n,x),CHEBYCHEV_U(n,x),CHEBYCHEV_U_LIST(n,x),Gegenbauer ultraspherical polynomial,GEGENBAUER_C(n,alpha,x),GEGENBAUER_C_LIST(n,alpha,x),GENERALIZED_LAGUERRE(n,alpha,x),Hermite polynomial,HERMITE_H(n,x),HERMITE_H_LIST(n,x),HERMITE_HE(n,x),HERMITE_HE_LIST(n,x),Jacobi polynomial,JACOBI_P(n,alpha,beta,x),JACOBI_P_LIST(n,alpha,beta,x),Laguerre polynomial,LAGUERRE_L(n,x),LAGUERRE_L_LIST(n,x),Legendre polynomial,LEGENDRE_P(n,x),LEGENDRE_P_LIST(n,x),OrthogonalPolynomials.mth,WEBER_D(n,x),Weber's parabolic cylinder function">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Orthogonal Polynomials">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Orthogonal Polynomials" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="OrthogonalPolynomials"
+		  data-hnd-context="3517"
+		  data-hnd-title="Orthogonal Polynomials"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li><li>Special Functions</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="HypergeometricFunctions.html" title="Hypergeometric Functions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ProbabilityFunctions1.html" title="Probability Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Orthogonal Polynomials</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">OrthogonalPolynomials.mth</span><span class="rvts6"> defines functions for generating orthogonal polynomials. &nbsp;These polynomials are described in Chapter 22 of Abramowitz and Stegun [1965]. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CHEBYCHEV_T</span><span class="rvts6">(n, x) simplifies to the nth Chebychev polynomial of the first kind Tn(x) based on the recursion</span></p>
+<p class="rvps23"><span class="rvts6">T0(x) = 1</span></p>
+<p class="rvps23"><span class="rvts6">T1(x) = x</span></p>
+<p class="rvps23"><span class="rvts6">T(n+1)(x) = 2·x·Tn(x) - T(n-1)(x)</span></p>
+<p class="rvps3"><span class="rvts6">For example,</span></p>
+<p class="rvps19"><span class="rvts10">CHEBYCHEV_T(6, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to T6(x)</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; 6 &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">32·x &nbsp;- 48·x &nbsp;+ 18·x &nbsp;- 1&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CHEBYCHEV_T_LIST</span><span class="rvts6">(n, x) simplifies to a vector of the first n Chebychev polynomials of the first kind. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">CHEBYCHEV_T_LIST(7, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector of T0(x) through T6(x).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CHEBYCHEV_U</span><span class="rvts6">(n, x) simplifies to the nth Chebychev polynomial of the second kind Un(x) based on the recursion</span></p>
+<p class="rvps23"><span class="rvts6">U0(x) = 1</span></p>
+<p class="rvps23"><span class="rvts6">U1(x) = 2·x</span></p>
+<p class="rvps23"><span class="rvts6">U(n+1)(x) = 2·x·Un(x) - U(n-1)(x)</span></p>
+<p class="rvps3"><span class="rvts6">For example,</span></p>
+<p class="rvps19"><span class="rvts10">CHEBYCHEV_U(6, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to U6(x)</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; 6 &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">64·x &nbsp;- 80·x &nbsp;+ 24·x &nbsp;- 1&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CHEBYCHEV_U_LIST</span><span class="rvts6">(n, x) simplifies to a vector of the first n Chebychev polynomials of the second kind. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">CHEBYCHEV_U_LIST(7, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector of U0(x) through U6(x).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LEGENDRE_P</span><span class="rvts6">(n, x) simplifies to the nth Legendre polynomial Pn(x) based on the recursion</span></p>
+<p class="rvps23"><span class="rvts6">P0(x) = 1</span></p>
+<p class="rvps23"><span class="rvts6">P1(x) = x</span></p>
+<p class="rvps23"><span class="rvts6">(n+1)·P(n+1)(x) = (2·n+1)·x·Pn(x) - n·P(n-1)(x)</span></p>
+<p class="rvps3"><span class="rvts6">For example,</span></p>
+<p class="rvps19"><span class="rvts10">LEGENDRE_P(6, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to P6(x)</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; 6 &nbsp; &nbsp; &nbsp; &nbsp;4 &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp;231·x &nbsp;- 315·x &nbsp;+ 105·x &nbsp;- 5 &nbsp;</span><br/><span class="rvts10">——————————————————————————————&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 16 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LEGENDRE_P_LIST</span><span class="rvts6">(n, x) simplifies to a vector of the first n Legendre polynomials. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">LEGENDRE_P_LIST(7, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector of P0(x) through P6(x).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">ASSOCIATED_LEGENDRE_P</span><span class="rvts6">(n, m, x) simplifies to the nth associated Legendre polynomial Pnm(x). &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">ASSOCIATED_LEGENDRE_P(4, 2, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to P4(2)(x)</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp;15·(1 - x )·(7·x &nbsp;- 1) &nbsp;</span><br/><span class="rvts10">————————————————————————&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">HERMITE_H</span><span class="rvts6">(n, x) simplifies to the nth Hermite polynomial Hn(x) based on the recursion</span></p>
+<p class="rvps23"><span class="rvts6">H0(x) = 1</span></p>
+<p class="rvps23"><span class="rvts6">H1(x) = 2·x</span></p>
+<p class="rvps23"><span class="rvts6">H(n+1)(x) = 2·x·Hn(x) - 2·n·H(n-1)(x)</span></p>
+<p class="rvps3"><span class="rvts6">For example,</span></p>
+<p class="rvps19"><span class="rvts10">HERMITE_H(6, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to H6(x)</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; 6 &nbsp; &nbsp; &nbsp; &nbsp;4 &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">64·x &nbsp;- 480·x &nbsp;+ 720·x &nbsp;- 120&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">HERMITE_H_LIST</span><span class="rvts6">(n, x) simplifies to a vector of the first n Hermite polynomials. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">HERMITE_H_LIST(7, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector of H0(x) through H6(x).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">HERMITE_HE</span><span class="rvts6">(n, x) simplifies to the nth associated Hermite polynomial Hen(x) based on the recursion</span></p>
+<p class="rvps23"><span class="rvts6">He0(x) = 1</span></p>
+<p class="rvps23"><span class="rvts6">He1(x) = x</span></p>
+<p class="rvps23"><span class="rvts6">He(n+1)(x) = x·Hen(x) - n·He(n-1)(x)</span></p>
+<p class="rvps3"><span class="rvts6">For example,</span></p>
+<p class="rvps19"><span class="rvts10">HERMITE_HE(6, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to He6(x)</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp;6 &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">x &nbsp;- 15·x &nbsp;+ 45·x &nbsp;- 15&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">HERMITE_HE_LIST</span><span class="rvts6">(n, x) simplifies to a vector of the first n associated Hermite polynomials. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">HERMITE_HE_LIST(7, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector of He0(x) through He6(x).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">WEBER_D</span><span class="rvts6">(n, x) simplifies to Weber's nth parabolic cylinder function Dn(x). &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">WEBER_D(6, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp;- x /4 &nbsp; 6 &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts45">e</span><span class="rvts10"> &nbsp; &nbsp; &nbsp;·(x &nbsp;- 15·x &nbsp;+ 45·x &nbsp;- 15)&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LAGUERRE_L</span><span class="rvts6">(n, x) simplifies to the nth Laguerre polynomial Ln(x) based on the recursion</span></p>
+<p class="rvps23"><span class="rvts6">L0(x) = 1</span></p>
+<p class="rvps23"><span class="rvts6">L1(x) = -x + 1</span></p>
+<p class="rvps23"><span class="rvts6">(n+1)·L(n+1)(x) = (2·n+1-x)·Ln(x) - n·L(n-1)(x)</span></p>
+<p class="rvps3"><span class="rvts6">For example,</span></p>
+<p class="rvps19"><span class="rvts10">LAGUERRE_L(4, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to L4(x)</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; 4 &nbsp; &nbsp; &nbsp; &nbsp;3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp;x &nbsp; &nbsp; &nbsp;2·x &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">———— - —————— + 3·x &nbsp;- 4·x + 1&nbsp;</span><br/><span class="rvts10">&nbsp;24 &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LAGUERRE_L_LIST</span><span class="rvts6">(n, x) simplifies to a vector of the first n Laguerre polynomials. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">LAGUERRE_L_LIST(5, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector of L0(x) through L4(x).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GENERALIZED_LAGUERRE</span><span class="rvts6">(n, </span><span class="rvts9">α</span><span class="rvts6">, x) simplifies to the nth generalized Laguerre polynomial Ln(</span><span class="rvts9">α</span><span class="rvts6">)(x) based on the recursion</span></p>
+<p class="rvps23"><span class="rvts6">L0(</span><span class="rvts9">α</span><span class="rvts6">)(x) = 1</span></p>
+<p class="rvps23"><span class="rvts6">L1(</span><span class="rvts9">α</span><span class="rvts6">)(x) = -x + </span><span class="rvts9">α</span><span class="rvts6"> + 1</span></p>
+<p class="rvps23"><span class="rvts6">(n+1)·L(n+1)(</span><span class="rvts9">α</span><span class="rvts6">)(x) = (2·n+</span><span class="rvts9">α</span><span class="rvts6">+1-x)·Ln(</span><span class="rvts9">α</span><span class="rvts6">)(x) - (n+</span><span class="rvts9">α</span><span class="rvts6">)·L(n-1)(</span><span class="rvts9">α</span><span class="rvts6">)(x)</span></p>
+<p class="rvps3"><span class="rvts6">For example,</span></p>
+<p class="rvps19"><span class="rvts10">GENERALIZED_LAGUERRE(4, 2, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to L4(2)(x)</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; 4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp;x &nbsp; &nbsp; &nbsp;3 &nbsp; &nbsp;15·x &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">———— - x &nbsp;+ ——————— - 20·x + 15&nbsp;</span><br/><span class="rvts10">&nbsp;24 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GENERALIZED_LAGUERRE_LIST</span><span class="rvts6">(n, </span><span class="rvts9">α</span><span class="rvts6">, x) simplifies to a vector of the first n generalized </span><span class="rvts9">α</span><span class="rvts6"> Laguerre polynomials. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">GENERALIZED_LAGUERRE_LIST(5, 2, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector of L0(2)(x) through L4(2)(x).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">JACOBI_P</span><span class="rvts6">(n, </span><span class="rvts9">α,</span><span class="rvts6"> </span><span class="rvts9">β</span><span class="rvts6">, x) simplifies to the nth Jacobi polynomial Pn(</span><span class="rvts9">α</span><span class="rvts6">, </span><span class="rvts9">β</span><span class="rvts6">)(x). &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">JACOBI_P(4, 2, 1, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to P4(2,1)(x)</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">&nbsp;5·(33·x &nbsp;+ 12·x &nbsp;- 18·x &nbsp;- 4·x + 1) &nbsp;</span><br/><span class="rvts10">—————————————————————————————————————&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 8 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">JACOBI_P_LIST</span><span class="rvts6">(n, </span><span class="rvts9">α,</span><span class="rvts6"> </span><span class="rvts9">β</span><span class="rvts6">, x) simplifies to a vector of the first n Jacobi (</span><span class="rvts9">α,</span><span class="rvts6"> </span><span class="rvts9">β)</span><span class="rvts6"> polynomials. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">JACOBI_P_LIST(5, 2, 1, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector of P0(2,1)(x) through P4(2,1)(x).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GEGENBAUER_C</span><span class="rvts6">(n, </span><span class="rvts9">α</span><span class="rvts6">, x) simplifies to the nth Gegenbauer ultraspherical polynomial Cn</span><span class="rvts9">α</span><span class="rvts6">(x). &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">GEGENBAUER_C(4, 2, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to C4(2)(x)</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">80·x &nbsp;- 48·x &nbsp;+ 3&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GEGENBAUER_C_LIST</span><span class="rvts6">(n, </span><span class="rvts9">α,</span><span class="rvts6"> x) simplifies to a vector of the first n Gegenbauer ultraspherical </span><span class="rvts9">α</span><span class="rvts6"> polynomials. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts10">GEGENBAUER_C_LIST(5, 2, x)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to a vector of C0(2)(x) through C4(2)(x).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/help-authoring-tool">Single source CHM, PDF, DOC and HTML Help creation</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

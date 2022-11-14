@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Combinatorial Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Bell number,BELL(n),Bernoulli numbers,Bernoulli polynomials,BERNOULLI(n),BERNOULLI_POLY(n,x),Catalan numbers,CATALAN(n),Centered number,CENTERED(n,p),CENTERED_CUBE(n,d),CENTERED_HEX(n,d),CENTERED_PYRAMID(n,p,d),CombinatorialFunctions.mth,Cube number, centered,Decompositions, number of,DISTINCT_PARTS(n),Dodecahedral number, rhombic,Euler numbers,Euler polynomials,EULER(n),EULER_POLY(n,x),Exponential number,Hex number,Hex number, centered,HEX(n),Octahedral number,OCTAHEDRAL(n),PARTS(n),PARTS_LIST(n),Pentatope number,PENTATOPE(n),Polygonal number,POLYGONAL(n,p),POLYGONAL_PYRAMID(n,p,d),Pyramid number, centered,Pyramid number, polygonal,RECURRENCE(u,v,v0,m),Recurrence, generation,RHOMBIC_DODECAHEDRAL(n),Star number,STAR(n),Stirling numbers,STIRLING(n,k),STIRLING_CYCLE(n,k),STIRLING_SUBSET(n,k),STIRLING1(n,k),STIRLING2(n,k),Tetrahedral number,TETRAHEDRAL(n),Triangular number,TRIANGULAR(n)">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Combinatorial Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Combinatorial Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="CombinatorialFunctions"
+		  data-hnd-context="3525"
+		  data-hnd-title="Combinatorial Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="UtilityLibraryFiles.html" title="Utility Library Files" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="EquationSolving.html" title="Equation Solving" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Combinatorial Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">CombinatorialFunctions.mth</span><span class="rvts6"> defines various combinatorial functions. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CATALAN</span><span class="rvts6">(n) simplifies to the nth Catalan number. &nbsp;For example, to determine the first 10 Catalan numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(CATALAN(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If n and k are positive integers, </span><span class="rvts7">STIRLING</span><span class="rvts6">(n, k) simplifies to the number of ways n objects can be partitioned into k nonempty subsets (i.e. the Stirling number of the </span><span class="rvts32">second</span><span class="rvts6"> kind </span><span class="rvts8">S</span><span class="rvts6">(n, k) ). &nbsp;If n and k are positive integers,</span><span class="rvts7"> STIRLING</span><span class="rvts6">(-k, -n) simplifies to the number of permutations of n objects containing exactly k cycles (i.e. the Stirling number of the </span><span class="rvts32">first</span><span class="rvts6"> kind </span><span class="rvts8">s</span><span class="rvts6">(n, k) ). &nbsp;For example, to generate a table of the first 10 Stirling numbers of the first and second kinds with k=5, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">TABLE([STIRLING(-5,-n),STIRLING(n,5)], n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If n and k are positive integers, </span><span class="rvts7">STIRLING1</span><span class="rvts6">(n, k) and </span><span class="rvts7">STIRLING_CYCLE</span><span class="rvts6">(n, k) simplify to the Stirling number of the </span><span class="rvts32">first</span><span class="rvts6"> kind </span><span class="rvts8">s</span><span class="rvts6">(n, k). &nbsp;For example, to determine the first 10 Stirling numbers of the first kind containing exactly 5 cycles, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(STIRLING1(n,5), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If n and k are positive integers, </span><span class="rvts7">STIRLING2</span><span class="rvts6">(n, k) and </span><span class="rvts7">STIRLING_SUBSET</span><span class="rvts6">(n, k) simplify to the Stirling number of the </span><span class="rvts32">second</span><span class="rvts6"> kind </span><span class="rvts8">S</span><span class="rvts6">(n, k). &nbsp;For example, to determine the first 10 Stirling numbers of the second kind with 5 nonempty subsets, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(STIRLING2(n,5), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">BERNOULLI</span><span class="rvts6">(n) simplifies to the nth Bernoulli number. &nbsp;For example, to determine the first 10 Bernoulli numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(BERNOULLI(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">BERNOULLI_POLY</span><span class="rvts6">(n, x) simplifies to the nth Bernoulli polynomial evaluated at x. &nbsp;For example, to make a table of the first 6 Bernoulli polynomials, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">TABLE(BERNOULLI_POLY(n,x), n, 1, 6)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">EULER</span><span class="rvts6">(n) simplifies to the nth Euler number. &nbsp;For example, to determine the first 10 Euler numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(EULER(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">EULER_POLY</span><span class="rvts6">(n, x) simplifies to the nth Euler polynomial evaluated at x. &nbsp;For example, to make a table of the first 6 Euler polynomials, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">TABLE(EULER_POLY(n,x), n, 1, 6)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PARTS</span><span class="rvts6">(n) simplifies to the number of decompositions of n into integer summands without regard to order. &nbsp;For example, to verify that the number of parts of 4 = 1+3 = 2+2 = 1+1+2 = 1+1+1 is 5, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">PARTS(4)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PARTS_LIST</span><span class="rvts6">(n) simplifies to an n+1-element vector of the number of decompositions of 0 through n into integer summands without regard to order. &nbsp;For example, to determine the number of parts of 0 through 4, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">PARTS_LIST(4)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DISTINCT_PARTS</span><span class="rvts6">(n) simplifies to the number of decompositions of n into </span><span class="rvts32">distinct</span><span class="rvts6"> integer summands without regard to order. &nbsp;For example, to verify that the number of distinct parts of 4 = 1+3 is 2, simplify the expression,</span></p>
+<p class="rvps6"><span class="rvts10">DISTINCT_PARTS(4)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">BELL</span><span class="rvts6">(n) simplifies to the nth Bell or exponential number. &nbsp;For example, to determine the first 11 Bell numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(BELL(n), n, 0, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RECURRENCE</span><span class="rvts6">(u, v , v0, m) simplifies to a vector of m elements of the recurrence u where v0 is a vector of the first elements and v is a variable. &nbsp;For example, to determine the first 8 Fibonacci numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">RECURRENCE(v SUB 1 + v SUB 2, v, [1,1], 8)</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TRIANGULAR</span><span class="rvts6">(n) simplifies to the nth triangular number. &nbsp;For example, to determine the first 10 triangular numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(TRIANGULAR(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">TETRAHEDRAL</span><span class="rvts6">(n) simplifies to the nth tetrahedral number. &nbsp;For example, to determine the first 10 tetrahedral numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(TETRAHEDRAL(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PENTATOPE</span><span class="rvts6">(n) simplifies to the nth pentatope number. &nbsp;For example, to determine the first 10 pentatope numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(PENTATOPE(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLYGONAL</span><span class="rvts6">(n, p) simplifies to the nth p-sided polygonal number, p³2. &nbsp;For example, to determine the first 10 4-sided polygonal numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(POLYGONAL(n, 4), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">POLYGONAL_PYRAMID</span><span class="rvts6">(n, p, d) simplifies to the nth p-sided d-dimensional polygonal pyramid number, p³2. &nbsp;For example, to determine the first 10 4-sided 4th dimensional polygonal pyramid numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(POLYGONAL_PYRAMID(n, 4, 4), n, 1, 10)</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">HEX</span><span class="rvts6">(n) simplifies to the nth hex (i.e. 6-sided centered) number. &nbsp;For example, to determine the first 10 hex numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(HEX(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">STAR</span><span class="rvts6">(n) simplifies to the nth star (i.e. 12-sided centered) number. &nbsp;For example, to determine the first 10 star numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(STAR(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CENTERED</span><span class="rvts6">(n, p) simplifies to the nth p-sided centered number. &nbsp;For example, to determine the first 10 8-sided centered numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(CENTERED(n,8), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">OCTAHEDRAL</span><span class="rvts6">(n) simplifies to the nth octahedral number. &nbsp;For example, to determine the first 10 octahedral numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(OCTAHEDRAL(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CENTERED_PYRAMID</span><span class="rvts6">(n, p, d) simplifies to the nth p-sided d-dimensional centered pyramid number, p³2. &nbsp;For example, to determine the first 10 6-sided 3-dimensional numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(CENTERED_PYRAMID(n, 6, 3), n, 1, 10)</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CENTERED_CUBE</span><span class="rvts6">(n, d) simplifies to the nth d-dimensional centered cube number. &nbsp;For example, to determine the first 10 3-dimensional centered cube numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(CENTERED_CUBE(n, 3), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RHOMBIC_DODECAHEDRAL</span><span class="rvts6">(n) simplifies to the nth rhombic dodecahedral number. &nbsp;For example, to determine the first 10 rhombic dodecahedral numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(RHOMBIC_DODECAHEDRAL(n), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CENTERED_HEX</span><span class="rvts6">(n, d) simplifies to the nth d-dimensional centered hex number. &nbsp;For example, to determine the first 10 4-dimensional centered hex numbers, simplify the expression</span></p>
+<p class="rvps6"><span class="rvts10">VECTOR(CENTERED_HEX(n, 4), n, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour/create-help-files-for-the-qt-help-framework">Create help files for the Qt Help Framework</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Second-order Ordinary Differential Equations</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Autonomous differential equation,AUTONOMOUS(r,v),AUTONOMOUS_CONSERVATIVE(q,x,y,x0,y0,v0),Conservative differential equation,Differential equations, ordinary,DSOLVE2(p,q,r,x,c1,c2),DSOLVE2_BV(p,q,r,x,x0,y0,x2,y2),DSOLVE2_IV(p,q,r,x,x0,y0,v0),EXACT2(p,q,x,y,v,c),Liouville differential equation,LIOUVILLE(p,q,x,y,c1,c2),Ordinary differential equations,Second-order ordinary differential equations,SecondOrderODEs.mth">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Second-order Ordinary Differential Equations">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Second-order Ordinary Differential Equations" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Second-orderOrdinaryDifferential"
+		  data-hnd-context="3507"
+		  data-hnd-title="Second-order Ordinary Differential Equations"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li><li>Differential and Recurrence Equations</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="First-orderOrdinaryDifferentialE.html" title="First-order Ordinary Differential Equations" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ApproximateSolutionofODEs.html" title="Approximate Solution of ODEs" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Second-order Ordinary Differential Equations</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">SecondOrderODES.mth</span><span class="rvts6"> defines functions for finding exact solutions of second order ordinary differential equations. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Sometimes more than one method may be applicable. &nbsp;The most easily applied methods are described first, beginning with direct methods that produce an explicit solution and only require recognizing a pattern. &nbsp;In contrast, later methods generally give implicit solutions or require more steps, such as solving a sequence of two first order differential equations. &nbsp;The file </span><a class="rvts19" href="First-orderOrdinaryDifferentialE.html">FirstOrderODES.mth</a><span class="rvts20">OA7SLO</span><span class="rvts6"> can be used to help solve these first order equations.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The notation used here and in the file </span><span class="rvts7">SecondOrderODES.mth</span><span class="rvts6"> is the same as that described near the beginning of the help for </span><a class="rvts19" href="First-orderOrdinaryDifferentialE.html">FirstOrderODES.mth</a><span class="rvts20">OA7SLO</span><span class="rvts6">. &nbsp;Also y=y2 at x=x2 is used as a second boundary condition, and y'=v0 at x=x0 is used as a second initial condition. &nbsp;d²y/dx² is abbreviated as y" for descriptive purposes only. &nbsp;In </span><span class="rvts8">Derive</span><span class="rvts6"> the double-quote mark can </span><span class="rvts32">not</span><span class="rvts6"> be used to denote second derivatives.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DSOLVE2</span><span class="rvts6">(p, q, r, x, c1, c2) simplifies to an explicit general solution of the linear second order ordinary differential equation</span></p>
+<p class="rvps19"><span class="rvts6">y" + p(x)·y' + q(x)·y = r(x)</span></p>
+<p class="rvps3"><span class="rvts6">in terms of arbitrary constants c1 and c2. &nbsp;Note that the last two arguments can be omitted if they are variables and you are satisfied with the names c1 and c2.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If no method applies or the equation cannot be converted to an equivalent one having a p and a q that are independent of x, </span><span class="rvts7">DSOLVE2</span><span class="rvts6"> returns the word "inapplicable".</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DSOLVE2</span><span class="rvts6"> can easily find a solution if p and q are numeric constants. &nbsp;When q is a symbolic constant, the result will often have a more appropriate form (sinusoidal versus exponential) if q has been declared positive or negative.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">A solution may contain indefinite integrals involving r(x) for which </span><span class="rvts8">Derive</span><span class="rvts6"> can not determine a closed-form antiderivative. &nbsp;To verify such a result, substitute the solution for y into the unsimplified form</span></p>
+<p class="rvps27"><span class="rvts9">⎡</span><span class="rvts10">d </span><span class="rvts9">⎤</span><span class="rvts10">2 &nbsp; &nbsp; &nbsp; &nbsp; d &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts9">⎢</span><span class="rvts10">——</span><span class="rvts9">⎥</span><span class="rvts10"> y + p(x)·—— y + q(x)·y - r(x)&nbsp;</span><br/><span class="rvts9">⎣</span><span class="rvts10">dx</span><span class="rvts9">⎦</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;dx &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">and then see that it simplifies to 0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If you want to find a specific solution for symbolic or numeric initial or boundary conditions, it is best to use </span><span class="rvts7">DSOLVE2_IV</span><span class="rvts6"> or </span><span class="rvts7">DSOLVE2_BV</span><span class="rvts6"> that directly return specific solutions. &nbsp;Otherwise, after finding a general solution using </span><span class="rvts7">DSOLVE2</span><span class="rvts6">, you must substitute these constraints into general solution, solve for c1 and c2, and then substitute those values back into the general solution.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DSOLVE2_BV</span><span class="rvts6">(p, q, r, x, x0, y0, x2, y2) is similar to </span><span class="rvts7">DSOLVE2</span><span class="rvts6">, but simplifies to a specific solution that satisfies the boundary conditions y=y0 at x=x0 and y=y2 at x=x2.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DSOLVE2_IV</span><span class="rvts6">(p, q, r, x, x0, y0, v0) is similar to</span><span class="rvts7">DSOLVE2_BV</span><span class="rvts6">, but simplifies to a specific solution that satisfies the initial conditions y=y0 and y'=v0 at x=x0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">AUTONOMOUS_CONSERVATIVE</span><span class="rvts6">(q, x, y, x0, y0, v0) simplifies to an implicit algebraic solution of an equation of the form y"=q(y) having initial conditions y=y0 and y'=v0 at x=x0. &nbsp;Equations of this form are </span><span class="rvts7">autonomous</span><span class="rvts6"> because the variable x does not occur and </span><span class="rvts7">conservative</span><span class="rvts6"> because y' does not occur. &nbsp;If instead of the initial condition y'=v0 you have a second boundary condition y=y2 at x=x2, substitute x2 for x and y2 for y in the solution and solve for v0, which you can then eliminate in favor of x2 and y2.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LIOUVILLE</span><span class="rvts6">(p, q, x, y, c1, c2) simplifies to an implicit algebraic solution of the </span><span class="rvts7">Liouville</span><span class="rvts6"> differential equation</span></p>
+<p class="rvps6"><span class="rvts6">y" + p(x)·y' + q(y)·(y')² = 0</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">This solution is a linear combination of two arbitrary constants c1 and c2. &nbsp;Consequently, you can substitute two sets of initial or boundary conditions, and then solve two simultaneous linear equations for c1 and c2.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To solve an equation missing the dependent variable y: &nbsp;f(y", y', x) = 0, use a new variable v for y' and use v' for y" to obtain a first order equation for v. &nbsp;If you can solve that first order equation to obtain an algebraic equation relating v, x, x0, and v0, then noting that v=y', you can attempt to solve this subsequent first order equation to obtain an algebraic equation relating y, x, x0, y0, and v0. &nbsp;The file </span><a class="rvts19" href="First-orderOrdinaryDifferentialE.html">FirstOrderODES.mth</a><span class="rvts20">OA7SLO</span><span class="rvts6"> may help solve the two successive first order equations.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">AUTONOMOUS</span><span class="rvts6">(r, v) simplifies an expression for dv/dy, given an autonomous equation y" = r(y, v) with v representing y'. &nbsp;Equations of this form are </span><span class="rvts7">autonomous</span><span class="rvts6"> because the independent variable x doesn't occur. &nbsp;If you can solve this resulting first order equation to obtain an algebraic equation relating v, y, v0, and y0, then noting that v=y', this result is another first order differential equation, which you can then attempt to solve to obtain an algebraic equation relating y, x, x0, v0, and y0. &nbsp;The file </span><a class="rvts19" href="First-orderOrdinaryDifferentialE.html">FirstOrderODES.mth</a><span class="rvts20">OA7SLO</span><span class="rvts6"> may help solve the two successive first order equations. &nbsp;If r is also independent of v, instead use the function </span><span class="rvts7">AUTONOMOUS_CONSERVATIVE</span><span class="rvts6"> to solve the equation in one step.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">EXACT2</span><span class="rvts6">(p, q, x, y, v, c) simplifies to an algebraic equation relating the solution of the equation relating y, v, x, and an arbitrary symbolic constant c, provided the equation</span></p>
+<p class="rvps19"><span class="rvts6">p(x, y, v)·y" + q(x, y, v) = 0</span></p>
+<p class="rvps3"><span class="rvts6">is exact. &nbsp;Note that here the variable v is used to represent y'. &nbsp;You can then attempt to solve the resulting first order differential equation. &nbsp;If the equation is inexact, </span><span class="rvts7">EXACT2</span><span class="rvts6"> returns "inapplicable".</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpauthoringsoftware.com">News and information about help authoring tools and software</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

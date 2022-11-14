@@ -1,0 +1,609 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Utility File Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Functions, mathematical">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Utility File Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Utility File Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="UtilityFileFunctions"
+		  data-hnd-context="6002"
+		  data-hnd-title="Utility File Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Indices</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Built-inFunctions.html" title="Built-in Functions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ReservedNames.html" title="Reserved Names" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Utility File Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The following is an alphabetical list of the functions defined in the utility files in Math directory distributed with </span><span class="rvts8">Derive</span><span class="rvts6"> (see the </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">). &nbsp;These functions are automatically load on demand.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">ADJOINT</a><span class="rvts76">I._DEZ</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">adjoint of square matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">AI_SERIES</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for Airy function Ai(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">ALMOST_LIN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(r,b,p,q,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">implicit solution of r(x,y)y'+p(x)b(y)=q(x) if almost linear</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">ALMOST_LIN_GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(r,b,p,q,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of r(x,y)y'+p(x)b(y)=q(x) if almost linear</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">APPEND_COLUMNS</a><span class="rvts76">I._DEZ</span><span class="rvts6">(A,B)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">append columns of A and B</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">APPROX_EIGENVECTOR</a><span class="rvts76">I._DEZ</span><span class="rvts6">(A,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximate eigenvector of A for approximate eigenvalue </span><span class="rvts9">μ</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">ARC_LENGTH</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(y,x,x1,x2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">arc length of y(x) from x=x1 to x2</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">ARC_LENGTH</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(y,x,x1,x2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of </span><span class="rvts9">μ</span><span class="rvts6">(x) along arc y(x) from x=x1 to x2</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingComplex-valuedExpression.html">ARCS</a><span class="rvts76">Plotting_Complex_valued_Expressions</span><span class="rvts6">(w,z,r0,rm,m,</span><span class="rvts9">θ</span><span class="rvts6">0,</span><span class="rvts9">θ</span><span class="rvts6">n,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">w-plane map of polar z-plane grid r=r0...rm, </span><span class="rvts9">θ</span><span class="rvts6">=</span><span class="rvts9">θ</span><span class="rvts6">0...</span><span class="rvts9">θ</span><span class="rvts6">n</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">AREA</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">area of region x=x1 to x2 and y=y1(x) to y2(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">AREA</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of </span><span class="rvts9">μ</span><span class="rvts6">(x,y) over region</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">AREA_CENTROID</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">area centroid of region</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">AREA_CENTROID</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">centroid of density </span><span class="rvts9">μ</span><span class="rvts6">(x,y) over region</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">AREA_INERTIA</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">area inertia tensor of region</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">AREA_INERTIA</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">inertia tensor of density </span><span class="rvts9">μ</span><span class="rvts6">(x,y)</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">AREA_OF_REVOLUTION</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(y,x,x1,x2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">area of y(x) revolved about x-axis</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingAreasandIntegrals.html">AreaBetweenCurves</a><span class="rvts76">Plotting_Areas_and_Integrals</span><span class="rvts6">(u,v,x,a,b)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">plots area between u(x) and v(x) from x = a to b (a &lt; b)</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingAreasandIntegrals.html">AreaOverCurves</a><span class="rvts76">Plotting_Areas_and_Integrals</span><span class="rvts6">(u,x,a,b)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">plots area over u(x) and under the x-axis from x = a to b (a &lt; b)</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingAreasandIntegrals.html">AreaUnderCurves</a><span class="rvts76">Plotting_Areas_and_Integrals</span><span class="rvts6">(u,x,a,b)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">plots area under u(x) and above the x-axis from x = a to b (a &lt; b)</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">AREAY_OF_REVOLUTION</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(y,x,x1,x2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">area of y(x) revolved about y-axis</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">ASSOCIATED_LEGENDRE_P</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,m,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth associated Legendre polynomial Pn(m)(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="Second-orderOrdinaryDifferential.html">AUTONOMOUS</a><span class="rvts76">OB7SLO</span><span class="rvts6">(r,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">dv/dy, given y"=r(y,v), reducing to sequence of two 1st order</span></p>
+<p class="rvps68"><a class="rvts75" href="Second-orderOrdinaryDifferential.html">AUTONOMOUS_CONSERVATIVE</a><span class="rvts76">OB7SLO</span><span class="rvts6">(q,x,y,x0,y0,v0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">solves y"=q(y), y=y0 and y'=v0 at x=x0</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">BELL</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Bell or exponential number</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">BERNOULLI</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Bernoulli number</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">BERNOULLI_ODE</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,k,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">implicit solution of Bernoulli equation y'+p(x)y=q(x)y^k</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">BERNOULLI_ODE_GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,k,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of Bernoulli equation y'+p(x)y=q(x)y^k</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">BERNOULLI_POLY</a><span class="rvts76">1338PND</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Bernoulli polynomial evaluated at x</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_I</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">modified Bessel function of 1st kind In(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_I_ASYMP</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">2-term asymptotic approximation for In(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_I_SERIES</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for In(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_J</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Bessel function of 1st kind Jn(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_J_ASYMP</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">1-term asymptotic approximation for Jn(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_J_LIST</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of Bessel functions of 1st kind J0(z) through Jn(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_J_SERIES</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for Jn(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_K</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">modified Bessel function of 2nd kind Kn(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_K_ASYMP</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">2-term asymptotic approximation for Kn(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_Y</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Bessel function of 2nd kind Yn(z), n fractional</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_Y_ASYMP</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">1-term asymptotic approximation for Yn(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BESSEL_Y_SERIES</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for Yn(z), n integer</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">BI_SERIES</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for Airy function Bi(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">BINOMIAL_DENSITY</a><span class="rvts76">0FMTUG</span><span class="rvts6">(k,n,p)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">binomial probability density function</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">BINOMIAL_DISTRIBUTION</a><span class="rvts76">0FMTUG</span><span class="rvts6">(k,n,p)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">cumulative probability binomial distribution function</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">CATALAN</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Catalan number</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">CENTER_OF_CURVATURE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(y,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">center of curvature of y(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">CENTERED</a><span class="rvts76">1338PND</span><span class="rvts6">(n,p)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth p-sided centered number</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">CENTERED_CUBE</a><span class="rvts76">1338PND</span><span class="rvts6">(n,d)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth d-dimensional centered cube number</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">CENTERED_HEX</a><span class="rvts76">1338PND</span><span class="rvts6">(n,d)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth d-dimensional centered hex number</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">CENTERED_PYRAMID</a><span class="rvts76">1338PND</span><span class="rvts6">(n,p)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth p-sided d-dimensional centered pyramid number</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">CHEBYCHEV_T</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Chebychev polynomial of 1st kind Tn(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">CHEBYCHEV_T_LIST</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of first n Chebychev polynomials of 1st kind</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">CHEBYCHEV_U</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Chebychev polynomial of 2nd kind Un(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">CHEBYCHEV_U_LIST</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of first n Chebychev polynomials of 2st kind</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">CHI_SQUARE</a><span class="rvts76">0FMTUG</span><span class="rvts6">(u,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Chi-square distribution P(u|v), u = </span><span class="rvts9">χ</span><span class="rvts6">²</span></p>
+<p class="rvps68"><a class="rvts75" href="ExponentialIntegrals.html">CI</a><span class="rvts76">7RN4D</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">cosine integral Ci(z), -</span><span class="rvts9">π</span><span class="rvts6"> &lt; phase z &lt; </span><span class="rvts9">π</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">CLAIRAUT</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,v,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of general and implicit solutions of generalized Clairaut differential equation</span></p>
+<p class="rvps68"><a class="rvts75" href="RecurrenceEquations.html">CLAIRAUT_DIF</a><span class="rvts76">OKAKSN</span><span class="rvts6">(p,q,d,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">implicit solution of Clairaut difference equation</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">COFACTOR</a><span class="rvts76">I._DEZ</span><span class="rvts6">(A,i,j)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">numerator of element i,j of inverse of square matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">CONE</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(</span><span class="rvts9">ϕ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">3D coordinate vector of cone at an angle of </span><span class="rvts9">ϕ</span><span class="rvts6"> radians from z-axis</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">CONTINUED_FRACTION</a><span class="rvts76">19ICN1P</span><span class="rvts6">(x,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of n+1 partial quotients of continued fraction of x</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">CONVERGENT</a><span class="rvts76">19ICN1P</span><span class="rvts6">(x,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">kth convergent of x based on continued fraction of x</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">CONVERGENTS</a><span class="rvts76">19ICN1P</span><span class="rvts6">(x,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of first k+1 convergents of x based on continued fraction of x</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">COPROJECTION</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">convert matrix A from lines of constant t to constant s</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">COVARIANT_METRIC_TENSOR</a><span class="rvts76">I._DEZ</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">covariant metric tensor of Jacobian matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">CRT</a><span class="rvts76">19ICN1P</span><span class="rvts6">(a,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">solution of system of linear congruence equations x = ai mod mi</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">CURVATURE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(y,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">curvature of y(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="NumericalApproximation.html">CYCLOTOMIC</a><span class="rvts76">Y5C_1X</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">simplifies to the nth cyclotomic polynomial in x</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">CYLINDER</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">3D coordinate vector of cylinder of radius r from z-axis</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">CYLINDRICAL_VOLUME</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(r, r1,r2,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">1,</span><span class="rvts9">θ</span><span class="rvts6">2,z,z1,z2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">volume of region in cylindrical coordinates</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">CYLINDRICAL_VOLUME</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(r,r1,r2,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">1,</span><span class="rvts9">θ</span><span class="rvts6">2,z,z1,z2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of </span><span class="rvts9">μ</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,z) over region in cylindrical coordinates</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="FresnelIntegrals.html">DAWSON</a><span class="rvts76">XYKLH9</span><span class="rvts6">(x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Dawson</span><span class="rvts6">’</span><span class="rvts6">s integral F(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">DEF_INT_PARTS</a><span class="rvts76">144O15P</span><span class="rvts6">(u,v,x,a,b)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of u(x)·v(x) from x=a to b using integration by parts</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">DEF_INT_SUBST</a><span class="rvts76">144O15P</span><span class="rvts6">(y,x,u,a,b)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of y(x) from x=a to b using substitution</span></p>
+<p class="rvps68"><a class="rvts75" href="NumericalApproximation.html">DIF_DATA</a><span class="rvts76">Y5C_1X</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">1st derivative of 2-column numeric data matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="NumericalApproximation.html">DIF_NUMERIC</a><span class="rvts76">Y5C_1X</span><span class="rvts6">(y,x,x0,h,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth derivative of y wrt x at x0 using step size h</span></p>
+<p class="rvps68"><a class="rvts75" href="NumericalApproximation.html">DIF2_DATA</a><span class="rvts76">Y5C_1X</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">2nd derivative of 2-column numeric data matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">DIGAMMA_PSI</a><span class="rvts76">0FMTUG</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximation for digamma function </span><span class="rvts9">ψ</span><span class="rvts6">(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="RiemannZetaFunctions.html">DILOG</a><span class="rvts76">1CKZXC</span><span class="rvts6">(x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">dilogarithm function of x</span></p>
+<p class="rvps68"><a class="rvts75" href="ApproximateSolutionofODEs.html">DIRECTION_FIELD</a><span class="rvts76">1NBVQQO</span><span class="rvts6">(r,x,x0,xm,m,y,y0,yn,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector that plots as direction field for y'=r(x,y)</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">DISTINCT_PARTS</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">number of decompositions of n into integer summands</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">DIVISOR_SIGMA</a><span class="rvts76">19ICN1P</span><span class="rvts6">(k,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">sum of kth powers of positive divisors of n</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">DIVISOR_TAU</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">number of divisors of n</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">DIVISORS</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">ordered vector of all positive divisors of n</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">DSOLVE1</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specific solution of p(x,y)+q(x,y)y'=0 with initial conditions y=y0 at x=x0</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">DSOLVE1_GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of p(x,y)+q(x,y)y'=0 in terms of c</span></p>
+<p class="rvps68"><a class="rvts75" href="Second-orderOrdinaryDifferential.html">DSOLVE2</a><span class="rvts76">OB7SLO</span><span class="rvts6">(p,q,r,x,c1,c2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of y"+p(x)y'+q(x)y=r(x) in terms of c1 and c2</span></p>
+<p class="rvps68"><a class="rvts75" href="Second-orderOrdinaryDifferential.html">DSOLVE2_BV</a><span class="rvts76">OB7SLO</span><span class="rvts6">(p,q,r,x,x0,y0,x2,y2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specific solution of y"+p(x)y'+q(x)y=r(x) with boundary conditions</span></p>
+<p class="rvps68"><a class="rvts75" href="Second-orderOrdinaryDifferential.html">DSOLVE2_IV</a><span class="rvts76">OB7SLO</span><span class="rvts6">(p,q,r,x,x0,y0,v0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specific solution of y"+p(x)y'+q(x)y=r(x) with initial conditions</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ExponentialIntegrals.html">EI</a><span class="rvts76">7RN4D</span><span class="rvts6">(x,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m terms of series approximation for exponential integral Ei(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="ExponentialIntegrals.html">EI1</a><span class="rvts76">7RN4D</span><span class="rvts6">(z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m terms of series approximation for E1(z), -</span><span class="rvts9">π</span><span class="rvts6"> &lt; phase z &lt; </span><span class="rvts9">π</span></p>
+<p class="rvps68"><a class="rvts75" href="EllipticIntegrals.html">EIF</a><span class="rvts76">296HRX</span><span class="rvts6">(</span><span class="rvts9">Φ</span><span class="rvts6">,m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n iteration approximation of elliptic integral of 1st kind F(</span><span class="rvts9">Φ</span><span class="rvts6">|m)</span></p>
+<p class="rvps68"><a class="rvts75" href="EllipticIntegrals.html">ELLIPTIC_E</a><span class="rvts76">296HRX</span><span class="rvts6">(</span><span class="rvts9">Φ</span><span class="rvts6">,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximation of elliptic integral of 2nd kind E(</span><span class="rvts9">Φ</span><span class="rvts6">|m)</span></p>
+<p class="rvps68"><a class="rvts75" href="EllipticIntegrals.html">ELLIPTIC_F</a><span class="rvts76">296HRX</span><span class="rvts6">(</span><span class="rvts9">Φ</span><span class="rvts6">,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximation of elliptic integral of 1st kind F(</span><span class="rvts9">Φ</span><span class="rvts6">|m)</span></p>
+<p class="rvps68"><a class="rvts75" href="EllipticIntegrals.html">ELLIPTIC_PI</a><span class="rvts76">296HRX</span><span class="rvts6">(</span><span class="rvts9">Φ</span><span class="rvts6">,m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximation of elliptic integral of 3rd kind II(n;</span><span class="rvts9">Φ</span><span class="rvts6">|m)</span></p>
+<p class="rvps68"><a class="rvts75" href="ExponentialIntegrals.html">EN</a><span class="rvts76">7RN4D</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth exponential integral En(z), real part of z &gt; 0</span></p>
+<p class="rvps68"><a class="rvts75" href="ExponentialIntegrals.html">EN_ASYMP</a><span class="rvts76">7RN4D</span><span class="rvts6">(n,z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of asymptotic approximation for En(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">EULER</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Euler number</span></p>
+<p class="rvps68"><a class="rvts75" href="ApproximateSolutionofODEs.html">EULER_ODE</a><span class="rvts76">1NBVQQO</span><span class="rvts6">(r,x,y,x0,y0,h,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of n+1 solution points of y'=r(x,y) using Euler's method</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">EULER_BETA</a><span class="rvts76">0FMTUG</span><span class="rvts6">(z,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Euler's beta function B(z,w)</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">EULER_PHI</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Euler's totient function </span><span class="rvts9">ϕ</span><span class="rvts6">(n)</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">EULER_POLY</a><span class="rvts76">1338PND</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Euler polynomial evaluated at x</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">EXACT</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">implicit specific solution of p(x,y)+q(x,y)y'=0, if it is exact</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">EXACT_EIGENVECTOR</a><span class="rvts76">I._DEZ</span><span class="rvts6">(A,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">eigenvector of matrix A corresponding to exact eigenvalue </span><span class="rvts9">μ</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">EXACT_GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">implicit general solution of p(x,y)+q(x,y)y'=0, if it is exact</span></p>
+<p class="rvps68"><a class="rvts75" href="Second-orderOrdinaryDifferential.html">EXACT2</a><span class="rvts76">OB7SLO</span><span class="rvts6">(p,q,x,y,v,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">reduces order of p(x,y,v)y"+q(x,y,v)=0 with v=y', if it is exact</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">EXTENDED_GCD</a><span class="rvts76">19ICN1P</span><span class="rvts6">(a,b)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector [g, [x, y]] of integers such that g = gcd(a, b) = x·a+y·b</span></p>
+<p class="rvps68"><a class="rvts75" href="ApproximateSolutionofODEs.html">EXTRACT_2_COLUMNS</a><span class="rvts76">1NBVQQO</span><span class="rvts6">(A,j,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">matrix composed of jth and kth columns of matrix A</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">F_DISTRIBUTION</a><span class="rvts76">0FMTUG</span><span class="rvts6">(F,v1,v2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">cumulative probability F-distribution P(F|v1,v2)</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">FAREY</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of Farey fractions of order n</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">FIBONACCI</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Fibonacci number</span></p>
+<p class="rvps68"><a class="rvts75" href="EquationSolving.html">FIXED_POINT</a><span class="rvts76">.S02QQ</span><span class="rvts6">(g,x,x0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n iterations of vector x=g(x), starting at x=x0</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">FORCE0</a><span class="rvts76">I._DEZ</span><span class="rvts6">(A,i,j,p)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">force element i,j of A to 0 using pivot row p</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">FOURIER</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(y,t,t1,t2,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth harmonic Fourier series of y(t) from t=t1 to t2</span></p>
+<p class="rvps68"><a class="rvts75" href="FresnelIntegrals.html">FRESNEL_COS</a><span class="rvts76">XYKLH9</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximates to Fresnel cosine integral C(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="FresnelIntegrals.html">FRESNEL_COS_ASYMP</a><span class="rvts76">XYKLH9</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">5-term asymptotic approximation for cosine integral C(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="FresnelIntegrals.html">FRESNEL_COS_J</a><span class="rvts76">XYKLH9</span><span class="rvts6">(z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximation of C(z) based on sum of m+1 spherical Bessel functions</span></p>
+<p class="rvps68"><a class="rvts75" href="FresnelIntegrals.html">FRESNEL_COS_SERIES</a><span class="rvts76">XYKLH9</span><span class="rvts6">(z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for cosine integral C(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="FresnelIntegrals.html">FRESNEL_SIN</a><span class="rvts76">XYKLH9</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximates to Fresnel sine integral S(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="FresnelIntegrals.html">FRESNEL_SIN_ASYMP</a><span class="rvts76">XYKLH9</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">5-term asymptotic approximation for sine integral S(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="FresnelIntegrals.html">FRESNEL_SIN_J</a><span class="rvts76">XYKLH9</span><span class="rvts6">(z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approximation of S(z) based on sum of m+1 spherical Bessel functions</span></p>
+<p class="rvps68"><a class="rvts75" href="FresnelIntegrals.html">FRESNEL_SIN_SERIES</a><span class="rvts76">XYKLH9</span><span class="rvts6">(z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for sine integral S(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">FUN_LIN_CCF</a><span class="rvts76">OA7SLO</span><span class="rvts6">(r,p,q,k,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">implicit solution of y'=r(p·x+q·y+k), if p,q,k constant</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">FUN_LIN_CCF_GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(r,p,q,k,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solutions of y'=r(p·x+q·y+k), if p,q,k constant</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="HypergeometricFunctions.html">GAUSS</a><span class="rvts76">3XSHYO3</span><span class="rvts6">(a,b,c,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Gauss hypergeometric function F(a,b;c;z)</span></p>
+<p class="rvps68"><a class="rvts75" href="HypergeometricFunctions.html">GAUSS_SERIES</a><span class="rvts76">3XSHYO3</span><span class="rvts6">(a,b,c,z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series for Gauss hypergeometric function</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">GEGENBAUER_C</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,a,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Gegenbauer ultraspherical polynomial Cn(a)(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">GEGENBAUER_C_LIST</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,a,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of first n Gegenbauer ultraspherical polynomials</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">GEN_HOM</a><span class="rvts76">OA7SLO</span><span class="rvts6">(r,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">implicit specific solution of y'=r(x,y), if r is generalized homogeneous</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">GEN_HOM_GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(r,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">implicit general solution of y'=r(x,y), if r is generalized homogeneous</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">GEN_LUCAS</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n,p,q,L0,L1)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth term of the generalized Lucas sequence L(n)</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">GENERALIZED_LAGUERRE</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,a,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth generalized Laguerre polynomial Ln(a)(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">GENERALIZED_LAGUERRE_LIST</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,a,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of first n generalized Laguerre a polynomials</span></p>
+<p class="rvps68"><a class="rvts75" href="RecurrenceEquations.html">GEOMETRIC1</a><span class="rvts76">OKAKSN</span><span class="rvts6">(k,p,q,x,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">solution of 1st order linear-geometric recurrence equation</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">GEOMETRY_MATRIX</a><span class="rvts76">I._DEZ</span><span class="rvts6">(</span><span class="rvts9">θ</span><span class="rvts6">,G)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">geometry matrix for coordinate vector </span><span class="rvts9">θ</span><span class="rvts6"> having metric tensor G</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">GOODNESS_OF_FIT</a><span class="rvts76">144O15P</span><span class="rvts6">(u,x,A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">standard deviation of u(x) from data in matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingGridLinesandPoints.html">GRID_LINES</a><span class="rvts76">Plotting_Grid_Lines_and_Points</span><span class="rvts6">(a,b,s,o)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">plots as three sets of grid lines in a 3D-plot window</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingGridLinesandPoints.html">GRID_POINTS</a><span class="rvts76">Plotting_Grid_Lines_and_Points</span><span class="rvts6">(a,b,s,o)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">plots as three sets of grid points in a 3D-plot window</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">HERMITE_H</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Hermite polynomial Hn(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">HERMITE_H_LIST</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of first n Hermite polynomials</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">HERMITE_HE</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth associated Hermite polynomial HEn(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">HERMITE_HE_LIST</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of first n associated Hermite polynomials</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">HOMOGENEOUS</a><span class="rvts76">OA7SLO</span><span class="rvts6">(r,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specific solution of y'=r(x,y), if r is homogeneous</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">HOMOGENEOUS_GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(r,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of y'=r(x,y), if r is homogeneous</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingComplex-valuedExpression.html">HORIZONTALS</a><span class="rvts76">Plotting_Complex_valued_Expressions</span><span class="rvts6">(w,z,z00,zmn,m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">2D plots as w-plane map of z-plane grid from z00 to zmn</span></p>
+<p class="rvps68"><a class="rvts75" href="RiemannZetaFunctions.html">HURWITZ_ZETA</a><span class="rvts76">1CKZXC</span><span class="rvts6">(s,a,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for Hurwitz generalized zeta function</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">HYPERGEOMETRIC_DENSITY</a><span class="rvts76">0FMTUG</span><span class="rvts6">(k,n,m,j)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">hypergeometric probability density function</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">HYPERGEOMETRIC_DISTRIBUTION</a><span class="rvts76">0FMTUG</span><span class="rvts6">(k,n,m,j)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">cumulative hypergeometric probability distribution function</span></p>
+<p class="rvps68"><a class="rvts75" href="HypergeometricFunctions.html">HYPERGEOMETRIC_SERIES</a><span class="rvts76">3XSHYO3</span><span class="rvts6">(plist,qlist,z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series for generalized hypergeometric function</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">IMP_CENTER_OF_ CURVATURE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(u,x,y)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">center of curvature of implicit function u(x,y)=0</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">IMP_CURVATURE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(u,x,y)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">curvature of implicit function u(x,y)=0</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">IMP_DIF</a><span class="rvts76">AUKXVG</span><span class="rvts6">(u,x,y,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth derivative of implicit function u(x,y)=0</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">IMP_OSCULATING_CIRCLE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(u,x,y,x0,y0,</span><span class="rvts9">θ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">circle osculating implicit function u(x,y)=0 at (x0,y0) in terms of </span><span class="rvts9">θ</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">IMP_PERPENDICULAR</a><span class="rvts76">AUKXVG</span><span class="rvts6">(u,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">line perpendicular to implicit function u(x,y)=0 at (x0,y0)</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">IMP_TANGENT</a><span class="rvts76">AUKXVG</span><span class="rvts6">(u,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">line tangent to implicit function u(x,y)=0 at (x0,y0)</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">INCOMPLETE_BETA</a><span class="rvts76">0FMTUG</span><span class="rvts6">(x,z,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">incomplete beta function Bx(z,w)</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">INCOMPLETE_GAMMA</a><span class="rvts76">0FMTUG</span><span class="rvts6">(z,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">incomplete gamma function P(z,w), real part z &gt; 0</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">INCOMPLETE_GAMMA_SERIES</a><span class="rvts76">0FMTUG</span><span class="rvts6">(z,w,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for P(z,w)</span></p>
+<p class="rvps68"><a class="rvts75" href="NumericalApproximation.html">INT_DATA</a><span class="rvts76">Y5C_1X</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">antiderivative of numerical data matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">INT_PARTS</a><span class="rvts76">144O15P</span><span class="rvts6">(u,v,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">antiderivative of u(x)·v(x) using integration by parts</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">INT_SUBST</a><span class="rvts76">144O15P</span><span class="rvts6">(y,x,u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">antiderivative of y(x) by substituting x for u(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">INTEGRATING_FACTOR</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specific solution of p(x,y)+q(x,y)y'=0, if integrating factor exists</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">INTEGRATING_FACTOR_GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of p(x,y)+q(x,y)y'=0, if integrating factor exists</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">INVERSE</a><span class="rvts76">144O15P</span><span class="rvts6">(u,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">inverse of u(x) with respect to x</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">ISOMETRIC</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">2D isometric projection of 3D coordinate vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">ISOMETRICS</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(v,s,s0,sm,m,t,t0,tn,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector that 2D plots as isometric projection of 3D coordinate vector v</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">JACOBI</a><span class="rvts76">19ICN1P</span><span class="rvts6">(a,b)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Jacobi symbol (a/b)</span></p>
+<p class="rvps68"><a class="rvts75" href="EllipticIntegrals.html">JACOBI_AM</a><span class="rvts76">296HRX</span><span class="rvts6">(u,m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Jacobi elliptic amplitude function</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">JACOBI_P</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,a,b,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Jacobi polynomial Pn(a,b)(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">JACOBI_P_LIST</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,a,b,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of 1st n Jacobi (a,b) polynomials</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">JACOBIAN</a><span class="rvts76">I._DEZ</span><span class="rvts6">(u,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Jacobian matrix of the coordinate transformation x=u(v1,v2, …, vm)</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="EllipticIntegrals.html">KI</a><span class="rvts76">296HRX</span><span class="rvts6">(m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">complete elliptic integral of the 1st kind</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">KRONECKER</a><span class="rvts76">I._DEZ</span><span class="rvts6">(i,j)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Kronecker delta function</span></p>
+<p class="rvps68"><a class="rvts75" href="HypergeometricFunctions.html">KUMMER</a><span class="rvts76">3XSHYO3</span><span class="rvts6">(a,b,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Kummer's confluent hypergeometric function M(a,b,z)</span></p>
+<p class="rvps68"><a class="rvts75" href="HypergeometricFunctions.html">KUMMER_SERIES</a><span class="rvts76">3XSHYO3</span><span class="rvts6">(a,b,z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for M(a,b,z)</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">LAGUERRE_L</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Laguerre polynomial Ln(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">LAGUERRE_L_LIST</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of first n Laguerre polynomials</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">LAPLACE</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(y,t,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Laplace transform of y(t) for transform domain variable</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">LEFT_RIEMANN</a><span class="rvts76">144O15P</span><span class="rvts6">(u,x,a,b,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">left Riemann sum of n rectangles of integral of u(x) from x=a to b</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">LEGENDRE_P</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Legendre polynomial Pn(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="OrthogonalPolynomials.html">LEGENDRE_P_LIST</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of first n Legendre polynomials</span></p>
+<p class="rvps68"><a class="rvts75" href="RiemannZetaFunctions.html">LERCH_PHI</a><span class="rvts76">1CKZXC</span><span class="rvts6">(z,s,a,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m terms of series approximation for Lerch transcendent function </span><span class="rvts58">Φ</span><span class="rvts6">(z,s,a)</span></p>
+<p class="rvps68"><a class="rvts75" href="ExponentialIntegrals.html">LI</a><span class="rvts76">7RN4D</span><span class="rvts6">(x,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m terms of series approximation for logarithmic integral li(x), x&gt;1</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">LIM2</a><span class="rvts76">144O15P</span><span class="rvts6">(u,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">limit of u as [x,y] -&gt; [x0,y0] along slope of @1</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">LIN_FRAC</a><span class="rvts76">OA7SLO</span><span class="rvts6">(r,a,b,c,p,q,k,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specific solution of linear fractional equation y'=r((ax+by+c)/(px+qy+k))</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">LIN_FRAC_ GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(r,a,b,c,p,q,k,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of linear fractional equation y'=r((ax+by+c)/(px+qy+k))</span></p>
+<p class="rvps68"><a class="rvts75" href="RecurrenceEquations.html">LIN1_DIFFERENCE</a><span class="rvts76">OKAKSN</span><span class="rvts6">(p,q,x, x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specific solution of recurrence equation y(x+1)=p(x)y(x)+q(x), y(x0)=y0</span></p>
+<p class="rvps68"><a class="rvts75" href="RecurrenceEquations.html">LIN2_CCF</a><span class="rvts76">OKAKSN</span><span class="rvts6">(p,q,r,x,c1,c2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of difference equation y(x+2)+p·y(x+1)+q·y(x)=r(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="RecurrenceEquations.html">LIN2_CCF_BV</a><span class="rvts76">OKAKSN</span><span class="rvts6">(p,q,r,x,x0,y0,x2,y2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specific solution of difference equation y(x+2)+p·y(x+1)+q·y(x)=r(x)</span></p>
+<p class="rvps68"><span class="rvts75">LINEAR_CORRELATION_COEFFICIENT</span><span class="rvts6">(A)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">linear correlation coefficient of 2-column x-y matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">LINEAR1</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">explicit solution of linear monic equation y'+p(x)y=q(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">LINEAR1_GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of linear monic equation y'+p(x)y=q(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="Second-orderOrdinaryDifferential.html">LIOUVILLE</a><span class="rvts76">OB7SLO</span><span class="rvts6">(p,q,x,y,c1,c2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of Liouville equation y"+p(x)y'+q(y)(y')^2=0</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">LUCAS</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Lucas number beginning at 1</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">LUCAS_LEHMER</a><span class="rvts76">19ICN1P</span><span class="rvts6">(p)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if p is an odd prime and 2^p-1 is prime, returns true; otherwise returns false</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">MATPROD</a><span class="rvts76">I._DEZ</span><span class="rvts6">(A,B,i,j)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">element i,j of the dot product of A and B</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">MERSENNE</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Mersenne prime 2^p - 1</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">MERSENNE_DEGREE</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">exponent p of nth Mersenne prime 2^p - 1</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">MERSENNE_LIST</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">exponents p of first n Mersenne prime 2^p - 1</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">MINOR</a><span class="rvts76">I._DEZ</span><span class="rvts6">(A,i,j)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">delete row i and column j from A</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">MOEBIUS_MU</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Moebius mu function of n</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">MONOMIAL_TEST</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integrating factor of p(x,y)+q(x,y)y'=0, if result of the form x^m·y^n</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="EquationSolving.html">NEWTON</a><span class="rvts76">.S02QQ</span><span class="rvts6">(u,x,x0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n iterations of Newton's method applied to equation u(x)=0 with initial guess of x=x0</span></p>
+<p class="rvps68"><a class="rvts75" href="EquationSolving.html">NEWTONS</a><span class="rvts76">.S02QQ</span><span class="rvts6">(u,x,x0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n iterations of Newton's method applied to a system of equations</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">NEXT_MERSENNE_DEGREE</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">smallest prime p&gt;n such that Mersenne number 2^p - 1 is prime</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">NORMAL_LINE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(u,v,v0,t)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">line normal to surface u=0 at v=v0, using parameter t</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">NTH_PRIME</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth prime number</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">OCTAHEDRAL</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth octahedral number</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">OSCULATING_CIRCLE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(y,x,</span><span class="rvts9">θ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">circle osculating y(x), in terms of </span><span class="rvts9">θ</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">OUTER</a><span class="rvts76">I._DEZ</span><span class="rvts6">(v,w)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">outer product of vectors v and w</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="RationalApproximation.html">PADE</a><span class="rvts76">12K9KB.</span><span class="rvts6">(y,x,x0,n,d)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">approx y(x) near x=x0, n=numr deg, d=denr deg, n=d or d-1</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">PARA_ARC_LENGTH</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(v,t,t1,t2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">arc length of vector v(t) from t=t1 to t2</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">PARA_ARC_LENGTH</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(v,t,t1,t2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of </span><span class="rvts9">μ</span><span class="rvts6">(t) along v(t) from t=t1 to t2</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">PARA_CENTER_OF_CURVATURE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(v,t)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">center of curvature of v=[x(t),y(t)]</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">PARA_CURVATURE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(v,t)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">curvature of v=[x(t),y(t)]</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">PARA_DIF</a><span class="rvts76">AUKXVG</span><span class="rvts6">(v,t,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth derivative of v=[x(t),y(t)]</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">PARA_OSCULATING_CIRCLE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(v,t,t0,</span><span class="rvts9">Φ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">circle osculating v=[x(t),y(t)] at t=t0 in terms of </span><span class="rvts9">Φ</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">PARA_PERPENDICULAR</a><span class="rvts76">AUKXVG</span><span class="rvts6">(v,t,t0,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">line perpendicular to v=[x(t),y(t)] at t=t0 in terms of x</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">PARA_TANGENT</a><span class="rvts76">AUKXVG</span><span class="rvts6">(v,t,t0,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">line tangent to v=[x(t),y(t)] at t=t0 in terms of x</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">PARTITION</a><span class="rvts76">I._DEZ</span><span class="rvts6">(v,n,d)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">partition of vector v into vectors of length n with an offset delta of d</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">PARTS</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">number of decompositions of n into integer summands</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">PARTS_LIST</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n+1 element vector of PARTS(0) through PARTS(n)</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">PELL</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth Pell number</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">PENTATOPE</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth pentatope number</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">PERFECT</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth perfect number (i.e. numbers that are equal to the sum of their divisors)</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">PERPENDICULAR</a><span class="rvts76">AUKXVG</span><span class="rvts6">(y,x,x0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">line perpendicular to y(x) at x=x0</span></p>
+<p class="rvps68"><a class="rvts75" href="ApproximateSolutionofODEs.html">PICARD</a><span class="rvts76">1NBVQQO</span><span class="rvts6">(r,p,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">improved series approximation of ODE, given the series p(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">PIVOT</a><span class="rvts76">I._DEZ</span><span class="rvts6">(A,i,j)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">force column j below row i to 0 by pivoting</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingAreasandIntegrals.html">PlotInt</a><span class="rvts76">Plotting_Areas_and_Integrals</span><span class="rvts6">(u,x,a,b)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">plots the definite integral of the function u(x) from x = a to b</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">POCHHAMMER</a><span class="rvts76">0FMTUG</span><span class="rvts6">(a,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Pochhammer symbol function (a)x</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">POISSON_DENSITY</a><span class="rvts76">0FMTUG</span><span class="rvts6">(k,t)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Poisson probability density</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">POISSON_DISTRIBUTION</a><span class="rvts76">0FMTUG</span><span class="rvts6">(k,t)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">cumulative probability Poisson distribution function</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">POLAR</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">2D coordinate vector of point at radius r and co-longitude </span><span class="rvts9">θ</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">POLAR_ARC_LENGTH</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">1,</span><span class="rvts9">θ</span><span class="rvts6">2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">arc length of polar r(</span><span class="rvts9">θ</span><span class="rvts6">) from </span><span class="rvts9">θ</span><span class="rvts6">1 to </span><span class="rvts9">θ</span><span class="rvts6">2</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">POLAR_ARC_LENGTH</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">1,</span><span class="rvts9">θ</span><span class="rvts6">2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of </span><span class="rvts9">μ</span><span class="rvts6">(</span><span class="rvts9">θ</span><span class="rvts6">) along arc r(</span><span class="rvts9">θ</span><span class="rvts6">)</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">POLAR_AREA</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(r,r1,r2,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">1,</span><span class="rvts9">θ</span><span class="rvts6">2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">area of </span><span class="rvts9">θ</span><span class="rvts6">=</span><span class="rvts9">θ</span><span class="rvts6">1 to </span><span class="rvts9">θ</span><span class="rvts6">2 and r=r1(</span><span class="rvts9">θ</span><span class="rvts6">) to r2(</span><span class="rvts9">θ</span><span class="rvts6">)</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">POLAR_AREA</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(r,r1,r2,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">1,</span><span class="rvts9">θ</span><span class="rvts6">2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of </span><span class="rvts9">μ</span><span class="rvts6">(</span><span class="rvts9">θ</span><span class="rvts6">) over region</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">POLAR_CENTER_OF_CURVATURE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">center of curvature of r(</span><span class="rvts9">θ</span><span class="rvts6">)</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">POLAR_CURVATURE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">curvature of r(</span><span class="rvts9">θ</span><span class="rvts6">)</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">POLAR_DIF</a><span class="rvts76">AUKXVG</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth derivative of r(</span><span class="rvts9">θ</span><span class="rvts6">)</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">POLAR_OSCULATING_CIRCLE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">0,</span><span class="rvts9">Φ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">circle osculating r(</span><span class="rvts9">θ</span><span class="rvts6">) at </span><span class="rvts9">θ</span><span class="rvts6">=</span><span class="rvts9">θ</span><span class="rvts6">0 in terms of </span><span class="rvts9">Φ</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">POLAR_PERPENDICULAR</a><span class="rvts76">AUKXVG</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">0,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">line perpendicular to r(</span><span class="rvts9">θ</span><span class="rvts6">) at </span><span class="rvts9">θ</span><span class="rvts6">=</span><span class="rvts9">θ</span><span class="rvts6">0 in terms of x</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">POLAR_TANGENT</a><span class="rvts76">AUKXVG</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">0,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">line tangent to r(</span><span class="rvts9">θ</span><span class="rvts6">) at </span><span class="rvts9">θ</span><span class="rvts6">=</span><span class="rvts9">θ</span><span class="rvts6">0 in terms of x</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">POLY_COEFF</a><span class="rvts76">144O15P</span><span class="rvts6">(u,x,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">coefficient of x^n term in polynomial u(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">POLY_DEGREE</a><span class="rvts76">144O15P</span><span class="rvts6">(u,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">degree of polynomial u(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="FillingPolygons.html">POLYGON_FILL</a><span class="rvts76">Filling_Polygons</span><span class="rvts6">(u)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">fills the 2D or 3D convex polygon u&nbsp;</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">POLY_INTERPOLATE</a><span class="rvts76">144O15P</span><span class="rvts6">(A,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">polynomial interpolation of data matrix A</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">POLY_INTERPOLATE_EXPRESSION</a><span class="rvts76">144O15P</span><span class="rvts6">(u,x,a)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">polynomial in x that interpolates u given 1D vector of points a</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">POLYGAMMA</a><span class="rvts76">0FMTUG</span><span class="rvts6">(n,z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m+1 terms of series approximation for the nth polygamma function </span><span class="rvts58">Ψ</span><span class="rvts6">n(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">POLYGONAL</a><span class="rvts76">1338PND</span><span class="rvts6">(n,p)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth p-sided polygonal number</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">POLYGONAL_PYRAMID</a><span class="rvts76">1338PND</span><span class="rvts6">(n,p,d)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth p-sided d-dimensional polygonal pyramid number</span></p>
+<p class="rvps68"><a class="rvts75" href="RiemannZetaFunctions.html">POLYLOG</a><span class="rvts76">1CKZXC</span><span class="rvts6">(n,z,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m terms of series approximation for Jonquière's polylogarithm function Li(n)(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">PRIMEPI</a><span class="rvts76">19ICN1P</span><span class="rvts6">(x,d,a)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">number of primes p </span><span class="rvts9">≤</span><span class="rvts6"> x, such that p is of the form p = k·d + a for some k </span><span class="rvts9">≥</span><span class="rvts6"> 0</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">PRIME_POWER?</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n is a power of a prime number, returns true; otherwise returns false</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">PRIMITIVE_ROOT</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">smallest primitive root mod n, if one exists; otherwise a ?</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">PROVE_SUM</a><span class="rvts76">144O15P</span><span class="rvts6">(t,k,a,n,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if SUM(t,k,a,n)=s, return [0,0]</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">RANDOM_MATRIX</a><span class="rvts76">144O15P</span><span class="rvts6">(m,n,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m by n matrix with random elements from -s to s</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">RANDOM_NORMAL</a><span class="rvts76">144O15P</span><span class="rvts6">(s,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">random normal value with a standard deviation of s and a mean value of m</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">RANDOM_POLY</a><span class="rvts76">144O15P</span><span class="rvts6">(x,d,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">poly of degree d in x with random coefficients from -s to s</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">RANDOM_SIGN</a><span class="rvts76">144O15P</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">random 1 or -1</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">RANDOM_VECTOR</a><span class="rvts76">144O15P</span><span class="rvts6">(n,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n element vector with random elements from -s to s</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">RATIO_TEST</a><span class="rvts76">144O15P</span><span class="rvts6">(t,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if &lt; 1, SUM(t,n,a,inf) converges; if &gt; 1, sum diverges</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingComplex-valuedExpression.html">RAYS</a><span class="rvts76">Plotting_Complex_valued_Expressions</span><span class="rvts6">(w,z,z00,zmn,m,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">2D plots w(z) as rays over the z-plane grid from z00 to zmn</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">RECURRENCE</a><span class="rvts76">1338PND</span><span class="rvts6">(u,v,v0,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">m recurrences of u(v) starting with vector v=v0</span></p>
+<p class="rvps68"><a class="rvts75" href="RecurrenceEquations.html">RECURRENCE1</a><span class="rvts76">OKAKSN</span><span class="rvts6">(r,x,y,x0,y0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n steps of y(x+1)=r(x,y(x)), y(x0)=y0</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">RHOMBIC_DODECAHEDRAL</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth rhombic dodecahedral number</span></p>
+<p class="rvps68"><a class="rvts75" href="ApproximateSolutionofODEs.html">RK</a><span class="rvts76">1NBVQQO</span><span class="rvts6">(r,v,v0,h,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">fourth order Runge-Kutta solution of system of 1st order differential equations</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">ROTATE_X</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(</span><span class="rvts9">φ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">matrix A so that A . [x,y,z] rotates angle </span><span class="rvts9">φ</span><span class="rvts6"> about x axis</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">ROTATE_Y</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(</span><span class="rvts9">φ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">matrix A so that A . [x,y,z] rotates angle </span><span class="rvts9">φ</span><span class="rvts6"> about y axis</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">ROTATE_Z</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(</span><span class="rvts9">φ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">matrix A so that A . [x,y,z] rotates angle </span><span class="rvts9">φ</span><span class="rvts6"> about z axis</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">SCALE_ELEMENT</a><span class="rvts76">I._DEZ</span><span class="rvts6">(v,i,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">multiply element i of v by s</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">SEPARABLE</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,x0,y0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specific solution of separable equation y'=p(x)q(y)</span></p>
+<p class="rvps68"><a class="rvts75" href="First-orderOrdinaryDifferentialE.html">SEPARABLE_GEN</a><span class="rvts76">OA7SLO</span><span class="rvts6">(p,q,x,y,c)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">general solution of separable equation y'=p(x)q(y)</span></p>
+<p class="rvps68"><a class="rvts75" href="ExponentialIntegrals.html">SI</a><span class="rvts76">7RN4D</span><span class="rvts6">(z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">sine integral Si(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="NumericalApproximation.html">SMOOTH_COLUMN</a><span class="rvts76">Y5C_1X</span><span class="rvts6">(A,j)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">matrix A with column j smoothed</span></p>
+<p class="rvps68"><a class="rvts75" href="NumericalApproximation.html">SMOOTH_VECTOR</a><span class="rvts76">Y5C_1X</span><span class="rvts6">(v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">smoothed copy of vector v</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">SOLVE_MOD</a><span class="rvts76">19ICN1P</span><span class="rvts6">(u,x,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of solutions of the linear congruence equation u(x) mod m</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">SPHERE</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">Φ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">3D coordinate matrix of a sphere of radius r</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">SPHERICAL_BESSEL_Y</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">closed-form spherical Bessel function of 2nd kind,yn(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">SPHERICAL_BESSEL_J</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">spherical Bessel function of 1st kind jn(z) for integer n</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">SPHERICAL_BESSEL_J_LIST</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of spherical Bessel functions of 1st kind j0(z) through jn(z)</span></p>
+<p class="rvps68"><a class="rvts75" href="BesselFunctions.html">SPHERICAL_BESSEL_Y</a><span class="rvts76">3JDX.V4</span><span class="rvts6">(n,z)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">spherical Bessel function of 2nd kind yn(z) for integer n</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">SPHERICAL_VOLUME</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(r,r1,r2,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">1,</span><span class="rvts9">θ</span><span class="rvts6">2,</span><span class="rvts9">Φ</span><span class="rvts6">,</span><span class="rvts9">Φ</span><span class="rvts6">1,</span><span class="rvts9">Φ</span><span class="rvts6">2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">volume of region specified in spherical coordinates</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">SPHERICAL_VOLUME</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(r, r1,r2,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">θ</span><span class="rvts6">1,</span><span class="rvts9">θ</span><span class="rvts6">2,</span><span class="rvts9">Φ</span><span class="rvts6">,</span><span class="rvts9">Φ</span><span class="rvts6">1,</span><span class="rvts9">Φ</span><span class="rvts6">2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of </span><span class="rvts9">μ</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">Φ</span><span class="rvts6">) over the region</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">SQUARE_ROOT</a><span class="rvts76">19ICN1P</span><span class="rvts6">(a,p)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">square root of integer a mod prime p, if one exists; otherwise ?</span></p>
+<p class="rvps68"><a class="rvts75" href="MiscellaneousFunctions.html">SQUARE_WAVE</a><span class="rvts76">144O15P</span><span class="rvts6">(x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">square wave of x</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">SQUAREFREE</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n is not divisible by the square of a prime, returns true; otherwise returns false</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">STAR</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth star (i.e. 12-sided centered) number</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">STIRLING</a><span class="rvts76">1338PND</span><span class="rvts6">(n,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Stirling number</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">STIRLING1</a><span class="rvts76">1338PND</span><span class="rvts6">(n,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Stirling cycle number of the 1st kind</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">STIRLING2</a><span class="rvts76">1338PND</span><span class="rvts6">(n,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Stirling subset number of the 2nd kind</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">STIRLING_CYCLE</a><span class="rvts76">1338PND</span><span class="rvts6">(n,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Stirling cycle number of the 1st kind</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">STIRLING_SUBSET</a><span class="rvts76">1338PND</span><span class="rvts6">(n,k)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Stirling subset number of the 2nd kind</span></p>
+<p class="rvps68"><a class="rvts75" href="ProbabilityFunctions1.html">STUDENT</a><span class="rvts76">0FMTUG</span><span class="rvts6">(t,v)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">student's cumulative probability distribution A(t|v)</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">SUBTRACT_ELEMENTS</a><span class="rvts76">I._DEZ</span><span class="rvts6">(v,i,j,s)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">subtract element j·s from element i of v</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">SURFACE_AREA</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(z,x,x1,x2,y,y1,y2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">area of surface z(x,y)</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">SURFACE_AREA</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(z,x,x1,x2,y,y1,y2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of </span><span class="rvts9">μ</span><span class="rvts6">(x,y) over surface z(x,y)</span></p>
+<p class="rvps68"><a class="rvts75" href="VectorandMatrixFunctions.html">SWAP_ELEMENTS</a><span class="rvts76">I._DEZ</span><span class="rvts6">(v,i,j)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">interchange elements i and j of vector v</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">TANGENT</a><span class="rvts76">AUKXVG</span><span class="rvts6">(y,x,x0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">line tangent to y(x) at x=x0</span></p>
+<p class="rvps68"><a class="rvts75" href="DifferentiationApplications.html">TANGENT_PLANE</a><span class="rvts76">AUKXVG</span><span class="rvts6">(u,v,v0)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">plane tangent to u(x,y,z)=0 at [x,y,z]=v=v0</span></p>
+<p class="rvps68"><a class="rvts75" href="EquationSolving.html">TAYLOR_INVERSE</a><span class="rvts76">.S02QQ</span><span class="rvts6">(u,x,y,x0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth order series expansion of inverse of y=u(x)</span></p>
+<p class="rvps68"><a class="rvts75" href="ApproximateSolutionofODEs.html">TAYLOR_ODE1</a><span class="rvts76">1NBVQQO</span><span class="rvts6">(r,x,y,x0,y0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth order Taylor series solution of y'=r(x,y) with y=y0 at x=x0</span></p>
+<p class="rvps68"><a class="rvts75" href="ApproximateSolutionofODEs.html">TAYLOR_ODE2</a><span class="rvts76">1NBVQQO</span><span class="rvts6">(r,x,y,v,x0,y0,v0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth order Taylor series solution of y''=r(x,y,y')</span></p>
+<p class="rvps68"><a class="rvts75" href="ApproximateSolutionofODEs.html">TAYLOR_ODES</a><span class="rvts76">1NBVQQO</span><span class="rvts6">(r,x,y,x0,y0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">vector of nth order Taylor series solutions of system of &nbsp;differential equations</span></p>
+<p class="rvps68"><a class="rvts75" href="EquationSolving.html">TAYLOR_SOLVE</a><span class="rvts76">.S02QQ</span><span class="rvts6">(u,x,y,x0,y0,n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth order series solution y(x) of u(x,y)=0</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">TETRAHEDRAL</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth tetrahedral number</span></p>
+<p class="rvps68"><a class="rvts75" href="PlottingSpaceCurvesandParametric.html">TORUS</a><span class="rvts76">2WQ_YS1</span><span class="rvts6">(r,</span><span class="rvts9">θ</span><span class="rvts6">,</span><span class="rvts9">Φ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">3D coordinate matrix of torus of radius r</span></p>
+<p class="rvps68"><a class="rvts75" href="CombinatorialFunctions.html">TRIANGULAR</a><span class="rvts76">1338PND</span><span class="rvts6">(n)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth triangular number</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">U_LUCAS</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n,p,q)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth term of the Lucas sequence L(n) where L(0)=0, L(1)=1, and L(n+2)=p·L(n+1)-q·L(n)</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">U_MOD</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n,p,q,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">U_LUCAS(n, p, q) mod m, but is more efficient</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">V_LUCAS</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n,p,q)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">nth term of the Lucas sequence L(n) where L(0)=2, L(1)=p, and L(n+2)=p·L(n+1)-q·L(n)</span></p>
+<p class="rvps68"><a class="rvts75" href="NumberTheoryFunctions1.html">V_MOD</a><span class="rvts76">19ICN1P</span><span class="rvts6">(n,p,q,m)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">V_LUCAS(n,p,q) mod m, but is more efficient</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">VOLUME</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2,z,z1,z2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">volume y=y1(x) to y2(x), z=z1(x,y) to z2(x,y)</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">VOLUME</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2,z,z1,z2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integral of </span><span class="rvts9">μ</span><span class="rvts6">(x,y,z) over region</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">VOLUME_CENTROID</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2,z,z1,z2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">volumetric centroid of region</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">VOLUME_CENTROID</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2,z,z1,z2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">centroid of density </span><span class="rvts9">μ</span><span class="rvts6">(x,y,z)</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">VOLUME_INERTIA</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2,z,z1,z2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">volumetric inertia tensor</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">VOLUME_INERTIA</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(x,x1,x2,y,y1,y2,z,z1,z2,</span><span class="rvts9">μ</span><span class="rvts6">)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">inertia tensor of </span><span class="rvts9">μ</span><span class="rvts6">(x,y,z)</span></p>
+<p class="rvps68"><a class="rvts75" href="IntegrationApplications.html">VOLUME_OF_REVOLUTION</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(y,x,x1,x2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">volume of y(x) revolved about x-axis</span></p>
+<p class="rvps69"><a class="rvts75" href="IntegrationApplications.html">VOLUMEY_OF_REVOLUTION</a><span class="rvts76">2W1Y_YU</span><span class="rvts6">(y,x,x1,x2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">volume of y(x) revolved about y-axis</span></p>
+<p class="rvps69"><span class="rvts6"><br/></span></p>
+<p class="rvps69"><a class="rvts75" href="OrthogonalPolynomials.html">WEBER_D</a><span class="rvts76">HBCBN</span><span class="rvts6">(n,x)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Weber's nth parabolic cylinder function Dn(x)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="TableofContents.html">Help Contents</a><span class="rvts20">idh_Contents</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour">Easily create HTML Help documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

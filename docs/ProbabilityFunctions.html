@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Probability Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="! (factorial) operator,Binomial coefficient,Calendar year,Centiseconds,COMB(m,n),Combinations,Digamma function,DIGAMMA(z),euler_gamma,Euler's gamma constant (0.577215..),Factorial function,Gamma constant,Gamma function,GAMMA(z),PERM(m,n),Permutations,Probability functions,Pseudo-random number generator,Random number generator,RANDOM(n),Seconds,Time,Year">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Probability Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Probability Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="ProbabilityFunctions"
+		  data-hnd-context="3009"
+		  data-hnd-title="Probability Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Built-in Functions and Constants</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ComplexVariableFunctions.html" title="Complex Variable Functions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="StatisticalFunctions.html" title="Statistical Functions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Probability Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The functions in this topic are useful for solving probability problems.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">euler_gamma </span><span class="rvts6">is Euler's </span><span class="rvts38">γ</span><span class="rvts6"> (gamma) constant. &nbsp;The constant can be entered by typing </span><span class="rvts7">euler_gamma</span><span class="rvts6"> on the expression entry line. &nbsp;The lower case Greek letter </span><span class="rvts38">γ</span><span class="rvts6"> (gamma) on the Greek symbol toolbar is </span><span class="rvts32">not</span><span class="rvts6"> associated with Euler's gamma constant, so that </span><span class="rvts38">γ</span><span class="rvts6"> can be used as the name of a user-defined variable or function. &nbsp;In exact mode arithmetic, </span><span class="rvts7">euler_gamma </span><span class="rvts6">remains symbolic since it is an irrational number. &nbsp;In approximate or mixed mode arithmetic, it simplifies to an approximation for </span><span class="rvts38">γ</span><span class="rvts6"> accurate to the current precision. &nbsp;For example,</span></p>
+<p class="rvps27"><span class="rvts10">APPROX(euler_gamma, 25)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to 0.5772156649015328606065121.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">z</span><span class="rvts7">!</span><span class="rvts6"> is the factorial function z</span><span class="rvts7">!</span><span class="rvts6">, defined for all real and complex z. &nbsp;If n is a positive integer, n</span><span class="rvts7">!</span><span class="rvts6"> is the product of the first n integers. &nbsp;For example,</span></p>
+<p class="rvps27"><span class="rvts10">VECTOR(k!, k, 0, 9)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps27"><span class="rvts10">[1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880]</span></p>
+<p class="rvps3"><span class="rvts6">and</span></p>
+<p class="rvps27"><span class="rvts10">(3/2)!</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp;3·</span><span class="rvts9">√π</span><span class="rvts10">&nbsp;</span><br/><span class="rvts10">——————</span><br/><span class="rvts10">&nbsp; &nbsp;4 &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GAMMA</span><span class="rvts6">(z) is the gamma function </span><span class="rvts38">Γ</span><span class="rvts6">(z), defined for all real and complex z. &nbsp;If z is nonnumeric, </span><span class="rvts38">Γ</span><span class="rvts6">(z) simplifies to z-1 factorial. &nbsp;The function can be entered by typing </span><span class="rvts7">GAMMA</span><span class="rvts6"> on the expression entry line, or by clicking on the capital Greek letter </span><span class="rvts38">Γ</span><span class="rvts6"> (Gamma) on the Greek symbol toolbar. &nbsp;The incomplete gamma function and its relatives are defined in </span><a class="rvts19" href="ProbabilityFunctions1.html">ProbabilityFunctions.mth</a><span class="rvts20">0FMTUG</span><span class="rvts6">. &nbsp;For example,</span></p>
+<p class="rvps27"><span class="rvts10">VECTOR(GAMMA(k), k, 1, 10)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts10">[1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880]</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DIGAMMA</span><span class="rvts6">(z) is the digamma function </span><span class="rvts38">Ψ</span><span class="rvts6">(z). &nbsp;</span><span class="rvts38">Ψ</span><span class="rvts6">(z) is defined as the first derivative of the natural logarithm of </span><span class="rvts38">Γ</span><span class="rvts6">(z). &nbsp;The function can be entered by typing </span><span class="rvts7">DIGAMMA</span><span class="rvts6"> on the expression entry line. &nbsp;The capital Greek letter </span><span class="rvts38">Ψ</span><span class="rvts6"> (Psi) on the Greek symbol toolbar is not associated with the digamma function, so that </span><span class="rvts38">Ψ</span><span class="rvts6"> can be used as the name of a user-defined variable or function. &nbsp;If k is a nonnegative integer, </span><span class="rvts38">Σ</span><span class="rvts6">(1/n, n, 1, k) equals </span><span class="rvts38">Ψ</span><span class="rvts6">(k+1) + </span><span class="rvts38">γ</span><span class="rvts6"> (Euler's gamma constant). &nbsp;For example,</span></p>
+<p class="rvps27"><span class="rvts10">VECTOR(DIGAMMA(k + 1) + euler_gamma, k, 0, 7)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to</span></p>
+<p class="rvps26"><span class="rvts9">⎡</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp;11 &nbsp; &nbsp;25 &nbsp; &nbsp;137 &nbsp; &nbsp;49 &nbsp; &nbsp;363 </span><span class="rvts9">⎤</span><br/><span class="rvts9">⎢</span><span class="rvts10">0, 1, ———, ————, ————, —————, ————, —————</span><span class="rvts9">⎥</span><br/><span class="rvts9">⎣</span><span class="rvts10"> &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; 6 &nbsp; &nbsp;12 &nbsp; &nbsp; 60 &nbsp; &nbsp;20 &nbsp; &nbsp;140 </span><span class="rvts9">⎦</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">PERM</span><span class="rvts6">(m, n) is the number of permutations or arrangements of m things taken n at a time. &nbsp;If z and w are nonnumeric, </span><span class="rvts7">PERM</span><span class="rvts6">(z, w) simplifies to z</span><span class="rvts7">!</span><span class="rvts6">/(z-w)</span><span class="rvts7">!</span><span class="rvts6">. &nbsp;For example,</span></p>
+<p class="rvps27"><span class="rvts10">PERM(n, n)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to n</span><span class="rvts7">!</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">COMB</span><span class="rvts6">(m, n) is the number of combinations or groupings of m things taken n at a time. &nbsp;If z and w are nonnumeric, </span><span class="rvts7">COMB</span><span class="rvts6">(z, w) simplifies to z</span><span class="rvts7">!</span><span class="rvts6">/(w</span><span class="rvts7">!</span><span class="rvts6">·(z-w)</span><span class="rvts7">!</span><span class="rvts6">). &nbsp;Note that </span><span class="rvts7">COMB</span><span class="rvts6">(m, n) is also the binomial coefficient of m and n. &nbsp;For example,</span></p>
+<p class="rvps27"><span class="rvts10">VECTOR(VECTOR(COMB(j, k), k, 0, 8), j, 0, 8)</span></p>
+<p class="rvps3"><span class="rvts6">simplifies to the first 9 rows of Pascal's triangle.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">RANDOM</span><span class="rvts6">(n) invokes a pseudo-random number generator. &nbsp;Random numbers are derived from a random number state variable, s, that is updated using the rule 2654435721·s + 1 mod 2^32 each time a random number is generated.</span></p>
+<p class="rvps20"><span class="rvts6"><br/></span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">If n&gt;1 is an integer, </span><span class="rvts7">RANDOM</span><span class="rvts6">(n) simplifies to a random integer in the interval [0, n). &nbsp;For example, each time </span><span class="rvts7">RANDOM</span><span class="rvts6">(6) is simplified, it returns with equal probability one of the 6 integers from the set {­0, 1, 2, 3, 4, 5}.</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">RANDOM</span><span class="rvts6">(1) simplifies to a random number in the interval [0, 1).</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">If n&lt;0 is an integer, </span><span class="rvts7">RANDOM</span><span class="rvts6">(n) simplifies to -n and initializes the random number state variable to -n.</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">RANDOM</span><span class="rvts6">(0) simplifies to the time in centiseconds since the current calendar year began and initializes the random number state variable to that time.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="Built-inFunctionsandConstants.html">Built-in Functions and Constants</a><span class="rvts20">Built_in_Functions_and_Constants</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpauthoringsoftware.com">What is a Help Authoring tool?</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

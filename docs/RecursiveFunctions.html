@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Recursive Functions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Recursive functions">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Recursive Functions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Recursive Functions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="RecursiveFunctions"
+		  data-hnd-context="4006"
+		  data-hnd-title="Recursive Functions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Discussion Topics</li><li>Derive Programming</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="BooleanTestClauses.html" title="Boolean Test Clauses" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="MutualRecursion.html" title="Mutual Recursion" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Recursive Functions</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">A function definition is recursive if the right side of the definition calls the function being defined. &nbsp;For example, if n is a nonnegative integer, the factorial of n can be computed recursively by the rules</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n! = 1</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n = 0, and</span><br/><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">n! = n(n-1)!</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n &gt; 0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The first rule is the terminal case for this definition. &nbsp;The second rule is the recursive case. &nbsp;The </span><span class="rvts8">Derive</span><span class="rvts6"> definition corresponding to the above rules is</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">FACT(n) := IF(n = 0, 1, n·FACT(n - 1))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To be computable, recursive definitions must have one or more terminal case rules, and the recursive case rules must make finite progress toward the terminal cases. &nbsp;The above definition for computing factorials is computable because</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">When the terminal case rule is applicable (i.e. when n=0), the recursion is terminated. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">When the recursive case rule is applicable (i.e. when n&gt;0), the problem is reduced to one closer to the terminal case.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">The terminal case is reached after a finite number of applications of the recursive case rule.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If x is an expression and n is a nonnegative integer, raising x to the n power can be computed recursively by the rules</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">RAISE</span><span class="rvts6">(x, n) = 1</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n = 0, and</span><br/><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">RAISE</span><span class="rvts6">(x, n) = x </span><span class="rvts7">RAISE</span><span class="rvts6">(x, n-1)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n &gt; 0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If m and n are integers, the greatest common divisor (gcd) of m and n can be computed recursively by the rules</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">GCD</span><span class="rvts6">(m, n) = |m|</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n = 0, and</span><br/><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">GCD</span><span class="rvts6">(m, n) = </span><span class="rvts7">GCD</span><span class="rvts6">(n, |m-n|)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n /= 0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The recursion terminates because both arguments must become nonnegative after two recursions, and thereafter the second argument decreases toward the terminal case by at least 1 for each recursion. &nbsp;It is also true that any integer that evenly divides m and n, also evenly divides n and |m - n|, including the greatest common divisor. &nbsp;It is also true that the greatest common divisor of m and 0 is |m|. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The speeds of </span><span class="rvts7">FACT</span><span class="rvts6"> and </span><span class="rvts7">!</span><span class="rvts6"> are approximately proportional for large n, as are the speeds of </span><span class="rvts7">RAISE</span><span class="rvts6">, </span><span class="rvts7">POWER</span><span class="rvts6">, and </span><span class="rvts7">^</span><span class="rvts6">. &nbsp;Although built-in operators or functions are faster, recursively defined functions can be reasonably efficient as well. &nbsp;The next example illustrates the importance of writing efficient definitions.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If n is a nonnegative integer, the nth Fibonacci number can be computed recursively by the rules</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">FIB</span><span class="rvts6">(n) = 0</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n = 0,</span><br/><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">FIB</span><span class="rvts6">(n) = 1</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n = 1, and</span><br/><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts7">FIB</span><span class="rvts6">(n) = </span><span class="rvts7">FIB</span><span class="rvts6">(n-1) + </span><span class="rvts7">FIB</span><span class="rvts6">(n-2)</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">if n &gt; 1.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">An iterative definition of </span><span class="rvts7">FIB</span><span class="rvts6"> that implemented these rules was discussed using the </span><a class="rvts19" href="TheITERATEFunction.html">ITERATE Function</a><span class="rvts20">The_ITERATE_Function</span><span class="rvts6">. &nbsp;The following recursive definition of </span><span class="rvts7">FIB_SLOW</span><span class="rvts6"> is another way to implement this recurrence:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10">FIB_SLOW(n) :=&nbsp;</span><br/><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">IF(n &lt; 2, n, FIB_SLOW(n - 1) + FIB_SLOW(n - 2))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The reason </span><span class="rvts7">FIB_SLOW</span><span class="rvts6"> is so slow is because to compute </span><span class="rvts7">FIB_SLOW</span><span class="rvts6">(n), </span><span class="rvts7">FIB_SLOW</span><span class="rvts6">(n-2) is computed twice: once for </span><span class="rvts7">FIB_SLOW</span><span class="rvts6">(n) and once for </span><span class="rvts7">FIB_SLOW</span><span class="rvts6">(n-1). &nbsp;Similarly, </span><span class="rvts7">FIB_SLOW</span><span class="rvts6">(n-3) is computed three times: once for </span><span class="rvts7">FIB_SLOW</span><span class="rvts6">(n-1) and once for each of the two computations of </span><span class="rvts7">FIB_SLOW</span><span class="rvts6">(n-2). &nbsp;In general, </span><span class="rvts7">FIB_SLOW</span><span class="rvts6">(n-i) must be computed the ith Fibonacci number of times. &nbsp;Thus the number of redundant calculations, and hence the time required to compute the nth Fibonacci number using </span><span class="rvts7">FIB_SLOW</span><span class="rvts6"> increases rapidly (i.e. Fibonaccially!) with n.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Such redundant computation is typical for recursive definitions that naively implement recurrences, like Fibonacci, that are doubly recursive. &nbsp;Note that the recurrences for factorial, raising to a power, and gcd were just singly recursive and so did not suffer such redundancy.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">In the case of Fibonacci this inefficiency is easy to overcome: &nbsp;Just define an auxiliary helper function that has extra accumulation arguments to retain previously computed values so that they do not have to be recomputed. &nbsp;The main function then invokes this helper function with the appropriate starting arguments.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10">FIB_AUX(n, f1, f0) :=&nbsp;</span><br/><span class="rvts10"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts10">IF(n=0, f0, FIB_AUX(n - 1, f1 + f0, f1))</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts10">FIB_FAST(n) := FIB_AUX(n, 1, 0)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">For additional examples of recursive functions, see the definition of </span><span class="rvts7">POLY_DEGREE</span><span class="rvts6"> in the file </span><a class="rvts19" href="MiscellaneousFunctions.html">MiscellaneousFunctions.mth</a><span class="rvts20">144O15P</span><span class="rvts6"> or the definitions of </span><span class="rvts7">SPHERICAL_BESSEL_J </span><span class="rvts6">and </span><span class="rvts7">SPHERICAL_BESSEL_Y</span><span class="rvts6"> in the file </span><a class="rvts19" href="BesselFunctions.html">BesselFunctions.mth</a><span class="rvts20">3JDX.V4</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="ProgramminginDERIVE.html">Programming in DERIVE</a><span class="rvts20">Programming</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour">Easily create Help documents</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

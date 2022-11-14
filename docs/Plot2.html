@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Plot</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="3D-plotExamples.dfw,Color scheme,Color, plot,Data point plots,Explicit function plots,Grid panels, 3D-plot,Insert &gt; Plot command,Insufficient memory to perform operation - message,Invalid plot type - message,Parametric plots,Plot color,Plot command,Sorry, the highlighted expression cannot be plotted - message,Too many variables for this plot window! - message,Wire frame grid plot">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Plot">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Plot" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Plot2"
+		  data-hnd-context="2002"
+		  data-hnd-title="Plot"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Menu Commands</li><li>3D-plot Window</li><li>Insert</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Insertcommands2.html" title="Insert commands" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Annotation4.html" title="Annotation" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Insert &gt; Plot command</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">Use the 3D-plot window </span><span class="rvts7">Insert &gt; Plot</span><span class="rvts6"> command, click on the </span><img alt="" style="padding : 1px;" src="lib/bm111.png"><span class="rvts6"> icon on the command toolbar, or press the </span><span class="rvts7">F4</span><span class="rvts6"> key to plot the expression highlighted in the algebra window associated with the active 3D-plot window. &nbsp;The file </span><span class="rvts7">3D-plotExamples.dfw</span><span class="rvts6"> in the </span><span class="rvts7">Users\Plotting</span><span class="rvts6"> directory includes several expressions that are interesting to plot in a 3D-plot window.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The </span><span class="rvts7">Insert &gt; Plot </span><span class="rvts6">command is only available if there is a highlighted expression in the algebra window. &nbsp;If you wish to stop the plotting before completion, press the </span><span class="rvts7">Esc</span><span class="rvts6"> key. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The type of plot made is based on the form of the expression being plotted as follows:</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Explicit function plots are made when plotting equations of the form </span><span class="rvts32">z</span><span class="rvts6"> = </span><span class="rvts32">u</span><span class="rvts6">, where </span><span class="rvts32">z</span><span class="rvts6"> is a variable and </span><span class="rvts32">u</span><span class="rvts6"> is a constant, a </span><a class="rvts40" href="Univariateexpression.html">univariate expression</a><span class="rvts20">Univariate_expression</span><span class="rvts6">, or a </span><a class="rvts40" href="Bivariateexpression.html">bivariate expression</a><span class="rvts20">Bivariate_expression</span><span class="rvts6"> independent of </span><span class="rvts32">z</span><span class="rvts6"> (for example, </span><span class="rvts10">z=2</span><span class="rvts6">, </span><span class="rvts10">z=x^2</span><span class="rvts6">, </span><span class="rvts10">z=x^2-y^2</span><span class="rvts6">, and </span><span class="rvts10">x=SIN(y)+SIN(z)</span><span class="rvts6">). &nbsp;Explicit plots are also made when plotting nonequations of two or fewer variables (for example, </span><span class="rvts10">2</span><span class="rvts6">, </span><span class="rvts10">x^2</span><span class="rvts6">, </span><span class="rvts10">x^2-y^2</span><span class="rvts6">, and </span><span class="rvts10">SIN(y)+SIN(z)</span><span class="rvts6">).</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts19" href="DataPointPlots1.html">Data point plots</a><span class="rvts20">2.DQ_BX</span><span class="rvts6"> are made when plotting data points of the form [</span><span class="rvts32">a</span><span class="rvts6">, </span><span class="rvts32">b</span><span class="rvts6">, </span><span class="rvts32">c</span><span class="rvts6">] where </span><span class="rvts32">a</span><span class="rvts6">, </span><span class="rvts32">b</span><span class="rvts6">, and </span><span class="rvts32">c</span><span class="rvts6"> are constants, or collections of such points (for example,</span></p>
+<p class="rvps19"><span class="rvts10">[1, 1, 1]</span></p>
+<p class="rvps37"><span class="rvts6">plots as a single point).</span></p>
+<p class="rvps4"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Parametric plots are made when plotting three-element vectors of the form [</span><span class="rvts32">u</span><span class="rvts6">, </span><span class="rvts32">v</span><span class="rvts6">, </span><span class="rvts32">w</span><span class="rvts6">] where </span><span class="rvts32">u</span><span class="rvts6">, </span><span class="rvts32">v</span><span class="rvts6">, and </span><span class="rvts32">w</span><span class="rvts6"> are bivariate expressions dependent on the same two variables (for example, in rectangular coordinates</span></p>
+<p class="rvps6"><span class="rvts10">[SIN(s)/COS(t), COS(s)/COS(t), SIN(t)]</span></p>
+<p class="rvps40"><span class="rvts6">plots as a worm hole in space if </span><span class="rvts10">s</span><span class="rvts6"> varies from </span><span class="rvts9">−</span><span class="rvts50">π</span><span class="rvts6"> to </span><span class="rvts50">π</span><span class="rvts6"> and </span><span class="rvts10">t</span><span class="rvts6"> varies from </span><span class="rvts9">−</span><span class="rvts6">1.3 to </span><span class="rvts53">1.3</span><span class="rvts6">).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Plots can be made using rectangular, spherical, or cylindrical coordinates (for details, see the </span><a class="rvts19" href="CoordinateSystem1.html">Set &gt; Coordinate System command</a><span class="rvts20">I8C1RB</span><span class="rvts6">). &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">More than one expression can be plotted at a time by making a vector of the expressions. &nbsp;However a three element vector will be plotted as a single parametric expression, rather than three separate expressions.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">3D surface plots are made by repeatedly evaluating the expression being plotted to determine the coordinates of an array of points on the surface. &nbsp;Connecting adjacent points by straight line segments and shading the panels approximates the shape of the surface. &nbsp;(Note that only real finite values are plotted and connected to their neighbors.) &nbsp;Projecting and plotting this three dimensional surface on a two dimensional computer screen allows you to visualize the surface. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If the 3D-plot window </span><span class="rvts7">Insert &gt; Plot </span><span class="rvts6">command results in the warning message</span></p>
+<p class="rvps38"><span class="rvts7">Too many variables for this plot window!</span></p>
+<p class="rvps3"><span class="rvts6">the highlighted expression has 3 or more independent variables and cannot be plotted. &nbsp;If the command results in the message</span></p>
+<p class="rvps38"><span class="rvts7">Invalid plot type</span></p>
+<p class="rvps3"><span class="rvts6">or the message</span></p>
+<p class="rvps38"><span class="rvts7">Sorry, the highlighted expression cannot be plotted</span></p>
+<p class="rvps3"><span class="rvts6">the highlighted expression was not one of the above forms, and cannot be plotted in its present form.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">Plot Parameters</span><span class="rvts6"> dialog box displayed by the </span><span class="rvts7">Insert &gt; Plot</span><span class="rvts6"> command and the </span><a class="rvts19" href="Plot1.html">Edit &gt; Plot command</a><span class="rvts20">765F8R</span><span class="rvts6"> to set the number of grid panels in the x and y directions. &nbsp;Note that the number of grid panels is one less than the number of grid lines for each direction. &nbsp;When plotting parametric surfaces, the </span><span class="rvts7">Minimum</span><span class="rvts6"> and </span><span class="rvts7">Maximum</span><span class="rvts6"> fields allow you to set the minimum and maximum values of the two independent variables. &nbsp;When plotting data points, the </span><span class="rvts7">Point Size</span><span class="rvts6"> field allows you to choose </span><span class="rvts7">Small</span><span class="rvts6">, </span><span class="rvts7">Medium</span><span class="rvts6">, or </span><span class="rvts7">Large </span><span class="rvts6">points.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">You can increase or decrease the number of grid lines in either the x or y direction or both. &nbsp;Increasing the grid lines allows more surface detail to be resolved until a point is reached where the grid lines start running together. &nbsp;This point of diminishing returns depends on the expression, the resolution of your graphics mode, and the size of your plot window.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The computation time and storage requirements increase with the number of grid panels. &nbsp;If the warning message</span></p>
+<p class="rvps19"><span class="rvts7">Insufficient memory to perform operation</span></p>
+<p class="rvps3"><span class="rvts6">is displayed while computing a 3D plot, reduce the number of grid panels to complete the plot.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">Plot Color</span><span class="rvts6"> dialog box displayed by the </span><span class="rvts7">Insert &gt; Plot</span><span class="rvts6"> command and the </span><a class="rvts19" href="Plot1.html">Edit &gt; Plot command</a><span class="rvts20">765F8R</span><span class="rvts6"> to control the color of 3D plots. &nbsp;The dialog box displays the following fields:</span></p>
+<p class="rvps9"><span class="rvts6">Use the </span><span class="rvts7">Scheme</span><span class="rvts6"> drop down menu to select the color scheme for the 3D plot (</span><span class="rvts7">Rainbow</span><span class="rvts6">, </span><span class="rvts7">Wire Grid</span><span class="rvts6">, </span><span class="rvts7">Gray Scale</span><span class="rvts6">, </span><span class="rvts7">Red &amp; Blue Checker</span><span class="rvts6">, </span><span class="rvts7">Heat Wave</span><span class="rvts6">, </span><span class="rvts7">Auto Plot Color</span><span class="rvts6">, or </span><span class="rvts7">Custom</span><span class="rvts6">).</span></p>
+<p class="rvps9"><span class="rvts6">If the </span><span class="rvts7">Custom</span><span class="rvts6"> color scheme is selected, use the </span><span class="rvts7">Color by</span><span class="rvts6"> drop down menu to select the method used to color the 3D plot (</span><span class="rvts7">z value</span><span class="rvts6">, </span><span class="rvts7">Gradient</span><span class="rvts6">, or </span><span class="rvts7">Checkerboard</span><span class="rvts6">).</span></p>
+<p class="rvps9"><span class="rvts7">Top:</span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Click the </span><span class="rvts7">Minimum</span><span class="rvts6"> button to select the color of the top of the surface at its minimum value.</span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Click the </span><span class="rvts7">Maximum</span><span class="rvts6"> button to select the color of the top of the surface at its maximum value.</span></p>
+<p class="rvps9"><span class="rvts7">Bottom:</span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Click the </span><span class="rvts7">Minimum</span><span class="rvts6"> button to select the color of the bottom of the surface at its minimum value.</span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Click the </span><span class="rvts7">Maximum</span><span class="rvts6"> button to select the color of the bottom of the surface at its maximum value.</span></p>
+<p class="rvps9"><span class="rvts7">Mesh Lines:</span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Pull-down the </span><span class="rvts7">Grids</span><span class="rvts6"> menu to select the color of the grid lines when the 3D plot is not selected.</span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Pull-down the </span><span class="rvts7">Trace</span><span class="rvts6"> menu to select the color of the grid lines when the 3D plot is selected.</span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Click the </span><span class="rvts7">On</span><span class="rvts6"> radial button to display plot mesh lines.</span></p>
+<p class="rvps21"><span class="rvts9">•</span><span class="rvts9"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Click the </span><span class="rvts7">Off</span><span class="rvts6"> radial button to hide plot mesh lines.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="3D-plotWindowCommands.html">3D-plot Window Commands</a><span class="rvts20">AR2HOH</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/feature-tour/iphone-website-generation">Free iPhone documentation generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

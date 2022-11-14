@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>First-order Ordinary Differential Equations</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="LINEAR1_GEN(p,q,x,y,c),monic,MONOMIAL_TEST(p,q,x,y),Ordinary differential equations,Quasi-linear,Separable differential equation,SEPARABLE(p,q,x,y,x0,y0),SEPARABLE_GEN(p,q,x,y,c),Singular solution">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="First-order Ordinary Differential Equations">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="First-order Ordinary Differential Equations" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="First-orderOrdinaryDifferentialE"
+		  data-hnd-context="3506"
+		  data-hnd-title="First-order Ordinary Differential Equations"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Utility Library Files</li><li>Differential and Recurrence Equations</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="NumericalApproximation.html" title="Numerical Approximation" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Second-orderOrdinaryDifferential.html" title="Second-order Ordinary Differential Equations" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>First-order Ordinary Differential Equations</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">The file </span><span class="rvts7">FirstOrderODEs.mth</span><span class="rvts6"> defines functions for finding exact solutions to first order ordinary differential equations. &nbsp;The function definitions in the file are automatically loaded when any of its functions are first used.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The file begins with methods taught in second-year calculus and elementary differential equations courses. &nbsp;Following the elementary methods are advanced methods that may succeed when the more elementary methods are inapplicable.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Functions with names having the suffix </span><span class="rvts7">GEN</span><span class="rvts6"> return a </span><span class="rvts32">general</span><span class="rvts6"> solution in terms of a symbolic constant. &nbsp;Functions with names without the suffix </span><span class="rvts7">GEN</span><span class="rvts6"> return a </span><span class="rvts32">specific</span><span class="rvts6"> solution when given numeric initial conditions, or they return a general solution in terms of symbolic initial conditions when given unassigned variables for the initial conditions.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">With either type of function, the result is usually an algebraic equation implicitly defining the dependent variable in terms of the independent variable. &nbsp;This equation may contain integrals that </span><span class="rvts8">Derive</span><span class="rvts6"> could not determine exactly. &nbsp;However, such implicit solutions are still considered solutions of differential equations even if integrals remain. &nbsp;If an implicit solution does not contain an integral involving the dependent variable, you can use the </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> in an attempt to find one or more explicit solutions.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">In this section as well as in </span><a class="rvts19" href="Second-orderOrdinaryDifferential.html">Second-order Ordinary Differential Equations</a><span class="rvts20">OB7SLO</span><span class="rvts6"> and the corresponding utility files, the variable x denotes the independent variable, and the variable y denotes the dependent variable. &nbsp;Also the variable x0 denotes the initial value of x, and the variable y0 denotes the corresponding initial value of y. &nbsp;Do </span><span class="rvts32">not</span><span class="rvts6"> use x or y as function names. &nbsp;In this section and in </span><a class="rvts19" href="Second-orderOrdinaryDifferential.html">Second-order Ordinary Differential Equations</a><span class="rvts20">OB7SLO</span><span class="rvts6">, dy/dx is abbreviated as y' for descriptive purposes only. &nbsp;In </span><span class="rvts8">Derive</span><span class="rvts6"> the apostrophe or single-quote mark can </span><span class="rvts32">not</span><span class="rvts6"> be used to denote derivatives.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If you want to find a specific solution for symbolic or numeric initial conditions, it is best to use a function that directly returns specific solutions. &nbsp;Otherwise, after finding a general solution, you must substitute x0 and y0 into the general solution, solve for c, and then substitute that value of c back into the general solution.</span></p>
+<p class="rvps52"><span class="rvts7">Elementary Methods</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DSOLVE1_GEN</span><span class="rvts6">(p, q, x, y, c) simplifies to a general solution of an equation having the form</span></p>
+<p class="rvps19"><span class="rvts6">p(x, y) + q(x, y)·y' = 0</span></p>
+<p class="rvps3"><span class="rvts6">in terms of symbolic constant c. &nbsp;Note that most first order differential equations can be put in the above form.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DSOLVE1_GEN</span><span class="rvts6"> can solve exact, linear, separable, homogeneous or generalized-homogeneous equations, and equations having an integrating factor that depends only on x or only on y. &nbsp;In other words, </span><span class="rvts7">DSOLVE1_GEN</span><span class="rvts6"> is a general-purpose function that can solve most first order equations that occur in second-year calculus or elementary differential equations courses.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If the equation is not one of the above forms, </span><span class="rvts7">DSOLVE1_GEN </span><span class="rvts6">returns the word "inapplicable". &nbsp;In this case, consider seeing if one of the advanced methods described in the next subsection is applicable to the equation.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">DSOLVE1</span><span class="rvts6">(p, q, x, y, x0, y0) is similar to </span><span class="rvts7">DSOLVE1_GEN</span><span class="rvts6">, but simplifies to a specific solution for the initial condition y=y0 at x=x0. &nbsp;These initial conditions can be numbers, variables, or general expressions.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">For example, to solve the differential equation 2·x·y + (1 + x²)·y' = 0 for the initial condition y=1 at x=0, enter and simplify the expression</span></p>
+<p class="rvps19"><span class="rvts10">DSOLVE1(2·x·y, 1 + x^2, x, y, 0, 1)</span></p>
+<p class="rvps3"><span class="rvts6">to produce the implicit algebraic solution</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">x ·y + y = 1&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To verify that it satisfies the initial condition, substitute x=0 and y=1 into this implicit solution, and then see that it simplifies to 0=0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The implicit differentiation function </span><span class="rvts7">IMP_DIF</span><span class="rvts6"> defined in the file </span><a class="rvts19" href="DifferentiationApplications.html">DifferentiationApplications.mth</a><span class="rvts20">AUKXVG</span><span class="rvts6"> may be helpful for verifying an implicit solution of a differential equation. &nbsp;For example, to verify the above implicit solution, enter the expression</span></p>
+<p class="rvps19"><span class="rvts10">2·x·y + (1 + x^2)·IMP_DIF(x^2·y + y - 1, x, y)</span></p>
+<p class="rvps3"><span class="rvts6">and see that it simplifies to 0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">If it is necessary to obtain an explicit solution of a differential equation, use the </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> to solve the implicit solution for y. &nbsp;For example, solving the above implicit solution for y gives</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; 1 &nbsp; &nbsp;</span><br/><span class="rvts10">y = ————————&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp;x &nbsp;+ 1 &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">To verify that this explicit solution satisfies the differential equation, substitute the solution for y in the </span><span class="rvts32">un</span><span class="rvts6">simplified difference of the two sides of the differential equation and see that the result simplifies to 0. &nbsp;For example, substituting 1/(x²+1) for y in</span></p>
+<p class="rvps27"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp;d &nbsp; &nbsp;</span><br/><span class="rvts10">2·x·y + (1 + x )·—— y&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;dx &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">and then simplifying the result gives 0.</span></p>
+<p class="rvps9"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The remaining functions in this subsection are for solving specific forms of differential equations. &nbsp;They are included primarily for educational purposes.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">SEPARABLE_GEN</span><span class="rvts6">(p, q, x, y, c) simplifies to a general implicit solution of an equation having the form y' = p(x)·q(y), where p(x) is an expression free of y and q(y) is an expression free of x. &nbsp;The right side may require factoring and/or applying various trigonometric, logarithmic, or exponential transformations to transform it to separable form.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">SEPARABLE</span><span class="rvts6">(p, q, x, y, x0, y0) is similar to </span><span class="rvts7">SEPARABLE_GEN</span><span class="rvts6">, but simplifies to a specific solution for the initial condition y=y0 at x=x0.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LINEAR1</span><span class="rvts6">(p, q, x, y, x0, y0) simplifies to an explicit solution of the linear monic differential equation y' + p(x)·y = q(x). &nbsp;A differential equation is </span><span class="rvts7">monic</span><span class="rvts6"> if the coefficient of its highest order derivative is 1. &nbsp;Note that this equation does not have to be linear in x: only linear in y and its derivative.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LINEAR1_GEN</span><span class="rvts6">(p, q, x, y, c) is similar to </span><span class="rvts7">LINEAR1</span><span class="rvts6">, but simplifies to a general solution in terms of symbolic constant c.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">HOMOGENEOUS</span><span class="rvts6">(r, x, y, x0, y0) simplifies to an implicit solution of an equation having the form y' = r(x, y) &nbsp;if r is homogeneous, otherwise it returns "inapplicable". &nbsp;In this context, an expression is </span><span class="rvts7">homogeneous</span><span class="rvts6"> if substituting k·x or x and k·y for y in the expression yields an equivalent expression. &nbsp;Often homogeneous expressions consist of a ratio of two polynomials in x and y, with exponents of x and y totaling the same constant in every term. &nbsp;The arguments of any irrational subexpressions must also be homogeneous. &nbsp;For example,</span></p>
+<p class="rvps19"><span class="rvts6">r = (x²·y - x·y²)/(x³ - y³) + sin(x/y)</span></p>
+<p class="rvps3"><span class="rvts6">is homogeneous.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">HOMOGENEOUS_GEN</span><span class="rvts6">(r, x, y, c) is similar to </span><span class="rvts7">HOMOGENEOUS</span><span class="rvts6">, but simplifies to a general solution in terms of symbolic constant c if r is homogeneous.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">EXACT</span><span class="rvts6">(p, q, x, y, x0, y0) simplifies to an implicit solution of an equation of the form p(x, y) + q(x, y) y' = 0 if this differential equation is </span><span class="rvts7">exact</span><span class="rvts6">, otherwise it returns "inapplicable". &nbsp;This equation is exact if and only if dp/dy - dq/dx is equivalent to 0. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">EXACT_GEN</span><span class="rvts6">(p, q, x, y, c) is similar to </span><span class="rvts7">EXACT</span><span class="rvts6">, but simplifies to a general solution in terms of symbolic constant c.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">INTEGRATING_FACTOR</span><span class="rvts6">(p, q, x, y, x0, y0) simplifies to an implicit solution of an equation of the form p(x, y) + q(x, y)·y' = 0 if this equation is exact when multiplied by an integrating factor free of x or free of y, otherwise it returns "inapplicable".</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">INTEGRATING_FACTOR_GEN</span><span class="rvts6">(p, q, x, y, c) is similar to </span><span class="rvts7">INTEGRATING_FACTOR</span><span class="rvts6">, but simplifies to a general solution in terms of symbolic constant c.</span></p>
+<p class="rvps52"><span class="rvts7">Advanced Methods</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">MONOMIAL_TEST</span><span class="rvts6">(p, q, x, y) simplifies to an integrating factor of the form x^m·y^n to the equation p(x, y) + q(x, y)·y' = 0, otherwise it returns "inapplicable". &nbsp;Thus if </span><span class="rvts7">MONOMIAL_TEST </span><span class="rvts6">returns a monomial, multiply the equation by this monomial and solve the resulting exact differential equation using </span><span class="rvts7">EXACT</span><span class="rvts6"> or </span><span class="rvts7">DSOLVE1</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">BERNOULLI_ODE</span><span class="rvts6">(p, q, k, x, y, x0, y0) simplifies to an implicit solution of the </span><span class="rvts7">Bernoulli equation</span><span class="rvts6"> &nbsp;y' + p(x)·y = q(x)·y^k, &nbsp;where k is a constant.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">BERNOULLI_ODE_GEN</span><span class="rvts6">(p, q, k, x, y, c) is similar to </span><span class="rvts7">BERNOULLI</span><span class="rvts6">, but simplifies to a general solution in terms of symbolic constant c.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GEN_HOM</span><span class="rvts6">(r, x, y, x0, y0) simplifies to an implicit solution of an equation of the form &nbsp;y' = r(x, y) &nbsp;if r is </span><span class="rvts7">generalized homogenous</span><span class="rvts6">, otherwise it returns "inapplicable". &nbsp;r is a generalized homogeneous expression if and only if</span></p>
+<p class="rvps53"><span class="rvts6">t·d(t·r)/dx</span><br/><span class="rvts6">—————</span><br/><span class="rvts6">d(t·r)/dy</span></p>
+<p class="rvps3"><span class="rvts6">is free of x and y, where t=x/y.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">GEN_HOM_GEN</span><span class="rvts6">(r, x, y, c) is similar to </span><span class="rvts7">GEN_HOM</span><span class="rvts6">, but simplifies to a general solution in terms of symbolic constant c.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">FUN_LIN_CCF</span><span class="rvts6">(r, p, q, k, x, y, x0, y0) simplifies to an implicit solution of an equation of the form y' = r(u), where r is a function of linear constant coefficients: &nbsp;u = p·x + q·y + k, &nbsp;with p, q, and k independent of x and y.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">FUN_LIN_CCF_GEN</span><span class="rvts6">(r, p, q, k, x, y, c) is similar to </span><span class="rvts7">FUN_LIN_CCF</span><span class="rvts6">, but simplifies to a general solution in terms of symbolic constant c.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LIN_FRAC</span><span class="rvts6">(r, a, b, d, p, q, k, x, y, x0, y0) simplifies to an implicit solution of a </span><span class="rvts7">linear fractional</span><span class="rvts6"> equation &nbsp;y' = r·((a·x+b·y+d)/(p·x+q·y+k)). &nbsp;However if q·a-p·b=0, instead use </span><span class="rvts7">FUN_LIN_CCF</span><span class="rvts6"> described above.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">LIN_FRAC_GEN</span><span class="rvts6">(r, a, b, d, p, q, k, x, y, c) is similar to </span><span class="rvts7">LIN_FRAC</span><span class="rvts6">, but simplifies to a general solution in terms of symbolic constant c.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">ALMOST_LIN</span><span class="rvts6">(r, b, p, q, x, y, x0, y0) simplifies to an implicit solution of an equation of the form &nbsp;r(x, y)·y' + p(x)·b(y) = q(x), if the equation is </span><span class="rvts7">almost-linear</span><span class="rvts6">, otherwise it returns "inapplicable". &nbsp;The differential equation is almost-linear if (db/dy)/r is free of y.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">ALMOST_LIN_GEN</span><span class="rvts6"> (r, b, p, q, x, y, c) is similar to </span><span class="rvts7">ALMOST_LIN</span><span class="rvts6">, but simplifies to a general solution in terms of symbolic constant c.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">The above functions are for quasi-linear equations, meaning linear in y'. &nbsp;If an equation is not quasi-linear, represent y' by a variable v and try solving for v to transform the equation into one or more alternate quasi-linear equations. &nbsp;Alternatively, the following method is directly applicable to some equations that are not quasi-linear, and this method may be preferable even if you can solve for v:</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts7">CLAIRAUT</span><span class="rvts6">(p, q, x, y, v, c) solves the generalized </span><span class="rvts7">Clairaut equation</span><span class="rvts6">, which has the form p(x·v - y) = q(v), where p and q are any functions and v is a variable representing y'. &nbsp;</span><span class="rvts7">CLAIRAUT</span><span class="rvts6"> returns a vector: &nbsp;The first component is a general solution containing an arbitrary constant c. &nbsp;The second component is an equation that you can attempt to solve algebraically for v. &nbsp;If you succeed, substitute this expression for v in the differential equation to obtain a </span><span class="rvts7">singular solution</span><span class="rvts6">. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">For example, to solve the differential equation (x·y' - y)² = (y')² + 1, enter</span></p>
+<p class="rvps19"><span class="rvts10">CLAIRAUT((x·v - y)^2, v^2+1, x, y, v)</span></p>
+<p class="rvps3"><span class="rvts6">which simplifies to</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; 2 &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">[c ·x &nbsp;- 2·c·x·y + y &nbsp;- c &nbsp;- 1 = 0, &nbsp; 2·(v·x &nbsp;- x·y - v) = 0]&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Solving the second component for v in terms of x and y gives</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; &nbsp;x·y &nbsp;&nbsp;</span><br/><span class="rvts10">v = ————————&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp;x &nbsp;- 1 &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Substituting the right side of this result for y' in the original differential equation gives the implicit singular solution</span></p>
+<p class="rvps26"><span class="rvts10">&nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp;2 &nbsp; &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp; &nbsp;y &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x ·y &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><br/><span class="rvts10">——————————— = ——————————— + 1&nbsp;</span><br/><span class="rvts10">&nbsp; &nbsp;2 &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp;</span><br/><span class="rvts10">&nbsp;(x &nbsp;- 1) &nbsp; &nbsp; &nbsp;(x &nbsp;- 1) &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="UtilityLibraryFiles.html">Utility File Library</a><span class="rvts20">G5BS2R</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/create-epub-ebooks">Full-featured EPub generator</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

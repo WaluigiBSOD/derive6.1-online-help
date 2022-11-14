@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 8.2.0.286">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Display Step</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Ctrl+D (Simplify &gt; Display Step command),Display Rules mode,Display Step command,Reduction phase,Restoration phase,Simplification - phases of,Simplify &gt; Display Step command,Step annotation,Step-simplifying,Transformation rules">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Display Step">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Display Step" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Derive 6 Help" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-orange.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>Derive 6 Help</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="0"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="DisplayStep"
+		  data-hnd-context="611"
+		  data-hnd-title="Display Step"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li>Menu Commands</li><li>Algebra Window</li><li>Simplify</li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Basic.html" title="Basic" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Expand.html" title="Expand" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Simplify &gt; Display Step command</h2>
+
+            <div class="main-content">
+                
+<p class="rvps3"><span class="rvts6">Use the </span><span class="rvts7">Simplify &gt; Display Step</span><span class="rvts6"> command, click on the </span><img alt="" style="padding : 1px;" src="lib/bm55.png"><span class="rvts6"> icon on the command toolbar, or press </span><span class="rvts7">Ctrl+D</span><span class="rvts6"> to show the steps in the simplification of mathematical expressions and the transformation rules justifying the steps.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">This command performs the next step in the simplification of the currently highlighted expression or subexpression, and then displays the resulting expression in the algebra window. &nbsp;The expression is highlighted and has its own </span><span class="rvts7">#n</span><span class="rvts6"> label number, where </span><span class="rvts7">n</span><span class="rvts6"> is a positive integer. &nbsp;Its annotation is displayed on the status bar and is of the form </span><span class="rvts7">Step(#n)</span><span class="rvts6">. &nbsp;If only a subexpression was highlighted, the annotation is of the form </span><span class="rvts7">Step(#n</span><span class="rvts7">’</span><span class="rvts7">)</span><span class="rvts6">.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Also, if </span><span class="rvts7">Display Rules</span><span class="rvts6"> mode is on, immediately before the result, a new text object is created showing the transformation rule that was applied. &nbsp;Use the </span><a class="rvts19" href="DisplayRulescheckbox.html">Display Rules check box</a><span class="rvts20">Display_Rules_mode</span><span class="rvts6"> of the </span><a class="rvts19" href="Simplificationfields.html">Options &gt; Mode Settings &gt; Simplification command</a><span class="rvts20">19_L5FP</span><span class="rvts6"> to turn </span><span class="rvts7">Display Rules</span><span class="rvts6"> mode on or off.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Repeatedly issue the </span><span class="rvts7">Simplify &gt; Display Step</span><span class="rvts6"> command to display successive steps in the simplification of an expression. &nbsp;At any time you can issue a </span><a class="rvts19" href="Basic.html">Simplify &gt; Basic command</a><span class="rvts20">BQ.NIL</span><span class="rvts6"> to skip the remaining steps and obtain a completely simplified result. &nbsp;For example, try step-simplifying</span></p>
+<p class="rvps6"><span class="rvts10">DIF(SIN(a·x)^2/x, x)</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts8">Derive</span><span class="rvts6"> simplifies expressions in two phases:&nbsp; A reduction phase and a restoration phase.&nbsp; These phases become apparent to the user when expressions are step-simplified. &nbsp;For example,&nbsp;</span></p>
+<p class="rvps19"><span class="rvts10">LN(2*x)</span></p>
+<p class="rvps3"><span class="rvts6">step-simplifies to</span></p>
+<p class="rvps19"><span class="rvts10">LN(x) + LN(2)</span></p>
+<p class="rvps3"><span class="rvts6">which in turn step-simplifies to</span></p>
+<p class="rvps19"><span class="rvts10">LN(2*x)</span></p>
+<p class="rvps3"><span class="rvts6">Although futile in this case, the first step above is a reduction phase transformation that allows for cancellations and collections to occur with other expressions. &nbsp;The second step is a restoration phase transformation that produces a more compact result. &nbsp;Note that when LN(2*x) is just simplified, it looks like nothing happens since the two transformations cancel each other out.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">Since it has no meaning in the context of iterative programming, step-simplification is disabled within the scope of </span><span class="rvts7">PROG</span><span class="rvts6"> and </span><span class="rvts7">LOOP</span><span class="rvts6"> constructs in user-defined functions. &nbsp;Instead the new </span><span class="rvts7">DISPLAY</span><span class="rvts6"> and </span><span class="rvts7">WRITE</span><span class="rvts6"> function can be used within user-defined functions to display intermediate values during the execution of </span><span class="rvts8">Derive</span><span class="rvts6"> programs (for details, see </span><a class="rvts19" href="ProgrammingFunctions.html">Programming Functions</a><span class="rvts20">Programming_Functions</span><span class="rvts6">).</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">You can try stepping through the simplification of any expression, however some or all of the intermediate steps may not be displayed. &nbsp;Also, some algorithms (for example integer, polynomial, and matrix factoring) are not amenable to step-simplifying, since there are no equivalent intermediate steps to display.</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><span class="rvts6">An alternative to the </span><span class="rvts7">Simplify &gt; Display Step</span><span class="rvts6"> command is to turn on </span><span class="rvts7">Display Steps</span><span class="rvts6"> mode using the </span><a class="rvts19" href="DisplayStepscheckbox.html">Display Steps check box</a><span class="rvts20">Display_Steps_mode</span><span class="rvts6"> of the </span><a class="rvts19" href="Simplificationfields.html">Options &gt; Mode Settings &gt; Simplification command</a><span class="rvts20">19_L5FP</span><span class="rvts6">. &nbsp;In this mode the steps resulting from </span><span class="rvts32">all</span><span class="rvts6"> simplify commands are displayed. &nbsp;</span></p>
+<p class="rvps3"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="Simplifycommands.html">Simplify commands</a><span class="rvts20">Simplify_commands</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>
+<p class="rvps7" style="clear: both;"><span class="rvts17">Created with the Personal Edition of HelpNDoc: </span><a class="rvts18" href="https://www.helpndoc.com/create-epub-ebooks">Free EPub producer</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 1988-2003 Texas Instruments Incorporated</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
