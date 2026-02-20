@@ -2,7 +2,7 @@
 
 [Derive 6.1](https://en.wikipedia.org/wiki/Derive_(computer_algebra_system))'s online help, a discontinued CAS software developed by Texas Instruments. Most of its content is valid regarding Derive 5.xx, too.
 
-## How was Made
+## Contents
 
 This repository basically contains a conversion of Texas Instruments' Derive 6.1 WinHelp [online help](https://en.wikipedia.org/wiki/Online_help) authored through [HelpNDoc](https://www.helpndoc.com/), and deployed as a HTML website using GitHub Pages.
 
