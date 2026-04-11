@@ -20,7 +20,7 @@ They can be found in any copy of the original software, in the root installation
 
 ## License
 
-Unlike [other stuff hosted on my GitHub](https://github.com/WaluigiBSOD) no license is available, the only thing I'm asking in exchange is to give me credit for this conversion if you mirror all of this somewhere outside [the original WaluigiBSOD repository](https://github.com/WaluigiBSOD/derive6.1-online-help).
+Unlike [other stuff hosted on my GitHub](https://github.com/WaluigiBSOD?tab=repositories) no license is available, the only thing I'm asking in exchange is to give me credit for this conversion if you mirror all of this somewhere outside [the original WaluigiBSOD repository](https://github.com/WaluigiBSOD/derive6.1-online-help).
 
 ### Disclaimer
 
