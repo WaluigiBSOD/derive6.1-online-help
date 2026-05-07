@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 10.4.0.281">
+  <meta name="generator" content="HelpNDoc Personal Edition 10.5.0.323">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -185,7 +185,7 @@
 
             <div class="main-content">
                 
-<p class="rvps3"><span class="rvts6">You can use the </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> and </span><span class="rvts7">SOLUTIONS</span><span class="rvts6"> functions to solve equations and inequalities exactly using algebraic methods. &nbsp;The </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return solutions in the form of equations and/or inequalities. &nbsp;The </span><span class="rvts7">SOLUTIONS</span><span class="rvts6"> function returns solutions in the form of a vector of values that satisfy the equations or inequalities.</span></p>
+<p class="rvps3"><span class="rvts6">You can use the </span><a class="rvts19" href="ExpressionS.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> and </span><span class="rvts7">SOLUTIONS</span><span class="rvts6"> functions to solve equations and inequalities exactly using algebraic methods. &nbsp;The </span><a class="rvts19" href="ExpressionS.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return solutions in the form of equations and/or inequalities. &nbsp;The </span><span class="rvts7">SOLUTIONS</span><span class="rvts6"> function returns solutions in the form of a vector of values that satisfy the equations or inequalities.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><span class="rvts6">The first argument of </span><span class="rvts7">SOLVE</span><span class="rvts6"> and </span><span class="rvts7">SOLUTIONS</span><span class="rvts6"> is the equation or inequality to be solved. &nbsp;If neither an equation nor inequality, it is assumed equal to 0. &nbsp;The second argument is the solution variable. &nbsp;If the third argument is the constant </span><span class="rvts7">Real</span><span class="rvts6">, only solutions not having an imaginary component are returned. &nbsp;For example,</span></p>
 <p class="rvps19"><span class="rvts10">SOLVE(x^3 + x^2 + x + 1, x)</span></p>
@@ -196,7 +196,7 @@
 <p class="rvps3"><span class="rvts6">simplifies to</span></p>
 <p class="rvps19"><span class="rvts10">x = -1</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><span class="rvts6">Given an equation or inequality, the </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return the solutions as a Boolean expression logically equivalent to the input but in disjunctive normal form. &nbsp;That is an expression of the form</span></p>
+<p class="rvps3"><span class="rvts6">Given an equation or inequality, the </span><a class="rvts19" href="ExpressionS.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return the solutions as a Boolean expression logically equivalent to the input but in disjunctive normal form. &nbsp;That is an expression of the form</span></p>
 <p class="rvps19"><span class="rvts32">relation</span><span class="rvts7">1</span><span class="rvts6"> OR </span><span class="rvts32">relation</span><span class="rvts7">2</span><span class="rvts6"> OR ...</span></p>
 <p class="rvps3"><span class="rvts6">where </span><span class="rvts32">relation</span><span class="rvts7">i</span><span class="rvts6"> is an equation or inequality. &nbsp;For example, the equation</span></p>
 <p class="rvps19"><span class="rvts10">SOLVE(x^2-1 = 0, x)</span></p>
@@ -207,7 +207,7 @@
 <p class="rvps3"><span class="rvts6">simplifies to</span></p>
 <p class="rvps19"><span class="rvts10">x &lt; -4 </span><span class="rvts9">∨</span><span class="rvts10"> -2 &lt; x &lt; 1 </span><span class="rvts9">∨</span><span class="rvts10"> x &gt; 3</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><span class="rvts6">Given a 1-element vector whose element is an equation or inequality, the </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return a vector of solutions, each in the form of a relation. &nbsp;For example,</span></p>
+<p class="rvps3"><span class="rvts6">Given a 1-element vector whose element is an equation or inequality, the </span><a class="rvts19" href="ExpressionS.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return a vector of solutions, each in the form of a relation. &nbsp;For example,</span></p>
 <p class="rvps19"><span class="rvts10">SOLVE([x^2-1 = 0], x)</span></p>
 <p class="rvps3"><span class="rvts6">simplifies to</span></p>
 <p class="rvps19"><span class="rvts10">[x = -1, x = 1]</span></p>
@@ -237,7 +237,7 @@
 <p class="rvps19"><span class="rvts10">SOLVE(x = x + 1, x)</span></p>
 <p class="rvps3"><span class="rvts6">simplifies to </span><span class="rvts7">false</span><span class="rvts6">.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><span class="rvts6">An equation or inequality is </span><span class="rvts7">degenerate</span><span class="rvts6"> if it is true for all values of the solution variable. &nbsp;Given a degenerate equation or inequality, both the </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return the truth-value </span><span class="rvts7">true</span><span class="rvts6">. &nbsp;For example,</span></p>
+<p class="rvps3"><span class="rvts6">An equation or inequality is </span><span class="rvts7">degenerate</span><span class="rvts6"> if it is true for all values of the solution variable. &nbsp;Given a degenerate equation or inequality, both the </span><a class="rvts19" href="ExpressionS.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return the truth-value </span><span class="rvts7">true</span><span class="rvts6">. &nbsp;For example,</span></p>
 <p class="rvps19"><span class="rvts10">SOLVE(|x - 2| &gt;= 0, x)</span></p>
 <p class="rvps3"><span class="rvts6">simplifies to </span><span class="rvts7">true</span><span class="rvts6">. &nbsp;Given a degenerate equation or inequality, the </span><span class="rvts7">SOLUTIONS</span><span class="rvts6"> function returns a 1-element vector of the form [@</span><span class="rvts32">n</span><span class="rvts6">] where </span><span class="rvts32">n</span><span class="rvts6"> is an integer. &nbsp;You can think of "@" as an abbreviation for "arbitrary" or "anything". &nbsp;</span><span class="rvts32">n</span><span class="rvts6"> starts at 1 and increments by 1 each time a new variable is required. &nbsp;For example,</span></p>
 <p class="rvps19"><span class="rvts10">SOLUTIONS(|x - 2| &gt;= 0, x)</span></p>

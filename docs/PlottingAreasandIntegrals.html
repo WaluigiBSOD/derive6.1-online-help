@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 10.4.0.281">
+  <meta name="generator" content="HelpNDoc Personal Edition 10.5.0.323">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -208,19 +208,19 @@
 <p class="rvps3"><span class="rvts25">By letting v = 0, </span><span class="rvts26">AreaBetweenCurves</span><span class="rvts25"> can also be used to plot the area associated with the definite integral of y = u(x) &nbsp;from x = a to b (a &lt; b) in a single color. &nbsp;For example, to plot the integral of the function y = sin(2·x) + cos(3·x) from x = -</span><span class="rvts27">π</span><span class="rvts25"> to </span><span class="rvts27">π</span><span class="rvts25">, plot the expression&nbsp;</span></p>
 <p class="rvps6"><span class="rvts46">AreaBetweenCurves(SIN(2·x) + COS(3·x), 0, x, -pi, pi, y)</span></p>
 <p class="rvps3"><span class="rvts25"><br/></span></p>
-<p class="rvps3"><span class="rvts26">PlotInt</span><span class="rvts25">(u, x, a, b, y) plots the area associated with the definite integral of the function y = u(x) from x = a to b. &nbsp;For </span><span class="rvts26">PlotInt</span><span class="rvts25">, use rectangular coordinates and have the 2D-plot window's </span><a class="rvts19" href="ApproximateBeforePlotting.html">Options &gt; Approximate Before Plotting option</a><span class="rvts20">EVZ132</span><span class="rvts25"> turned on. &nbsp;For example, to plot the integral of the function y = x + sin(2·x) &nbsp;from x = -3 to 3, plot the expression</span></p>
+<p class="rvps3"><span class="rvts26">PlotInt</span><span class="rvts25">(u, x, a, b, y) plots the area associated with the definite integral of the function y = u(x) from x = a to b. &nbsp;For </span><span class="rvts26">PlotInt</span><span class="rvts25">, use rectangular coordinates and have the 2D-plot window's </span><a class="rvts19" href="ApproximateBeforePlotting2D.html">Options &gt; Approximate Before Plotting option</a><span class="rvts20">EVZ132</span><span class="rvts25"> turned on. &nbsp;For example, to plot the integral of the function y = x + sin(2·x) &nbsp;from x = -3 to 3, plot the expression</span></p>
 <p class="rvps6"><span class="rvts46">PlotInt(x + SIN(2·x), x, -3, 3, y)</span></p>
 <p class="rvps3"><span class="rvts25"><br/></span></p>
 <p class="rvps3"><span class="rvts7">PlotInt</span><span class="rvts6">(u, y, a ,b, x) plots the area associated with the definite integral of the function x = u(y) from y = a to b. &nbsp;For example, to plot the integral of the function x = y + sin(2</span><span class="rvts25">·</span><span class="rvts6">y) &nbsp;from y = -3 to 3, plot the expression</span></p>
 <p class="rvps6"><span class="rvts46">PlotInt(y + SIN(2·y), y, -3, 3, x)</span></p>
 <p class="rvps3"><span class="rvts25"><br/></span></p>
-<p class="rvps3"><span class="rvts25">If the option to automatically change plot colors is on (see </span><a class="rvts19" href="Color.html">Options &gt; Display &gt; Color command</a><span class="rvts20">JDDXSP</span><span class="rvts25">), the positive part of the integral is plotted in one color, then the negative part is plotted in a contrasting color. &nbsp;For example, compare the previous plot with a plot of the expression</span></p>
+<p class="rvps3"><span class="rvts25">If the option to automatically change plot colors is on (see </span><a class="rvts19" href="Color2D.html">Options &gt; Display &gt; Color command</a><span class="rvts20">JDDXSP</span><span class="rvts25">), the positive part of the integral is plotted in one color, then the negative part is plotted in a contrasting color. &nbsp;For example, compare the previous plot with a plot of the expression</span></p>
 <p class="rvps6"><span class="rvts46">PlotInt(x + SIN(2·x), x, 3, -3, y)</span></p>
 <p class="rvps3"><span class="rvts25"><br/></span></p>
 <p class="rvps3"><span class="rvts25">Many other examples of plotting and filling the areas of curves can be constructed directly using Boolean plots. &nbsp;For example, to plot and fill a circle of radius 2 with center at (1,2), plot the expression</span></p>
 <p class="rvps6"><span class="rvts46">(x-1)^2 + (y-2)^2 = 4 OR (x-1)^2 + (y-2)^2 &lt;= 4</span></p>
 <p class="rvps3"><span class="rvts25"><br/></span></p>
-<p class="rvps3"><span class="rvts25">If the plot looks like an ellipse, use the </span><a class="rvts19" href="AspectRatio.html">Set &gt; Aspect Ratio command</a><span class="rvts20">02_MF4</span><span class="rvts25"> to make it a true circle. &nbsp;As another example, to plot the area between x = y² and x = sin(y) for y = -2 to 2, plot the expression</span></p>
+<p class="rvps3"><span class="rvts25">If the plot looks like an ellipse, use the </span><a class="rvts19" href="AspectRatio2D.html">Set &gt; Aspect Ratio command</a><span class="rvts20">02_MF4</span><span class="rvts25"> to make it a true circle. &nbsp;As another example, to plot the area between x = y² and x = sin(y) for y = -2 to 2, plot the expression</span></p>
 <p class="rvps6"><span class="rvts46">x=y^2 OR x=SIN(y) OR ((x-y^2)·(SIN(y)-x) &gt;= 0 AND -2 &lt;= y &lt;= 2)</span></p>
 <p class="rvps3"><span class="rvts25"><br/></span></p>
 <p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="GraphicsFunctions.html">Graphics Functions</a><span class="rvts20">ZG4ZTI</span><span class="rvts6">&nbsp;</span></p>

@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 10.4.0.281">
+  <meta name="generator" content="HelpNDoc Personal Edition 10.5.0.323">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -185,11 +185,11 @@
 
             <div class="main-content">
                 
-<p class="rvps3"><span class="rvts6">You can use both the </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and </span><a class="rvts19" href="System.html">Solve &gt; System command</a><span class="rvts20">1EJYXJP</span><span class="rvts6"> commands to solve systems of polynomial equations. &nbsp;You can also use the </span><span class="rvts7">SOLVE</span><span class="rvts6"> and </span><span class="rvts7">SOLUTIONS</span><span class="rvts6"> functions to solve such systems. &nbsp;The first argument of </span><span class="rvts7">SOLVE</span><span class="rvts6"> and </span><span class="rvts7">SOLUTIONS</span><span class="rvts6"> is the system of equations to be solved. &nbsp;The second argument is a vector of the solution variables.</span></p>
+<p class="rvps3"><span class="rvts6">You can use both the </span><a class="rvts19" href="ExpressionS.html">Solve &gt; Expression</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and </span><a class="rvts19" href="System.html">Solve &gt; System command</a><span class="rvts20">1EJYXJP</span><span class="rvts6"> commands to solve systems of polynomial equations. &nbsp;You can also use the </span><span class="rvts7">SOLVE</span><span class="rvts6"> and </span><span class="rvts7">SOLUTIONS</span><span class="rvts6"> functions to solve such systems. &nbsp;The first argument of </span><span class="rvts7">SOLVE</span><span class="rvts6"> and </span><span class="rvts7">SOLUTIONS</span><span class="rvts6"> is the system of equations to be solved. &nbsp;The second argument is a vector of the solution variables.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><span class="rvts6">All these methods use the </span><a class="rvts19" href="GrobnerBasis.html">Gröbner Basis</a><span class="rvts20">GROEBNER_BASIS</span><span class="rvts6"> to reduce the system of polynomial equations to a single univariate equation. &nbsp;This univariate equation is then solved algebraically or numerically, and the result back-substituted into the other equations.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><span class="rvts6">Given a conjunction of equations, the </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return the solutions as a Boolean expression logically equivalent to the input but in disjunctive normal form. &nbsp;That is an expression of the form</span></p>
+<p class="rvps3"><span class="rvts6">Given a conjunction of equations, the </span><a class="rvts19" href="ExpressionS.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return the solutions as a Boolean expression logically equivalent to the input but in disjunctive normal form. &nbsp;That is an expression of the form</span></p>
 <p class="rvps19"><span class="rvts32">conjunct</span><span class="rvts6"> </span><span class="rvts7">1</span><span class="rvts6"> OR </span><span class="rvts32">conjunct</span><span class="rvts6"> </span><span class="rvts7">2</span><span class="rvts6"> OR ...&nbsp;</span></p>
 <p class="rvps3"><span class="rvts6">where </span><span class="rvts32">conjunct</span><span class="rvts6"> </span><span class="rvts7">i</span><span class="rvts6"> is an expression of the form</span></p>
 <p class="rvps19"><span class="rvts32">relation</span><span class="rvts6"> </span><span class="rvts7">i1</span><span class="rvts6"> AND </span><span class="rvts32">relation</span><span class="rvts6"> </span><span class="rvts7">i2</span><span class="rvts6"> AND ...</span></p>
@@ -198,7 +198,7 @@
 <p class="rvps3"><span class="rvts6">simplifies to</span></p>
 <p class="rvps19"><span class="rvts10">(x = -a </span><span class="rvts9">∧</span><span class="rvts10"> y = -a) </span><span class="rvts9">∨</span><span class="rvts10"> (x = a </span><span class="rvts9">∧</span><span class="rvts10"> y = a)</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><span class="rvts6">Given a vector of equations, the </span><a class="rvts19" href="Expression2.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return a vector of solutions. &nbsp;The </span><a class="rvts19" href="System.html">Solve System command</a><span class="rvts20">1EJYXJP</span><span class="rvts6"> always returns the solutions in this form. &nbsp;For example,&nbsp;</span></p>
+<p class="rvps3"><span class="rvts6">Given a vector of equations, the </span><a class="rvts19" href="ExpressionS.html">Solve &gt; Expression command</a><span class="rvts20">1PET_XA</span><span class="rvts6"> and the </span><span class="rvts7">SOLVE</span><span class="rvts6"> function return a vector of solutions. &nbsp;The </span><a class="rvts19" href="System.html">Solve System command</a><span class="rvts20">1EJYXJP</span><span class="rvts6"> always returns the solutions in this form. &nbsp;For example,&nbsp;</span></p>
 <p class="rvps19"><span class="rvts10">SOLVE([x^2 + y^2 = 2·a^2, x - y = 0], [x, y])</span></p>
 <p class="rvps3"><span class="rvts6">simplifies to</span></p>
 <p class="rvps19"><span class="rvts10">[x = a </span><span class="rvts9">∧</span><span class="rvts10"> y = a, x = -a </span><span class="rvts9">∧</span><span class="rvts10"> y = -a]</span></p>

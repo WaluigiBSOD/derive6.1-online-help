@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 10.4.0.281">
+  <meta name="generator" content="HelpNDoc Personal Edition 10.5.0.323">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -185,7 +185,7 @@
 
             <div class="main-content">
                 
-<p class="rvps3"><span class="rvts6">Use the following functions defined in the </span><a class="rvts19" href="GraphicsFunctions.html">GraphicsFunctions.mth</a><span class="rvts20">ZG4ZTI</span><span class="rvts6"> utility file to project 3D rectangular coordinate vectors into two dimensions so parametrically defined space curves and surfaces can be plotted in 2D-plot windows. &nbsp;Note that 3D rectangular coordinate vectors can be plotted directly in 3D-plot windows (for details, see the </span><a class="rvts19" href="Plot2.html">Insert &gt; Plot command</a><span class="rvts20">72HLS1</span><span class="rvts6">). &nbsp;The </span><a class="rvts19" href="CoordinateSystemConversionFuncti.html">Coordinate System Conversion Functions</a><span class="rvts20">Coordinate_System_Conversion_Functions</span><span class="rvts6"> can be used to convert surfaces parametrically defined in other coordinate systems to rectangular coordinate vectors.</span></p>
+<p class="rvps3"><span class="rvts6">Use the following functions defined in the </span><a class="rvts19" href="GraphicsFunctions.html">GraphicsFunctions.mth</a><span class="rvts20">ZG4ZTI</span><span class="rvts6"> utility file to project 3D rectangular coordinate vectors into two dimensions so parametrically defined space curves and surfaces can be plotted in 2D-plot windows. &nbsp;Note that 3D rectangular coordinate vectors can be plotted directly in 3D-plot windows (for details, see the </span><a class="rvts19" href="Plot3DI.html">Insert &gt; Plot command</a><span class="rvts20">72HLS1</span><span class="rvts6">). &nbsp;The </span><a class="rvts19" href="CoordinateSystemConversionFuncti.html">Coordinate System Conversion Functions</a><span class="rvts20">Coordinate_System_Conversion_Functions</span><span class="rvts6"> can be used to convert surfaces parametrically defined in other coordinate systems to rectangular coordinate vectors.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><span class="rvts6">Images of three dimensional objects are projected using an isometric (trimetric) projection. &nbsp;That is images are projected perpendicular to the screen as if viewed from a great distance through a telephoto lens. &nbsp;For example, the isometric projection of the front surface of a cube does not appear larger (or smaller) than the back surface.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
@@ -205,9 +205,9 @@
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><span class="rvts7">ISOMETRICS</span><span class="rvts6">(v, s, s0, sm, m, t, t0, tn, n) approximates to a vector of n+1 two-column matrices that plots in a 2D-plot window as the isometric projection of the parametric surface specified by 3D coordinate vector v which is defined in terms of parameters s and t. &nbsp;This vector is evaluated on a grid of points with s varying from s0 through sm in m equal increments and t varying from t0 through tn in n equal increments.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><span class="rvts6">To produce a plot of line segments along lines of constant t, use the 2D-plot window </span><a class="rvts19" href="CoordinateSystem.html">Set &gt; Coordinate System command</a><span class="rvts20">162L784</span><span class="rvts6"> to select the rectangular coordinate system and the </span><a class="rvts19" href="Points.html">Options &gt; Display &gt; Points command</a><span class="rvts20">7CKH0ZT</span><span class="rvts6"> to select connected points that are medium or large in size.</span></p>
+<p class="rvps3"><span class="rvts6">To produce a plot of line segments along lines of constant t, use the 2D-plot window </span><a class="rvts19" href="CoordinateSystem2D.html">Set &gt; Coordinate System command</a><span class="rvts20">162L784</span><span class="rvts6"> to select the rectangular coordinate system and the </span><a class="rvts19" href="Points.html">Options &gt; Display &gt; Points command</a><span class="rvts20">7CKH0ZT</span><span class="rvts6"> to select connected points that are medium or large in size.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
-<p class="rvps3"><span class="rvts6">To make the dots and lines in such plots all the same color, turn off the option to automatically change plot colors (see the </span><a class="rvts19" href="Color.html">Options &gt; Display &gt; Color command</a><span class="rvts20">JDDXSP</span><span class="rvts6">). &nbsp;Also, you can use the </span><a class="rvts19" href="Axes.html">Options &gt; Display &gt; Axes command</a><span class="rvts20">1YH6GXP</span><span class="rvts6"> to turn off the plotting of the axes lines and labels in the 2D-plot window.</span></p>
+<p class="rvps3"><span class="rvts6">To make the dots and lines in such plots all the same color, turn off the option to automatically change plot colors (see the </span><a class="rvts19" href="Color2D.html">Options &gt; Display &gt; Color command</a><span class="rvts20">JDDXSP</span><span class="rvts6">). &nbsp;Also, you can use the </span><a class="rvts19" href="Axes2D.html">Options &gt; Display &gt; Axes command</a><span class="rvts20">1YH6GXP</span><span class="rvts6"> to turn off the plotting of the axes lines and labels in the 2D-plot window.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><span class="rvts7">COPROJECTION</span><span class="rvts6">(A) approximates to the coprojection of A. &nbsp;The coprojection of a projection matrix produced by </span><span class="rvts7">ISOMETRICS</span><span class="rvts6"> is a vector of m+1 two-column matrices that plots as the isometric projection of the same parametric surface, but with lines of constant s instead of constant t. &nbsp;Superimposing a plot of the coprojection onto a plot of the projection often helps visualize a 3-dimensional surface. &nbsp;Note that the coprojection can also be generated by approximating </span><span class="rvts7">ISOMETRICS</span><span class="rvts6">(v, t, t0, tn, n, s, s0, sm, m).</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
@@ -217,7 +217,7 @@
 <p class="rvps19"><span class="rvts46">ISOMETRICS(SPHERE(2,theta,psi),theta,-pi,pi,16,psi,0,pi,8)</span></p>
 <p class="rvps3"><span class="rvts6">and</span></p>
 <p class="rvps19"><span class="rvts46">COPROJECTION(ISOMETRICS(SPHERE(2,theta,psi),theta,-pi,pi,16,psi,0,pi,8))</span></p>
-<p class="rvps3"><span class="rvts6">with the </span><a class="rvts19" href="ApproximateBeforePlotting.html">Options &gt; Approximate Before Plotting option</a><span class="rvts20">EVZ132</span><span class="rvts6"> turned on.</span></p>
+<p class="rvps3"><span class="rvts6">with the </span><a class="rvts19" href="ApproximateBeforePlotting2D.html">Options &gt; Approximate Before Plotting option</a><span class="rvts20">EVZ132</span><span class="rvts6"> turned on.</span></p>
 <p class="rvps3"><span class="rvts25"><br/></span></p>
 <p class="rvps9"><span class="rvts6">Other </span><a class="rvts19" href="GraphicsFunctions.html">Graphics Functions</a><span class="rvts20">ZG4ZTI</span><span class="rvts6">&nbsp;</span></p>
 <p class="rvps9"><span class="rvts16"></span><span class="rvts6"></span></p>

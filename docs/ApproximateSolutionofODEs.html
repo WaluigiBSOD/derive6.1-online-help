@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 10.4.0.281">
+  <meta name="generator" content="HelpNDoc Personal Edition 10.5.0.323">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -252,7 +252,7 @@
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><span class="rvts6">When given a single differential equation, </span><span class="rvts7">RK</span><span class="rvts6"> returns a data matrix that plots in a 2D-plot window as the solution of the equation. &nbsp;For example, to plot the solution of y</span><span class="rvts6">’</span><span class="rvts6"> = sin(x·y) for x=0 to 10 having an initial value of y=1 at x=0, enter the expression</span></p>
 <p class="rvps19"><span class="rvts10">RK([SIN(x·y)], [x, y], [0, 1], 0.1, 100)</span></p>
-<p class="rvps3"><span class="rvts6">Then switch to a 2D-plot window and plot the expression after using the </span><a class="rvts19" href="Points.html">Options &gt; Display &gt; Points command</a><span class="rvts20">7CKH0ZT</span><span class="rvts6"> to connect data points and the </span><a class="rvts19" href="ApproximateBeforePlotting.html">Options &gt; Approximate Before Plotting command</a><span class="rvts20">EVZ132</span><span class="rvts6"> to approximate expressions before plotting them.</span></p>
+<p class="rvps3"><span class="rvts6">Then switch to a 2D-plot window and plot the expression after using the </span><a class="rvts19" href="Points.html">Options &gt; Display &gt; Points command</a><span class="rvts20">7CKH0ZT</span><span class="rvts6"> to connect data points and the </span><a class="rvts19" href="ApproximateBeforePlotting2D.html">Options &gt; Approximate Before Plotting command</a><span class="rvts20">EVZ132</span><span class="rvts6"> to approximate expressions before plotting them.</span></p>
 <p class="rvps3"><span class="rvts6"><br/></span></p>
 <p class="rvps3"><span class="rvts6">When given m differential equations, </span><span class="rvts7">RK</span><span class="rvts6"> returns a m+1 column matrix. &nbsp;To plot y1 versus x, extract the first two columns of the matrix by appending COL [1,2] to the </span><span class="rvts7">RK</span><span class="rvts6"> function call. &nbsp;To plot y2 versus x, extract the first and third columns by appending COL [1,3], etc. &nbsp;Alternatively, to plot y2 versus y1 ¾ a parametric phase-plane plot ¾ extract the second and third columns by appending COL [2,3], etc. &nbsp;For example, to plot the solutions of the system y</span><span class="rvts6">’</span><span class="rvts6"> = sin(x·y·z) and z</span><span class="rvts6">’</span><span class="rvts6"> = cos(x·y·z) for x=0 to 5 having initial values of y=1 and z=1 at x=0, enter and plot the expressions</span></p>
 <p class="rvps6"><span class="rvts10">(RK([SIN(x·y·z),COS(x·y·z)], [x,y,z], [0,1,1], 0.1, 50)) COL [1,2]</span></p>
